@@ -27,10 +27,13 @@ if [ ! -f "$FULL_SRC" ]; then
     exit 1
 fi
 
-# Move to archive with metadata header
+# Move to archive with metadata header (robust 3-step for WSL + untracked compat)
 cp "$FULL_SRC" "$ARCHIVE_DIR/$NEW_NAME"
 sed -i "1s/^/### Archived on ${TODAY}./" "$ARCHIVE_DIR/$NEW_NAME"
 sed -i "2i ### Reason: ${REASON}" "$ARCHIVE_DIR/$NEW_NAME"
-git mv "$FULL_SRC" "$ARCHIVE_DIR/$NEW_NAME" 2>/dev/null || true
+# Track-aware deletion: git rm if tracked, direct rm if untracked (e.g. new temp pages)
+git ls-files --error-unmatch "$FULL_SRC" &>/dev/null && \
+    git rm -f "$FULL_SRC" || rm -f "$FULL_SRC"
+git add "$ARCHIVE_DIR/$NEW_NAME"               # Stage the archived version
 
 echo "✅ 已归档: $PAGE_PATH -> archive/$NEW_NAME"

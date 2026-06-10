@@ -21,20 +21,14 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.indexes
+    - navigation.top
     - search.highlight
     - search.suggest
+    - search.share
 
-nav:
-  - 首页: index.md
-  - 考据档案:
-      - 索引页: topics/novel-lore/_index.md
-      - 主角 · 顾青山: topics/novel-lore/gu-qing-shan-profile.md
-      - BOSS · 邪魔之主: topics/novel-lore/xiemozhizhu-profile.md
-      - 幕 / 冰封之尸: topics/novel-lore/bingfengzhishi-profile.md
-      - 洪荒与六道轮回: topics/novel-lore/honghuang-liudao-concept.md
-      - 大结局剧情分析: topics/novel-lore/zhu-jie-mo-ri-ending.md
-
-plugins: []
+plugins:
+  - awesome-pages:
+      collapse_single_pages: true
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -43,3 +37,5 @@ markdown_extensions:
   - pymdownx.superfences
   - tables
   - attr_list
+  - toc:
+      permalink: true
