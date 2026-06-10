@@ -22,3 +22,80 @@
 ## [2026-06-10] lint | Auto-filer audit
 - Fixed: Cross-links from xiemozhizhu-profile.md → bingfengzhishi-profile.md (was missing)
 - Flagged: 结局版本冲突 — 幕的最终归宿存在 A/B 两个不一致的版本，需要更多一手来源验证（已记录在 bingfengzhishi-profile.md #⚠ 结局版本冲突）
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 5
+- Issues found: 6
+- Warnings:
+  - WARNING: No frontmatter in docs/topics/novel-lore/_index.md
+  - WARNING: Missing 'date_added' in docs/topics/novel-lore/xiemozhizhu-profile.md
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/bingfengzhishi-profile.md → target not found
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/xiemozhizhu-profile.md → target not found
+- Info:
+  - INFO: Body does not start with '## Summary' in docs/topics/novel-lore/gu-qing-shan-profile.md
+  - INFO: Body does not start with '## Summary' in docs/topics/novel-lore/xiemozhizhu-profile.md
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- Issues found: 6
+- Warnings:
+  - WARNING: No frontmatter in docs/topics/novel-lore/_index.md
+  - WARNING: No frontmatter in docs/topics/novel-lore/gu-qing-shan-profile.md
+  - WARNING: Missing 'date_added' in docs/topics/novel-lore/xiemozhizhu-profile.md
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/bingfengzhishi-profile.md → target not found
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/xiemozhizhu-profile.md → target not found
+- Info:
+  - INFO: Body does not start with '## Summary' in docs/topics/novel-lore/xiemozhizhu-profile.md
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- ✅ Auto-fixed: 7 issue(s) fixed:
+  - FIXED: Added frontmatter to docs/topics/novel-lore/_index.md
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/_index.md
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/bingfengzhishi-profile.md
+  - FIXED: Added frontmatter to docs/topics/novel-lore/gu-qing-shan-profile.md
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/gu-qing-shan-profile.md
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/honghuang-liudao-concept.md
+  - FIXED: Added missing 'date_added' to docs/topics/novel-lore/xiemozhizhu-profile.md
+- ⚠️ Remaining warnings: 2
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/bingfengzhishi-profile.md → target not found
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/xiemozhizhu-profile.md → target not found
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- ⚠️ Remaining warnings: 2
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/bingfengzhishi-profile.md → target not found
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/xiemozhizhu-profile.md → target not found
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- ⚠️ Remaining warnings: 2
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/bingfengzhishi-profile.md → target not found
+  - BROKEN LINK: [./xiedaoling-profile.md] in docs/topics/novel-lore/xiemozhizhu-profile.md → target not found
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- ✅ Auto-fixed: 2 issue(s) fixed:
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/bingfengzhishi-profile.md
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/gu-qing-shan-profile.md
+- 🎉 All checks passed!
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- 🎉 All checks passed!
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- 🎉 All checks passed!
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- 🎉 All checks passed!
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- 🎉 All checks passed!
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 6
+- 🎉 All checks passed!

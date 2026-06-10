@@ -1,13 +1,18 @@
 ---
+
 title: 诸界末日在线 — 顾青山角色全设定
 date_added: 2026-06-08
-date_modified: 2026-06-08
-source_count: 1
-tags: [fiction, zhu-jie-mo-ri, character-profile, gu-qing-shan]
+last_modified: 2026-06-10
 status: complete
-aliases: [顾青山档案, GuQingShanProfile]
-references: [https://baike.baidu.com/item/顾青山/23325096]
+sources: ["百度百科", "知乎全解析帖"]
+date_modified: 2026-06-08
+
 ---
+
+
+## Summary
+
+《诸界末日在线》男主角。真实身份为时间与奥秘之子"毁灭"，身负四圣柱正神与混沌代言人多重位格，是谢道灵集合众生发动的终极术法——"混沌"本身（即最高序列·诸界末日在线）。既是诸界末日的终结者，也是维系时空存续的锚点。生命构成融合末日与众生双重特性，可同时使用两者力量。
 
 ## 一、基础信息
 
@@ -217,3 +222,4 @@ references: [https://baike.baidu.com/item/顾青山/23325096]
 - 晚半年起步难血命换石剑独苦斩走出路子见安约最烈美回后完但安娜五七一号阵地妖魔赶两夜只同归看
 - 多年后前线战忽见仰大圣法斗百招顿悟虚属自己意渐渐出众拔峰成仙位指
 - **十年逆转点：十年为他修机救王城部修发剑秘·归击杀终魔神被带走偷渡回前。现在一直在着往前走不得不用尽办法搏几乎休息时候
+- [# PENDING FIX — 链接目标尚未创建]

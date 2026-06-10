@@ -1,33 +1,45 @@
-site_name: Personal Wiki
-site_description: LLM-maintained personal knowledge base
-dev_addr: 127.0.0.1:8300
+docs_dir: docs
+site_name: "诸界末日在线 · 知识库"
+site_dir: site
 theme:
   name: material
+  language: zh
   palette:
-    scheme: slate
-    primary: black
+    - scheme: slate
+      primary: indigo
+      accent: purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
   features:
     - navigation.sections
     - navigation.expand
-    - search.suggest
+    - navigation.indexes
     - search.highlight
-    - content.code.copy
-
-plugins:
-  - search
+    - search.suggest
 
 nav:
-  - Home: index.md
-  - Novel & Fiction Lore:
-    - Overview: topics/novel-lore/_index.md
-    - 大结局剧情分析: topics/novel-lore/zhu-jie-mo-ri-ending.md
-    - 顾青山 · 角色档案: topics/novel-lore/gu-qing-shan-profile.md
-    - 邪魔之主 · 角色档案: topics/novel-lore/xiemozhizhu-profile.md
-    - 幕 / 冰封之尸 · 角色档案: topics/novel-lore/bingfengzhishi-profile.md
+  - 首页: index.md
+  - 考据档案:
+      - 索引页: topics/novel-lore/_index.md
+      - 主角 · 顾青山: topics/novel-lore/gu-qing-shan-profile.md
+      - BOSS · 邪魔之主: topics/novel-lore/xiemozhizhu-profile.md
+      - 幕 / 冰封之尸: topics/novel-lore/bingfengzhishi-profile.md
+      - 洪荒与六道轮回: topics/novel-lore/honghuang-liudao-concept.md
+      - 大结局剧情分析: topics/novel-lore/zhu-jie-mo-ri-ending.md
+
+plugins: []
 
 markdown_extensions:
-  - tables
-  - toc:
-      permalink: true
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - pymdownx.superfences
+  - tables
+  - attr_list

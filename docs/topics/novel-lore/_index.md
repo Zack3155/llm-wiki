@@ -1,4 +1,12 @@
-# Novel & Fiction Lore — 索引
+---
+title: Index
+date_added: 2026-06-10
+status: complete
+description: Auto-generated index — needs review
+date_modified: 2026-06-10
+---
+
+## Summary
 
 **小说考据资料库**。来源：百度百科、知乎高赞解析帖、贴吧精华讨论区。
 
