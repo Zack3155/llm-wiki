@@ -139,3 +139,8 @@
   - FIXED: Added 'date_modified' to docs/archive/_test_ghost_target_final_archived_2026-06-10_133522_pressure test archive.md
 - ⚠️ Remaining warnings: 1
   - CONTRADICTION: '✅ 完整...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 13
+- ⚠️ Remaining warnings: 1
+  - CONTRADICTION: '完整 ✅...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
