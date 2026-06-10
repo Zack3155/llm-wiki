@@ -116,3 +116,14 @@
 - Pages scanned: 7
 - ⚠️ Remaining warnings: 1
   - CONTRADICTION: '完整 ✅...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 10
+- ✅ Auto-fixed: 5 issue(s) fixed:
+  - FIXED: Added frontmatter to docs/archive/_ghost_test_target_archived_2026-06-10_131540_ghost fix validation.md
+  - FIXED: Added 'date_modified' to docs/archive/_ghost_test_target_archived_2026-06-10_131540_ghost fix validation.md
+  - FIXED: Added frontmatter to docs/archive/_tracked_target_final_archived_2026-06-10_131556_final robustness proof.md
+  - FIXED: Added 'date_modified' to docs/archive/_tracked_target_final_archived_2026-06-10_131556_final robustness proof.md
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/_ghost_test_target.md
+- ⚠️ Remaining warnings: 1
+  - CONTRADICTION: '✅ 完整...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
