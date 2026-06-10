@@ -127,3 +127,15 @@
   - FIXED: Added 'date_modified' to docs/topics/novel-lore/_ghost_test_target.md
 - ⚠️ Remaining warnings: 1
   - CONTRADICTION: '✅ 完整...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 13
+- ✅ Auto-fixed: 6 issue(s) fixed:
+  - FIXED: Added frontmatter to docs/archive/_test_ghost_target_final_archived_2026-06-10_133436_pressure test archive.md
+  - FIXED: Added 'date_modified' to docs/archive/_test_ghost_target_final_archived_2026-06-10_133436_pressure test archive.md
+  - FIXED: Added frontmatter to docs/archive/_test_ghost_target_final_archived_2026-06-10_133500_pressure test archive.md
+  - FIXED: Added 'date_modified' to docs/archive/_test_ghost_target_final_archived_2026-06-10_133500_pressure test archive.md
+  - FIXED: Added frontmatter to docs/archive/_test_ghost_target_final_archived_2026-06-10_133522_pressure test archive.md
+  - FIXED: Added 'date_modified' to docs/archive/_test_ghost_target_final_archived_2026-06-10_133522_pressure test archive.md
+- ⚠️ Remaining warnings: 1
+  - CONTRADICTION: '✅ 完整...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
