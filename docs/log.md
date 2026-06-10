@@ -103,3 +103,11 @@
 ## [2026-06-10] lint | Routine health check
 - Pages scanned: 6
 - 🎉 All checks passed!
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 8
+- ✅ Auto-fixed: 3 issue(s) fixed:
+  - FIXED: Added frontmatter to docs/archive/test-trash-me_archived_2026-06-10_130604_压力测试归档.md
+  - FIXED: Added 'date_modified' to docs/archive/test-trash-me_archived_2026-06-10_130604_压力测试归档.md
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/test-trash-me.md
+- 🎉 All checks passed!
