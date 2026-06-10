@@ -18,6 +18,12 @@ plugins:
 
 nav:
   - Home: index.md
+  - Novel & Fiction Lore:
+    - Overview: topics/novel-lore/_index.md
+    - 大结局剧情分析: topics/novel-lore/zhu-jie-mo-ri-ending.md
+    - 顾青山 · 角色档案: topics/novel-lore/gu-qing-shan-profile.md
+    - 邪魔之主 · 角色档案: topics/novel-lore/xiemozhizhu-profile.md
+    - 幕 / 冰封之尸 · 角色档案: topics/novel-lore/bingfengzhishi-profile.md
 
 markdown_extensions:
   - tables
