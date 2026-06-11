@@ -331,3 +331,6 @@
   - BROKEN LINK: [./docs/archive/_ghost_test_target_archived_2026-06-10_131540_ghost fix validation.md] in docs/topics/novel-lore/_index.md → target not found
   - BROKEN LINK: [./docs/archive/_test_ghost_target_final_archived_2026-06-10_133500_pressure test archive.md] in docs/topics/novel-lore/_index.md → target not found
   - BROKEN LINK: [./docs/archive/_tracked_target_final_archived_2026-06-10_131556_final robustness proof.md] in docs/topics/novel-lore/_index.md → target not found
+# [2026-06-11] lint | Routine health check
+- Pages scanned: 9
+- ⚠️ Remaining warnings: 17
