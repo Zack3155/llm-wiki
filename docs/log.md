@@ -235,7 +235,7 @@
   - CONFIDENCE VIOLATION: docs/topics/novel-lore/di-zhi-qian-bi-concept.md - claimed 0.95 confidence with only 0 source(s). Rule: Confidence > 0.8 REQUIRES >= 2 independent sources.
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/honghuang-liudao-concept.md - has 3 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
   - CONFIDENCE VIOLATION: docs/topics/novel-lore/liudao-zhengxiong-concept.md - claimed 0.95 confidence with only 0 source(s). Rule: Confidence > 0.8 REQUIRES >= 2 independent sources.
-  - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
 
 ## [2026-06-11] lint | Routine health check
 - Pages scanned: 15
@@ -243,8 +243,8 @@
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/bingfengzhishi-profile.md - has 4 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/honghuang-liudao-concept.md - has 3 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/xiemozhizhu-profile.md - has 5 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
-  - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
 
 ## [2026-06-11] lint | Routine health check
 - Pages scanned: 15
@@ -252,8 +252,8 @@
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/bingfengzhishi-profile.md - has 4 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/honghuang-liudao-concept.md - has 3 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/xiemozhizhu-profile.md - has 5 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
-  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '冰封之尸' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '冰封之尸' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
 
 ## [2026-06-11] lint | Routine health check
 - Pages scanned: 15
@@ -261,8 +261,8 @@
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/bingfengzhishi-profile.md - has 4 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/honghuang-liudao-concept.md - has 3 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/xiemozhizhu-profile.md - has 5 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
-  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
 
 ## [2026-06-11] lint | Routine health check
 - Pages scanned: 15
@@ -270,8 +270,8 @@
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/bingfengzhishi-profile.md - has 4 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/honghuang-liudao-concept.md - has 3 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
   - CONFIDENCE MISMATCH: docs/topics/novel-lore/xiemozhizhu-profile.md - has 5 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
-  - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
 
 ## [2026-06-11] lint | Routine health check
 - Pages scanned: 15
@@ -281,27 +281,27 @@
   - FIXED: Auto-injected heuristic confidence=0.71 for 3 sources in docs/topics/novel-lore/honghuang-liudao-concept.md
   - FIXED: Auto-injected heuristic confidence=0.89 for 5 sources in docs/topics/novel-lore/xiemozhizhu-profile.md
 - ⚠️ Remaining warnings: 4
-  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '顾青山角色全设定' overlap detected between docs/topics/novel-lore/gu-qing-shan-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '详见下文各章节' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '顾青山角色全设定' overlap detected between docs/topics/novel-lore/gu-qing-shan-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '详见下文各章节' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
 
 ## [2026-06-11] lint | Routine health check
 - Pages scanned: 15
 - ⚠️ Remaining warnings: 5
   - CONFIDENCE VIOLATION: docs/topics/novel-lore/liudao-zhengxiong-concept.md - claimed 0.95 confidence with weighted source score 1.20. Rule: Confidence > 0.85 REQUIRES ≥ 2.0 equivalent sources (Baike=1.0, Zhihu=0.75, Tieba/Other=0.3).
-  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '顾青山角色全设定' overlap detected between docs/topics/novel-lore/gu-qing-shan-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '概念档案' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '角色档案' overlap detected between docs/topics/novel-lore/bingfengzhishi-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '顾青山角色全设定' overlap detected between docs/topics/novel-lore/gu-qing-shan-profile.md and docs/topics/novel-lore/zhu-jie-mo-ri-ending.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '概念档案' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
 
 ## [2026-06-11] lint | Routine health check
 - Pages scanned: 15
 - ⚠️ Remaining warnings: 4
   - CONFIDENCE VIOLATION: docs/topics/novel-lore/liudao-zhengxiong-concept.md - claimed 0.95 confidence with weighted source score 1.20. Rule: Confidence > 0.85 REQUIRES ≥ 2.0 equivalent sources (Baike=1.0, Zhihu=0.75, Tieba/Other=0.3).
   - WARNING: No frontmatter in docs/topics/novel-lore/zhu-jie-mo-ri-ending.md
-  - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '概念档案' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '概念档案' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
 
 ## [2026-06-11] lint | Routine health check
 - Pages scanned: 15
@@ -311,8 +311,8 @@
 - ⚠️ Remaining warnings: 4
   - CONFIDENCE VIOLATION: docs/topics/novel-lore/liudao-zhengxiong-concept.md - claimed 0.95 confidence with weighted source score 1.20. Rule: Confidence > 0.85 REQUIRES ≥ 2.0 equivalent sources (Baike=1.0, Zhihu=0.75, Tieba/Other=0.3).
   - WARNING: No frontmatter in docs/topics/novel-lore/zhu-jie-mo-ri-ending.md
-  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
-  - MISSING LINK: '详见下文各章节' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
+  - MISSING LINK: '详见下文各章节' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: `[Title](path.md)`' links exist.
 
 ## [2026-06-11] lint | Routine health check
 - Pages scanned: 15
