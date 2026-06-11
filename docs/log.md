@@ -410,3 +410,6 @@
 - Summary: Auto-filer detected xie-dao-ling-profile.md had missing `title` in frontmatter and corrupted `## Summary` header from previous truncated write. Fixed both. Cleaned up messy auto-added rows in _index.md, organized into 角色档案 / 概念档案 sections. Linter: 0 errors, 4 non-blocking TERM_INCONSISTENCY warnings (canonical alternate names — human judgment required).# [2026-06-11] lint | Routine health check
 - Pages scanned: 10
 - 🎉 All checks passed!
+# [2026-06-11] lint | Routine health check
+- Pages scanned: 10
+- 🎉 All checks passed!
