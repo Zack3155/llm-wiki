@@ -221,3 +221,12 @@
 - Pages scanned: 15
 - ⚠️ Remaining warnings: 1
   - CONTRADICTION: '完整 ✅...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
+
+## [2026-06-11] lint | Routine health check
+- Pages scanned: 15
+- ⚠️ Remaining warnings: 9
+  - CONFIDENCE MISMATCH: docs/topics/novel-lore/bingfengzhishi-profile.md - has 4 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
+  - CONFIDENCE VIOLATION: docs/topics/novel-lore/di-zhi-qian-bi-concept.md - claimed 0.95 confidence with only 0 source(s). Rule: Confidence > 0.8 REQUIRES >= 2 independent sources.
+  - CONFIDENCE MISMATCH: docs/topics/novel-lore/honghuang-liudao-concept.md - has 3 sources but confidence is only 0.0. Suggest upgrading or flagging single weak source.
+  - CONFIDENCE VIOLATION: docs/topics/novel-lore/liudao-zhengxiong-concept.md - claimed 0.95 confidence with only 0 source(s). Rule: Confidence > 0.8 REQUIRES >= 2 independent sources.
+  - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
