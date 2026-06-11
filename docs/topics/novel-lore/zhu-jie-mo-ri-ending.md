@@ -27,3 +27,4 @@
 - [[顾青山 · 主角档案]](./gu-qing-shan-profile.md) — 六道兵器与洪荒使徒的转生身。
 
 - [诸界末日在线 — novel-lore](./liudao-zhengxiong-concept.md)
+- [顾青山作为 — novel-lore](./zhu-jie-mo-ri-ending.md)
