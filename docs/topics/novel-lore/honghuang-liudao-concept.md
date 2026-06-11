@@ -41,3 +41,4 @@ confidence: 0.71
 - [[邪魔之主 · 角色档案]](./xiemozhizhu-profile.md) — BOSS 本体 / 幕后黑手。
 - [[诸界末日在线结局分析]](./zhu-jie-mo-ri-ending.md) — 混沌吞没墟墓的全过程。
 - [[顾青山 · 主角档案]](./gu-qing-shan-profile.md) — 六道兵器与洪荒使徒的转生身。
+- [详见下文各章节](liudao-zhengxiong-concept.md)

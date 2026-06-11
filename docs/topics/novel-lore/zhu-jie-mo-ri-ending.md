@@ -34,3 +34,4 @@ date_modified: 2026-06-11
 
 - [诸界末日在线 — novel-lore](./liudao-zhengxiong-concept.md)
 - [洪荒混沌使徒 — novel-lore](./zhu-jie-mo-ri-ending.md)
+- [初代天帝利用其将顾青山炼化为六道兵器](honghuang-liudao-concept.md)
