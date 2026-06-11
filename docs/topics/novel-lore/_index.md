@@ -50,8 +50,10 @@ date_modified: 2026-06-11
 - **谢道灵 = 天道帝 / 最终术法术主**
 
 
-| [地之钱币（虚空四正神之魂器）](./di-zhi-qian-bi-concept.md) | Wiki 词条 | Auto-added by Linter phase 7 |
+
+
 
 
 | [Ghost Test Target](./_ghost_test_target.md) | Wiki | Auto-added |
+| [地之钱币（虚空四正神之魂器）](./di-zhi-qian-bi-concept.md) | Wiki | Auto-added |
 
