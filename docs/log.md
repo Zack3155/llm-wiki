@@ -181,3 +181,8 @@
 - Pages created: topics/novel-lore/liudao-zhengxiong-concept.md
 - Pages touched: topics/novel-lore/_index.md (added entry), topics/novel-lore/liudao-zhengxiong-concept.md (new)
 - Summary: Filed 六道争雄 concept article from verified multi-source research session. Content includes event rules, promotion path table, character roles in 争雄, original novel text quotes from Ch.618, and cross-links to existing lore pages. Confidence: 0.95 (SearXNG + Baike + novel text = ≥2 independent sources).
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 14
+- ⚠️ Remaining warnings: 1
+  - CONTRADICTION: '✅ 完整...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
