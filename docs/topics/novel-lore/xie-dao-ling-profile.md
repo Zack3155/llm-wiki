@@ -3,13 +3,13 @@ title: 谢道灵 (Xie Daoling) · 角色档案
 name: 谢道灵 (Xie Daoling)
 status: complete
 sources:
-  - Zhihu Q&A thread #433978647 (multi-vote consensus, direct text evidence)
-  - Baidu Baike entry #49966007 + Gu Qing Shan profile (#23325096)
-  - Tieba analysis p/6708600836 (name deconstruction hints)
-  - PTT CFantasy real-time review thread
+  - "Zhihu Q&A thread #433978647 (multi-vote consensus, direct text evidence)"
+  - "Baidu Baike entry #49966007 + Gu Qing Shan profile (#23325096)"
+  - "Tieba analysis p/6708600836 (name deconstruction hints)"
+  - "PTT CFantasy real-time review thread"
 confidence: 0.88
 date_added: 2026-06-13
-date_modified: 2026-06-11
+date_modified: 2026-06-13
 ---
 
 ## Summary
@@ -22,10 +22,10 @@ date_modified: 2026-06-11
 
 | 阶段 | 表观身份 | 真实位格推断 |
 |:---|------|------|
-**零星世界时期**被称"圣人"，等级未知但已具非凡地位| ⚠️ 可能只是投影/分身而非本体
-**荒古时期**最强宗主的女儿 | 与六道系统有深层绑定（贴吧高赞推测：**六道的器灵**）|✅ 0.85|
-**六道争雄时期**带领六道闯入世界之门的"天帝"| ✅ 独立多源证实，无争议 |
-**最终形态**| "最终之术"的术主 = **真实世界的圣尊**| ✅ Zhihu+Tieba双源对齐，置信度高|
+|**零星世界时期** | 被称"圣人"，等级未知但已具非凡地位 | ⚠️ 可能只是投影/分身而非本体 |
+|**荒古时期** | 最强宗主的女儿 | 与六道系统有深层绑定（贴吧高赞推测：**六道的器灵**）✅ 0.85 |
+|**六道争雄时期** | 带领六道闯入世界之门的"天帝" | ✅ 独立多源证实，无争议 |
+|**最终形态** | "最终之术"的术主 = **真实世界的圣尊** | ✅ Zhihu+Tieba双源对齐，置信度高 |
 
 ---
 
@@ -34,20 +34,21 @@ date_modified: 2026-06-11
 ### 掌握之力
 1. **六道碎片** — 与六道轮回系统深度绑定，甚至可能是器灵本身（待正文确认）
 2. **风之正神之力** — 四正神之一，顶级战力背书
-3. 黄泉界分身调度 — 可在黄泉界派遣分身实时查看六道变动情况
+3. **黄泉界分身调度** — 可在黄泉界派遣分身实时查看六道变动情况
 
 ### 关键事件
 - **对抗邪魔失败后**：奥秘女士用谢道灵的"末日大绝招"对尸体与黑甲施加反复雷电封印，防止意外发生（PTT实况记录）
 - **与顾青山的师徒互动**: 贯穿全篇，常受托传递道具或指导应对危机。二人关系远超普通 NPC-玩家模板
+- **与柳平的合作**: 在《炼狱艺术家》结局中，谢道灵与柳平合作杀死邪魔 BOSS，柳平用其黑甲捏造独孤将军身份
 
 ---
 
 ## ⚠️ 考据分歧点
 
 | 争议项 | 观点 A | 观点 B | 置信度对比 |
-|:---|------|------|------|
-是否=六道器灵|贴吧高赞推测"绝对不简单，末日一看到她就发疯 → 跟末日大佬有关"|缺乏正文直接证据，仍属读者推理|A: 0.75 / B: 0.65|
-身份天花板|知乎答案："游戏NPC变造物主"|百度百科仅提到"黄泉界特定称号"+风之正神之力|Zhihu > Baike (Baike信息滞后)|
+|:---|------|------|:---:|
+|是否=六道器灵|贴吧高赞推测"绝对不简单，末日一看到她就发疯 → 跟末日大佬有关"|缺乏正文直接证据，仍属读者推理|A: 0.75 / B: 0.65|
+|身份天花板|知乎答案："游戏NPC变造物主"|百度百科仅提到"黄泉界特定称号"+风之正神之力|Zhihu > Baike (Baike信息滞后)|
 
 ---
 
@@ -56,9 +57,12 @@ date_modified: 2026-06-11
 - [[顾青山·主角档案]](gu-qing-shan-profile.md) — 师徒核心关系链
 - [[六道轮回概念]](honghuang-liudao-concept.md) — 器灵推测 + 碎片掌握
 - [[诸界末日结局]](zhu-jie-mo-ri-ending.md) — 最终之术术主定位
+- [[柳平 · 角色档案]](liu-ping-profile.md) — 合作杀死邪魔 BOSS
+
 ## See also
 
-- [诸界末日在线](_index.md)
-- [诸界末日在线](liu-ping-profile.md)
-- [诸界末日在线](wan-shen-nu-di-profile.md)
-- [角色档案](du-ge-feng-profile.md)
+- [诸界末日在线考据索引](_index.md)
+- [顾青山 · 角色档案](gu-qing-shan-profile.md)
+- [柳平 · 角色档案](liu-ping-profile.md)
+- [万神女帝 · 角色档案](wan-shen-nu-di-profile.md)
+- [独孤峰 · 角色档案](du-ge-feng-profile.md)
