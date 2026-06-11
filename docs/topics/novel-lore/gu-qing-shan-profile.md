@@ -235,3 +235,4 @@ confidence: 0.59
 - [谢道灵 · 角色档案](xie-dao-ling-profile.md) — 混沌最高序列核心人物
 - [幕 / 冰封之尸 · 角色档案](bingfengzhishi-profile.md) — 远古封印看守人
 - [诸界末日在线考据索引](_index.md)
+- [顾青山](zhu-jie-mo-ri-ending.md)

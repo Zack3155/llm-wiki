@@ -7,7 +7,7 @@ sources:
   - 知乎: "有没有大佬捋一捋诸界末日在线故事线" (Dec 8, 2020)
   - 起点中文网: 《炼狱艺术家》作者页
 confidence: 0.90
-date_modified: 2026-06-11
+date_modified: 2026-06-13
 ---
 
 ## Summary
