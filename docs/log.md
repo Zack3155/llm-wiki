@@ -434,3 +434,11 @@
 # [2026-06-11] lint | Routine health check
 - Pages scanned: 10
 - 🎉 All checks passed!
+# [2026-06-11] lint | Routine health check
+- Pages scanned: 10
+- 🎉 All checks passed!
+## [2026-06-13] ingest | 柳平 · 角色档案 (Auto-Filer Sync)
+- Source: session `20260611_105909_93bc58` (诸界末日在线结局 #46) + 3-layer SearXNG deep search verification
+- Pages updated: liu-ping-profile.md (major rewrite), gu-qing-shan-profile.md (added See also cross-link), _index.md (added table entry)
+- Facts synced: (1) 顾青山是柳平的老师 — PTT原文 + 知乎双源交叉验证, Confidence 0.90; (2) 柳平扮演邪魔首领/巨大黑甲尸体，按固定历史演出帮助两人完成历史使命
+- Cross-links verified: liu-ping ↔ gu-qing-shan (师徒), liu-ping ↔ xie-dao-ling (辅助关系), liu-ping ↔ xiemozhizhu (扮演身份)
