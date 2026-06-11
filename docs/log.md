@@ -403,3 +403,8 @@
 # [2026-06-11] lint | Routine health check
 - Pages scanned: 10
 - ⚠️ Remaining warnings: 4
+
+## [2026-06-11] auto-filer | Cron sync — xie-dao-ling profile + _index cleanup
+- Origin: session `20260611_040123_97308d` (探讨诸界末日在线结局 #41) + cron job scan
+- Pages touched: xie-dao-ling-profile.md (fixed frontmatter title/header), _index.md (cleaned formatting, organized tables)
+- Summary: Auto-filer detected xie-dao-ling-profile.md had missing `title` in frontmatter and corrupted `## Summary` header from previous truncated write. Fixed both. Cleaned up messy auto-added rows in _index.md, organized into 角色档案 / 概念档案 sections. Linter: 0 errors, 4 non-blocking TERM_INCONSISTENCY warnings (canonical alternate names — human judgment required).
