@@ -191,3 +191,13 @@
 - Pages scanned: 14
 - ⚠️ Remaining warnings: 1
   - CONTRADICTION: '✅ 完整...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 14
+- ⚠️ Remaining warnings: 1
+  - CONTRADICTION: '完整 ✅...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
+
+## [2026-06-13] ingest | 地之钱币（虚空四正神之一）
+- Source: 知乎故事线梳理帖 + SearXNG cross-source (2 independent hits)
+- Pages touched: di-zhi-qian-bi-concept.md
+- Summary: Created new concept page covering the "Di-Zhi Coin" — one of four Era Artifacts. Cross-referenced chapter index (700~926). Confidence 0.85 backed by ≥2 sources.
