@@ -21,6 +21,7 @@ date_modified: 2026-06-11
 | [谢道灵 · 角色档案](xie-dao-ling-profile.md) | NPC→圣人→天帝→最终之术术主的身份演变时间线、核心能力、考据分歧点 | complete | 2026-06-13 |
 | [万神女帝 · 蕾妮朵儿](wan-shen-nu-di-profile.md) | 身份说法对照表、多源综合分析 | complete | 2026-06-13 |
 | [柳平 · 角色档案](liu-ping-profile.md) | "再来人"身份、师徒关系（顾青山的老师为学生）、扮演邪魔首领、帮助谢道灵与顾青山 | complete | 2026-06-13 |
+| [独孤峰 · 角色档案](du-ge-feng-profile.md) | 身份分歧：水之纪元使徒(原著) vs 柳平捏造身份(读者推理)、考据分歧点待解 | complete | 2026-06-13 |
 
 ## 概念档案
 

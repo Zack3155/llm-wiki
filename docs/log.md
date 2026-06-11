@@ -1,5 +1,11 @@
 # Wiki Activity Log
 
+## [2026-06-13] filed | 独孤峰 · 角色档案
+- Origin: auto-filer cron scan — session `20260611_132541_1fb19d` (探讨诸界末日在线结局 #48)
+- Pages created: topics/novel-lore/du-ge-feng-profile.md
+- Pages touched: liu-ping-profile.md (added cross-link to du-ge-feng), _index.md (added table row)
+- Summary: Filed new character profile for 独孤峰 (Dugu Feng / Dugu Peak). Documented multi-source identity divergence: (A) Water Epoch Apostle per Zhihu canonical interpretation, (B) Liu Ping's fabricated identity using demon BOSS black armor per PTT reader theory. Applied wiki-divergence-injector standard with <details> collapsible block. Confidence 0.75 due to active contradiction between Tier-1 and Tier-2 sources.
+
 ## [2026-06-08] ingest | 诸界末日在线 — 大结局剧情分析
 - Pages created: topics/novel-lore/zhu-jie-mo-ri-ending.md
 - New entities found: 顾青山, 谢道灵, 幕/冰封之尸, 蕾妮朵儿, 灵魂尖啸者, 邪魔之主
