@@ -52,14 +52,4 @@ date_modified: 2026-06-11
 - **顾青山 = 时间与奥秘之子 / "毁灭" / 混沌最高序列**
 - **谢道灵 = 天帝 / 最终之术术主**
 
-| [Comparison-Pricing-Claude](./docs/pages/comparisons/comparison-pricing-claude.md) | Wiki | Auto-added |
-| [亿元级超高净值家庭占-极低](./docs/pages/comparisons/亿元级超高净值家庭占-极低.md) | Wiki | Auto-added |
-| [其他势力-顾青山](./docs/pages/comparisons/其他势力-顾青山.md) | Wiki | Auto-added |
-| [墨西哥城阿兹特克体育场-年的开幕-墨西哥](./docs/pages/comparisons/墨西哥城阿兹特克体育场-年的开幕-墨西哥.md) | Wiki | Auto-added |
-| [对法国这种能一场-赛塞](./docs/pages/comparisons/对法国这种能一场-赛塞.md) | Wiki | Auto-added |
-| [百度页面渲染-较慢](./docs/pages/comparisons/百度页面渲染-较慢.md) | Wiki | Auto-added |
-| [Insight](./docs/pages/concepts/insight.md) | Wiki | Auto-added |
-| [Solution](./docs/pages/concepts/solution.md) | Wiki | Auto-added |
-| [Technical](./docs/pages/concepts/technical.md) | Wiki | Auto-added |
-| [Tool](./docs/pages/concepts/tool.md) | Wiki | Auto-added |
 
