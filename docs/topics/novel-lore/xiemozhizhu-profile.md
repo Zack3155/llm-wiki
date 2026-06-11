@@ -15,6 +15,7 @@ tags:
   - 反派
 date_added: 2026-06-10
 
+confidence: 0.89
 ---
 
 ## Summary
