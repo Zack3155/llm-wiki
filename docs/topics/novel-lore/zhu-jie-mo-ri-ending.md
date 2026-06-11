@@ -7,7 +7,8 @@ sources:
   - SearXNG cross-check (Zhihu + Tieba + PTT)
   - 百度百科 (六道轮回概念)
   - 抖音百科 (六道崩碎)
-confidence: 0.88
+  - PTT CFantasy 实况 (Apr 15, 2022)
+confidence: 0.90
 date_modified: 2026-06-11
 
 ---
@@ -41,6 +42,7 @@ date_modified: 2026-06-11
 ### ⚠️ 考据分歧点
 
 - **邪魔之主身份**：早期读者误认为"冰封尸体=邪魔之主"，经 2026-06-13 三层深挖验证后修正为：**冰封尸体=幕**，柳平扮演邪魔首领，真正邪魔之主≠冰封尸体。详见 [幕/冰封尸体档案](bingfengzhishi-profile.md)。
+- **独孤峰身份**：早期知乎剧情梳理称独孤峰为"水之纪元使徒"，但 2026-06-13 PTT 实况验证修正为：**独孤峰=柳平捏造的身份**。详见 [独孤峰档案](du-ge-feng-profile.md)。
 - **万神女帝之死**：知乎讨论指出作者战力系统存在矛盾 — 女帝展现的实力（秒级火圣柱）与其最终被击败的方式不匹配。详见 [万神女帝档案](wan-shen-nu-di-profile.md)。
 
 ### See also:
@@ -48,5 +50,7 @@ date_modified: 2026-06-11
 - [顾青山 · 主角档案](gu-qing-shan-profile.md) — 六道兵器与洪荒使徒的转生身
 - [洪荒六道 · 概念档案](honghuang-liudao-concept.md) — 六道轮回的起源与机制
 - [幕/冰封尸体档案](bingfengzhishi-profile.md) — 冰封尸体身份验证（幕 ≠ 邪魔之主）
+- [柳平 · 角色档案](liu-ping-profile.md) — 扮演邪魔首领的人
+- [独孤峰 · 角色档案](du-ge-feng-profile.md) — 柳平捏造的身份
 - [万神女帝档案](wan-shen-nu-di-profile.md) — 女帝陨落与战力系统争议
 - [顾青山](_index.md)
