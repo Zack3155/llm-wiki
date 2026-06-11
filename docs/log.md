@@ -175,3 +175,9 @@
 - Pages scanned: 3
 - Action: Event-driven delta sync from layered_search results
 - Summary: Query: 幕 冰封之尸 诸界末日在线 Engine: searxng (8 results) Pages scanned: 3
+
+## [2026-06-11] auto-filer | 六道争雄 (概念档案)
+- Origin: session `20260610_184605_79cc50` (Web Page Screenshot and Content Extraction — 六道争雄 Baidu Baike + 速读谷原文研究)
+- Pages created: topics/novel-lore/liudao-zhengxiong-concept.md
+- Pages touched: topics/novel-lore/_index.md (added entry), topics/novel-lore/liudao-zhengxiong-concept.md (new)
+- Summary: Filed 六道争雄 concept article from verified multi-source research session. Content includes event rules, promotion path table, character roles in 争雄, original novel text quotes from Ch.618, and cross-links to existing lore pages. Confidence: 0.95 (SearXNG + Baike + novel text = ≥2 independent sources).
