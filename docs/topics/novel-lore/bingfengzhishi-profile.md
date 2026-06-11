@@ -1,5 +1,5 @@
 ---
-title: "幕 / 冰封之尸（巨大尸体） — 角色档案"
+title: 幕 / 冰封之尸（巨大尸体） — 角色档案
 date_added: 2026-06-10
 last_modified: 2026-06-11
 status: complete

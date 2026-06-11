@@ -319,3 +319,15 @@
   - BROKEN LINK: [./docs/archive/_test_ghost_target_final_archived_2026-06-10_133500_pressure test archive.md] in docs/topics/novel-lore/_index.md → target not found
   - BROKEN LINK: [./docs/archive/_test_ghost_target_final_archived_2026-06-10_133522_pressure test archive.md] in docs/topics/novel-lore/_index.md → target not found
   - BROKEN LINK: [./docs/archive/_test_ghost_target_final_archived_2026-06-10_133436_pressure test archive.md] in docs/topics/novel-lore/_index.md → target not found
+
+## [2026-06-11] lint | Routine health check
+- Pages scanned: 15
+- ✅ Auto-fixed: 2 issue(s) fixed:
+  - FIXED: Added frontmatter to docs/topics/novel-lore/zhu-jie-mo-ri-ending.md
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/zhu-jie-mo-ri-ending.md
+- ⚠️ Remaining warnings: 20
+  - CONFIDENCE VIOLATION: docs/topics/novel-lore/liudao-zhengxiong-concept.md - claimed 0.95 confidence with weighted source score 1.20. Rule: Confidence > 0.85 REQUIRES ≥ 2.0 equivalent sources (Baike=1.0, Zhihu=0.75, Tieba/Other=0.3).
+  - BROKEN LINK: [./docs/archive/_test_ghost_target_final_archived_2026-06-10_133436_pressure test archive.md] in docs/topics/novel-lore/_index.md → target not found
+  - BROKEN LINK: [./docs/archive/_ghost_test_target_archived_2026-06-10_131540_ghost fix validation.md] in docs/topics/novel-lore/_index.md → target not found
+  - BROKEN LINK: [./docs/archive/_test_ghost_target_final_archived_2026-06-10_133500_pressure test archive.md] in docs/topics/novel-lore/_index.md → target not found
+  - BROKEN LINK: [./docs/archive/_tracked_target_final_archived_2026-06-10_131556_final robustness proof.md] in docs/topics/novel-lore/_index.md → target not found

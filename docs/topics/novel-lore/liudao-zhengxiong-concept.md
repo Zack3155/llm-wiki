@@ -1,6 +1,6 @@
 ---
 
-title: "六道争雄 (概念档案)"
+title: 六道争雄 (概念档案)
 name: liudao-zhengxiong
 topic: novel-lore
 date_added: "2026-06-10"

@@ -1,6 +1,6 @@
 ---
 
-title: "邪魔之主 — 最终BOSS考据"
+title: 邪魔之主 — 最终BOSS考据
 status: complete
 date_created: "2026-06-19"
 date_modified: 2026-06-11
