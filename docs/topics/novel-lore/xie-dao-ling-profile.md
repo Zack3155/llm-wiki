@@ -56,3 +56,6 @@ date_modified: 2026-06-11
 - [[顾青山·主角档案]](gu-qing-shan-profile.md) — 师徒核心关系链
 - [[六道轮回概念]](honghuang-liudao-concept.md) — 器灵推测 + 碎片掌握
 - [[诸界末日结局]](zhu-jie-mo-ri-ending.md) — 最终之术术主定位
+## See also
+
+- [诸界末日在线](_index.md)

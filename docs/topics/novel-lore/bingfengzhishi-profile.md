@@ -66,4 +66,4 @@ confidence: 0.83
 See also:
 - [邪魔之主 · 角色档案](./xiemozhizhu-profile.md) — BOSS本体/幕后黑手
 - [顾青山 · 角色档案](./gu-qing-shan-profile.md) — 主角线
-
+- [冰封之尸](_index.md)
