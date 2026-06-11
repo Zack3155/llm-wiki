@@ -1,7 +1,7 @@
 ---
 title: "幕 / 冰封之尸（巨大尸体） — 角色档案"
 date_added: 2026-06-10
-last_modified: 2026-06-10
+last_modified: 2026-06-11
 status: complete
 sources: ["百度百科", "知乎全解析帖", "PTT批踢贴", "实体书专栏《最后几十章》"]
 date_modified: 2026-06-10

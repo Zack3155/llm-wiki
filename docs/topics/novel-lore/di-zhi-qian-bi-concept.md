@@ -1,7 +1,7 @@
 ---
 title: 地之钱币（虚空四正神之魂器）
 date_added: 2026-06-13
-date_modified: 2026-06-13
+date_modified: 2026-06-11
 status: complete
 sources:
   - "百度百科·四圣柱词条"

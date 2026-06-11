@@ -3,7 +3,7 @@
 title: "邪魔之主 — 最终BOSS考据"
 status: complete
 date_created: "2026-06-19"
-date_modified: "2026-06-20"
+date_modified: 2026-06-11
 sources:
   - "百度百科: 诸界末日在线词条"
   - "百度百科: 幕角色页"

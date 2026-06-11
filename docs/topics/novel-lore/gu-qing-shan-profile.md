@@ -2,7 +2,7 @@
 
 title: 诸界末日在线 — 顾青山角色全设定
 date_added: 2026-06-08
-last_modified: 2026-06-10
+last_modified: 2026-06-11
 status: complete
 sources: ["百度百科", "知乎全解析帖"]
 date_modified: 2026-06-08

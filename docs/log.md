@@ -296,3 +296,14 @@
   - WARNING: No frontmatter in docs/topics/novel-lore/zhu-jie-mo-ri-ending.md
   - MISSING LINK: '诸界末日在线' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
   - MISSING LINK: '概念档案' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+
+## [2026-06-11] lint | Routine health check
+- Pages scanned: 15
+- ✅ Auto-fixed: 2 issue(s) fixed:
+  - FIXED: Added frontmatter to docs/topics/novel-lore/zhu-jie-mo-ri-ending.md
+  - FIXED: Added 'date_modified' to docs/topics/novel-lore/zhu-jie-mo-ri-ending.md
+- ⚠️ Remaining warnings: 4
+  - CONFIDENCE VIOLATION: docs/topics/novel-lore/liudao-zhengxiong-concept.md - claimed 0.95 confidence with weighted source score 1.20. Rule: Confidence > 0.85 REQUIRES ≥ 2.0 equivalent sources (Baike=1.0, Zhihu=0.75, Tieba/Other=0.3).
+  - WARNING: No frontmatter in docs/topics/novel-lore/zhu-jie-mo-ri-ending.md
+  - MISSING LINK: '百度百科' overlap detected between docs/topics/novel-lore/_index.md and docs/topics/novel-lore/di-zhi-qian-bi-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
+  - MISSING LINK: '详见下文各章节' overlap detected between docs/topics/novel-lore/honghuang-liudao-concept.md and docs/topics/novel-lore/liudao-zhengxiong-concept.md. Ensure mutual 'See also: [Title](path.md)' links exist.
