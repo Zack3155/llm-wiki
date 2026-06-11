@@ -164,3 +164,14 @@
 - Pages scanned: 13
 - ⚠️ Remaining warnings: 1
   - CONTRADICTION: '✅ 完整...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
+
+## [2026-06-10] lint | Routine health check
+- Pages scanned: 13
+- ⚠️ Remaining warnings: 1
+  - CONTRADICTION: '✅ 完整...' diverges across ['docs/topics/novel-lore/_index.md'] vs ['docs/topics/novel-lore/_index.md']
+
+## [2026-06-11] auto-sync | Search: "幕 冰封之尸 诸界末日在线"
+- Engine: searxng (8 results)
+- Pages scanned: 3
+- Action: Event-driven delta sync from layered_search results
+- Summary: Query: 幕 冰封之尸 诸界末日在线 Engine: searxng (8 results) Pages scanned: 3
