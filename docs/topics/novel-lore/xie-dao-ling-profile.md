@@ -1,5 +1,5 @@
 ---
-
+title: 谢道灵 (Xie Daoling) · 角色档案
 name: 谢道灵 (Xie Daoling)
 status: complete
 sources:
@@ -10,9 +10,7 @@ sources:
 confidence: 0.88
 date_added: 2026-06-13
 date_modified: 2026-06-11
-
 ---
-
 
 ## Summary
 
