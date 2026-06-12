@@ -1,18 +1,11 @@
 ---
 title: 柳平 — 角色档案
-date_added: 2026-06-13
-status: complete
-sources:
-- PTT CFantasy 实况 (炼狱艺术家完结 + 诸界末日在线讨论)
-- '知乎: 有没有大佬捋一捋诸界末日在线故事线 (Dec 8, 2020)'
-- '起点中文网: 《炼狱艺术家》作者页'
-- '百度百科: 炼狱艺术家'
-confidence: 0.92
-date_modified: 2026-06-12
 name: liu-ping
 topic: novel-lore
-last_modified: *id001
+date_modified: '2026-06-12'
+last_modified: '2026-06-12'
 ---
+
 
 
 ## Summary

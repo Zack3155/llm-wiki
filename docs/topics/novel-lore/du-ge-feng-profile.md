@@ -1,17 +1,11 @@
 ---
 title: 独孤峰 — 角色档案
-date_added: 2026-06-13
-status: complete
-sources:
-- PTT CFantasy 实况 (炼狱艺术家完结 + 诸界末日在线讨论, Apr 15, 2022)
-- '知乎: 有没有大佬捋一捋诸界末日在线故事线 (Dec 8, 2020)'
-- '百度百科: 诸界末日在线词条'
-confidence: 0.9
-date_modified: 2026-06-12
 name: du-ge-feng
 topic: novel-lore
-last_modified: *id001
+date_modified: '2026-06-12'
+last_modified: '2026-06-12'
 ---
+
 
 
 ## Summary
