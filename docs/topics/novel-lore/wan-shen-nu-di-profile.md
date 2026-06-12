@@ -1,7 +1,7 @@
 ---
 title: 万神女帝 · 蕾妮朵儿
 date_added: 2026-06-13
-status: complete
+status: needs-more-sources
 sources:
   - "Zhihu Q&A (知乎 #433978647)"
   - "Baike entry (百度百科)"

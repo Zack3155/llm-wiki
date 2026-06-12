@@ -7,7 +7,7 @@ status: complete
 sources: ["百度百科", "知乎全解析帖"]
 date_modified: 2026-06-08
 
-confidence: 0.59
+confidence: 0.88
 ---
 
 
