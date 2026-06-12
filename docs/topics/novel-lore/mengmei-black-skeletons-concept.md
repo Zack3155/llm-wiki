@@ -2,7 +2,7 @@
 title: 蒙昧世界中的黑色骷髅
 name: mengmei black skeletons
 date_added: 2026-06-11
-status: complete
+status: needs-more-sources
 date_modified: 2026-06-11
 tags:
   - 蒙昧世界
@@ -14,7 +14,7 @@ tags:
 
 ## Summary
 
-**蒙昧世界中的黑色骷髅不是某个单独隐藏角色，也不是“巨大尸体/幕”的化身。** 从现有章节与外部资料交叉看，它们更像是蒙昧世界中大量存在的**邪魔/邪恶灵体残骸**：没有独立姓名，成群出现，被巨大尸体击杀后又能从泥土中重新冒出。
+**蒙昧世界中的黑色骷髅不是某个单独隐藏角色，也不是“巨大尸体/幕”的化身。** 从现有章节与中文资料交叉看，它们更像是蒙昧世界中大量存在的**邪魔/邪恶灵体残骸**：没有独立姓名，成群出现，被巨大尸体击杀后又能从泥土中重新冒出。
 
 ## 证据链
 
@@ -33,18 +33,13 @@ tags:
 
 ### 2. 与“巨大尸体/幕”区分
 
-巨大尸体是蒙昧世界中真正有身份的核心存在。Fandom 的 Giant Corpse 条目说明：
-
-- Giant Corpse 是 tied to a bronze pillar in an obscure world 的强大存在。
-- 其物种为 Evil Spirits。
-- 它是 all evil spirits 的 leader。
-- 中文资料/读者梳理中常将巨大尸体与“幕 / 邪魔之主 / 冰封尸体”联系起来。
+巨大尸体是蒙昧世界中真正有身份的核心存在。中文资料与读者梳理中常将巨大尸体与“幕 / 邪魔之主 / 冰封尸体”联系起来。
 
 因此，**黑色骷髅是巨大尸体所在蒙昧世界中的低阶/群体邪魔残骸，而不是巨大尸体本人。**
 
 ## 结论
 
-**真实身份：邪魔/邪恶灵体残骸（Evil Spirits remains / lesser Evil Spirits），群体性存在，无单独姓名。**
+**真实身份：邪魔/邪恶灵体残骸，群体性存在，无单独姓名。**
 
 需要注意：目前能直接证明的是“黑色骷髅是蒙昧世界中的邪魔类群体/残骸”，但章节没有用一句明确台词说“它们就是某某”。所以这里不把它们提升为某个具名角色。
 
@@ -57,6 +52,5 @@ tags:
 Sources:
 - 《诸界末日在线》第39章《时空乱流》：青铜柱、黑色骷髅、墨绿之火、泥土中重新冒头
 - 《诸界末日在线》第603章《世界之墓！》：蒙昧世界、黑色骷髅、巨大尸体对话
-- Fandom API: Giant Corpse wikitext — species Evil Spirits, leader of all evil spirits, tied to bronze pillar in obscure world
-- 知乎剧情梳理：大尸兄/巨大尸体与邪魔之主、蒙昧世界避难线索
-Confidence Score: 0.76 | Sources: 原文章节片段 + Fandom Giant Corpse + 知乎剧情梳理
+- 中文百科/读者梳理：巨大尸体与邪魔之主、蒙昧世界、冰封尸体线索
+Confidence Score: 0.76 | Sources: 原文章节片段 + 中文百科/读者梳理
