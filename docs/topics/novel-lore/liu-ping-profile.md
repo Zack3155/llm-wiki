@@ -4,7 +4,15 @@ name: liu-ping
 topic: novel-lore
 date_modified: '2026-06-12'
 last_modified: '2026-06-12'
+sources:
+- 百度百科《诸界末日在线》词条
+- 知乎剧情全解析帖
+- PTT CFantasy 实况讨论
+confidence: 0.92
+status: complete
+date_added: '2026-06-13'
 ---
+
 
 
 

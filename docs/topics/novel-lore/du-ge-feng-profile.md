@@ -4,7 +4,14 @@ name: du-ge-feng
 topic: novel-lore
 date_modified: '2026-06-12'
 last_modified: '2026-06-12'
+sources:
+- PTT CFantasy 实况讨论
+- 本地 Wiki 独孤峰页面
+confidence: 0.9
+status: complete
+date_added: '2026-06-13'
 ---
+
 
 
 
