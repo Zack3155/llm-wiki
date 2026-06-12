@@ -1,27 +1,22 @@
 ---
-
-title: 六道争雄 (概念档案)
+title: 六道争雄 · 概念档案
 name: liudao-zhengxiong
 topic: novel-lore
-date_added: "2026-06-10"
-date_modified: 2026-06-12
+date_added: '2026-06-10'
+date_modified: '2026-06-12'
+last_modified: '2026-06-12'
 status: complete
 confidence: 0.95
 sources:
-  - "SearXNG layered_search.py (exit=0, 8 results)"
-  - "Baike.baidu.com 诸界末日在线词条 (JS全文提取, 8+ hits)"
-  - "速读谷·第六百一十八章原文 (novel text verification)"
-
+- SearXNG layered_search.py (exit=0, 8 results)
+- Baike.baidu.com 诸界末日在线词条 (JS全文提取, 8+ hits)
+- 飘天文学第六百一十八章原文 (novel text verification)
 ---
 
-## Summary
-
-六道争雄 (概念档案) — 详见下文各章节。
-*Verified: 2026-06-10 via SearXNG + Baike cross-check. Confidence: 0.95.*
 
 ## Summary
 
-六道争雄是《诸界末日在线》世界观中的核心终极事件 — **六道轮回世界体系进行的世界归属争夺战**。详见下文各章节。
+六道争雄是《诸界末日在线》世界观中的核心终极事件 — **六道轮回世界体系进行的世界归属争夺战**。
 
 > ⚠️ VERIFIED on 2026-06-10 via multi-source cross-check (Baike + SearXNG #6 novel original text): 六道争雄的目的在于选出各轮回界**圣人**与**主神器**，最终目标是六道世界再次融合、化为洪荒与邪魔决战。
 
@@ -86,7 +81,9 @@ sources:
 
 ## See also
 
-- [[洪荒纪元与六道轮回]](./honghuang-liudao-concept.md) — 六道轮回的起源与崩碎过程。
-- [[顾青山 · 主角档案]](./gu-qing-shan-profile.md) — 六道兵器与洪荒使徒的转生身，恶鬼道圣选者。
-- [[诸界末日在线 · 结局概览]](./zhu-jie-mo-ri-ending.md) — 含第五/六阶段（六道争雄前奏与正式展开）。
-- [诸界末日在线](liudao-lunhui-concept.md)
+- [[六道体系总览]](liudao-system-overview-concept.md) — 六道体系总览与专题导航
+- [[六道轮回]](liudao-lunhui-concept.md) — 六道轮回的本质、功能与崩碎转场
+- [[洪荒纪元]](honghuang-concept.md) — 六道轮回的起源与机制
+- [[诸界末日在线 · 结局概览]](zhu-jie-mo-ri-ending.md) — 含第五/六阶段（六道争雄前奏与正式展开）
+- [诸界末日在线](di-zhi-qian-bi-concept.md)
+- [诸界末日在线](world-gate-concept.md)

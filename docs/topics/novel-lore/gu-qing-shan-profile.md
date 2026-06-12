@@ -1,14 +1,18 @@
 ---
-
-title: 诸界末日在线 — 顾青山角色全设定
+title: 顾青山 — 角色档案
+name: gu-qing-shan
+topic: novel-lore
 date_added: 2026-06-08
-last_modified: 2026-06-11
+date_modified: 2026-06-12
+last_modified: 2026-06-12
 status: complete
-sources: ["百度百科", "知乎全解析帖"]
-date_modified: 2026-06-08
-
+sources:
+- 百度百科
+- 知乎全解析帖
+- 本地 Wiki 交叉验证
 confidence: 0.88
 ---
+
 
 
 ## Summary
@@ -236,3 +240,5 @@ confidence: 0.88
 - [幕 / 冰封之尸 · 角色档案](bingfengzhishi-profile.md) — 远古封印看守人
 - [诸界末日在线考据索引](_index.md)
 - [顾青山](zhu-jie-mo-ri-ending.md)
+- [诸界末日在线](du-ge-feng-profile.md)
+- [诸界末日在线](wan-shen-nu-di-profile.md)

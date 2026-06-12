@@ -1,15 +1,18 @@
 ---
-title: 万神女帝 · 蕾妮朵儿
+title: 万神女帝身份考据 · 角色档案
+name: wan-shen-nu-di
+topic: novel-lore
 date_added: 2026-06-13
+date_modified: 2026-06-12
+last_modified: 2026-06-12
 status: needs-more-sources
 sources:
-  - "Zhihu Q&A (知乎 #433978647)"
-  - "Baike entry (百度百科)"
-  - "Sudogu Ch536 chapter scan"
-confidence: 0.70
-date_modified: 2026-06-13
-
+- 'Zhihu Q&A #433978647'
+- 百度百科《诸界末日在线》词条
+- 速读谷第536章章节扫描
+confidence: 0.7
 ---
+
 
 ## Summary
 
@@ -44,3 +47,5 @@ date_modified: 2026-06-13
 - [幕/冰封尸体档案](bingfengzhishi-profile.md) — 与女帝势力可能的起源关联
 - [谢道灵档案](xie-dao-ling-profile.md) — 最终之术术主，与女帝有间接关联
 - [考据索引](_index.md)
+- [诸界末日在线](du-ge-feng-profile.md)
+- [诸界末日在线](liu-ping-profile.md)

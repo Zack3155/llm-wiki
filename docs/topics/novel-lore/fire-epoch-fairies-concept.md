@@ -1,15 +1,22 @@
 ---
 title: 妖精 · 种族档案
-name: fire-epoch fairies
+name: fire-epoch-fairies
+topic: novel-lore
 date_added: 2026-06-11
+date_modified: 2026-06-12
+last_modified: 2026-06-12
 status: complete
-date_modified: 2026-06-11
 tags:
-  - 妖精
-  - 火之纪元
-  - 混沌使徒
-  - 顾青山
+- 妖精
+- 火之纪元
+- 混沌使徒
+- 顾青山
+sources:
+- 本地 Wiki 妖精页面
+- SearXNG 中文关键词交叉检索
+confidence: 0.82
 ---
+
 
 ## Summary
 

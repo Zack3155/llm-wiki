@@ -1,17 +1,20 @@
 ---
-title: 诸界末日在线 — 终局分析
+title: 诸界末日在线 · 终局分析
 date_added: 2026-06-11
 status: complete
 description: 终局时间线、六道崩碎机制与诸界末日在线术法解析
 sources:
-  - SearXNG cross-check (Zhihu + Tieba + PTT)
-  - 百度百科 (六道轮回概念)
-  - 抖音百科 (六道崩碎)
-  - PTT CFantasy 实况 (Apr 15, 2022)
-confidence: 0.90
-date_modified: 2026-06-12
-
+- SearXNG cross-check (Zhihu + Tieba + PTT)
+- 百度百科 (六道轮回概念)
+- 抖音百科 (六道崩碎)
+- PTT CFantasy 实况 (Apr 15, 2022)
+confidence: 0.9
+date_modified: &id001 2026-06-12
+name: zhu-jie-mo-ri-ending
+topic: novel-lore
+last_modified: *id001
 ---
+
 
 ## Summary
 
@@ -48,7 +51,10 @@ date_modified: 2026-06-12
 ### See also:
 - [邪魔之主 · 角色档案](xiemozhizhu-profile.md) — BOSS 本体 / 幕后黑手
 - [顾青山 · 主角档案](gu-qing-shan-profile.md) — 六道兵器与洪荒使徒的转生身
-- [洪荒六道 · 概念档案](honghuang-liudao-concept.md) — 六道轮回的起源与机制
+- [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 六道体系总览与专题导航
+- [六道轮回 · 概念档案](liudao-lunhui-concept.md) — 六道轮回本质、功能与崩碎转场
+- [六道争雄 · 概念档案](liudao-zhengxiong-concept.md) — 六道争雄规则与启动机制
+- [洪荒纪元 · 概念档案](honghuang-concept.md) — 六道轮回的起源与机制
 - [幕/冰封尸体档案](bingfengzhishi-profile.md) — 冰封尸体身份验证（幕 ≠ 邪魔之主）
 - [柳平 · 角色档案](liu-ping-profile.md) — 扮演邪魔首领的人
 - [独孤峰 · 角色档案](du-ge-feng-profile.md) — 柳平捏造的身份

@@ -1,16 +1,19 @@
 ---
-title: 谢道灵 (Xie Daoling) · 角色档案
-name: 谢道灵 (Xie Daoling)
+title: 谢道灵 — 角色档案
+name: xie-dao-ling
+topic: novel-lore
 status: complete
 sources:
-  - "Zhihu Q&A thread #433978647 (multi-vote consensus, direct text evidence)"
-  - "Baidu Baike entry #49966007 + Gu Qing Shan profile (#23325096)"
-  - "Tieba analysis p/6708600836 (name deconstruction hints)"
-  - "PTT CFantasy real-time review thread"
+- 'Zhihu Q&A thread #433978647'
+- Baidu Baike 顾青山条目
+- Tieba analysis
+- PTT CFantasy real-time review thread
 confidence: 0.88
 date_added: 2026-06-13
-date_modified: 2026-06-13
+date_modified: 2026-06-12
+last_modified: 2026-06-12
 ---
+
 
 ## Summary
 
@@ -55,7 +58,7 @@ date_modified: 2026-06-13
 ## 🔗 Cross-Links
 
 - [[顾青山·主角档案]](gu-qing-shan-profile.md) — 师徒核心关系链
-- [[六道轮回概念]](honghuang-liudao-concept.md) — 器灵推测 + 碎片掌握
+- [[六道轮回概念]](honghuang-concept.md) — 洪荒纪元毁灭后形成六道轮回的起源机制
 - [[诸界末日结局]](zhu-jie-mo-ri-ending.md) — 最终之术术主定位
 - [[柳平 · 角色档案]](liu-ping-profile.md) — 合作杀死邪魔 BOSS
 

@@ -1,15 +1,19 @@
 ---
-title: 幕 / 冰封之尸（巨大尸体） — 角色档案
+title: 幕 / 冰封之尸 — 角色档案
+name: bingfengzhishi
+topic: novel-lore
 date_added: 2026-06-10
+date_modified: 2026-06-12
+last_modified: 2026-06-12
 status: complete
 sources:
-  - "百度百科·幕角色页 (baike.baidu.com/item/幕/49979741)"
-  - "抖音百科·诸界末日在线 (m.baike.com/wikiid/6560631052217538570)"
-  - "知乎全解析帖 #433978647"
-  - "PTT批踢贴 CFantasy"
-date_modified: 2026-06-13
+- 百度百科·幕角色页
+- 抖音百科·诸界末日在线
+- '知乎全解析帖 #433978647'
+- PTT CFantasy
 confidence: 0.92
 ---
+
 
 ## Summary
 

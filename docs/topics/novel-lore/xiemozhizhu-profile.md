@@ -1,22 +1,25 @@
 ---
-title: 邪魔之主 — 最终BOSS考据
+title: 邪魔之主 — 角色档案
+name: xiemozhizhu
+topic: novel-lore
 status: complete
-date_created: "2026-06-19"
-date_modified: 2026-06-13
-sources:
-  - 百度百科: 诸界末日在线词条
-  - 百度百科: 幕角色页
-  - 知乎剧情全解析帖 (2025-09-07)
-  - 百度贴吧剧情讨论区
-  - PTT CFantasy 实况 (Apr 15, 2022)
-tags:
-  - novel-lore
-  - boss
-  - 反派
+date_created: '2026-06-19'
 date_added: 2026-06-10
-
-confidence: 0.90
+date_modified: 2026-06-12
+last_modified: 2026-06-12
+sources:
+- 百度百科《诸界末日在线》词条
+- 百度百科“幕”角色页
+- 知乎剧情全解析帖
+- 百度贴吧剧情讨论区
+- PTT CFantasy 实况
+tags:
+- novel-lore
+- boss
+- 反派
+confidence: 0.9
 ---
+
 
 ## Summary
 

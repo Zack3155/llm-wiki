@@ -1,15 +1,19 @@
 ---
-title: 地之钱币（虚空四正神之魂器）
+title: 地之钱币 · 概念档案
+name: di-zhi-qian-bi
+topic: novel-lore
 date_added: 2026-06-13
-date_modified: 2026-06-11
+date_modified: 2026-06-12
+last_modified: 2026-06-12
 status: complete
 sources:
-  - "百度百科·四圣柱词条"
-  - "百度百科·顾青山词条"
-  - "知乎故事线梳理帖"
-  - "贴吧/飘天文学章节目录 (第700~926章)"
+- 百度百科·四圣柱词条
+- 百度百科·顾青山词条
+- 知乎故事线梳理帖
+- 贴吧/飘天文学章节目录 (第700~926章)
 confidence: 0.95
 ---
+
 
 ## Summary
 
@@ -59,3 +63,8 @@ confidence: 0.95
 ## See also
 
 - [百度百科](_index.md)
+- [诸界末日在线](honghuang-concept.md)
+- [诸界末日在线](liudao-lunhui-concept.md)
+- [诸界末日在线](liudao-system-overview-concept.md)
+- [诸界末日在线](liudao-zhengxiong-concept.md)
+- [诸界末日在线](world-gate-concept.md)

@@ -1,16 +1,24 @@
 ---
-title: 世界之门
-name: world gate
+title: 世界之门 · 概念档案
+name: world-gate
+topic: novel-lore
 date_added: 2026-06-11
+date_modified: 2026-06-12
+last_modified: 2026-06-12
 status: needs-more-sources
-date_modified: 2026-06-11
 tags:
-  - 世界之门
-  - 门与世界
-  - 虚空
-  - 平行世界
-  - 命运侵蚀
+- 世界之门
+- 门与世界
+- 虚空
+- 平行世界
+- 命运侵蚀
+sources:
+- 百度百科《诸界末日在线》词条
+- SearXNG 中文关键词交叉检索
+- 本地 Wiki 世界之门页面
+confidence: 0.62
 ---
+
 
 ## Summary
 
@@ -58,3 +66,8 @@ Sources:
 - 69书吧目录检索：第1596章《世界之门外》、第1630章《门与末日》、第2187章《门与世界》、第2191章《血海之门》
 - 知乎剧情梳理：命运侵蚀、平行世界、血海与诸界结构讨论
 Confidence Score: 0.64 | Sources: QQ阅读章节片段 + 69书吧目录 + 知乎剧情梳理
+- [诸界末日在线](di-zhi-qian-bi-concept.md)
+- [诸界末日在线](honghuang-concept.md)
+- [诸界末日在线](liudao-lunhui-concept.md)
+- [诸界末日在线](liudao-system-overview-concept.md)
+- [诸界末日在线](liudao-zhengxiong-concept.md)

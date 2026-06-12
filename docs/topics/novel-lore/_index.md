@@ -45,25 +45,26 @@ date_modified: 2026-06-11
 | 页面 | 主题 | 状态 | 更新 |
 |------|------|:---:|------|
 | [诸界末日在线结局分析](zhu-jie-mo-ri-ending.md) | 全文七阶段梳理、邪魔主线、世界观深层结构 | complete | 2026-06-13 |
-| [顾青山 · 角色档案](gu-qing-shan-profile.md) | 主角完整设定：身份/位格/神器库/技能树 | complete | 2026-06-08 |
-| [邪魔之主 · 角色档案](xiemozhizhu-profile.md) | 最终 BOSS 考据、远古背景、至高三术、结局命运 | complete | 2026-06-13 |
-| [幕 / 冰封之尸 · 角色档案](bingfengzhishi-profile.md) | 封印看守人、身份演变线、传授术法、结局版本冲突 | complete | 2026-06-10 |
-| [谢道灵 · 角色档案](xie-dao-ling-profile.md) | NPC→圣人→天帝→最终之术术主的身份演变时间线、核心能力、考据分歧点 | complete | 2026-06-13 |
-| [万神女帝 · 蕾妮朵儿](wan-shen-nu-di-profile.md) | 身份说法对照表、多源综合分析 | complete | 2026-06-13 |
-| [柳平 · 角色档案](liu-ping-profile.md) | "再来人"身份、师徒关系（顾青山的老师为学生）、扮演邪魔首领、帮助谢道灵与顾青山 | complete | 2026-06-13 |
-| [独孤峰 · 角色档案](du-ge-feng-profile.md) | 柳平捏造的独孤将军身份、巨大黑甲尸体由来、被顾青山打回炼狱之门 | complete | 2026-06-13 |
+| [顾青山 — 角色档案](gu-qing-shan-profile.md) | 主角完整设定：身份/位格/神器库/技能树 | complete | 2026-06-08 |
+| [邪魔之主 — 角色档案](xiemozhizhu-profile.md) | 最终 BOSS 考据、远古背景、至高三术、结局命运 | complete | 2026-06-12 |
+| [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) | 封印看守人、身份演变线、传授术法、结局版本冲突 | complete | 2026-06-12 |
+| [谢道灵 — 角色档案](xie-dao-ling-profile.md) | NPC→圣人→天帝→最终之术术主的身份演变时间线、核心能力、考据分歧点 | complete | 2026-06-12 |
+| [万神女帝身份考据 · 角色档案](wan-shen-nu-di-profile.md) | 身份说法对照表、多源综合分析 | needs-more-sources | 2026-06-12 |
+| [柳平 — 角色档案](liu-ping-profile.md) | "再来人"身份、师徒关系（顾青山的老师为学生）、扮演邪魔首领、帮助谢道灵与顾青山 | complete | 2026-06-13 |
+| [独孤峰 — 角色档案](du-ge-feng-profile.md) | 柳平捏造的独孤将军身份、巨大黑甲尸体由来、被顾青山打回炼狱之门 | complete | 2026-06-13 |
 
 ## 概念档案
 
 | 页面 | 主题 | 状态 | 更新 |
 |------|------|:---:|------|
-|| [洪荒纪元与六道轮回](honghuang-liudao-concept.md) | 洪荒→六道形成→崩碎时间线、核心功能 | complete | 2026-06-10 |
-|| [六道轮回 · 概念档案](liudao-lunhui-concept.md) | 六道本质/起源/争雄规则/顾青山与谢道灵关系/崩碎转场 | complete | 2026-06-12 |
-|| [六道争雄](liudao-zhengxiong-concept.md) | 赛事规则、晋升路径、角色定位、原文片段 | complete | 2026-06-11 |
-|| [地之钱币（虚空四正神之魂器）](di-zhi-qian-bi-concept.md) | 虚空四正神之一，关键设定与章节索引 (700~926) | complete | 2026-06-13 |
-|| [世界之门](world-gate-concept.md) | 世界、虚空、末日、时间线转移的门式机制；仍需补证 | needs-more-sources | 2026-06-11 |
-|| [蒙昧世界中的黑色骷髅](mengmei-black-skeletons-concept.md) | 蒙昧世界中的邪魔/邪恶灵体残骸；与巨大尸体/幕存在读者身份混淆，已标分歧 | needs-more-sources | 2026-06-11 |
-|| [妖精 · 种族档案](fire-epoch-fairies-concept.md) | 火之纪元种族、逃脱封印、多次帮助顾青山 | complete | 2026-06-11 |
+| [六道体系总览 · 概念档案](liudao-system-overview-concept.md) | 六道体系总览：洪荒→六道轮回→六道争雄→六道崩碎→虚空时代 | complete | 2026-06-12 |
+| [洪荒纪元 · 概念档案](honghuang-concept.md) | 洪荒→六道形成前史、顾青山前世牺牲、六道起源 | complete | 2026-06-12 |
+| [六道轮回 · 概念档案](liudao-lunhui-concept.md) | 六道本质/起源/争雄规则/顾青山与谢道灵关系/崩碎转场 | complete | 2026-06-12 |
+| [六道争雄 · 概念档案](liudao-zhengxiong-concept.md) | 赛事规则、晋升路径、角色定位、原文片段 | complete | 2026-06-12 |
+| [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md) | 虚空四正神之一，关键设定与章节索引 (700~926) | complete | 2026-06-12 |
+| [世界之门 · 概念档案](world-gate-concept.md) | 世界、虚空、末日、时间线转移的门式机制；仍需补证 | needs-more-sources | 2026-06-12 |
+| [蒙昧世界黑色骷髅 · 概念档案](mengmei-black-skeletons-concept.md) | 蒙昧世界中的邪魔/邪恶灵体残骸；与巨大尸体/幕存在读者身份混淆，已标分歧 | needs-more-sources | 2026-06-12 |
+| [妖精 · 种族档案](fire-epoch-fairies-concept.md) | 火之纪元种族、逃脱封印、多次帮助顾青山 | complete | 2026-06-12 |
 
 ## 交叉引用说明
 

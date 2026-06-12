@@ -1,16 +1,23 @@
 ---
-title: 蒙昧世界中的黑色骷髅
-name: mengmei black skeletons
+title: 蒙昧世界黑色骷髅 · 概念档案
+name: mengmei-black-skeletons
+topic: novel-lore
 date_added: 2026-06-11
+date_modified: 2026-06-12
+last_modified: 2026-06-12
 status: needs-more-sources
-date_modified: 2026-06-11
 tags:
-  - 蒙昧世界
-  - 黑色骷髅
-  - 邪魔
-  - 巨大尸体
-  - 幕
+- 蒙昧世界
+- 黑色骷髅
+- 邪魔
+- 巨大尸体
+- 幕
+sources:
+- 本地 Wiki 蒙昧世界黑色骷髅页面
+- SearXNG 中文关键词交叉检索
+confidence: 0.64
 ---
+
 
 ## Summary
 
