@@ -4,7 +4,7 @@ Knowledge base maintained by your AI assistant.
 
 ## Topics
 
-### Novel & Fiction Lore (16 articles)
+### Novel & Fiction Lore (17 articles)
 
 | Page | Summary | Tags | Added |
 |------|---------|------|-------|
@@ -19,6 +19,7 @@ Knowledge base maintained by your AI assistant.
 | [六道体系总览 · 概念档案](topics/novel-lore/liudao-system-overview-concept.md) | **六道体系**是《诸界末日在线》中段核心世界观，由洪荒纪元毁灭后的残骸演化而来，包含六道轮回、六道争雄、圣选者、主神器、界力与终局崩碎等关键结构。它既是镇压邪魔与末日的容器，也是众生进化的战争机器，最终在终局前后崩碎，推动故事进入虚... | concept | 2026-06-12 |
 | [六道争雄 · 概念档案](topics/novel-lore/liudao-zhengxiong-concept.md) | 六道争雄是《诸界末日在线》世界观中的核心终极事件 — **六道轮回世界体系进行的世界归属争夺战**。 | concept | 2026-06-10 |
 | [蒙昧世界黑色骷髅 · 概念档案](topics/novel-lore/mengmei-black-skeletons-concept.md) | **蒙昧世界中的黑色骷髅目前只能被谨慎判定为“蒙昧世界中的群体性邪魔/邪恶灵体残骸”，不能提升为某个具名隐藏角色。** 现有章节显示它们成群出现、被巨大尸体击杀后会从泥土中重新冒出；但与“巨大尸体/幕/邪魔之主”之间的读者混淆仍未完全... | concept | 2026-06-11 |
+| [万界俯视者 — 角色档案](topics/novel-lore/wan-jie-fu-shi-zhe-profile.md) | **万界俯视者**是《诸界末日在线》中登场的神秘至高位格存在。正文给予的完整名号为**"真古之魔·万界俯视者"**——其中"真古之魔"为本体名号，"万界俯视者"为称号/尊称。 ⚠️ 第659章明确说明：英灵殿主对顾青山表示"我们只知道... | character-profile | 2026-06-13 |
 | [万神女帝身份考据 · 角色档案](topics/novel-lore/wan-shen-nu-di-profile.md) | **万神女帝·蕾妮朵儿** 是《诸界末日在线》墟墓篇章中的核心势力领袖之一，自称"万神女帝"，统领独立的世界层级势力。其真实身份在正文中未直接揭晓，现有结论主要来自百度百科、知乎剧情梳理与贴吧读者分析，存在一定争议。 | character-profile | 2026-06-13 |
 | [世界之门 · 概念档案](topics/novel-lore/world-gate-concept.md) | **世界之门不是单纯“虚空里的青铜门”。目前可确认的是：它是《诸界末日在线》后期涉及世界、虚空、末日、时间线和血海之门等多个层面的“门”概念。** 但它的完整机制、与“门与世界”“血海之门”“虚空原本之界”的精确关系，现有公开可检索资... | concept | 2026-06-11 |
 | [谢道灵 — 角色档案](topics/novel-lore/xie-dao-ling-profile.md) | **谢道灵**，贯穿《诸界末日在线》全篇的核心人物。表面身份从NPC到圣人、宗主之女、天帝层层叠加，但真实位格远超所有表象。她是"最终之术"的术主，也是真实世界的圣尊——换言之，**游戏里的 NPC 最后是主角的造物主**。掌握六道碎... | character-profile | 2026-06-13 |
@@ -31,4 +32,4 @@ Knowledge base maintained by your AI assistant.
 - **`raw/`** — drop links, PDFs, or articles here and ask to compile them
 - **Ask** — "what does my wiki say about X?" works anytime
 
-*Auto-generated on 2026-06-12 06:36:51*
+*Auto-generated on 2026-06-12 12:03:25*

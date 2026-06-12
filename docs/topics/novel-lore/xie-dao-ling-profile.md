@@ -75,3 +75,4 @@ last_modified: 2026-06-12
 - [柳平 · 角色档案](liu-ping-profile.md)
 - [万神女帝 · 角色档案](wan-shen-nu-di-profile.md)
 - [独孤峰 · 角色档案](du-ge-feng-profile.md)
+- [诸界末日在线](wan-jie-fu-shi-zhe-profile.md)
