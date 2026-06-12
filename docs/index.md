@@ -16,7 +16,7 @@ Knowledge base maintained by your AI assistant.
 | [洪荒纪元与六道轮回 (概念档案)](topics/novel-lore/honghuang-liudao-concept.md) | **洪荒纪元与六道轮回** 是《诸界末日在线》世界观的核心设定。根据多源交叉验证，"六道轮回"并非传统宗教概念，而是**遭邪魔侵蚀毁灭的洪荒纪元残骸**，是整个故事舞台从具体世界向"诸天无限·虚空"过渡的中转站。 | concept | 2026-06-10 |
 | [柳平 — 角色档案](topics/novel-lore/liu-ping-profile.md) | **柳平** 是烟火成城小说《炼狱艺术家》的男主角，同时也是《诸界末日在线》时间线中的关键角色。在诸界的宏大叙事中，他以"再来人"的身份扮演邪魔首领/巨大黑甲尸体，按照固定历史演出，帮助谢道灵和顾青山完成其历史使命。 | character-profile | 2026-06-13 |
 | [六道争雄 (概念档案)](topics/novel-lore/liudao-zhengxiong-concept.md) | 六道争雄 (概念档案) — 详见下文各章节。 *Verified: 2026-06-10 via SearXNG + Baike cross-check. Confidence: 0.95.* | concept | 2026-06-10 |
-| [蒙昧世界中的黑色骷髅](topics/novel-lore/mengmei-black-skeletons-concept.md) | **蒙昧世界中的黑色骷髅不是某个单独隐藏角色，也不是“巨大尸体/幕”的化身。** 从现有章节与中文资料交叉看，它们更像是蒙昧世界中大量存在的**邪魔/邪恶灵体残骸**：没有独立姓名，成群出现，被巨大尸体击杀后又能从泥土中重新冒出。 | concept | 2026-06-11 |
+| [蒙昧世界中的黑色骷髅](topics/novel-lore/mengmei-black-skeletons-concept.md) | **蒙昧世界中的黑色骷髅目前只能被谨慎判定为“蒙昧世界中的群体性邪魔/邪恶灵体残骸”，不能提升为某个具名隐藏角色。** 现有章节显示它们成群出现、被巨大尸体击杀后会从泥土中重新冒出；但与“巨大尸体/幕/邪魔之主”之间的读者混淆仍未完全... | concept | 2026-06-11 |
 | [万神女帝 · 蕾妮朵儿](topics/novel-lore/wan-shen-nu-di-profile.md) | **万神女帝·蕾妮朵儿** 是《诸界末日在线》墟墓篇章中的核心势力领袖之一，自称"万神女帝"，统领独立的世界层级势力。其真实身份在正文中未直接揭晓，现有结论主要来自百度百科、知乎剧情梳理与贴吧读者分析，存在一定争议。 | character-profile | 2026-06-13 |
 | [世界之门](topics/novel-lore/world-gate-concept.md) | **世界之门不是单纯“虚空里的青铜门”。目前可确认的是：它是《诸界末日在线》后期涉及世界、虚空、末日、时间线和血海之门等多个层面的“门”概念。** 但它的完整机制、与“门与世界”“血海之门”“虚空原本之界”的精确关系，现有公开可检索资... | concept | 2026-06-11 |
 | [谢道灵 (Xie Daoling) · 角色档案](topics/novel-lore/xie-dao-ling-profile.md) | **谢道灵**，贯穿《诸界末日在线》全篇的核心人物。表面身份从NPC到圣人、宗主之女、天帝层层叠加，但真实位格远超所有表象。她是"最终之术"的术主，也是真实世界的圣尊——换言之，**游戏里的 NPC 最后是主角的造物主**。掌握六道碎... | character-profile | 2026-06-13 |
@@ -29,4 +29,4 @@ Knowledge base maintained by your AI assistant.
 - **`raw/`** — drop links, PDFs, or articles here and ask to compile them
 - **Ask** — "what does my wiki say about X?" works anytime
 
-*Auto-generated on 2026-06-11 19:53:25*
+*Auto-generated on 2026-06-11 21:07:14*
