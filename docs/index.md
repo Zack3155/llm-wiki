@@ -4,7 +4,7 @@ Knowledge base maintained by your AI assistant.
 
 ## Topics
 
-### Novel & Fiction Lore (14 articles)
+### Novel & Fiction Lore (15 articles)
 
 | Page | Summary | Tags | Added |
 |------|---------|------|-------|
@@ -15,6 +15,7 @@ Knowledge base maintained by your AI assistant.
 | [诸界末日在线 — 顾青山角色全设定](topics/novel-lore/gu-qing-shan-profile.md) | ### Real Identity Test: 顾青山身份=毁灭+混沌 (contradiction test) 《诸界末日在线》男主角。真实身份为时间与奥秘之子"毁灭"，身负四圣柱正神与混沌代言人多重位格，是谢道灵集合众生发动的终极... | character-profile | 2026-06-08 |
 | [洪荒纪元与六道轮回 (概念档案)](topics/novel-lore/honghuang-liudao-concept.md) | **洪荒纪元与六道轮回** 是《诸界末日在线》世界观的核心设定。根据多源交叉验证，"六道轮回"并非传统宗教概念，而是**遭邪魔侵蚀毁灭的洪荒纪元残骸**，是整个故事舞台从具体世界向"诸天无限·虚空"过渡的中转站。 | concept | 2026-06-10 |
 | [柳平 — 角色档案](topics/novel-lore/liu-ping-profile.md) | **柳平** 是烟火成城小说《炼狱艺术家》的男主角，同时也是《诸界末日在线》时间线中的关键角色。在诸界的宏大叙事中，他以"再来人"的身份扮演邪魔首领/巨大黑甲尸体，按照固定历史演出，帮助谢道灵和顾青山完成其历史使命。 | character-profile | 2026-06-13 |
+| [六道轮回 · 概念档案](topics/novel-lore/liudao-lunhui-concept.md) | **六道轮回**是《诸界末日在线》中由 **洪荒纪元毁灭残骸** 演化而成的六道闭环世界体系，并非传统宗教意义上的轮回概念。它既是洪荒残骸、镇压容器和天道兵器熔炉，也是六道争雄、圣选者晋升、界力争夺与最终对抗邪魔/末日的世界舞台。 核... | concept | 2026-06-10 |
 | [六道争雄 (概念档案)](topics/novel-lore/liudao-zhengxiong-concept.md) | 六道争雄 (概念档案) — 详见下文各章节。 *Verified: 2026-06-10 via SearXNG + Baike cross-check. Confidence: 0.95.* | concept | 2026-06-10 |
 | [蒙昧世界中的黑色骷髅](topics/novel-lore/mengmei-black-skeletons-concept.md) | **蒙昧世界中的黑色骷髅目前只能被谨慎判定为“蒙昧世界中的群体性邪魔/邪恶灵体残骸”，不能提升为某个具名隐藏角色。** 现有章节显示它们成群出现、被巨大尸体击杀后会从泥土中重新冒出；但与“巨大尸体/幕/邪魔之主”之间的读者混淆仍未完全... | concept | 2026-06-11 |
 | [万神女帝 · 蕾妮朵儿](topics/novel-lore/wan-shen-nu-di-profile.md) | **万神女帝·蕾妮朵儿** 是《诸界末日在线》墟墓篇章中的核心势力领袖之一，自称"万神女帝"，统领独立的世界层级势力。其真实身份在正文中未直接揭晓，现有结论主要来自百度百科、知乎剧情梳理与贴吧读者分析，存在一定争议。 | character-profile | 2026-06-13 |
@@ -29,4 +30,4 @@ Knowledge base maintained by your AI assistant.
 - **`raw/`** — drop links, PDFs, or articles here and ask to compile them
 - **Ask** — "what does my wiki say about X?" works anytime
 
-*Auto-generated on 2026-06-11 21:07:14*
+*Auto-generated on 2026-06-12 05:41:54*

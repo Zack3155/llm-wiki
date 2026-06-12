@@ -57,8 +57,9 @@ date_modified: 2026-06-11
 
 | 页面 | 主题 | 状态 | 更新 |
 |------|------|:---:|------|
-|| [洪荒纪元与六道轮回](honghuang-liudao-concept.md) | 洪荒→六道形成→崩碎时间线、核心功能 | complete | 2026-06-10 |
-|| [六道争雄](liudao-zhengxiong-concept.md) | 赛事规则、晋升路径、角色定位、原文片段 | complete | 2026-06-11 |
+||| [洪荒纪元与六道轮回](honghuang-liudao-concept.md) | 洪荒→六道形成→崩碎时间线、核心功能 | complete | 2026-06-10 |
+||| [六道轮回 · 概念档案](liudao-lunhui-concept.md) | 六道本质/起源/争雄规则/顾青山与谢道灵关系/崩碎转场 | complete | 2026-06-12 |
+||| [六道争雄](liudao-zhengxiong-concept.md) | 赛事规则、晋升路径、角色定位、原文片段 | complete | 2026-06-11 |
 || [地之钱币（虚空四正神之魂器）](di-zhi-qian-bi-concept.md) | 虚空四正神之一，关键设定与章节索引 (700~926) | complete | 2026-06-13 |
 || [世界之门](world-gate-concept.md) | 世界、虚空、末日、时间线转移的门式机制；仍需补证 | needs-more-sources | 2026-06-11 |
 || [蒙昧世界中的黑色骷髅](mengmei-black-skeletons-concept.md) | 蒙昧世界中的邪魔/邪恶灵体残骸；与巨大尸体/幕存在读者身份混淆，已标分歧 | needs-more-sources | 2026-06-11 |

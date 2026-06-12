@@ -34,3 +34,4 @@ confidence: 0.88
 - [诸界末日在线结局分析](./zhu-jie-mo-ri-ending.md) — 混沌吞没墟墓的全过程
 - [顾青山 · 主角档案](./gu-qing-shan-profile.md) — 六道兵器与洪荒使徒的转生身
 - [六道争雄](liudao-zhengxiong-concept.md) — 六道世界体系的世界归属争夺战
+- [六道轮回 · 概念档案](liudao-lunhui-concept.md) — 六道本质、起源、争雄规则与崩碎转场

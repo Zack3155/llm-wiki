@@ -4,7 +4,7 @@ title: 六道争雄 (概念档案)
 name: liudao-zhengxiong
 topic: novel-lore
 date_added: "2026-06-10"
-date_modified: "2026-06-11"
+date_modified: 2026-06-12
 status: complete
 confidence: 0.95
 sources:
@@ -89,3 +89,4 @@ sources:
 - [[洪荒纪元与六道轮回]](./honghuang-liudao-concept.md) — 六道轮回的起源与崩碎过程。
 - [[顾青山 · 主角档案]](./gu-qing-shan-profile.md) — 六道兵器与洪荒使徒的转生身，恶鬼道圣选者。
 - [[诸界末日在线 · 结局概览]](./zhu-jie-mo-ri-ending.md) — 含第五/六阶段（六道争雄前奏与正式展开）。
+- [诸界末日在线](liudao-lunhui-concept.md)
