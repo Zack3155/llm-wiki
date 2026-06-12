@@ -4,6 +4,8 @@ site_dir: site
 exclude_docs: |
   raw/**
   pages/**
+  archive/**
+  log.md
 theme:
   name: material
   language: zh
