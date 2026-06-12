@@ -43,6 +43,7 @@ date_modified: 2026-06-11
 || [六道争雄](liudao-zhengxiong-concept.md) | 赛事规则、晋升路径、角色定位、原文片段 | complete | 2026-06-11 |
 || [地之钱币（虚空四正神之魂器）](di-zhi-qian-bi-concept.md) | 虚空四正神之一，关键设定与章节索引 (700~926) | complete | 2026-06-13 |
 || [世界之门（Reality Gate）](world-gate-concept.md) | 虚空中的青铜门、平行世界通道、命运侵蚀风险 | complete | 2026-06-11 |
+|| [蒙昧世界中的黑色骷髅](mengmei-black-skeletons-concept.md) | 蒙昧世界中的邪魔/邪恶灵体残骸，非巨大尸体本人 | complete | 2026-06-11 |
 || [妖精 · 种族档案](fire-epoch-fairies-concept.md) | 火之纪元种族、逃脱封印、多次帮助顾青山 | complete | 2026-06-11 |
 
 ## 交叉引用说明
