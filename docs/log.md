@@ -1,3 +1,15 @@
+## 2026-06-14 — Auto-Filer Sync (15:00 UTC)
+
+### New page: `novel-lore/qingtongzhizhu-profile.md`
+- Topic: "青铜之主" (Bronze Lord) identity in 《诸界末日在线》
+- **Core finding**: 青铜之主 is NOT a single entity/true name, but a class of war-level "万生" existences nurtured by 墟墓 and controlled by "一人万生之术"
+- Identity chain: 一人万生之术 (master from beyond void) → controls Bronze Lords / puppet civilizations / sequence units → used by 魔皇纪元文明 → serves Demon Emperor (魔皇) resurrection
+- **Key differentiator**: 魔皇 ≠ 青铜之主 (Demon Emperor is the master; Bronze Lords are controlled war units)
+- Original text evidence: Chapters 230《否决！》, 269《高维之地！》, 270《战争序列的真相》, 276《魔皇纪元》, 287《纪元与术》 + QQ Reader Ch.1994 public excerpt
+- Multi-source cross-verification: douyin baike (一人万生之术操控所有青铜之主等"万生"), hetubook/czbooks/quanben chapter text alignment, PTT CFantasy, Zhihu analysis
+- Confidence: 0.84
+- Pages touched: qingtongzhizhu-profile.md (new), _index.md (updated)
+
 ## 2026-06-14 — Auto-Filer Sync (03:00 local)
 
 ### New page: `novel-lore/chaos-concept.md`
