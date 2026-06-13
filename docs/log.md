@@ -1,3 +1,12 @@
+## 2026-06-14 — Auto-Filer Sync (03:00 local)
+
+### New page: `novel-lore/chaos-concept.md`
+- Topic: "混沌" (Chaos) foundational concept in 《诸界末日在线》
+- Core definition: 众生最终之术 = 序列之王 = 诸界末日在线 = 顾青山的真身
+- Original text evidence from Chapters 119《可怜的你》, 120《和平与……》with multi-source verification (飘天文学/和图书原文 + 知乎考据 + 百度百科 + layered_search)
+- Confidence: 0.93
+- Pages touched: chaos-concept.md (new), _index.md (updated)
+
 ## 2026-06-13 — Auto-Filer Sync (12:00 UTC)
 
 - **New page**: `wan-jie-fu-shi-zhe-profile.md` — 万界俯视者/真古之魔角色档案

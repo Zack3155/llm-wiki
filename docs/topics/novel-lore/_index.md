@@ -67,6 +67,7 @@ date_modified: 2026-06-11
 | [蒙昧世界黑色骷髅 · 概念档案](mengmei-black-skeletons-concept.md) | 蒙昧世界中的邪魔/邪恶灵体残骸；与巨大尸体/幕存在读者身份混淆，已标分歧 | needs-more-sources | 2026-06-12 |
 || [妖精 · 种族档案](fire-epoch-fairies-concept.md) | 火之纪元种族、逃脱封印、多次帮助顾青山 | complete | 2026-06-12 |
 || [序列体系 · 概念档案](sequence-system-concept.md) | "序列"核心概念：魔王/邪魔/众生/六道/混沌五级序列定义、原文证据与常见误区 | complete | 2026-06-13 |
+||| [混沌 · 概念档案](chaos-concept.md) | "混沌"终极术法：众生最终之术=序列之王=诸界末日在线=顾青山真身、原文证据与作用矩阵 | complete | 2026-06-13 |
 
 ## 交叉引用说明
 

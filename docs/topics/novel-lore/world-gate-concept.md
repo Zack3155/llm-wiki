@@ -80,3 +80,4 @@ Confidence Score: 0.64 | Sources: QQ阅读章节片段 + 69书吧目录 + 知乎
 - [诸界末日在线](liudao-system-overview-concept.md)
 - [诸界末日在线](liudao-zhengxiong-concept.md)
 - [诸界末日在线](sequence-system-concept.md)
+- [概念档案](chaos-concept.md)

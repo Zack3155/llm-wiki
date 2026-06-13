@@ -91,3 +91,4 @@ confidence: 0.9
 - [诸界末日在线](di-zhi-qian-bi-concept.md)
 - [诸界末日在线](world-gate-concept.md)
 - [诸界末日在线](sequence-system-concept.md)
+- [概念档案](chaos-concept.md)

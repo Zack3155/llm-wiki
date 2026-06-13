@@ -4,11 +4,12 @@ Knowledge base maintained by your AI assistant.
 
 ## Topics
 
-### Novel & Fiction Lore (18 articles)
+### Novel & Fiction Lore (19 articles)
 
 | Page | Summary | Tags | Added |
 |------|---------|------|-------|
 | [幕 / 冰封之尸 — 角色档案](topics/novel-lore/bingfengzhishi-profile.md) | **幕**，核心角色。其**本体就是冰封之尸"万物与众生的灭绝者"**。他是**封印掌管者**，负责防止冰封之尸复活。后来**反抗了命运**，主动汲取冰封之尸的力量，成为顾青山的同伴并教他各种术法。 | character-profile | 2026-06-10 |
+| [混沌 · 概念档案](topics/novel-lore/chaos-concept.md) | **"混沌"**是《诸界末日在线》中最核心的终极力量概念，不是普通法术或外挂。它有三层等价定义： 1. **众生为战胜邪魔而释放的终极术法** —— 由真实世界众生耗尽全部力量、谢道灵主导发动 2. **序列之王 / 诸界末日在线本身... | concept | 2026-06-13 |
 | [地之钱币 · 概念档案](topics/novel-lore/di-zhi-qian-bi-concept.md) | 地之钱币是《诸界末日在线》中"四圣柱"孕育的四件法则魂器之一。四圣柱孕育的魂器分别为：地之钱币、海底之书、焰灵坠饰、风之匙，持有者经认可可成为凌驾众神的"四柱正神"（传说不可战胜）。地之钱币与地之世界共生共存，发动**真实幸运**可获... | concept | 2026-06-13 |
 | [独孤峰 — 角色档案](topics/novel-lore/du-ge-feng-profile.md) | **独孤峰 = 柳平扮演的身份**。根据 PTT CFantasy 实况讨论（2022年4月15日）的原文确认，柳平利用邪魔 BOSS 的黑甲"捏了一个独孤将军的身份"，这个身份后来在《诸界末日在线》中被用来扮演"邪魔首领/巨大黑甲尸... | character-profile | 2026-06-13 |
 | [妖精 · 种族档案](topics/novel-lore/fire-epoch-fairies-concept.md) | **妖精是《诸界末日在线》中来自火之纪元的种族**。火之纪元被毁灭后，妖精几乎全族被封印在永灭之王的黑暗大陆监牢中，但凭借种族特性逃脱，并在后续剧情中多次帮助顾青山。 | concept | 2026-06-11 |
@@ -33,4 +34,4 @@ Knowledge base maintained by your AI assistant.
 - **`raw/`** — drop links, PDFs, or articles here and ask to compile them
 - **Ask** — "what does my wiki say about X?" works anytime
 
-*Auto-generated on 2026-06-13 00:02:22*
+*Auto-generated on 2026-06-13 03:02:40*

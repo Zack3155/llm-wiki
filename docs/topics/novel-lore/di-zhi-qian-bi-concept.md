@@ -77,3 +77,4 @@ confidence: 0.95
 - [诸界末日在线](liudao-zhengxiong-concept.md)
 - [诸界末日在线](world-gate-concept.md)
 - [诸界末日在线](sequence-system-concept.md)
+- [概念档案](chaos-concept.md)
