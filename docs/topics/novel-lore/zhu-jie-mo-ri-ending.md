@@ -1,19 +1,11 @@
 ---
 title: 诸界末日在线 · 终局分析
-date_added: 2026-06-11
-status: complete
-description: 终局时间线、六道崩碎机制与诸界末日在线术法解析
-sources:
-- SearXNG cross-check (Zhihu + Tieba + PTT)
-- 百度百科 (六道轮回概念)
-- 抖音百科 (六道崩碎)
-- PTT CFantasy 实况 (Apr 15, 2022)
-confidence: 0.9
-date_modified: 2026-06-13
 name: zhu-jie-mo-ri-ending
 topic: novel-lore
-last_modified: *id001
+date_modified: '2026-06-12'
+last_modified: '2026-06-12'
 ---
+
 
 
 
