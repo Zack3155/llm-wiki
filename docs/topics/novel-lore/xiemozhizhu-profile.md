@@ -105,4 +105,5 @@ confidence: 0.9
 - [诸界末日在线结局分析](./zhu-jie-mo-ri-ending.md)
 - [柳平 · 角色档案](./liu-ping-profile.md) — 扮演邪魔首领的人
 - [独孤峰 · 角色档案](./du-ge-feng-profile.md) — 柳平捏造的身份
+- [虚空三术与众生同调 · 概念对照档案](./xukong-san-shu-comparison.md) — 一人万生之术原文证据与能力对照（含完整虚空三术关系表）
 - [邪魔之主](_index.md)

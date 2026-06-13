@@ -30,3 +30,14 @@
 
 ### Verification
 - Lint and build results recorded below by tool calls.
+
+## 2026-06-13 — Auto-Filer (cron, ~07:00 UTC+8)
+
+### New page: `novel-lore/xukong-san-shu-comparison.md`
+- Topic: "虚空三术与众生同调" concept comparison — resolves common reader confusion between 众生同调 (identity-harmonization mystery) and 一人万生之术 (strategic Void Tri-Art)
+- Sources: Chapter 135《取剑》, Chapter 250《一人与三术！》, Chapter 252《固定的历史》, Chapter 596《意外的真相！》 (confirmed via layered_search SearXNG — UUKanshu, hjwzw, tianyabook); Baidu Baike; Douyin Baike; Zhihu analysis; PTT CFantasy live discussion
+- Confidence: 0.88 (9 independent source hits across text sites + encyclopedias + reader analysis)
+- Pages touched: xukong-san-shu-comparison.md (new), gu-qing-shan-profile.md (cross-ref added), xiemozhizhu-profile.md (cross-ref added), _index.md (entry added)
+
+### Verification
+- Lint and build results recorded below by tool calls.
