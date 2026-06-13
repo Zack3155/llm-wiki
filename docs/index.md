@@ -27,7 +27,7 @@ Knowledge base maintained by your AI assistant.
 | [谢道灵 — 角色档案](topics/novel-lore/xie-dao-ling-profile.md) | **谢道灵**，贯穿《诸界末日在线》全篇的核心人物。表面身份从NPC到圣人、宗主之女、天帝层层叠加，但真实位格远超所有表象。她是"最终之术"的术主，也是真实世界的圣尊——换言之，**游戏里的 NPC 最后是主角的造物主**。掌握六道碎... | character-profile | 2026-06-13 |
 | [邪魔之主 — 角色档案](topics/novel-lore/xiemozhizhu-profile.md) | **邪魔之主**，最终BOSS。其**真实身份是被"永灭之王"（地之纪元初来者）封印于青铜柱上的存在**，称号"万物与众生的灭绝者，不可听闻的秘密末日"。 | character-profile | 2026-06-10 |
 | [虚空三术与众生同调 · 概念对照档案](topics/novel-lore/xukong-san-shu-comparison.md) | **读者常混淆的两个核心概念"众生同调"与"一人万生之术"并非同一术法，也非上下位关系。** 二者名称均含"众生"二字，但性质截然不同：前者是顾青山的个体身份调谐奥秘，后者是邪魔阵营的战略级虚空三术之一。本档案收录原文证据并建立对照表... |  | 2026-06-13 |
-| [诸界末日在线 · 终局分析](topics/novel-lore/zhu-jie-mo-ri-ending.md) | 《诸界末日在线》终局核心围绕**六道轮回崩碎**展开。根据多源交叉验证（知乎 + 贴吧 + PTT），"六道轮回"并非传统宗教概念，而是**遭邪魔侵蚀毁灭的洪荒纪元残骸**，是整个故事舞台从具体世界向"诸天无限·虚空"过渡的中转站。终... | ending |  |
+| [诸界末日在线 · 终局分析](topics/novel-lore/zhu-jie-mo-ri-ending.md) | 《诸界末日在线》终局核心围绕**六道轮回崩碎**展开。根据多源交叉验证（知乎 + 贴吧 + PTT），"六道轮回"并非传统宗教概念，而是**遭邪魔侵蚀毁灭的洪荒纪元残骸**，是整个故事舞台从具体世界向"诸天无限·虚空"过渡的中转站。终... | ending | 2026-06-13 |
 
 ## How This Works
 
@@ -35,4 +35,4 @@ Knowledge base maintained by your AI assistant.
 - **`raw/`** — drop links, PDFs, or articles here and ask to compile them
 - **Ask** — "what does my wiki say about X?" works anytime
 
-*Auto-generated on 2026-06-13 06:03:55*
+*Auto-generated on 2026-06-13 09:01:21*
