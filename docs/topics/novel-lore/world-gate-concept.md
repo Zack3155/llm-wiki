@@ -3,7 +3,7 @@ title: 世界之门 · 概念档案
 name: world-gate
 topic: novel-lore
 date_added: 2026-06-11
-date_modified: 2026-06-12
+date_modified: 2026-06-13
 last_modified: 2026-06-12
 status: needs-more-sources
 tags:
@@ -79,3 +79,4 @@ Confidence Score: 0.64 | Sources: QQ阅读章节片段 + 69书吧目录 + 知乎
 - [诸界末日在线](liudao-lunhui-concept.md)
 - [诸界末日在线](liudao-system-overview-concept.md)
 - [诸界末日在线](liudao-zhengxiong-concept.md)
+- [诸界末日在线](sequence-system-concept.md)

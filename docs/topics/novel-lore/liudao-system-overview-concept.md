@@ -3,7 +3,7 @@ title: 六道体系总览 · 概念档案
 name: six-path-system-overview
 topic: novel-lore
 date_added: 2026-06-12
-date_modified: 2026-06-12
+date_modified: 2026-06-13
 last_modified: 2026-06-12
 status: complete
 sources:
@@ -90,3 +90,4 @@ confidence: 0.9
 - [谢道灵 — 角色档案](xie-dao-ling-profile.md)
 - [诸界末日在线](di-zhi-qian-bi-concept.md)
 - [诸界末日在线](world-gate-concept.md)
+- [诸界末日在线](sequence-system-concept.md)

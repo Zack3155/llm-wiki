@@ -3,7 +3,7 @@ title: 洪荒纪元 · 概念档案
 name: honghuang-era
 topic: novel-lore
 date_added: 2026-06-10
-date_modified: 2026-06-12
+date_modified: 2026-06-13
 last_modified: 2026-06-12
 status: complete
 sources:
@@ -101,3 +101,4 @@ confidence: 0.88
 - [诸界末日在线](di-zhi-qian-bi-concept.md)
 - [诸界末日在线](liudao-system-overview-concept.md)
 - [诸界末日在线](world-gate-concept.md)
+- [诸界末日在线](sequence-system-concept.md)

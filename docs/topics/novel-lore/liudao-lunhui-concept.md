@@ -3,7 +3,7 @@ title: 六道轮回 · 概念档案
 name: six-path-reincarnation
 topic: novel-lore
 date_added: 2026-06-10
-date_modified: 2026-06-12
+date_modified: 2026-06-13
 last_modified: 2026-06-12
 status: complete
 sources:
@@ -332,3 +332,4 @@ confidence: 0.88
 - [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md)
 - [诸界末日在线](di-zhi-qian-bi-concept.md)
 - [诸界末日在线](world-gate-concept.md)
+- [诸界末日在线](sequence-system-concept.md)

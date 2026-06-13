@@ -3,7 +3,7 @@ title: 六道争雄 · 概念档案
 name: liudao-zhengxiong
 topic: novel-lore
 date_added: '2026-06-10'
-date_modified: '2026-06-12'
+date_modified: 2026-06-13
 last_modified: '2026-06-12'
 status: complete
 confidence: 0.95
@@ -95,3 +95,4 @@ sources:
 - [[诸界末日在线 · 结局概览]](zhu-jie-mo-ri-ending.md) — 含第五/六阶段（六道争雄前奏与正式展开）
 - [诸界末日在线](di-zhi-qian-bi-concept.md)
 - [诸界末日在线](world-gate-concept.md)
+- [诸界末日在线](sequence-system-concept.md)

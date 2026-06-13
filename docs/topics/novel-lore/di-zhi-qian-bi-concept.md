@@ -3,7 +3,7 @@ title: 地之钱币 · 概念档案
 name: di-zhi-qian-bi
 topic: novel-lore
 date_added: 2026-06-13
-date_modified: 2026-06-12
+date_modified: 2026-06-13
 last_modified: 2026-06-12
 status: complete
 sources:
@@ -76,3 +76,4 @@ confidence: 0.95
 - [诸界末日在线](liudao-system-overview-concept.md)
 - [诸界末日在线](liudao-zhengxiong-concept.md)
 - [诸界末日在线](world-gate-concept.md)
+- [诸界末日在线](sequence-system-concept.md)

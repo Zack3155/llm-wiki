@@ -65,7 +65,8 @@ date_modified: 2026-06-11
 | [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md) | 虚空四正神之一，关键设定与章节索引 (700~926) | complete | 2026-06-12 |
 | [世界之门 · 概念档案](world-gate-concept.md) | 世界、虚空、末日、时间线转移的门式机制；仍需补证 | needs-more-sources | 2026-06-12 |
 | [蒙昧世界黑色骷髅 · 概念档案](mengmei-black-skeletons-concept.md) | 蒙昧世界中的邪魔/邪恶灵体残骸；与巨大尸体/幕存在读者身份混淆，已标分歧 | needs-more-sources | 2026-06-12 |
-| [妖精 · 种族档案](fire-epoch-fairies-concept.md) | 火之纪元种族、逃脱封印、多次帮助顾青山 | complete | 2026-06-12 |
+|| [妖精 · 种族档案](fire-epoch-fairies-concept.md) | 火之纪元种族、逃脱封印、多次帮助顾青山 | complete | 2026-06-12 |
+|| [序列体系 · 概念档案](sequence-system-concept.md) | "序列"核心概念：魔王/邪魔/众生/六道/混沌五级序列定义、原文证据与常见误区 | complete | 2026-06-13 |
 
 ## 交叉引用说明
 

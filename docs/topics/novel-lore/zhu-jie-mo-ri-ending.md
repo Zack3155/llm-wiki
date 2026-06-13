@@ -9,7 +9,7 @@ sources:
 - 抖音百科 (六道崩碎)
 - PTT CFantasy 实况 (Apr 15, 2022)
 confidence: 0.9
-date_modified: &id001 2026-06-12
+date_modified: 2026-06-13
 name: zhu-jie-mo-ri-ending
 topic: novel-lore
 last_modified: *id001
@@ -69,3 +69,4 @@ last_modified: *id001
 - [万神女帝档案](wan-shen-nu-di-profile.md) — 女帝陨落与战力系统争议
 - [顾青山](_index.md)
 - [六道轮回](liudao-lunhui-concept.md)
+- [诸界末日在线](sequence-system-concept.md)
