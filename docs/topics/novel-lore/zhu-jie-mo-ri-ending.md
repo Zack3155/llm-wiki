@@ -3,8 +3,12 @@ title: 诸界末日在线 · 终局分析
 name: zhu-jie-mo-ri-ending
 topic: novel-lore
 date_added: '2026-06-13'
-date_modified: '2026-06-13'
+date_modified: 2026-06-14
 last_modified: '2026-06-13'
+status: stub
+confidence: 0.00
+sources:
+  - local wiki
 ---
 
 

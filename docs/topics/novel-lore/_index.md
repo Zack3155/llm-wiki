@@ -13,7 +13,7 @@ title: 诸界末日在线 · 考据索引
 name: novel-lore index
 date_added: 2026-06-10
 status: complete
-date_modified: 2026-06-11
+date_modified: 2026-06-14
 
 
 
@@ -24,6 +24,7 @@ date_modified: 2026-06-11
 
 
 
+confidence: 0.00
 ---
 
 

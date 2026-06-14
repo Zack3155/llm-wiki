@@ -4,7 +4,7 @@ name: qingtongzhizhu
 topic: novel-lore
 status: complete
 date_added: 2026-06-13
-date_modified: 2026-06-13
+date_modified: 2026-06-14
 last_modified: 2026-06-13
 sources:
 - 第230章《否决！》原文（hetubook/czbooks/quanben 多源对齐）
@@ -161,6 +161,7 @@ confidence: 0.84
 
 > **青铜之主 = 墟墓孕育、被一人万生之术纳入操控的战争级"万生"存在；以青铜柱系力量参与六道战争，被魔皇纪元文明作为序列战争体系一部分投放，最终服务于一人万生之术与魔皇复苏。**
 
+confidence: 0.00
 ---
 
 ## See Also
