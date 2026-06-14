@@ -1,3 +1,15 @@
+## 2026-06-14 — Auto-Filer Sync (33:00 UTC / ~03:00 next cycle)
+
+### New page: `novel-lore/yong-mie-zhi-wang-profile.md`
+- Topic: "永灭之王 / 魔躯" identity in 《诸界末日在线》
+- **Core finding**: "永灭之王" is NOT a separate entity — it is the self-proclaimed title of **魔躯**, which originates from causal-law mysteries. Full self-title: "诸界的圣律之主，混沌的驾驭者，永灭之王".
+- Identity chain: 魔躯 = 诞生于因果律奥秘之中的未知之物 → 报出尊号"永灭之王" → ≠ 顾青山, ≠ 邪魔之主, ≠ 邪性之魔 (目标不同、存在矛盾)
+- **Key differentiator**: Multiple entities with similar-sounding titles confirmed distinct per Chapter 322 text
+- Original text evidence: Chapter 322《永灭之王》(sequence intelligence analysis + demon-body self-proclamation + Gu Qingshan confirmation)
+- Multi-source cross-verification: layered_search SearXNG L1 ≥8 independent sources (起点中文, UU看书, 黄金屋中文网 chapter titles confirm "第三百二十二章永灭之王"), Zhihu analysis post ("永灭之王为首...击碎六道")
+- Confidence: 0.88
+- Pages touched: yong-mie-zhi-wang-profile.md (new), _index.md (updated)
+
 ## 2026-06-14 — Auto-Filer Sync (21:00 local, cron #75)
 
 ### New page: `novel-lore/wu-zhuan-zhi-di-concept.md`
