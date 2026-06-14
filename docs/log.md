@@ -1,3 +1,16 @@
+## 2026-06-14 — Auto-Filer Sync (21:00 local, cron #75)
+
+### New page: `novel-lore/wu-zhuan-zhi-di-concept.md`
+- Topic: "无转之地" (Land Without Reincarnation) concept in 《诸界末日在线》
+- **Core finding**: 无转之地 is a high-danger coffin-seal space bound to the six-path reincarnation system, containing those who sacrificed for six paths and cannot reincarnate
+- Identity chain: Six Path mechanism → triggers 无转之地 → infinite coffin sea houses irreincarnatable sacrifices + sealed beings (e.g., Wang Lingxiu) + former Heavenly Emperor's sealed body
+- **Key differentiator**: 天之法·无转万魔棺 ≠ 无转之地 (technique to enter vs. the space itself); 前代天帝/永恒夺念者 bound to but not equal to this place
+- Original text evidence: Ch.286《魔躯之秘》, Ch.304《魔躯的身份！》, Ch.305《寻救！》, Ch.306+ (demon guardian, life-death gate)
+- Multi-source cross-verification: layered_search SearXNG L1 ≥8 independent sources, Baidu Baike "永恒夺念者", Zhihu analysis, Douyin Baike, QQ Reader excerpts
+- Confidence: 0.88
+- Research gaps: creator identity, formal definition of "无转", sleeping entity identity, fate in endgame, full history with Honghuang destruction
+- Pages touched: wu-zhuan-zhi-di-concept.md (new), _index.md (updated)
+
 ## 2026-06-14 — Auto-Filer Sync (15:00 UTC)
 
 ### New page: `novel-lore/qingtongzhizhu-profile.md`

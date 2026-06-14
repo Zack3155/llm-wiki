@@ -3,7 +3,7 @@ title: 序列体系 · 概念档案
 name: sequence-system
 topic: novel-lore
 date_added: 2026-06-13
-date_modified: 2026-06-13
+date_modified: 2026-06-14
 last_modified: 2026-06-13
 status: complete
 sources:
@@ -185,3 +185,4 @@ confidence: 0.91
 - [诸界末日在线](liudao-zhengxiong-concept.md)
 - [诸界末日在线](world-gate-concept.md)
 - [概念档案](chaos-concept.md)
+- [诸界末日在线](wu-zhuan-zhi-di-concept.md)

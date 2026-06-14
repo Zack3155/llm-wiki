@@ -3,7 +3,7 @@ title: 混沌 · 概念档案
 name: chaos-concept
 topic: novel-lore
 date_added: 2026-06-13
-date_modified: 2026-06-13
+date_modified: 2026-06-14
 last_modified: 2026-06-13
 status: complete
 sources:
@@ -157,3 +157,4 @@ confidence: 0.93
 - [概念档案](liudao-system-overview-concept.md)
 - [概念档案](liudao-zhengxiong-concept.md)
 - [概念档案](world-gate-concept.md)
+- [诸界末日在线](wu-zhuan-zhi-di-concept.md)

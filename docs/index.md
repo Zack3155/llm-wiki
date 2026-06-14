@@ -4,7 +4,7 @@ Knowledge base maintained by your AI assistant.
 
 ## Topics
 
-### Novel & Fiction Lore (21 articles)
+### Novel & Fiction Lore (22 articles)
 
 | Page | Summary | Tags | Added |
 |------|---------|------|-------|
@@ -25,6 +25,7 @@ Knowledge base maintained by your AI assistant.
 | [万界俯视者 — 角色档案](topics/novel-lore/wan-jie-fu-shi-zhe-profile.md) | **万界俯视者**是《诸界末日在线》中登场的神秘至高位格存在。正文给予的完整名号为**"真古之魔·万界俯视者"**——其中"真古之魔"为本体名号，"万界俯视者"为称号/尊称。 ⚠️ 第659章明确说明：英灵殿主对顾青山表示"我们只知道... | character-profile | 2026-06-13 |
 | [万神女帝身份考据 · 角色档案](topics/novel-lore/wan-shen-nu-di-profile.md) | **万神女帝·蕾妮朵儿** 是《诸界末日在线》墟墓篇章中的核心势力领袖之一，自称"万神女帝"，统领独立的世界层级势力。其真实身份在正文中未直接揭晓，现有结论主要来自百度百科、知乎剧情梳理与贴吧读者分析，存在一定争议。 | character-profile | 2026-06-13 |
 | [世界之门 · 概念档案](topics/novel-lore/world-gate-concept.md) | **世界之门不是单纯“虚空里的青铜门”。目前可确认的是：它是《诸界末日在线》后期涉及世界、虚空、末日、时间线和血海之门等多个层面的“门”概念。** 但它的完整机制、与“门与世界”“血海之门”“虚空原本之界”的精确关系，现有公开可检索资... | concept | 2026-06-11 |
+| [无转之地 · 概念档案](topics/novel-lore/wu-zhuan-zhi-di-concept.md) | **无转之地**是《诸界末日在线》中与六道轮回深度绑定的高危棺材封印空间。它由无穷棺木构成，收容"为六道牺牲而不可轮回的人"及被控制/封印者。前代天帝/永恒夺念者与其有极强关联——其身躯曾被封印于此。顾青山曾借前代天帝的"天之法·无转... | concept | 2026-06-14 |
 | [谢道灵 — 角色档案](topics/novel-lore/xie-dao-ling-profile.md) | **谢道灵**，贯穿《诸界末日在线》全篇的核心人物。表面身份从NPC到圣人、宗主之女、天帝层层叠加，但真实位格远超所有表象。她是"最终之术"的术主，也是真实世界的圣尊——换言之，**游戏里的 NPC 最后是主角的造物主**。掌握六道碎... | character-profile | 2026-06-13 |
 | [邪魔之主 — 角色档案](topics/novel-lore/xiemozhizhu-profile.md) | **邪魔之主**，最终BOSS。其**真实身份是被"永灭之王"（地之纪元初来者）封印于青铜柱上的存在**，称号"万物与众生的灭绝者，不可听闻的秘密末日"。 | character-profile | 2026-06-10 |
 | [虚空三术与众生同调 · 概念对照档案](topics/novel-lore/xukong-san-shu-comparison.md) | **读者常混淆的两个核心概念"众生同调"与"一人万生之术"并非同一术法，也非上下位关系。** 二者名称均含"众生"二字，但性质截然不同：前者是顾青山的个体身份调谐奥秘，后者是邪魔阵营的战略级虚空三术之一。本档案收录原文证据并建立对照表... |  | 2026-06-13 |
@@ -36,4 +37,4 @@ Knowledge base maintained by your AI assistant.
 - **`raw/`** — drop links, PDFs, or articles here and ask to compile them
 - **Ask** — "what does my wiki say about X?" works anytime
 
-*Auto-generated on 2026-06-13 15:03:21*
+*Auto-generated on 2026-06-14 00:02:58*
