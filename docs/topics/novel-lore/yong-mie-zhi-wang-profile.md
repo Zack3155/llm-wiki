@@ -3,6 +3,7 @@ title: 永灭之王 / 魔躯 — 角色档案
 name: yong-mie-zhi-wang
 topic: novel-lore
 status: complete
+date_added: '2026-06-14'
 date_created: '2026-06-14'
 date_modified: &id001 2026-06-14
 sources:
