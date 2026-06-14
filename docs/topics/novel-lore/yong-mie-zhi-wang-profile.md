@@ -4,7 +4,7 @@ name: yong-mie-zhi-wang
 topic: novel-lore
 status: complete
 date_created: '2026-06-14'
-date_modified: 2026-06-14
+date_modified: &id001 2026-06-14
 sources:
 - 第三百二十二章《永灭之王》原文（微信读书 / 起点中文网 / UU看书 / 黄金屋中文网多站交叉）
 - SearXNG 检索结果 8 条独立来源
@@ -15,7 +15,9 @@ tags:
 - 反派
 - 地之纪元
 confidence: 0.88
+last_modified: *id001
 ---
+
 
 ## Summary
 
