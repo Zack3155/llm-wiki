@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T13:00:51.060396+00:00",
+  "generated_at": "2026-06-15T14:05:10.537572+00:00",
   "wiki_root": "/home/zack/wiki",
   "counts": {
     "public_pages": 25,
@@ -9,8 +9,7 @@
   },
   "status_counts": {
     "complete": 19,
-    "needs-more-sources": 5,
-    "stub": 1
+    "needs-more-sources": 6
   },
   "guards": {
     "root_index_managed": true,

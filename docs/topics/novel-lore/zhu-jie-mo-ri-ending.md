@@ -3,12 +3,14 @@ title: 诸界末日在线 · 终局分析
 name: zhu-jie-mo-ri-ending
 topic: novel-lore
 date_added: '2026-06-13'
-date_modified: 2026-06-14
-last_modified: '2026-06-13'
-status: stub
-confidence: 0.0
+date_modified: 2026-06-15
+last_modified: 2026-06-15
+status: needs-more-sources
+confidence: 0.78
 sources:
-- local wiki
+- 百度百科《诸界末日在线》词条
+- 知乎/贴吧/PTT 终局梳理交叉验证
+- 本地 Wiki 六道轮回、墟墓、幕、柳平、独孤峰、万神女帝等页面
 ---
 
 
