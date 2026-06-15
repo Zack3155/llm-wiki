@@ -38,4 +38,4 @@ Knowledge base maintained by your AI assistant.
 - **`raw/`** — drop links, PDFs, or articles here and ask to compile them
 - **Ask** — "what does my wiki say about X?" works anytime
 
-*Auto-generated on 2026-06-14 23:03:27*
+*Auto-generated on 2026-06-14 23:17:23*
