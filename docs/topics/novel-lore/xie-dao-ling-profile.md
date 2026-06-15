@@ -82,7 +82,7 @@ last_modified: 2026-06-12
 
 ## See also
 
-- [诸界末日在线考据索引](_index.md)
+- [诸界末日在线 · 考据索引](./_index.md)
 - [顾青山 · 角色档案](gu-qing-shan-profile.md)
 - [柳平 · 角色档案](liu-ping-profile.md)
 - [万神女帝 · 角色档案](wan-shen-nu-di-profile.md)

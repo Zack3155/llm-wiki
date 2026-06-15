@@ -163,14 +163,13 @@ confidence: 0.84
 
 ## 📊 一句话定义
 
-> **青铜之主 = 墟墓孕育、被一人万生之术纳入操控的战争级"万生"存在；以青铜柱系力量参与六道战争，被魔皇纪元文明作为序列战争体系一部分投放，最终服务于一人万生之术与魔皇复苏。**
+> **青铜之主 = 墟墓孕育、被一人万生之术纳入操控的战争级“万生”存在；以青铜柱系力量参与六道战争，被魔皇纪元文明作为序列战争体系一部分投放，最终服务于一人万生之术与魔皇复苏。**
 
-confidence: 0.00
 ---
 
 ## See Also
 
-- [[邪魔之主 — 角色档案](xiemozhizhu-profile.md)] — 最终BOSS，一人万生之术等虚空三术释放者
-- [[虚空三术与众生同调 · 概念对照档案](xukong-san-shu-comparison.md)] — 一人万生之术原文证据与能力对照
-- [[幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md)] — 区分封印掌管者与被操控战争存在
-- [[六道体系总览 · 概念档案](liudao-system-overview-concept.md)] — 六道战争背景
+- [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 最终 BOSS，一人万生之术等虚空三术释放者
+- [虚空三术与众生同调 · 概念对照档案](xukong-san-shu-comparison.md) — 一人万生之术原文证据与能力对照
+- [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) — 区分封印掌管者与被操控战争存在
+- [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 六道战争背景

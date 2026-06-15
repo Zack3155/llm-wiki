@@ -148,9 +148,8 @@ confidence: 0.75
 - [邪魔之主 · 角色档案](xiemozhizhu-profile.md) — 最终BOSS，与万界俯视者非同一存在
 - [幕 / 冰封之尸 · 角色档案](bingfengzhishi-profile.md) — 远古封印看守人，同属高位格但不同体系
 - [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 万界俯视者不在六道体系内
-- [诸界末日在线结局分析](zhu-jie-mo-ri-ending.md) — 全文结局梳理
-- [诸界末日在线考据索引](_index.md)
-- [诸界末日在线](du-ge-feng-profile.md)
+- [独孤峰 · 角色档案](du-ge-feng-profile.md) — 柳平捏造的身份角色
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 全文结局梳理
 - [诸界末日在线](liu-ping-profile.md)
 - [诸界末日在线](wan-shen-nu-di-profile.md)
 - [诸界末日在线](xie-dao-ling-profile.md)

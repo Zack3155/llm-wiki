@@ -64,7 +64,7 @@ confidence: 0.7
 - [诸界末日在线结局](zhu-jie-mo-ri-ending.md) — 女帝陨落如何催化墟墓篇章崩塌序列
 - [幕/冰封尸体档案](bingfengzhishi-profile.md) — 与女帝势力可能的起源关联
 - [谢道灵档案](xie-dao-ling-profile.md) — 最终之术术主，与女帝有间接关联
-- [考据索引](_index.md)
-- [诸界末日在线](du-ge-feng-profile.md)
+- [诸界末日在线 · 考据索引](./_index.md)
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 女帝身份与终局争议
 - [诸界末日在线](liu-ping-profile.md)
 - [诸界末日在线](wan-jie-fu-shi-zhe-profile.md)

@@ -257,8 +257,8 @@ confidence: 0.88
 - [谢道灵 · 角色档案](xie-dao-ling-profile.md) — 混沌最高序列核心人物
 - [幕 / 冰封之尸 · 角色档案](bingfengzhishi-profile.md) — 远古封印看守人
 - [虚空三术与众生同调 · 概念对照档案](xukong-san-shu-comparison.md) — 众生同调奥秘与一人万生之术原文对照
-- [诸界末日在线考据索引](_index.md)
-- [顾青山](zhu-jie-mo-ri-ending.md)
+- [诸界末日在线 · 考据索引](./_index.md)
+- [终局分析](zhu-jie-mo-ri-ending.md) — 顾青山终局行动与身份争议
 - [诸界末日在线](du-ge-feng-profile.md)
 - [诸界末日在线](wan-shen-nu-di-profile.md)
 - [诸界末日在线](wan-jie-fu-shi-zhe-profile.md)

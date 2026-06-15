@@ -74,6 +74,6 @@ confidence: 0.92
 
 ## See also
 
-- [角色档案](_index.md)
+- [诸界末日在线 · 考据索引](./_index.md)
 - [扮演邪魔首领](liu-ping-profile.md)
 - [独孤峰 · 角色档案](du-ge-feng-profile.md)

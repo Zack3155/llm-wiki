@@ -73,6 +73,7 @@ sources:
 - [柳平 · 角色档案](liu-ping-profile.md) — 扮演邪魔首领的人
 - [独孤峰 · 角色档案](du-ge-feng-profile.md) — 柳平捏造的身份
 - [万神女帝档案](wan-shen-nu-di-profile.md) — 女帝陨落与战力系统争议
-- [顾青山](_index.md)
+- [顾青山 · 角色档案](gu-qing-shan-profile.md) — 终局行动核心
 - [六道轮回](liudao-lunhui-concept.md)
 - [诸界末日在线](sequence-system-concept.md)
+- [终局分析](_index.md)

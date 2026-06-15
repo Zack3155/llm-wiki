@@ -80,8 +80,8 @@ confidence: 0.95
 926 | 唯一物和四圣柱 | 核心设定绑定 |
 ## See also
 
-- [百度百科](_index.md)
-- [诸界末日在线](honghuang-concept.md)
+- [诸界末日在线 · 考据索引](./_index.md)
+- [洪荒 · 概念档案](honghuang-concept.md)
 - [诸界末日在线](liudao-lunhui-concept.md)
 - [诸界末日在线](liudao-system-overview-concept.md)
 - [诸界末日在线](liudao-zhengxiong-concept.md)

@@ -91,6 +91,6 @@ date_added: '2026-06-13'
 - [顾青山 · 角色档案](gu-qing-shan-profile.md) — 与独孤峰有直接冲突
 - [谢道灵 · 角色档案](xie-dao-ling-profile.md) — 合作关系
 - [邪魔之主 · 角色档案](xiemozhizhu-profile.md) — 身份关联实体
-- [角色档案](_index.md)
-- [诸界末日在线](wan-shen-nu-di-profile.md)
+- [诸界末日在线 · 考据索引](./_index.md)
+- [柳平 · 角色档案](liu-ping-profile.md) — 终局相关角色
 - [诸界末日在线](wan-jie-fu-shi-zhe-profile.md)
