@@ -1,15 +1,6 @@
----
-title: Wiki-Health
-date_added: 2026-06-14
-status: stub
-confidence: 0.00
-sources:
-  - local wiki
----
-date_modified: 2026-06-14
 # Wiki Health Report
 
-- Generated: 2026-06-14T23:21:58.655876+00:00
+- Generated: 2026-06-15T00:29:01.413058+00:00
 - Public pages: 24
 - Raw sessions: 114 total / 11 processed / 103 unprocessed
 - Health: **ok**
@@ -25,6 +16,3 @@ date_modified: 2026-06-14
 - missing_sources: 0
 - low_confidence_complete: 0
 - high_confidence_needs_more_sources: 0
-
-## Summary
-
