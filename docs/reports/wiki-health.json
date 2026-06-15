@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T07:00:50.325919+00:00",
+  "generated_at": "2026-06-15T07:48:50.380418+00:00",
   "wiki_root": "/home/zack/wiki",
   "counts": {
     "public_pages": 25,
@@ -13,7 +13,7 @@
     "stub": 1
   },
   "guards": {
-    "root_index_managed": false,
+    "root_index_managed": true,
     "dependency_lock_ok": true,
     "xumu_guard_ok": true,
     "cron_ok": true,
@@ -28,5 +28,5 @@
     "low_confidence_complete": [],
     "high_confidence_needs_more_sources": []
   },
-  "health": "attention"
+  "health": "ok"
 }

@@ -1,12 +1,12 @@
 # Wiki Health Report
 
-- Generated: 2026-06-15T07:00:50.325919+00:00
+- Generated: 2026-06-15T07:48:50.380418+00:00
 - Public pages: 25
 - Raw sessions: 114 total / 11 processed / 103 unprocessed
-- Health: **attention**
+- Health: **ok**
 
 ## Guards
-- `root_index_managed`: `False`
+- `root_index_managed`: `True`
 - `dependency_lock_ok`: `True`
 - `xumu_guard_ok`: `True`
 - `cron_ok`: `True`
