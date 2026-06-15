@@ -1,13 +1,21 @@
 # Wiki Health Report
 
-- Generated: 2026-06-15T01:01:46.782201+00:00
-- Public pages: 24
+- Generated: 2026-06-15T07:00:50.325919+00:00
+- Public pages: 25
 - Raw sessions: 114 total / 11 processed / 103 unprocessed
-- Health: **ok**
+- Health: **attention**
+
+## Guards
+- `root_index_managed`: `False`
+- `dependency_lock_ok`: `True`
+- `xumu_guard_ok`: `True`
+- `cron_ok`: `True`
+- `cron_lines`: 1 detected
+  - `@reboot bash ~/wiki/start-wiki.sh >> /tmp/wiki-cron.log 2>&1`
 
 ## Status Counts
 - `complete`: 19
-- `needs-more-sources`: 4
+- `needs-more-sources`: 5
 - `stub`: 1
 
 ## Issues

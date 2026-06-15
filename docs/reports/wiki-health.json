@@ -1,16 +1,25 @@
 {
-  "generated_at": "2026-06-15T01:01:46.782201+00:00",
+  "generated_at": "2026-06-15T07:00:50.325919+00:00",
   "wiki_root": "/home/zack/wiki",
   "counts": {
-    "public_pages": 24,
+    "public_pages": 25,
     "raw_sessions_total": 114,
     "raw_sessions_processed": 11,
     "raw_sessions_unprocessed": 103
   },
   "status_counts": {
     "complete": 19,
-    "needs-more-sources": 4,
+    "needs-more-sources": 5,
     "stub": 1
+  },
+  "guards": {
+    "root_index_managed": false,
+    "dependency_lock_ok": true,
+    "xumu_guard_ok": true,
+    "cron_ok": true,
+    "cron_lines": [
+      "@reboot bash ~/wiki/start-wiki.sh >> /tmp/wiki-cron.log 2>&1"
+    ]
   },
   "issues": {
     "missing_status": [],
@@ -19,5 +28,5 @@
     "low_confidence_complete": [],
     "high_confidence_needs_more_sources": []
   },
-  "health": "ok"
+  "health": "attention"
 }
