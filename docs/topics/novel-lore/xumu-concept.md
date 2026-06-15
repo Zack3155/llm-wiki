@@ -86,12 +86,10 @@ last_modified: *id001
 - [柳平 · 角色档案](liu-ping-profile.md)
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md)
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md)
+- [诸界末日在线 · 考据索引](./_index.md)
+- [无转之地 · 概念档案](wu-zhuan-zhi-di-concept.md)
 
 Confidence Score: 0.78 | Sources: 百度百科《诸界末日在线》词条；百度贴吧终局梳理帖；PTT CFantasy 结局讨论；本地 Wiki 交叉引用审计。
-
-## Summary
-- [概念档案](_index.md)
-- [概念档案](wu-zhuan-zhi-di-concept.md)
 
 ## Summary
 
