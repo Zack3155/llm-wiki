@@ -6,10 +6,11 @@ date_added: '2026-06-13'
 date_modified: 2026-06-14
 last_modified: '2026-06-13'
 status: stub
-confidence: 0.00
+confidence: 0.0
 sources:
-  - local wiki
+- local wiki
 ---
+
 
 
 
