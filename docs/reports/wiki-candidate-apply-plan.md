@@ -1,38 +1,38 @@
 # Wiki Candidate Dry-Run Apply Plan
 
-- Generated: 2026-06-15T01:51:28.915943+00:00
+- Generated: 2026-06-15T10:35:50.903893+00:00
 - Wiki root: `/home/zack/wiki`
-- Actions: 8
-- Known pages indexed: 25
+- Actions: 4
+- Known pages indexed: 26
 
 ## Actions
 
-### 1. update_existing_page
-- Session: 探讨诸界末日在线结局 #78
-- Claim type: `identity_or_relation`
-- Review score: `0.789`
+### 1. create_new_page
+- Session: 探讨诸界末日在线结局 #87
+- Claim type: `verification_gate`
+- Review score: `0.796`
 - Proposed topic: `novel-lore`
-- Proposed page: `docs/topics/novel-lore/yong-mie-zhi-wang-profile.md`
-- Decision: `existing_page_match`
-- Best existing page: `docs/topics/novel-lore/yong-mie-zhi-wang-profile.md`
-- Best score: `20.75`
-- Top topics: novel-lore
-- Reason: Strong existing page match; safe to review for targeted update.
+- Proposed page: `docs/index.md`
+- Decision: `novel_lore_term_match`
+- Best existing page: `docs/index.md`
+- Best score: `1.25`
+- Top topics: general, novel-lore, unknown
+- Reason: Candidate passed review threshold and has a proposed topic; still dry-run unless --apply is used.
 
-### 2. update_existing_page
-- Session: 探讨诸界末日在线结局 #79
-- Claim type: `identity_or_relation`
-- Review score: `0.789`
+### 2. create_new_page
+- Session: 探讨诸界末日在线结局 #161
+- Claim type: `verification_gate`
+- Review score: `0.515`
 - Proposed topic: `novel-lore`
-- Proposed page: `docs/topics/novel-lore/yong-mie-zhi-wang-profile.md`
-- Decision: `existing_page_match`
-- Best existing page: `docs/topics/novel-lore/yong-mie-zhi-wang-profile.md`
-- Best score: `20.0`
-- Top topics: novel-lore
-- Reason: Strong existing page match; safe to review for targeted update.
+- Proposed page: `docs/log.md`
+- Decision: `novel_lore_term_match`
+- Best existing page: `docs/log.md`
+- Best score: `1.0`
+- Top topics: novel-lore, unknown
+- Reason: Candidate passed review threshold and has a proposed topic; still dry-run unless --apply is used.
 
 ### 3. defer_low_review_score
-- Session: 探讨诸界末日在线结局 #79
+- Session: 探讨诸界末日在线结局 #161
 - Claim type: `ending_or_timeline`
 - Review score: `0.0`
 - Proposed topic: `novel-lore`
@@ -40,65 +40,17 @@
 - Decision: `novel_lore_term_match`
 - Best existing page: `docs/log.md`
 - Best score: `5.0`
-- Top topics: novel-lore, unknown
+- Top topics: general, novel-lore, unknown
 - Reason: Review score is below the safe auto-apply threshold; keep in backlog.
 
-### 4. update_existing_page
-- Session: 探讨诸界末日在线结局 #80
+### 4. defer_low_review_score
+- Session: 探讨诸界末日在线结局 #87
 - Claim type: `identity_or_relation`
-- Review score: `0.518`
+- Review score: `0.301`
 - Proposed topic: `novel-lore`
-- Proposed page: `docs/topics/novel-lore/yong-mie-zhi-wang-profile.md`
-- Decision: `existing_page_match`
-- Best existing page: `docs/topics/novel-lore/yong-mie-zhi-wang-profile.md`
-- Best score: `19.0`
-- Top topics: novel-lore, unknown
-- Reason: Strong existing page match; safe to review for targeted update.
-
-### 5. defer_low_review_score
-- Session: 探讨诸界末日在线结局 #80
-- Claim type: `ending_or_timeline`
-- Review score: `0.0`
-- Proposed topic: `novel-lore`
-- Proposed page: `docs/log.md`
+- Proposed page: `docs/topics/novel-lore/chaos-concept.md`
 - Decision: `novel_lore_term_match`
-- Best existing page: `docs/log.md`
-- Best score: `5.0`
-- Top topics: novel-lore, unknown
-- Reason: Review score is below the safe auto-apply threshold; keep in backlog.
-
-### 6. defer_low_review_score
-- Session: 探讨诸界末日在线结局 #81
-- Claim type: `ending_or_timeline`
-- Review score: `0.0`
-- Proposed topic: `novel-lore`
-- Proposed page: `docs/log.md`
-- Decision: `novel_lore_term_match`
-- Best existing page: `docs/log.md`
-- Best score: `5.0`
-- Top topics: novel-lore, unknown
-- Reason: Review score is below the safe auto-apply threshold; keep in backlog.
-
-### 7. defer_low_review_score
-- Session: 探讨诸界末日在线结局 #82
-- Claim type: `ending_or_timeline`
-- Review score: `0.0`
-- Proposed topic: `novel-lore`
-- Proposed page: `docs/log.md`
-- Decision: `novel_lore_term_match`
-- Best existing page: `docs/log.md`
-- Best score: `5.0`
-- Top topics: novel-lore, unknown
-- Reason: Review score is below the safe auto-apply threshold; keep in backlog.
-
-### 8. defer_low_review_score
-- Session: 探讨诸界末日在线结局 #83
-- Claim type: `ending_or_timeline`
-- Review score: `0.0`
-- Proposed topic: `novel-lore`
-- Proposed page: `docs/log.md`
-- Decision: `novel_lore_term_match`
-- Best existing page: `docs/log.md`
-- Best score: `5.0`
-- Top topics: novel-lore, unknown
+- Best existing page: `docs/topics/novel-lore/chaos-concept.md`
+- Best score: `9.5`
+- Top topics: novel-lore
 - Reason: Review score is below the safe auto-apply threshold; keep in backlog.
