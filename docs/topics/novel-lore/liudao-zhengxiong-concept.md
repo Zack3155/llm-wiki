@@ -99,10 +99,10 @@ sources:
 
 ## See also
 
-- [[六道体系总览]](liudao-system-overview-concept.md) — 六道体系总览与专题导航
-- [[六道轮回]](liudao-lunhui-concept.md) — 六道轮回的本质、功能与崩碎转场
-- [[洪荒纪元]](honghuang-concept.md) — 六道轮回的起源与机制
-- [[诸界末日在线 · 结局概览]](zhu-jie-mo-ri-ending.md) — 含第五/六阶段（六道争雄前奏与正式展开）
+- [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 六道体系总览与专题导航
+- [六道轮回 · 概念档案](liudao-lunhui-concept.md) — 六道轮回的本质、功能与崩碎转场
+- [洪荒纪元 · 概念档案](honghuang-concept.md) — 六道轮回的起源与机制
+- [诸界末日在线 · 结局概览](zhu-jie-mo-ri-ending.md) — 含第五/六阶段（六道争雄前奏与正式展开）
 - [诸界末日在线](di-zhi-qian-bi-concept.md)
 - [诸界末日在线](world-gate-concept.md)
 - [诸界末日在线](sequence-system-concept.md)

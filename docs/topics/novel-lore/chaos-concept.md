@@ -164,4 +164,4 @@ confidence: 0.93
 - [概念档案](liudao-zhengxiong-concept.md)
 - [概念档案](world-gate-concept.md)
 - [诸界末日在线](wu-zhuan-zhi-di-concept.md)
-- [诸界末日在线](_index.md)
+- [诸界末日在线 · 考据索引](./_index.md)

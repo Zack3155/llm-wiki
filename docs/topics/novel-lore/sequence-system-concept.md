@@ -192,4 +192,4 @@ confidence: 0.91
 - [诸界末日在线](world-gate-concept.md)
 - [概念档案](chaos-concept.md)
 - [诸界末日在线](wu-zhuan-zhi-di-concept.md)
-- [诸界末日在线](_index.md)
+- [诸界末日在线 · 考据索引](./_index.md)

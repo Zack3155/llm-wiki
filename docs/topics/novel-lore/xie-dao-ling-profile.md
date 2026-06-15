@@ -75,10 +75,10 @@ last_modified: 2026-06-12
 
 ## 🔗 Cross-Links
 
-- [[顾青山·主角档案]](gu-qing-shan-profile.md) — 师徒核心关系链
-- [[六道轮回概念]](honghuang-concept.md) — 洪荒纪元毁灭后形成六道轮回的起源机制
-- [[诸界末日结局]](zhu-jie-mo-ri-ending.md) — 最终之术术主定位
-- [[柳平 · 角色档案]](liu-ping-profile.md) — 合作杀死邪魔 BOSS
+- [顾青山 · 主角档案](gu-qing-shan-profile.md) — 师徒核心关系链
+- [六道轮回 · 概念档案](liudao-lunhui-concept.md) — 洪荒纪元毁灭后形成六道轮回的起源机制
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 最终之术术主定位
+- [柳平 · 角色档案](liu-ping-profile.md) — 合作杀死邪魔 BOSS
 
 ## See also
 

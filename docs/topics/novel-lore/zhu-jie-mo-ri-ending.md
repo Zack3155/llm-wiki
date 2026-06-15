@@ -76,4 +76,4 @@ sources:
 - [顾青山 · 角色档案](gu-qing-shan-profile.md) — 终局行动核心
 - [六道轮回](liudao-lunhui-concept.md)
 - [诸界末日在线](sequence-system-concept.md)
-- [终局分析](_index.md)
+- [诸界末日在线 · 考据索引](./_index.md)
