@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-15T01:12:31.264055+00:00",
+  "wiki_root": "/home/zack/wiki",
+  "counts": {
+    "review_clusters": 3,
+    "known_pages_indexed": 25,
+    "actions": 3
+  },
+  "actions": [
+    {
+      "order": 1,
+      "action": "create_new_page",
+      "session_title": "Wiki Knowledge Auto-Filer (3h window) · Jun 14 18:01",
+      "claim_type": "wiki_maintenance",
+      "review_score": 0.25,
+      "proposed_topic": "wiki-ops",
+      "proposed_page": "docs/topics/wiki-ops/wiki-knowledge-auto-filer-3h-window-jun-14-18-01.md",
+      "decision": "ops_term_match",
+      "best_page": "docs/log.md",
+      "best_score": 3.75,
+      "top_topics": [
+        "novel-lore",
+        "unknown"
+      ],
+      "reason": "Dry-run only; no files were written."
+    },
+    {
+      "order": 2,
+      "action": "create_new_page",
+      "session_title": "Wiki Knowledge Auto-Filer (3h window) · Jun 14 18:01",
+      "claim_type": "ending_or_timeline",
+      "review_score": 0.0,
+      "proposed_topic": "novel-lore",
+      "proposed_page": "docs/topics/novel-lore/wiki-knowledge-auto-filer-3h-window-jun-14-18-01.md",
+      "decision": "novel_lore_term_match",
+      "best_page": "docs/log.md",
+      "best_score": 4.5,
+      "top_topics": [
+        "novel-lore",
+        "unknown"
+      ],
+      "reason": "Dry-run only; no files were written."
+    },
+    {
+      "order": 3,
+      "action": "create_new_page",
+      "session_title": "探讨诸界末日在线结局 #82",
+      "claim_type": "identity_or_relation",
+      "review_score": 0.0,
+      "proposed_topic": "novel-lore",
+      "proposed_page": "docs/topics/novel-lore/探讨诸界末日在线结局-82.md",
+      "decision": "novel_lore_term_match",
+      "best_page": "docs/log.md",
+      "best_score": 0.75,
+      "top_topics": [
+        "novel-lore",
+        "unknown"
+      ],
+      "reason": "Dry-run only; no files were written."
+    }
+  ]
+}
