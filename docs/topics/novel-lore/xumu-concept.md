@@ -90,6 +90,3 @@ last_modified: *id001
 - [无转之地 · 概念档案](wu-zhuan-zhi-di-concept.md)
 
 Confidence Score: 0.78 | Sources: 百度百科《诸界末日在线》词条；百度贴吧终局梳理帖；PTT CFantasy 结局讨论；本地 Wiki 交叉引用审计。
-
-## Summary
-
