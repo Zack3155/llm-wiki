@@ -1,24 +1,194 @@
 # Wiki Candidate Extractor Report
 
-- Generated: 2026-06-15T00:44:29.438914+00:00
+- Generated: 2026-06-15T00:52:31.060723+00:00
 - State DB: `/home/zack/.hermes/state.db`
 - Raw sessions: `/home/zack/wiki/docs/raw/sessions`
 
 ## Counts
 
-- State DB candidates: 4815
+- State DB candidates: 4843
 - Raw session candidates: 7950
-- Total candidates: 12620
+- Total candidates: 12648
 
 ## By Claim Type
 
 - `durable_fact`: 2452
-- `ending_or_timeline`: 1638
-- `identity_or_relation`: 2747
-- `verification_gate`: 741
-- `wiki_maintenance`: 5042
+- `ending_or_timeline`: 1643
+- `identity_or_relation`: 2748
+- `verification_gate`: 743
+- `wiki_maintenance`: 5062
 
 ## Latest Candidates
+
+### state.db:20260614_172730_0556cc:127
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: 就按照你给的建议，开始下一步，然后现在wiki的cron job有没有可以合并或者一块运行的可能，貌似已经有多个不一样的在运行了
+
+### state.db:20260614_172730_0556cc:126
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `identity_or_relation`
+- Confidence hint: 0.97
+- Snippet: ✅ 先回答你的问题：**刚才提到的候选提取器和 health report 之前不是自动运行，只是脚本。** 我已经把它们接成 **cron 自动运行**，并实锤验证成功。 --- ## 已完成的下一步计划：自动化候选提取 + 健康报告 ### 1. 候选提取器已接入 cron 新增自动任务： ```text Wiki Candidate Extractor daily Job ID: 75b39ccdfa1d Schedule: 每天 03:35 Script: cron-wiki-candidate-extractor.py Mode: no_agent ``` 它会生成： ```text /home/zack/wiki/docs/reports/wiki-candidates.json /home/zack/wiki/docs/reports/wiki-candidates.md ``` 最新 cron 实测结果： ```text last_status: ok last_delivery_error: null ``` 实际输出： ```json { "state_db_candidates": 4815, "raw_session_candidates": 7950, "total_candidates": 12620, "emitted_candidates": 1000 } ``` 说明： - 它扫描 `state.db` 和 `docs/raw/sessions` - 提取候选知识片段 - 默认最多输出 1000 条，避免报告过大 - **不会自动写 Wiki 页面**，只是生成候选报告，供后续审核/入库 --- ### 2. Health report 已接入 cron 新增自动任务： ```text Wiki Health Report 6h Job ID: f6fc2dcec42b Schedule: 每 6 小时 Script: cron-wiki-health.py Mode: no_agent ``` 它会生成： ```text /home/zack/wiki/docs/reports/wiki-health.json /home/zack/wiki/docs/reports/wiki-health.md ``` 最新 cron 实测结果： ```text last_status: ok last_delivery_error: null ``` 实际健康状态： ```json { "health": "ok", "public_pages": 24, "raw_sessions_total": 114, "raw_sessions_processed": 11, "raw_sessions_unprocessed": 103, "missing_status": 0, "missing_confidence": 0, "missing_sources": 0, "low_confidence_complete": 0 } ``` --- ## 新增/修改文件 ```text /home/zack/.hermes/scripts/wiki-candidate-extractor.py /home/zack/.hermes/scripts/wiki-health.py /home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py /home/zack/.hermes/scripts/cron-wiki-health.py /home/zack/wiki/docs/reports/wiki-candidates.json /home/zack/wiki/docs/reports/wiki-candidates.md /home/zack/wiki/docs/reports/wiki-health.json /home/zack/wiki/docs/reports/wiki-health.md ``` --- ## 验证结果 已跑： ```text py_compile: ✅ wiki-candidate-extractor.py ✅ cron-wiki-candidate-extractor.py ✅ wiki-health.py ✅ cron-wiki-health.py ``` cron 手动触发验证： ```text Wiki Candidate Extractor daily ✅ last_status: ok Wiki Health Report 6h ✅ last_status: ok ``` Wiki 最终验证： ```text w
+
+### state.db:20260614_172730_0556cc:125
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `ending_or_timeline`
+- Snippet: {"todos": [{"id": "1", "content": "确认候选提取器和 health report 当前是否自动运行", "status": "completed"}, {"id": "2", "content": "为候选提取器增加 docs/reports 输出与 Markdown 摘要", "status": "completed"}, {"id": "3", "content": "创建 cron 包装脚本：Wiki Candidate Extractor 与 Wiki Health Report", "status": "completed"}, {"id": "4", "content": "注册并实锤验证两个 cron job", "status": "completed"}, {"id": "5", "content": "运行最终验证：py_compile、cron run、报告存在、git 状态", "status": "completed"}], "summary": {"total": 5, "pending": 0, "in_progress": 0, "completed": 5, "cancelled": 0}}
+
+### state.db:20260614_172730_0556cc:124
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: { "success": true, "count": 6, "jobs": [ { "job_id": "5ea87b78e2ad", "name": "Wiki Linter (health check)", "skill": null, "skills": [], "prompt_preview": "This is a no-agent job, but required field. Script runs directly.", "model": "odytrice/qwen3.6:5090-27b", "provider": "local-localhost:11434", "base_url": null, "schedule": "every 720m", "repeat": "forever", "deliver": "feishu:oc_c287194d33528f3aa30e1a13f0603d64", "next_run_at": "2026-06-14T21:50:30.704243-07:00", "last_run_at": "2026-06-14T09:50:30.704243-07:00", "last_status": "ok", "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "wiki-lint.py", "no_agent": true }, { "job_id": "4c9c352bacfc", "name": "memory-weekly-scan", "skill": null, "skills": [], "prompt_preview": "weekly memory hygiene audit", "model": null, "provider": null, "base_url": null, "schedule": "0 9 * * 0", "repeat": "forever", "deliver": "feishu:oc_c287194d33528f3aa30e1a13f0603d64", "next_run_at": "2026-06-21T09:00:00-07:00", "last_run_at": "2026-06-14T12:02:30.163822-07:00", "last_status": "ok", "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "memory-scanner.py", "no_agent": true }, { "job_id": "610f265caa42", "name": "Wiki Knowledge Auto-Filer (3h window)", "skill": "llm-wiki", "skills": [ "llm-wiki" ], "prompt_preview": "Wiki Knowledge Auto-Filer \u2014 3-hour durable knowledge sync.\n\nLoad the llm-wiki skill first. You are r...", "model": "odytrice/qwen3.6:5090-27b", "provider": "local-localhost:11434", "base_url": null, "schedule": "0 */3 * * *", "repeat": "forever", "deliver": "feishu:oc_c287194d33528f3aa30e1a13f0603d64", "next_run_at": "2026-06-14T18:00:00-07:00", "last_run_at": "2026-06-14T15:02:00.381455-07:00", "last_status": "ok", "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "enabled_toolsets": [ "session_search", "file", "termi
+
+### state.db:20260614_172730_0556cc:123
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"content": "1|{\n2| \"timestamp\": \"2026-06-14T17:44:51.106458\",\n3| \"pages_scanned\": 24,\n4| \"auto_fixed\": [\n5| \"✅ Index unchanged: /home/zack/wiki/docs/index.md\",\n6| \"✅ Git committed lint changes: docs/reports/wiki-candidates.json | 13013 ++++++++++++++++++++++++++++++++++++\\n docs/reports/wiki-candidates.md | 325 +\\n docs/reports/wiki-health.json | 2 +-\\n docs/reports/wiki-health.md | 2 +-\\n 4 files changed, 13340 insertions(+), 2 deletions(-)\"\n7| ],\n8| \"auto_fix_count\": 2,\n9| \"remaining_errors\": [],\n10| \"remaining_warnings\": []\n11|}", "total_lines": 10, "file_size": 540, "truncated": false, "is_binary": false, "is_image": false}
+
+### state.db:20260614_172730_0556cc:122
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"output": "candidates_json True 2177932\ncandidates_md True 50697\nhealth_json True 523\nhealth_md True 381\n{\n \"candidate_counts\": {\n \"state_db_candidates\": 4815,\n \"raw_session_candidates\": 7950,\n \"total_candidates\": 12620,\n \"emitted_candidates\": 1000\n },\n \"health\": \"ok\",\n \"health_counts\": {\n \"public_pages\": 24,\n \"raw_sessions_total\": 114,\n \"raw_sessions_processed\": 11,\n \"raw_sessions_unprocessed\": 103\n }\n}\nLINT_BUILD_EXIT=0\n✅ 24 pages | fixes=2 err=0 warn=0 | report=/tmp/wiki_lint_report.json\n---BUILD---\n\n │ ⚠ Warning from the Material for MkDocs team\n │\n │ MkDocs 2.0, the underlying framework of Material for MkDocs,\n │ will introduce backward-incompatible changes, including:\n │\n │ × All plugins will stop working – the plugin system has been removed\n │ × All theme overrides will break – the theming system has been rewritten\n │ × No migration path exists – existing projects cannot be upgraded\n │ × Closed contribution model – community members can't report bugs\n │ × Currently unlicensed – unsuitable for production use\n │\n │ Our full analysis:\n │\n │ https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/\n\nINFO - Cleaning site directory\nINFO - Building documentation to directory: /home/zack/wiki/site\nINFO - Documentation built in 0.19 seconds\n---GIT---", "exit_code": 0, "error": null}
+
+### state.db:20260614_172730_0556cc:121
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `ending_or_timeline`
+- Snippet: {"todos": [{"id": "1", "content": "确认候选提取器和 health report 当前是否自动运行", "status": "completed"}, {"id": "2", "content": "为候选提取器增加 docs/reports 输出与 Markdown 摘要", "status": "completed"}, {"id": "3", "content": "创建 cron 包装脚本：Wiki Candidate Extractor 与 Wiki Health Report", "status": "completed"}, {"id": "4", "content": "注册并实锤验证两个 cron job", "status": "completed"}, {"id": "5", "content": "运行最终验证：py_compile、cron run、报告存在、git 状态", "status": "in_progress"}], "summary": {"total": 5, "pending": 0, "in_progress": 1, "completed": 4, "cancelled": 0}}
+
+### state.db:20260614_172730_0556cc:120
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"output": "JOB 75b39ccdfa1d\nFILE /home/zack/.hermes/cron/output/75b39ccdfa1d/2026-06-14_17-44-29.md\n# Cron Job: Wiki Candidate Extractor daily\n\n**Job ID:** 75b39ccdfa1d\n**Run Time:** 2026-06-14 17:44:29\n**Mode:** no_agent (script)\n\n---\n\nRUN /home/zack/.hermes/hermes-agent/venv/bin/python /home/zack/.hermes/scripts/wiki-candidate-extractor.py --out /home/zack/wiki/docs/reports/wiki-candidates.json --md-out /home/zack/wiki/docs/reports/wiki-candidates.md --state-limit 120 --raw-limit 300 --max-candidates 1000\n{\"ok\": true, \"out\": \"/home/zack/wiki/docs/reports/wiki-candidates.json\", \"md_out\": \"/home/zack/wiki/docs/reports/wiki-candidates.md\", \"counts\": {\"state_db_candidates\": 4815, \"raw_session_candidates\": 7950, \"total_candidates\": 12620, \"emitted_candidates\": 1000}}\n\nJOB f6fc2dcec42b\nFILE /home/zack/.hermes/cron/output/f6fc2dcec42b/2026-06-14_17-44-28.md\n# Cron Job: Wiki Health Report 6h\n\n**Job ID:** f6fc2dcec42b\n**Run Time:** 2026-06-14 17:44:28\n**Mode:** no_agent (script)\n\n---\n\nRUN /home/zack/.hermes/hermes-agent/venv/bin/python /home/zack/.hermes/scripts/wiki-health.py --wiki-root /home/zack/wiki --json-out /home/zack/wiki/docs/reports/wiki-health.json --md-out /home/zack/wiki/docs/reports/wiki-health.md\n{\"ok\": true, \"health\": \"ok\", \"json\": \"/home/zack/wiki/docs/reports/wiki-health.json\", \"md\": \"/home/zack/wiki/docs/reports/wiki-health.md\"}", "exit_code": 0, "error": null}
+
+### state.db:20260614_172730_0556cc:119
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: { "success": true, "count": 6, "jobs": [ { "job_id": "5ea87b78e2ad", "name": "Wiki Linter (health check)", "skill": null, "skills": [], "prompt_preview": "This is a no-agent job, but required field. Script runs directly.", "model": "odytrice/qwen3.6:5090-27b", "provider": "local-localhost:11434", "base_url": null, "schedule": "every 720m", "repeat": "forever", "deliver": "feishu:oc_c287194d33528f3aa30e1a13f0603d64", "next_run_at": "2026-06-14T21:50:30.704243-07:00", "last_run_at": "2026-06-14T09:50:30.704243-07:00", "last_status": "ok", "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "wiki-lint.py", "no_agent": true }, { "job_id": "4c9c352bacfc", "name": "memory-weekly-scan", "skill": null, "skills": [], "prompt_preview": "weekly memory hygiene audit", "model": null, "provider": null, "base_url": null, "schedule": "0 9 * * 0", "repeat": "forever", "deliver": "feishu:oc_c287194d33528f3aa30e1a13f0603d64", "next_run_at": "2026-06-21T09:00:00-07:00", "last_run_at": "2026-06-14T12:02:30.163822-07:00", "last_status": "ok", "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "memory-scanner.py", "no_agent": true }, { "job_id": "610f265caa42", "name": "Wiki Knowledge Auto-Filer (3h window)", "skill": "llm-wiki", "skills": [ "llm-wiki" ], "prompt_preview": "Wiki Knowledge Auto-Filer \u2014 3-hour durable knowledge sync.\n\nLoad the llm-wiki skill first. You are r...", "model": "odytrice/qwen3.6:5090-27b", "provider": "local-localhost:11434", "base_url": null, "schedule": "0 */3 * * *", "repeat": "forever", "deliver": "feishu:oc_c287194d33528f3aa30e1a13f0603d64", "next_run_at": "2026-06-14T18:00:00-07:00", "last_run_at": "2026-06-14T15:02:00.381455-07:00", "last_status": "ok", "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "enabled_toolsets": [ "session_search", "file", "termi
+
+### state.db:20260614_172730_0556cc:118
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: { "success": true, "job": { "job_id": "f6fc2dcec42b", "name": "Wiki Health Report 6h", "skill": null, "skills": [], "prompt_preview": "This is a no-agent job; run the configured script directly.", "model": null, "provider": null, "base_url": null, "schedule": "10 */6 * * *", "repeat": "forever", "deliver": "origin", "next_run_at": "2026-06-14T17:43:39.321058-07:00", "last_run_at": null, "last_status": null, "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "cron-wiki-health.py", "no_agent": true } }
+
+### state.db:20260614_172730_0556cc:117
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: { "success": true, "job": { "job_id": "75b39ccdfa1d", "name": "Wiki Candidate Extractor daily", "skill": null, "skills": [], "prompt_preview": "This is a no-agent job; run the configured script directly.", "model": null, "provider": null, "base_url": null, "schedule": "35 3 * * *", "repeat": "forever", "deliver": "origin", "next_run_at": "2026-06-14T17:43:34.788868-07:00", "last_run_at": null, "last_status": null, "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "cron-wiki-candidate-extractor.py", "no_agent": true } }
+
+### state.db:20260614_172730_0556cc:116
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: { "success": true, "job_id": "f6fc2dcec42b", "name": "Wiki Health Report 6h", "skill": null, "skills": [], "schedule": "10 */6 * * *", "repeat": "forever", "deliver": "origin", "next_run_at": "2026-06-14T18:10:00-07:00", "job": { "job_id": "f6fc2dcec42b", "name": "Wiki Health Report 6h", "skill": null, "skills": [], "prompt_preview": "This is a no-agent job; run the configured script directly.", "model": null, "provider": null, "base_url": null, "schedule": "10 */6 * * *", "repeat": "forever", "deliver": "origin", "next_run_at": "2026-06-14T18:10:00-07:00", "last_run_at": null, "last_status": null, "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "cron-wiki-health.py", "no_agent": true }, "message": "Cron job 'Wiki Health Report 6h' created." }
+
+### state.db:20260614_172730_0556cc:115
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: { "success": true, "job_id": "75b39ccdfa1d", "name": "Wiki Candidate Extractor daily", "skill": null, "skills": [], "schedule": "35 3 * * *", "repeat": "forever", "deliver": "origin", "next_run_at": "2026-06-15T03:35:00-07:00", "job": { "job_id": "75b39ccdfa1d", "name": "Wiki Candidate Extractor daily", "skill": null, "skills": [], "prompt_preview": "This is a no-agent job; run the configured script directly.", "model": null, "provider": null, "base_url": null, "schedule": "35 3 * * *", "repeat": "forever", "deliver": "origin", "next_run_at": "2026-06-15T03:35:00-07:00", "last_run_at": null, "last_status": null, "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "cron-wiki-candidate-extractor.py", "no_agent": true }, "message": "Cron job 'Wiki Candidate Extractor daily' created." }
+
+### state.db:20260614_172730_0556cc:114
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `ending_or_timeline`
+- Snippet: {"todos": [{"id": "1", "content": "确认候选提取器和 health report 当前是否自动运行", "status": "completed"}, {"id": "2", "content": "为候选提取器增加 docs/reports 输出与 Markdown 摘要", "status": "completed"}, {"id": "3", "content": "创建 cron 包装脚本：Wiki Candidate Extractor 与 Wiki Health Report", "status": "completed"}, {"id": "4", "content": "注册并实锤验证两个 cron job", "status": "in_progress"}, {"id": "5", "content": "运行最终验证：py_compile、cron run、报告存在、git 状态", "status": "pending"}], "summary": {"total": 5, "pending": 1, "in_progress": 1, "completed": 3, "cancelled": 0}}
+
+### state.db:20260614_172730_0556cc:113
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"output": "CANDIDATE_EXIT=0\nRUN /home/zack/.hermes/hermes-agent/venv/bin/python3 /home/zack/.hermes/scripts/wiki-candidate-extractor.py --out /home/zack/wiki/docs/reports/wiki-candidates.json --md-out /home/zack/wiki/docs/reports/wiki-candidates.md --state-limit 120 --raw-limit 300 --max-candidates 1000\n{\"ok\": true, \"out\": \"/home/zack/wiki/docs/reports/wiki-candidates.json\", \"md_out\": \"/home/zack/wiki/docs/reports/wiki-candidates.md\", \"counts\": {\"state_db_candidates\": 4815, \"raw_session_candidates\": 7950, \"total_candidates\": 12620, \"emitted_candidates\": 1000}}\nSTDERR\n{\n \"counts\": {\n \"state_db_candidates\": 4815,\n \"raw_session_candidates\": 7950,\n \"total_candidates\": 12620,\n \"emitted_candidates\": 1000\n },\n \"candidate_bytes\": 2177932\n}", "exit_code": 0, "error": null}
+
+### state.db:20260614_172730_0556cc:112
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py\n+++ b//home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py\n@@ -15,6 +15,7 @@\n \"--md-out\", str(REPORTS / \"wiki-candidates.md\"),\n \"--state-limit\", \"120\",\n \"--raw-limit\", \"300\",\n+ \"--max-candidates\", \"1000\",\n ]\n print(\"RUN \" + \" \".join(cmd))\n result = subprocess.run(cmd, text=True, capture_output=True)\n", "files_modified": ["/home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py"}
+
+### state.db:20260614_172730_0556cc:111
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki-candidate-extractor.py\n+++ b//home/zack/.hermes/scripts/wiki-candidate-extractor.py\n@@ -210,6 +210,7 @@\n candidates = state_candidates + raw_candidates\n candidates.sort(key=lambda c: (c.get(\"timestamp\") or \"\", c.get(\"id\") or \"\"), reverse=True)\n candidates = [c for c in candidates if score_text(c.get(\"snippet\", \"\")) >= args.min_score]\n+ emitted_candidates = candidates if args.max_candidates is None else candidates[:args.max_candidates]\n \n report = {\n \"generated_at\": datetime.now(timezone.utc).isoformat(),\n@@ -219,8 +220,9 @@\n \"state_db_candidates\": len(state_candidates),\n \"raw_session_candidates\": len(raw_candidates),\n \"total_candidates\": len(candidates),\n+ \"emitted_candidates\": len(emitted_candidates),\n },\n- \"candidates\": candidates,\n+ \"candidates\": emitted_candidates,\n }\n out = Path(args.out)\n out.parent.mkdir(parents=True, exist_ok=True)\n", "files_modified": ["/home/zack/.hermes/scripts/wiki-candidate-extractor.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki-candidate-extractor.py"}
+
+### state.db:20260614_172730_0556cc:110
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki-candidate-extractor.py\n+++ b//home/zack/.hermes/scripts/wiki-candidate-extractor.py\n@@ -202,6 +202,7 @@\n parser.add_argument(\"--state-limit\", type=int, default=80)\n parser.add_argument(\"--raw-limit\", type=int, default=200)\n parser.add_argument(\"--min-score\", type=int, default=1)\n+ parser.add_argument(\"--max-candidates\", type=int, default=None, help=\"Optional cap for emitted candidates after filtering\")\n args = parser.parse_args()\n \n state_candidates = extract_from_state_db(Path(args.state_db), args.state_limit)\n", "files_modified": ["/home/zack/.hermes/scripts/wiki-candidate-extractor.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki-candidate-extractor.py"}
+
+### state.db:20260614_172730_0556cc:109
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"output": "CANDIDATE_EXIT=0\nRUN /home/zack/.hermes/hermes-agent/venv/bin/python3 /home/zack/.hermes/scripts/wiki-candidate-extractor.py --out /home/zack/wiki/docs/reports/wiki-candidates.json --md-out /home/zack/wiki/docs/reports/wiki-candidates.md --state-limit 120 --raw-limit 300\n{\"ok\": true, \"out\": \"/home/zack/wiki/docs/reports/wiki-candidates.json\", \"md_out\": \"/home/zack/wiki/docs/reports/wiki-candidates.md\", \"counts\": {\"state_db_candidates\": 4815, \"raw_session_candidates\": 7950, \"total_candidates\": 12620}}\nSTDERR\ncandidate_json_exists True bytes 14950112\n{\n \"state_db_candidates\": 4815,\n \"raw_session_candidates\": 7950,\n \"total_candidates\": 12620\n}\nHEALTH_EXIT=0\nRUN /home/zack/.hermes/hermes-agent/venv/bin/python3 /home/zack/.hermes/scripts/wiki-health.py --wiki-root /home/zack/wiki --json-out /home/zack/wiki/docs/reports/wiki-health.json --md-out /home/zack/wiki/docs/reports/wiki-health.md\n{\"ok\": true, \"health\": \"ok\", \"json\": \"/home/zack/wiki/docs/reports/wiki-health.json\", \"md\": \"/home/zack/wiki/docs/reports/wiki-health.md\"}\nSTDERR", "exit_code": 0, "error": null}
+
+### state.db:20260614_172730_0556cc:108
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"bytes_written": 702, "dirs_created": true, "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/cron-wiki-health.py", "files_modified": ["/home/zack/.hermes/scripts/cron-wiki-health.py"]}
+
+### state.db:20260614_172730_0556cc:107
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py\n+++ b//home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py\n@@ -11,7 +11,6 @@\n cmd = [\n sys.executable,\n str(Path.home() / \".hermes\" / \"scripts\" / \"wiki-candidate-extractor.py\"),\n- \"--wiki-root\", str(WIKI_ROOT),\n \"--out\", str(REPORTS / \"wiki-candidates.json\"),\n \"--md-out\", str(REPORTS / \"wiki-candidates.md\"),\n \"--state-limit\", \"120\",\n", "files_modified": ["/home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py"}
+
+### state.db:20260614_172730_0556cc:106
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"bytes_written": 773, "dirs_created": true, "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py", "files_modified": ["/home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py"]}
+
+### state.db:20260614_172730_0556cc:105
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `verification_gate`
+- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki-candidate-extractor.py\n+++ b//home/zack/.hermes/scripts/wiki-candidate-extractor.py\n@@ -224,7 +224,43 @@\n out = Path(args.out)\n out.parent.mkdir(parents=True, exist_ok=True)\n out.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding=\"utf-8\")\n- print(json.dumps({\"ok\": True, \"out\": str(out), \"counts\": report[\"counts\"]}, ensure_ascii=False))\n+\n+ if args.md_out:\n+ md_path = Path(args.md_out)\n+ md_path.parent.mkdir(parents=True, exist_ok=True)\n+ by_type: dict[str, int] = {}\n+ for c in candidates:\n+ by_type[c.get(\"claim_type\", \"unknown\")] = by_type.get(c.get(\"claim_type\", \"unknown\"), 0) + 1\n+ md = [\n+ \"# Wiki Candidate Extractor Report\",\n+ \"\",\n+ f\"- Generated: {report['generated_at']}\",\n+ f\"- State DB: `{report['state_db']}`\",\n+ f\"- Raw sessions: `{report['raw_dir']}`\",\n+ \"\",\n+ \"## Counts\",\n+ \"\",\n+ f\"- State DB candidates: {report['counts']['state_db_candidates']}\",\n+ f\"- Raw session candidates: {report['counts']['raw_session_candidates']}\",\n+ f\"- Total candidates: {report['counts']['total_candidates']}\",\n+ \"\",\n+ \"## By Claim Type\",\n+ \"\",\n+ ]\n+ for k, v in sorted(by_type.items()):\n+ md.append(f\"- `{k}`: {v}\")\n+ md.extend([\"\", \"## Latest Candidates\", \"\"])\n+ for c in candidates[:50]:\n+ md.append(f\"### {c['id']}\")\n+ md.append(f\"- Source: `{c['source']}`\")\n+ md.append(f\"- Session: {c.get('session_title', '')}\")\n+ md.append(f\"- Type: `{c.get('claim_type', '')}`\")\n+ if c.get(\"confidence_hint\") is not None:\n+ md.append(f\"- Confidence hint: {c['confidence_hint']}\")\n+ md.append(f\"- Snippet: {c.get('snippet', '')}\")\n+ md.append(\"\")\n+ md_path.write_text(\"\\n\".join(md), encoding=\"utf-8\")\n+ print(json.dumps({\"ok\": True, \"out\": str(out), \"md_out\": args.md_out, \"counts\": report[\"counts\"]}, ensure_ascii=False))\n return 0\n \n \n", "files_modified": ["/home/zack/.hermes/scripts/wiki-
+
+### state.db:20260614_172730_0556cc:104
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki-candidate-extractor.py\n+++ b//home/zack/.hermes/scripts/wiki-candidate-extractor.py\n@@ -198,6 +198,7 @@\n parser.add_argument(\"--state-db\", default=str(DEFAULT_STATE_DB))\n parser.add_argument(\"--raw-dir\", default=str(DEFAULT_RAW_DIR))\n parser.add_argument(\"--out\", default=str(DEFAULT_OUT))\n+ parser.add_argument(\"--md-out\", default=None, help=\"Optional Markdown report path\")\n parser.add_argument(\"--state-limit\", type=int, default=80)\n parser.add_argument(\"--raw-limit\", type=int, default=200)\n parser.add_argument(\"--min-score\", type=int, default=1)\n", "files_modified": ["/home/zack/.hermes/scripts/wiki-candidate-extractor.py"], "lint": {"status": "ok", "output": ""}, "_warning": "/home/zack/.hermes/scripts/wiki-candidate-extractor.py was last read with offset/limit pagination (partial view). Re-read the whole file before overwriting it.", "resolved_path": "/home/zack/.hermes/scripts/wiki-candidate-extractor.py"}
+
+### state.db:20260614_172730_0556cc:103
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `verification_gate`
+- Confidence hint: 0.5
+- Snippet: {"content": "180| return \"wiki_maintenance\"\n181| return \"durable_fact\"\n182|\n183|\n184|def guess_confidence(text: str) -> float | None:\n185| m = re.search(r\"Confidence Score:\\s*([0-9]+(?:\\.[0-9]+)?)\", text, re.IGNORECASE)\n186| if m:\n187| try:\n188| return round(float(m.group(1)), 3)\n189| except Exception:\n190| pass\n191| if \"needs-more-sources\" in text.lower() or \"待补充\" in text or \"未确认\" in text:\n192| return 0.5\n193| return None\n194|\n195|\n196|def main() -> int:\n197| parser = argparse.ArgumentParser(description=\"Extract durable Wiki knowledge candidates from state.db/raw sessions.\")\n198| parser.add_argument(\"--state-db\", default=str(DEFAULT_STATE_DB))\n199| parser.add_argument(\"--raw-dir\", default=str(DEFAULT_RAW_DIR))\n200| parser.add_argument(\"--out\", default=str(DEFAULT_OUT))\n201| parser.add_argument(\"--state-limit\", type=int, default=80)\n202| parser.add_argument(\"--raw-limit\", type=int, default=200)\n203| parser.add_argument(\"--min-score\", type=int, default=1)\n204| args = parser.parse_args()\n205|\n206| state_candidates = extract_from_state_db(Path(args.state_db), args.state_limit)\n207| raw_candidates = extract_from_raw_sessions(Path(args.raw_dir), args.raw_limit)\n208| candidates = state_candidates + raw_candidates\n209| candidates.sort(key=lambda c: (c.get(\"timestamp\") or \"\", c.get(\"id\") or \"\"), reverse=True)\n210| candidates = [c for c in candidates if score_text(c.get(\"snippet\", \"\")) >= args.min_score]\n211|\n212| report = {\n213| \"generated_at\": datetime.now(timezone.utc).isoformat(),\n214| \"state_db\": str(Path(args.state_db)),\n215| \"raw_dir\": str(Path(args.raw_dir)),\n216| \"counts\": {\n217| \"state_db_candidates\": len(state_candidates),\n218| \"raw_session_candidates\": len(raw_candidates),\n219| \"total_candidates\": len(candidates),\n220| },\n221| \"candidates\": candidates,\n222| }\n223| out = Path(args.out)\n224| out.parent.mkdir(parents=True, exist_ok=True)\n225| out.write_text(json.dump
+
+### state.db:20260614_172730_0556cc:102
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `ending_or_timeline`
+- Snippet: {"todos": [{"id": "1", "content": "确认候选提取器和 health report 当前是否自动运行", "status": "completed"}, {"id": "2", "content": "为候选提取器增加 docs/reports 输出与 Markdown 摘要", "status": "in_progress"}, {"id": "3", "content": "创建 cron 包装脚本：Wiki Candidate Extractor 与 Wiki Health Report", "status": "pending"}, {"id": "4", "content": "注册并实锤验证两个 cron job", "status": "pending"}, {"id": "5", "content": "运行最终验证：py_compile、cron run、报告存在、git 状态", "status": "pending"}], "summary": {"total": 5, "pending": 3, "in_progress": 1, "completed": 1, "cancelled": 0}}
+
+### state.db:20260614_172730_0556cc:101
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `wiki_maintenance`
+- Snippet: { "success": true, "count": 4, "jobs": [ { "job_id": "5ea87b78e2ad", "name": "Wiki Linter (health check)", "skill": null, "skills": [], "prompt_preview": "This is a no-agent job, but required field. Script runs directly.", "model": "odytrice/qwen3.6:5090-27b", "provider": "local-localhost:11434", "base_url": null, "schedule": "every 720m", "repeat": "forever", "deliver": "feishu:oc_c287194d33528f3aa30e1a13f0603d64", "next_run_at": "2026-06-14T21:50:30.704243-07:00", "last_run_at": "2026-06-14T09:50:30.704243-07:00", "last_status": "ok", "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "wiki-lint.py", "no_agent": true }, { "job_id": "4c9c352bacfc", "name": "memory-weekly-scan", "skill": null, "skills": [], "prompt_preview": "weekly memory hygiene audit", "model": null, "provider": null, "base_url": null, "schedule": "0 9 * * 0", "repeat": "forever", "deliver": "feishu:oc_c287194d33528f3aa30e1a13f0603d64", "next_run_at": "2026-06-21T09:00:00-07:00", "last_run_at": "2026-06-14T12:02:30.163822-07:00", "last_status": "ok", "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "script": "memory-scanner.py", "no_agent": true }, { "job_id": "610f265caa42", "name": "Wiki Knowledge Auto-Filer (3h window)", "skill": "llm-wiki", "skills": [ "llm-wiki" ], "prompt_preview": "Wiki Knowledge Auto-Filer \u2014 3-hour durable knowledge sync.\n\nLoad the llm-wiki skill first. You are r...", "model": "odytrice/qwen3.6:5090-27b", "provider": "local-localhost:11434", "base_url": null, "schedule": "0 */3 * * *", "repeat": "forever", "deliver": "feishu:oc_c287194d33528f3aa30e1a13f0603d64", "next_run_at": "2026-06-14T18:00:00-07:00", "last_run_at": "2026-06-14T15:02:00.381455-07:00", "last_status": "ok", "last_delivery_error": null, "enabled": true, "state": "scheduled", "paused_at": null, "paused_reason": null, "enabled_toolsets": [ "session_search", "file", "termi
+
+### state.db:20260614_172730_0556cc:100
+- Source: `state.db`
+- Session: 探讨诸界末日在线结局 #82
+- Type: `ending_or_timeline`
+- Snippet: {"todos": [{"id": "1", "content": "确认候选提取器和 health report 当前是否自动运行", "status": "in_progress"}, {"id": "2", "content": "为候选提取器增加 docs/reports 输出与 Markdown 摘要", "status": "pending"}, {"id": "3", "content": "创建 cron 包装脚本：Wiki Candidate Extractor 与 Wiki Health Report", "status": "pending"}, {"id": "4", "content": "注册并实锤验证两个 cron job", "status": "pending"}, {"id": "5", "content": "运行最终验证：py_compile、cron run、报告存在、git 状态", "status": "pending"}], "summary": {"total": 5, "pending": 4, "in_progress": 1, "completed": 0, "cancelled": 0}}
 
 ### state.db:20260614_172730_0556cc:99
 - Source: `state.db`
@@ -152,174 +322,3 @@
 - Session: 探讨诸界末日在线结局 #82
 - Type: `wiki_maintenance`
 - Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/skills/llm-wiki/execute.md\n+++ b//home/zack/.hermes/skills/llm-wiki/execute.md\n@@ -93,7 +93,7 @@\n \n ### Broad correction sweep\n \n-When user asks to update wiki based on prior conversation:\n+When user asks to update wiki based on prior conversation, sweep all `docs/topics/*` unless `{{TOPIC_DIR}}` is explicitly provided:\n \n 1. Search all topic pages for relevant terms.\n 2. Identify every affected page.\n", "files_modified": ["/home/zack/.hermes/skills/llm-wiki/execute.md"], "lint": {"status": "skipped", "message": "No linter for .md files"}, "resolved_path": "/home/zack/.hermes/skills/llm-wiki/execute.md"}
-
-### state.db:20260614_172730_0556cc:77
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `identity_or_relation`
-- Confidence hint: 0.64
-- Snippet: {"success": true, "name": "llm-wiki", "file": "execute.md", "content": "# Execute\n\n## Purpose\n\nThis document contains execution recipes, command templates, and operational steps for the LLM-maintained wiki.\n\nUse `SKILL.md` for workflow and `design.md` for architecture. Use this file when you need concrete commands.\n\n## Variable Substitution\n\nDefine variables in `references/specs/variables.md`.\n\nCommon variables:\n\n```text\n{{WIKI_ROOT}}\n{{SEARCH_SCRIPT}}\n{{LINTER_SCRIPT}}\n{{BUILD_CMD}}\n{{TOPIC_DIR}}\n{{ENTITY}}\n{{QUERY}}\n{{QUERY_ZH}}\n{{CONFIDENCE_THRESHOLD}}\n{{COMPLETE_THRESHOLD}}\n{{LOCALE}}\n```\n\n## Standard Workflow\n\n```bash\n# 1. Search and inspect report\n{{SEARCH_SCRIPT}} --query \"{{QUERY}}\"\n\n# 2. Read /tmp/layered_search_report.json and source pages\n\n# 3. Write or patch wiki pages\n\n# 4. Lint\ncd {{WIKI_ROOT}} && {{LINTER_SCRIPT}}\n\n# 5. Build\ncd {{WIKI_ROOT}} && {{BUILD_CMD}}\n\n# 6. Check status\ncd {{WIKI_ROOT}} && git status --short\n```\n\n## Search Recipes\n\n### Basic Chinese lore search\n\n```bash\n{{SEARCH_SCRIPT}} --query \"{{QUERY_ZH}}\"\n```\n\n### Deep identity/truth search\n\nUse when the query contains identity/truth triggers such as “谁”, “是”, “结局”, “关系”, “为什么”, “真相”, “身份”.\n\n```bash\n{{SEARCH_SCRIPT}} --query \"{{ENTITY}} 真实身份 是什么\"\n{{SEARCH_SCRIPT}} --query \"{{ENTITY}} 别名 区别 不是\"\n{{SEARCH_SCRIPT}} --query \"{{ENTITY}} 原文 关键词\"\n```\n\n### English supplemental search\n\nUse only when Chinese sources are insufficient or user allows English sources.\n\n```bash\n{{SEARCH_SCRIPT}} --query \"{{ENTITY}} English title identity\"\n```\n\n## Wiki Write Recipes\n\n### Create new concept page\n\n1. Run collision check.\n2. If collision exists, update existing page instead.\n3. Write page with frontmatter, `## Summary`, evidence sections, `See also`, and confidence footer.\n4. Update topic `_index.md` if needed.\n5. Update related pages.\n6. Lint and build.\n\n### Update existing page\n\n1. Read current page fresh fro
-
-### state.db:20260614_172730_0556cc:76
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `verification_gate`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/skills/llm-wiki/design.md\n+++ b//home/zack/.hermes/skills/llm-wiki/design.md\n@@ -15,6 +15,8 @@\n 3. **Knowledge synthesis** — extract durable facts, resolve contradictions, assign confidence.\n 4. **Knowledge filing** — create/update wiki pages, indexes, cross-links.\n 5. **Verification** — lint, build, negative tests, git status, and report.\n+\n+The system is topic-agnostic. `novel-lore` is one topic namespace; generic scripts must operate across `docs/topics/*` unless explicitly scoped.\n \n ## File Model\n \n", "files_modified": ["/home/zack/.hermes/skills/llm-wiki/design.md"], "lint": {"status": "skipped", "message": "No linter for .md files"}, "resolved_path": "/home/zack/.hermes/skills/llm-wiki/design.md"}
-
-### state.db:20260614_172730_0556cc:75
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `identity_or_relation`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/skills/llm-wiki/references/specs/variables.md\n+++ b//home/zack/.hermes/skills/llm-wiki/references/specs/variables.md\n@@ -9,7 +9,7 @@\n | `{{LINTER_SCRIPT}}` | Wiki linter command | `python3 ~/.hermes/scripts/wiki-lint.py` |\n | `{{LINTER_CMD}}` | Full linter command used in recipes | `cd {{WIKI_ROOT}} && {{LINTER_SCRIPT}}` |\n | `{{BUILD_CMD}}` | MkDocs build command | `mkdocs build` |\n-| `{{TOPIC_DIR}}` | Wiki topic directory | `novel-lore` |\n+| `{{TOPIC_DIR}}` | Optional Wiki topic directory; omit to operate across all `docs/topics/*` | `novel-lore` |\n | `{{ENTITY}}` | Entity or concept being researched | `世界之门` |\n | `{{QUERY}}` | Generic search query | `诸界末日在线 世界之门 是什么` |\n | `{{QUERY_ZH}}` | Chinese query for Chinese lore | `诸界末日在线 世界之门 真实身份 是什么` |\n", "files_modified": ["/home/zack/.hermes/skills/llm-wiki/references/specs/variables.md"], "lint": {"status": "skipped", "message": "No linter for .md files"}, "resolved_path": "/home/zack/.hermes/skills/llm-wiki/references/specs/variables.md"}
-
-### state.db:20260614_172730_0556cc:74
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `identity_or_relation`
-- Snippet: {"success": true, "name": "llm-wiki", "file": "references/specs/variables.md", "content": "# Variables\n\nThis file defines variables used by `SKILL.md`, `design.md`, `execute.md`, and `review.md`.\n\n| Variable | Meaning | Default / Example |\n|---|---|---|\n| `{{WIKI_ROOT}}` | Wiki root directory | `/home/zack/wiki` |\n| `{{SEARCH_SCRIPT}}` | Enforced search routing script | `python3 ~/.hermes/scripts/layered_search.py` |\n| `{{LINTER_SCRIPT}}` | Wiki linter command | `python3 ~/.hermes/scripts/wiki-lint.py` |\n| `{{LINTER_CMD}}` | Full linter command used in recipes | `cd {{WIKI_ROOT}} && {{LINTER_SCRIPT}}` |\n| `{{BUILD_CMD}}` | MkDocs build command | `mkdocs build` |\n| `{{TOPIC_DIR}}` | Wiki topic directory | `novel-lore` |\n| `{{ENTITY}}` | Entity or concept being researched | `世界之门` |\n| `{{QUERY}}` | Generic search query | `诸界末日在线 世界之门 是什么` |\n| `{{QUERY_ZH}}` | Chinese query for Chinese lore | `诸界末日在线 世界之门 真实身份 是什么` |\n| `{{CONFIDENCE_THRESHOLD}}` | Minimum confidence for durable claim | `0.8` |\n| `{{COMPLETE_THRESHOLD}}` | Minimum confidence for `status: complete` | `0.8` |\n| `{{LOCALE}}` | Locale hard mode for linter | `chinese-lore` |\n", "file_type": ".md"}
-
-### state.db:20260614_172730_0556cc:73
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `identity_or_relation`
-- Confidence hint: 0.5
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/skills/llm-wiki/SKILL.md\n+++ b//home/zack/.hermes/skills/llm-wiki/SKILL.md\n@@ -197,9 +197,10 @@\n - Treating an Auto-Filer/Cron `IDENTITY_CONFLICT` as resolved without adding an explicit divergence block or lowering the page status to `needs-more-sources`\n - Treating a cron/auto-filer `IDENTITY_CONFLICT` as harmless instead of patching the page with an explicit divergence block\n - Assuming a cron/auto-filer will capture every durable research session; if the user needs certainty, write/update the Wiki directly and verify with lint/build/git\n-- Treating a user-requested optimization as a one-off edit when they ask for recurring upkeep; convert safe structural maintenance into a deterministic script/cron job when appropriate\n-- Treating a deep lore chat answer as either a Wiki write or a casual summary; when the user asks for detailed lore analysis without asking to update the Wiki, use `references/novel-lore-direct-answer-evidence.md` for a chat-native evidence-tiered response\n-- Scanning the wrong auto-filer window: for a 3-hour schedule, use `recent_messages_3h` and a Python `time.time() - 10800` cutoff against `~/.hermes/state.db`\n+- Treating a user-requested optimization as a one-off edit when they ask for recurring upkeep; convert safe structural maintenance into a deterministic script/cron job when appropriate.\n+- Treating `novel-lore` as the whole wiki. The wiki system is generic; scripts and rules should operate across `docs/topics/*` unless a topic filter is explicitly provided.\n+- Treating a deep lore chat answer as either a Wiki write or a casual summary; when the user asks for detailed lore analysis without asking to update the Wiki, use `references/novel-lore-direct-answer-evidence.md` for a chat-native evidence-tiered response.\n+\n - Treating wiki optimization as only content writing; structural hygiene (title normalization, metadata completion, duplicate headings, raw manifest refresh, lint
-
-### state.db:20260614_172730_0556cc:72
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/skills/llm-wiki/SKILL.md\n+++ b//home/zack/.hermes/skills/llm-wiki/SKILL.md\n@@ -14,9 +14,13 @@\n \n ## Overview\n \n-This skill governs the LLM-maintained wiki: a structured, source-verified knowledge base for durable facts, research syntheses, and auditable notes. It is not a general note-taking skill.\n+This skill governs the LLM-maintained wiki: a structured, source-verified knowledge base for durable facts, research syntheses, and auditable notes across any topic. It is not a general note-taking skill.\n \n Use it when the user asks to create, update, audit, repair, search, or publish wiki content.\n+\n+## Scope\n+\n+The wiki system is generic. `novel-lore` is only one topic directory, not the entire system boundary. Scripts, linter rules, health reports, auto-filers, and search-to-sync hooks must operate across `docs/topics/*` unless a command explicitly passes a topic filter.\n \n ## When to Use\n \n", "files_modified": ["/home/zack/.hermes/skills/llm-wiki/SKILL.md"], "lint": {"status": "skipped", "message": "No linter for .md files"}, "resolved_path": "/home/zack/.hermes/skills/llm-wiki/SKILL.md"}
-
-### state.db:20260614_172730_0556cc:71
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `ending_or_timeline`
-- Snippet: {"todos": [{"id": "1", "content": "Phase 0：将 wiki-lint.py 改为通用 Wiki 规则并修复缺失元数据盲区", "status": "completed"}, {"id": "2", "content": "Phase 0：补齐 zhu-jie-mo-ri-ending.md 元数据并运行 linter/build/负测", "status": "completed"}, {"id": "3", "content": "Phase 1：实现通用 raw/session 候选知识提取器并验证", "status": "completed"}, {"id": "4", "content": "Phase 2：改造 wiki_sync_hook.py 支持通用 topic/entity 匹配并验证 dry-run", "status": "completed"}, {"id": "5", "content": "Phase 3：新增通用 Wiki health report 并验证", "status": "completed"}, {"id": "6", "content": "Phase 4：补充 MkDocs 版本锁定/兼容检查与验证", "status": "completed"}, {"id": "7", "content": "Phase 5：更新 llm-wiki 规则为通用 Wiki 表述并验证 skill/docs", "status": "in_progress"}], "summary": {"total": 7, "pending": 0, "in_progress": 1, "completed": 6, "cancelled": 0}}
-
-### state.db:20260614_172730_0556cc:70
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"output": "mkdocs=1.6.1\nmkdocs-material=9.7.6\nOK: MkDocs dependency versions are compatible with current plugin-based wiki build.\nEXIT=0\nBUILD_EXIT=0\n\n │ ⚠ Warning from the Material for MkDocs team\n │\n │ MkDocs 2.0, the underlying framework of Material for MkDocs,\n │ will introduce backward-incompatible changes, including:\n │\n │ × All plugins will stop working – the plugin system has been removed\n │ × All theme overrides will break – the theming system has been rewritten\n │ × No migration path exists – existing projects cannot be upgraded\n │ × Closed contribution model – community members can't report bugs\n │ × Currently unlicensed – unsuitable for production use\n │\n │ Our full analysis:\n │\n │ https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/\n\nINFO - Cleaning site directory\nINFO - Building documentation to directory: /home/zack/wiki/site\nINFO - Documentation built in 0.20 seconds", "exit_code": 0, "error": null}
-
-### state.db:20260614_172730_0556cc:69
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"bytes_written": 425, "dirs_created": true, "lint": {"status": "skipped", "message": "No linter for .lock files"}, "resolved_path": "/home/zack/wiki/requirements.lock", "files_modified": ["/home/zack/wiki/requirements.lock"]}
-
-### state.db:20260614_172730_0556cc:68
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `ending_or_timeline`
-- Snippet: {"todos": [{"id": "1", "content": "Phase 0：将 wiki-lint.py 改为通用 Wiki 规则并修复缺失元数据盲区", "status": "completed"}, {"id": "2", "content": "Phase 0：补齐 zhu-jie-mo-ri-ending.md 元数据并运行 linter/build/负测", "status": "completed"}, {"id": "3", "content": "Phase 1：实现通用 raw/session 候选知识提取器并验证", "status": "completed"}, {"id": "4", "content": "Phase 2：改造 wiki_sync_hook.py 支持通用 topic/entity 匹配并验证 dry-run", "status": "completed"}, {"id": "5", "content": "Phase 3：新增通用 Wiki health report 并验证", "status": "completed"}, {"id": "6", "content": "Phase 4：补充 MkDocs 版本锁定/兼容检查与验证", "status": "in_progress"}, {"id": "7", "content": "Phase 5：更新 llm-wiki 规则为通用 Wiki 表述并验证 skill/docs", "status": "pending"}], "summary": {"total": 7, "pending": 1, "in_progress": 1, "completed": 5, "cancelled": 0}}
-
-### state.db:20260614_172730_0556cc:67
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"success": true, "diff": "--- a//home/zack/wiki/mkdocs.yml\n+++ b//home/zack/wiki/mkdocs.yml\n@@ -5,6 +5,7 @@\n raw/**\n pages/**\n archive/**\n+ reports/**\n log.md\n theme:\n name: material\n", "files_modified": ["/home/zack/wiki/mkdocs.yml"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/wiki/mkdocs.yml"}
-
-### state.db:20260614_172730_0556cc:66
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `verification_gate`
-- Snippet: {"output": "{\"ok\": true, \"health\": \"ok\", \"json\": \"/home/zack/wiki/docs/reports/wiki-health.json\", \"md\": \"/home/zack/wiki/docs/reports/wiki-health.md\"}\nEXIT=0\n{\n \"health\": \"ok\",\n \"counts\": {\n \"public_pages\": 24,\n \"raw_sessions_total\": 114,\n \"raw_sessions_processed\": 11,\n \"raw_sessions_unprocessed\": 103\n },\n \"issues\": {\n \"missing_status\": 0,\n \"missing_confidence\": 0,\n \"missing_sources\": 0,\n \"low_confidence_complete\": 0,\n \"high_confidence_needs_more_sources\": 0\n }\n}", "exit_code": 0, "error": null}
-
-### state.db:20260614_172730_0556cc:65
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki-health.py\n+++ b//home/zack/.hermes/scripts/wiki-health.py\n@@ -10,7 +10,7 @@\n from typing import Any, Dict, List\n \n DEFAULT_WIKI_ROOT = Path.home() / \"wiki\"\n-EXCLUDED_PARTS = {\"raw\", \"archive\", \"site\", \"logs\"}\n+EXCLUDED_PARTS = {\"raw\", \"archive\", \"site\", \"logs\", \"reports\"}\n \n \n def parse_frontmatter(text: str) -> Dict[str, Any]:\n", "files_modified": ["/home/zack/.hermes/scripts/wiki-health.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki-health.py"}
-
-### state.db:20260614_172730_0556cc:64
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `verification_gate`
-- Snippet: {"output": "{\"ok\": true, \"health\": \"ok\", \"json\": \"/tmp/wiki_health_current.json\", \"md\": \"/tmp/wiki_health_current.md\"}\nEXIT=0\n{\n \"health\": \"ok\",\n \"counts\": {\n \"public_pages\": 24,\n \"raw_sessions_total\": 114,\n \"raw_sessions_processed\": 11,\n \"raw_sessions_unprocessed\": 103\n },\n \"issues\": {\n \"missing_status\": 0,\n \"missing_confidence\": 0,\n \"missing_sources\": 0,\n \"low_confidence_complete\": 0,\n \"high_confidence_needs_more_sources\": 0\n }\n}", "exit_code": 0, "error": null}
-
-### state.db:20260614_172730_0556cc:63
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki-health.py\n+++ b//home/zack/.hermes/scripts/wiki-health.py\n@@ -22,8 +22,9 @@\n fm: Dict[str, Any] = {}\n current_key: str | None = None\n for line in parts[1].splitlines():\n- if line.startswith(\"-\") and current_key:\n- fm.setdefault(current_key, []).append(line.strip()[1:].strip().strip(\"'\\\"\"))\n+ stripped = line.strip()\n+ if stripped.startswith(\"-\") and current_key:\n+ fm.setdefault(current_key, []).append(stripped[1:].strip().strip(\"'\\\"\"))\n continue\n if \":\" not in line:\n continue\n", "files_modified": ["/home/zack/.hermes/scripts/wiki-health.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki-health.py"}
-
-### state.db:20260614_172730_0556cc:62
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `ending_or_timeline`
-- Snippet: {"content": "1|---\n2|title: 诸界末日在线 · 终局分析\n3|name: zhu-jie-mo-ri-ending\n4|topic: novel-lore\n5|date_added: '2026-06-13'\n6|date_modified: 2026-06-14\n7|last_modified: '2026-06-13'\n8|status: stub\n9|confidence: 0.00\n10|sources:\n11| - local wiki\n12|---\n13|\n14|\n15|\n16|\n17|\n18|\n19|\n20|\n21|", "total_lines": 74, "file_size": 3973, "truncated": true, "hint": "Use offset=21 to continue reading (showing 1-20 of 74 lines)", "is_binary": false, "is_image": false}
-
-### state.db:20260614_172730_0556cc:61
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `verification_gate`
-- Snippet: {"output": "{\"ok\": true, \"health\": \"attention\", \"json\": \"/tmp/wiki_health_current.json\", \"md\": \"/tmp/wiki_health_current.md\"}\nEXIT=3\n{\n \"health\": \"attention\",\n \"counts\": {\n \"public_pages\": 24,\n \"raw_sessions_total\": 114,\n \"raw_sessions_processed\": 11,\n \"raw_sessions_unprocessed\": 103\n },\n \"issues\": {\n \"missing_status\": 0,\n \"missing_confidence\": 0,\n \"missing_sources\": 1,\n \"low_confidence_complete\": 0,\n \"high_confidence_needs_more_sources\": 0\n }\n}", "exit_code": 0, "error": null}
-
-### state.db:20260614_172730_0556cc:60
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki-health.py\n+++ b//home/zack/.hermes/scripts/wiki-health.py\n@@ -20,11 +20,22 @@\n if len(parts) < 3:\n return {}\n fm: Dict[str, Any] = {}\n+ current_key: str | None = None\n for line in parts[1].splitlines():\n+ if line.startswith(\"-\") and current_key:\n+ fm.setdefault(current_key, []).append(line.strip()[1:].strip().strip(\"'\\\"\"))\n+ continue\n if \":\" not in line:\n continue\n key, val = line.split(\":\", 1)\n- fm[key.strip().lower()] = val.strip().strip(\"'\\\"\")\n+ key = key.strip().lower()\n+ val = val.strip().strip(\"'\\\"\")\n+ if val:\n+ fm[key] = val\n+ current_key = key\n+ else:\n+ fm[key] = []\n+ current_key = key\n return fm\n \n \n", "files_modified": ["/home/zack/.hermes/scripts/wiki-health.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki-health.py"}
-
-### state.db:20260614_172730_0556cc:59
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `verification_gate`
-- Snippet: {"content": "1|---\n2|title: 顾青山 — 角色档案\n3|name: gu-qing-shan\n4|topic: novel-lore\n5|date_added: 2026-06-08\n6|date_modified: 2026-06-12\n7|last_modified: 2026-06-12\n8|status: complete\n9|sources:\n10|- 百度百科\n11|- 知乎全解析帖\n12|- 本地 Wiki 交叉验证\n13|confidence: 0.88\n14|---\n15|\n16|\n17|\n18|\n19|\n20|\n21|\n22|\n23|\n24|\n25|\n26|\n27|\n28|\n29|\n30|\n31|", "total_lines": 260, "file_size": 15431, "truncated": true, "hint": "Use offset=31 to continue reading (showing 1-30 of 260 lines)", "is_binary": false, "is_image": false}
-
-### state.db:20260614_172730_0556cc:58
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `ending_or_timeline`
-- Confidence hint: 0.5
-- Snippet: {"output": "{\"ok\": true, \"health\": \"attention\", \"json\": \"/tmp/wiki_health_current.json\", \"md\": \"/tmp/wiki_health_current.md\"}\nEXIT=3\n{\n \"generated_at\": \"2026-06-14T23:20:10.207356+00:00\",\n \"wiki_root\": \"/home/zack/wiki\",\n \"counts\": {\n \"public_pages\": 24,\n \"raw_sessions_total\": 114,\n \"raw_sessions_processed\": 11,\n \"raw_sessions_unprocessed\": 103\n },\n \"status_counts\": {\n \"complete\": 19,\n \"needs-more-sources\": 4,\n \"stub\": 1\n },\n \"issues\": {\n \"missing_status\": [],\n \"missing_confidence\": [],\n \"missing_sources\": [\n \"docs/topics/novel-lore/bingfengzhishi-profile.md\",\n \"docs/topics/novel-lore/chaos-concept.md\",\n \"docs/topics/novel-lore/di-zhi-qian-bi-concept.md\",\n \"docs/topics/novel-lore/du-ge-feng-profile.md\",\n \"docs/topics/novel-lore/fire-epoch-fairies-concept.md\",\n \"docs/topics/novel-lore/gu-qing-shan-profile.md\",\n \"docs/topics/novel-lore/honghuang-concept.md\",\n \"docs/topics/novel-lore/liu-ping-profile.md\",\n \"docs/topics/novel-lore/liudao-lunhui-concept.md\",\n \"docs/topics/novel-lore/liudao-system-overview-concept.md\",\n \"docs/topics/novel-lore/liudao-zhengxiong-concept.md\",\n \"docs/topics/novel-lore/mengmei-black-skeletons-concept.md\",\n \"docs/topics/novel-lore/qingtongzhizhu-profile.md\",\n \"docs/topics/novel-lore/sequence-system-concept.md\",\n \"docs/topics/novel-lore/wan-jie-fu-shi-zhe-profile.md\",\n \"docs/topics/novel-lore/wan-shen-nu-di-profile.md\",\n \"docs/topics/novel-lore/world-gate-concept.md\",\n \"docs/topics/novel-lore/wu-zhuan-zhi-di-concept.md\",\n \"docs/topics/novel-lore/xie-dao-ling-profile.md\",\n \"docs/topics/novel-lore/xiemozhizhu-profile.md\",\n \"docs/topics/novel-lore/xukong-san-shu-comparison.md\",\n \"docs/topics/novel-lore/yong-mie-zhi-wang-profile.md\",\n \"docs/topics/novel-lore/zhu-jie-mo-ri-ending.md\"\n ],\n \"low_confidence_complete\": [],\n \"high_confidence_needs_more_sources\": []\n },\n \"health\": \"attention\"\n}---MD---\n# Wi
-
-### state.db:20260614_172730_0556cc:57
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"bytes_written": 5751, "dirs_created": true, "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki-health.py", "files_modified": ["/home/zack/.hermes/scripts/wiki-health.py"]}
-
-### state.db:20260614_172730_0556cc:56
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `ending_or_timeline`
-- Snippet: {"todos": [{"id": "1", "content": "Phase 0：将 wiki-lint.py 改为通用 Wiki 规则并修复缺失元数据盲区", "status": "completed"}, {"id": "2", "content": "Phase 0：补齐 zhu-jie-mo-ri-ending.md 元数据并运行 linter/build/负测", "status": "completed"}, {"id": "3", "content": "Phase 1：实现通用 raw/session 候选知识提取器并验证", "status": "completed"}, {"id": "4", "content": "Phase 2：改造 wiki_sync_hook.py 支持通用 topic/entity 匹配并验证 dry-run", "status": "completed"}, {"id": "5", "content": "Phase 3：新增通用 Wiki health report 并验证", "status": "in_progress"}, {"id": "6", "content": "Phase 4：补充 MkDocs 版本锁定/兼容检查与验证", "status": "pending"}, {"id": "7", "content": "Phase 5：更新 llm-wiki 规则为通用 Wiki 表述并验证 skill/docs", "status": "pending"}], "summary": {"total": 7, "pending": 2, "in_progress": 1, "completed": 4, "cancelled": 0}}
-
-### state.db:20260614_172730_0556cc:55
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `identity_or_relation`
-- Snippet: {"output": "EXIT=0\n{\n \"status\": \"synced\",\n \"query\": \"顾青山 身份 六道兵器\",\n \"engine\": \"test\",\n \"results_count\": 1,\n \"pages_scanned\": 1,\n \"flagged_stale\": [],\n \"new_entity_phrases\": [\n \"顾青山身份测试\",\n \"顾青山与六道兵器\",\n \"洪荒纪元残骸有关\"\n ],\n \"search_summary_truncated\": \"[test-source] 顾青山身份测试: 顾青山与六道兵器、洪荒纪元残骸有关\",\n \"agent_action_required\": true\n}\nSTDERR\n[DRY RUN] Would write to log.md:\n Query: 顾青山 身份 六道兵器\n Engine: test (1 results)\n Pages scanned: 1\n 🆕 New entity phrases not in wiki: 顾青山身份测试, 顾青山与六道兵器, 洪荒纪元残骸有关", "exit_code": 0, "error": null}
-
-### state.db:20260614_172730_0556cc:54
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki_sync_hook.py\n+++ b//home/zack/.hermes/scripts/wiki_sync_hook.py\n@@ -254,6 +254,7 @@\n pa.add_argument(\"--dry-run\", action=\"store_true\", help=\"Show what would change without writing\")\n args = pa.parse_args()\n \n+ global WIKI_ROOT, WIKI_DOCS, TOPICS_DIR, LOG_FILE, SEARCH_REPORT\n WIKI_ROOT = Path(args.wiki_root).expanduser().resolve()\n WIKI_DOCS = WIKI_ROOT / \"docs\"\n TOPICS_DIR = WIKI_DOCS / \"topics\"\n", "files_modified": ["/home/zack/.hermes/scripts/wiki_sync_hook.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki_sync_hook.py"}
-
-### state.db:20260614_172730_0556cc:53
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `identity_or_relation`
-- Snippet: {"output": "EXIT=0\n{\n \"status\": \"synced\",\n \"query\": \"顾青山 身份 六道兵器\",\n \"engine\": \"searxng\",\n \"results_count\": 8,\n \"pages_scanned\": 1,\n \"flagged_stale\": [\n \"topics/novel-lore/gu-qing-shan-profile.md\"\n ],\n \"new_entity_phrases\": [\n \"煦色韶光映竹無人見相伴\",\n \"小說\",\n \"諸界末日線上\",\n \"第三百二十八章最后一圣\",\n \"勝利是屬於我的\",\n \"日語\",\n \"動漫\",\n \"要好先用血之聖柱的力騙了永滅之王一場\",\n \"爭奪了簡單\",\n \"有没有大佬捋一捋诸界末日在线故事线\"\n ],\n \"search_summary_truncated\": \"[SearXNG] Bengtsson41Floyd - Centrum Analiz Klimatyczno-Energetycznych (CAKE): 煦色韶光映竹無人見相伴-p2 小說-諸界末日線上-诸界末日在线 第三百二十八章最后一圣！ ... 勝利是屬於我的【日語】 動漫 要好先用血之聖柱的力騙了永滅之王一場，爭奪了簡單 ...\\n[SearXNG] 有没有大佬捋一捋诸界末日在线故事线，看完整个人还是有点懵？ - 知乎: Dec 8, 2020 ... 有没有大佬捋一捋诸界末日在线故事线，看完整个人还是有点懵？ 点击 ... 永灭之王为首，再用秘密为代价邀请高维世界的强者一起，一次次击碎六道 ...\\n[SearXNG] 诸界末日在线- 烟火成城 - 起点中文: Nov 20, 2025 · ... 《诸界末日在线》，已更新2255章，最新章节：新书《盗三界》已发布！ ... 第三百二十二章永灭之王; 第三百二十三章师徒手段; 第三百二十四章万 ...\\n[SearXNG] 诸界末日在线- 烟火成城 - 起点中文: Nov 20, 2025 ... ... 《诸界末日在线》，已更\",\n \"agent_action_required\": true\n}\nSTDERR\n[DRY RUN] Would write to log.md:\n Query: 顾青山 身份 六道兵器\n Engine: searxng (8 results)\n Pages scanned: 1\n ⚠️ Potentially stale pages: topics/novel-lore/gu-qing-shan-profile.md\n 🆕 New entity phrases not in wiki: 煦色韶光映竹無人見相伴, 小說, 諸界末日線上, 第三百二十八章最后一圣, 勝利是屬於我的", "exit_code": 0, "error": null}
-
-### state.db:20260614_172730_0556cc:52
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki_sync_hook.py\n+++ b//home/zack/.hermes/scripts/wiki_sync_hook.py\n@@ -270,7 +270,7 @@\n result_count = len(data.get(\"results\", []))\n \n # Step 2: Find relevant wiki pages\n- relevant_pages = find_relevant_pages(query)\n+ relevant_pages = find_relevant_pages(query, topic_dir=args.topic_dir)\n if not relevant_pages:\n print(f\"📭 No wiki pages match query '{query}' — nothing to sync\", file=sys.stderr)\n save_sync_state(load_sync_state())\n", "files_modified": ["/home/zack/.hermes/scripts/wiki_sync_hook.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki_sync_hook.py"}
-
-### state.db:20260614_172730_0556cc:51
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki_sync_hook.py\n+++ b//home/zack/.hermes/scripts/wiki_sync_hook.py\n@@ -254,7 +254,11 @@\n pa.add_argument(\"--dry-run\", action=\"store_true\", help=\"Show what would change without writing\")\n args = pa.parse_args()\n \n- print(\"🔍 Wiki Sync Hook starting...\", file=sys.stderr)\n+ WIKI_ROOT = Path(args.wiki_root).expanduser().resolve()\n+ WIKI_DOCS = WIKI_ROOT / \"docs\"\n+ TOPICS_DIR = WIKI_DOCS / \"topics\"\n+ LOG_FILE = WIKI_DOCS / \"log.md\"\n+ SEARCH_REPORT = Path(args.search_report)\n \n # Step 1: Load search results\n data = load_search_results()\n", "files_modified": ["/home/zack/.hermes/scripts/wiki_sync_hook.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki_sync_hook.py"}
-
-### state.db:20260614_172730_0556cc:50
-- Source: `state.db`
-- Session: 探讨诸界末日在线结局 #82
-- Type: `wiki_maintenance`
-- Snippet: {"success": true, "diff": "--- a//home/zack/.hermes/scripts/wiki_sync_hook.py\n+++ b//home/zack/.hermes/scripts/wiki_sync_hook.py\n@@ -248,6 +248,9 @@\n import argparse\n pa = argparse.ArgumentParser(description=\"Wiki Sync Hook — event-driven search→wiki pipeline\")\n pa.add_argument(\"--query\", type=str, help=\"Search query (for log entry)\")\n+ pa.add_argument(\"--topic-dir\", type=str, default=None, help=\"Optional topic directory under docs/topics; defaults to all topics\")\n+ pa.add_argument(\"--wiki-root\", type=str, default=os.environ.get(\"WIKI_ROOT\", str(Path.home() / \"wiki\")), help=\"Wiki root directory\")\n+ pa.add_argument(\"--search-report\", type=str, default=os.environ.get(\"WIKI_SEARCH_REPORT\", \"/tmp/layered_search_report.json\"), help=\"layered_search JSON report path\")\n pa.add_argument(\"--dry-run\", action=\"store_true\", help=\"Show what would change without writing\")\n args = pa.parse_args()\n \n", "files_modified": ["/home/zack/.hermes/scripts/wiki_sync_hook.py"], "lint": {"status": "ok", "output": ""}, "resolved_path": "/home/zack/.hermes/scripts/wiki_sync_hook.py"}

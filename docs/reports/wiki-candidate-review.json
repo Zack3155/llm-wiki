@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-15T00:50:00.592921+00:00",
+  "generated_at": "2026-06-15T00:52:31.102094+00:00",
   "input": "/home/zack/.hermes/state.db",
   "counts": {
-    "input_total_candidates": 12620,
+    "input_total_candidates": 12648,
     "input_emitted_candidates": 1000,
-    "review_clusters": 5
+    "review_clusters": 3
   },
   "claim_type_counts": {
-    "durable_fact": 70,
-    "identity_or_relation": 434,
-    "wiki_maintenance": 237,
+    "wiki_maintenance": 254,
+    "identity_or_relation": 420,
     "ending_or_timeline": 181,
-    "verification_gate": 78
+    "verification_gate": 80,
+    "durable_fact": 65
   },
   "clusters": [
     {
@@ -22,11 +22,11 @@
         "state.db"
       ],
       "snippets": [
-        "{\"output\": \"acc44b0 docs: refresh wiki health report\\n957ac38 docs: add wiki health report\\nbec91a6 Wiki Linter Auto-Commit: 2026-06-14 17:29:16\", \"exit_code\": 0, \"error\": null}",
-        "{\"output\": \"[main acc44b0] docs: refresh wiki health report\\n 2 files changed, 2 insertions(+), 2 deletions(-)\", \"exit_code\": 0, \"error\": null}",
-        "{\"output\": \"[main 957ac38] docs: add wiki health report\\n 2 files changed, 2 insertions(+), 2 deletions(-)\", \"exit_code\": 0, \"error\": null}",
-        "{\"output\": \"BUILD_EXIT=0\\n\\n │ ⚠ Warning from the Material for MkDocs team\\n │\\n │ MkDocs 2.0, the underlying framework of Material for MkDocs,\\n │ will introduce backward-incompatible changes, including:\\n │\\n │ × All plugins will stop working – the plugin system has been removed\\n │ × All theme overrides will break – the theming system has been rewritten\\n │ × No migration path exists – existing projects cannot be upgraded\\n │ × Closed contribution model – community members can't report bugs\\n │ × Currently unlicensed – unsuitable for production use\\n │\\n │ Our full analysis:\\n │\\n │ https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/\\n\\nINFO - Cleaning site directory\\nINFO - Building documentation to directory: /home/zack/wiki/site\\nINFO - Documentation built in 0.19 seconds\\n---GIT---\", \"exit_code\": 0, \"error\": null}",
-        "{\"output\": \"LINT_EXIT=0\\n✅ 24 pages | fixes=2 err=0 warn=0 | report=/tmp/wiki_lint_report.json\\n{\\n \\\"timestamp\\\": \\\"2026-06-14T17:29:16.536964\\\",\\n \\\"pages_scanned\\\": 24,\\n \\\"auto_fixed\\\": [\\n \\\"✅ Index unchanged: /home/zack/wiki/docs/index.md\\\",\\n \\\"✅ Git committed lint changes: docs/reports/wiki-health.json | 2 +-\\\\n docs/reports/wiki-health.md | 14 +-------------\\\\n 2 files changed, 2 insertions(+), 14 deletions(-)\\\"\\n ],\\n \\\"auto_fix_count\\\": 2,\\n \\\"remaining_errors\\\": [],\\n \\\"remaining_warnings\\\": []\\n}---GIT---\", \"exit_code\": 0, \"error\": null}"
+        "就按照你给的建议，开始下一步，然后现在wiki的cron job有没有可以合并或者一块运行的可能，貌似已经有多个不一样的在运行了",
+        "{ \"success\": true, \"count\": 6, \"jobs\": [ { \"job_id\": \"5ea87b78e2ad\", \"name\": \"Wiki Linter (health check)\", \"skill\": null, \"skills\": [], \"prompt_preview\": \"This is a no-agent job, but required field. Script runs directly.\", \"model\": \"odytrice/qwen3.6:5090-27b\", \"provider\": \"local-localhost:11434\", \"base_url\": null, \"schedule\": \"every 720m\", \"repeat\": \"forever\", \"deliver\": \"feishu:oc_c287194d33528f3aa30e1a13f0603d64\", \"next_run_at\": \"2026-06-14T21:50:30.704243-07:00\", \"last_run_at\": \"2026-06-14T09:50:30.704243-07:00\", \"last_status\": \"ok\", \"last_delivery_error\": null, \"enabled\": true, \"state\": \"scheduled\", \"paused_at\": null, \"paused_reason\": null, \"script\": \"wiki-lint.py\", \"no_agent\": true }, { \"job_id\": \"4c9c352bacfc\", \"name\": \"memory-weekly-scan\", \"skill\": null, \"skills\": [], \"prompt_preview\": \"weekly memory hygiene audit\", \"model\": null, \"provider\": null, \"base_url\": null, \"schedule\": \"0 9 * * 0\", \"repeat\": \"forever\", \"deliver\": \"feishu:oc_c287194d33528f3aa30e1a13f0603d64\", \"next_run_at\": \"2026-06-21T09:00:00-07:00\", \"last_run_at\": \"2026-06-14T12:02:30.163822-07:00\", \"last_status\": \"ok\", \"last_delivery_error\": null, \"enabled\": true, \"state\": \"scheduled\", \"paused_at\": null, \"paused_reason\": null, \"script\": \"memory-scanner.py\", \"no_agent\": true }, { \"job_id\": \"610f265caa42\", \"name\": \"Wiki Knowledge Auto-Filer (3h window)\", \"skill\": \"llm-wiki\", \"skills\": [ \"llm-wiki\" ], \"prompt_preview\": \"Wiki Knowledge Auto-Filer \\u2014 3-hour durable knowledge sync.\\n\\nLoad the llm-wiki skill first. You are r...\", \"model\": \"odytrice/qwen3.6:5090-27b\", \"provider\": \"local-localhost:11434\", \"base_url\": null, \"schedule\": \"0 */3 * * *\", \"repeat\": \"forever\", \"deliver\": \"feishu:oc_c287194d33528f3aa30e1a13f0603d64\", \"next_run_at\": \"2026-06-14T18:00:00-07:00\", \"last_run_at\": \"2026-06-14T15:02:00.381455-07:00\", \"last_status\": \"ok\", \"last_delivery_error\": null, \"enabled\": true, \"state\": \"scheduled\", \"paused_at\": null, \"paused_reason\": null, \"enabled_toolsets\": [ \"session_search\", \"file\", \"termi",
+        "{\"content\": \"1|{\\n2| \\\"timestamp\\\": \\\"2026-06-14T17:44:51.106458\\\",\\n3| \\\"pages_scanned\\\": 24,\\n4| \\\"auto_fixed\\\": [\\n5| \\\"✅ Index unchanged: /home/zack/wiki/docs/index.md\\\",\\n6| \\\"✅ Git committed lint changes: docs/reports/wiki-candidates.json | 13013 ++++++++++++++++++++++++++++++++++++\\\\n docs/reports/wiki-candidates.md | 325 +\\\\n docs/reports/wiki-health.json | 2 +-\\\\n docs/reports/wiki-health.md | 2 +-\\\\n 4 files changed, 13340 insertions(+), 2 deletions(-)\\\"\\n7| ],\\n8| \\\"auto_fix_count\\\": 2,\\n9| \\\"remaining_errors\\\": [],\\n10| \\\"remaining_warnings\\\": []\\n11|}\", \"total_lines\": 10, \"file_size\": 540, \"truncated\": false, \"is_binary\": false, \"is_image\": false}",
+        "{\"output\": \"candidates_json True 2177932\\ncandidates_md True 50697\\nhealth_json True 523\\nhealth_md True 381\\n{\\n \\\"candidate_counts\\\": {\\n \\\"state_db_candidates\\\": 4815,\\n \\\"raw_session_candidates\\\": 7950,\\n \\\"total_candidates\\\": 12620,\\n \\\"emitted_candidates\\\": 1000\\n },\\n \\\"health\\\": \\\"ok\\\",\\n \\\"health_counts\\\": {\\n \\\"public_pages\\\": 24,\\n \\\"raw_sessions_total\\\": 114,\\n \\\"raw_sessions_processed\\\": 11,\\n \\\"raw_sessions_unprocessed\\\": 103\\n }\\n}\\nLINT_BUILD_EXIT=0\\n✅ 24 pages | fixes=2 err=0 warn=0 | report=/tmp/wiki_lint_report.json\\n---BUILD---\\n\\n │ ⚠ Warning from the Material for MkDocs team\\n │\\n │ MkDocs 2.0, the underlying framework of Material for MkDocs,\\n │ will introduce backward-incompatible changes, including:\\n │\\n │ × All plugins will stop working – the plugin system has been removed\\n │ × All theme overrides will break – the theming system has been rewritten\\n │ × No migration path exists – existing projects cannot be upgraded\\n │ × Closed contribution model – community members can't report bugs\\n │ × Currently unlicensed – unsuitable for production use\\n │\\n │ Our full analysis:\\n │\\n │ https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/\\n\\nINFO - Cleaning site directory\\nINFO - Building documentation to directory: /home/zack/wiki/site\\nINFO - Documentation built in 0.19 seconds\\n---GIT---\", \"exit_code\": 0, \"error\": null}",
+        "{\"output\": \"JOB 75b39ccdfa1d\\nFILE /home/zack/.hermes/cron/output/75b39ccdfa1d/2026-06-14_17-44-29.md\\n# Cron Job: Wiki Candidate Extractor daily\\n\\n**Job ID:** 75b39ccdfa1d\\n**Run Time:** 2026-06-14 17:44:29\\n**Mode:** no_agent (script)\\n\\n---\\n\\nRUN /home/zack/.hermes/hermes-agent/venv/bin/python /home/zack/.hermes/scripts/wiki-candidate-extractor.py --out /home/zack/wiki/docs/reports/wiki-candidates.json --md-out /home/zack/wiki/docs/reports/wiki-candidates.md --state-limit 120 --raw-limit 300 --max-candidates 1000\\n{\\\"ok\\\": true, \\\"out\\\": \\\"/home/zack/wiki/docs/reports/wiki-candidates.json\\\", \\\"md_out\\\": \\\"/home/zack/wiki/docs/reports/wiki-candidates.md\\\", \\\"counts\\\": {\\\"state_db_candidates\\\": 4815, \\\"raw_session_candidates\\\": 7950, \\\"total_candidates\\\": 12620, \\\"emitted_candidates\\\": 1000}}\\n\\nJOB f6fc2dcec42b\\nFILE /home/zack/.hermes/cron/output/f6fc2dcec42b/2026-06-14_17-44-28.md\\n# Cron Job: Wiki Health Report 6h\\n\\n**Job ID:** f6fc2dcec42b\\n**Run Time:** 2026-06-14 17:44:28\\n**Mode:** no_agent (script)\\n\\n---\\n\\nRUN /home/zack/.hermes/hermes-agent/venv/bin/python /home/zack/.hermes/scripts/wiki-health.py --wiki-root /home/zack/wiki --json-out /home/zack/wiki/docs/reports/wiki-health.json --md-out /home/zack/wiki/docs/reports/wiki-health.md\\n{\\\"ok\\\": true, \\\"health\\\": \\\"ok\\\", \\\"json\\\": \\\"/home/zack/wiki/docs/reports/wiki-health.json\\\", \\\"md\\\": \\\"/home/zack/wiki/docs/reports/wiki-health.md\\\"}\", \"exit_code\": 0, \"error\": null}"
       ],
       "confidence_hints": [],
       "review_score": 0.25,
@@ -40,22 +40,8 @@
         "state.db"
       ],
       "snippets": [
-        "{\"todos\": [{\"id\": \"1\", \"content\": \"Phase 0：将 wiki-lint.py 改为通用 Wiki 规则并修复缺失元数据盲区\", \"status\": \"completed\"}, {\"id\": \"2\", \"content\": \"Phase 0：补齐 zhu-jie-mo-ri-ending.md 元数据并运行 linter/build/负测\", \"status\": \"completed\"}, {\"id\": \"3\", \"content\": \"Phase 1：实现通用 raw/session 候选知识提取器并验证\", \"status\": \"completed\"}, {\"id\": \"4\", \"content\": \"Phase 2：改造 wiki_sync_hook.py 支持通用 topic/entity 匹配并验证 dry-run\", \"status\": \"completed\"}, {\"id\": \"5\", \"content\": \"Phase 3：新增通用 Wiki health report 并验证\", \"status\": \"completed\"}, {\"id\": \"6\", \"content\": \"Phase 4：补充 MkDocs 版本锁定/兼容检查与验证\", \"status\": \"completed\"}, {\"id\": \"7\", \"content\": \"Phase 5：更新 llm-wiki 规则为通用 Wiki 表述并验证 skill/docs\", \"status\": \"completed\"}], \"summary\": {\"total\": 7, \"pending\": 0, \"in_progress\": 0, \"completed\": 7, \"cancelled\": 0}}",
-        "{\"output\": \"{\\\"ok\\\": true, \\\"health\\\": \\\"ok\\\", \\\"json\\\": \\\"/home/zack/wiki/docs/reports/wiki-health.json\\\", \\\"md\\\": \\\"/home/zack/wiki/docs/reports/wiki-health.md\\\"}\\nFINAL_EXIT=0\\n✅ 24 pages | fixes=1 err=0 warn=0 | report=/tmp/wiki_lint_report.json\\n{\\n \\\"timestamp\\\": \\\"2026-06-14T17:30:27.793731\\\",\\n \\\"pages_scanned\\\": 24,\\n \\\"auto_fixed\\\": [\\n \\\"✅ Index unchanged: /home/zack/wiki/docs/index.md\\\"\\n ],\\n \\\"auto_fix_count\\\": 1,\\n \\\"remaining_errors\\\": [],\\n \\\"remaining_warnings\\\": []\\n}---BUILD---\\n\\n │ ⚠ Warning from the Material for MkDocs team\\n │\\n │ MkDocs 2.0, the underlying framework of Material for MkDocs,\\n │ will introduce backward-incompatible changes, including:\\n │\\n │ × All plugins will stop working – the plugin system has been removed\\n │ × All theme overrides will break – the theming system has been rewritten\\n │ × No migration path exists – existing projects cannot be upgraded\\n │ × Closed contribution model – community members can't report bugs\\n │ × Currently unlicensed – unsuitable for production use\\n │\\n │ Our full analysis:\\n │\\n │ https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/\\n\\nINFO - Cleaning site directory\\nINFO - Building documentation to directory: /home/zack/wiki/site\\nINFO - Documentation built in 0.19 seconds\\n---GIT---\\n M docs/reports/wiki-health.json\\n M docs/reports/wiki-health.md\", \"exit_code\": 0, \"error\": null}"
-      ],
-      "confidence_hints": [],
-      "review_score": 0.0,
-      "recommended_action": "keep_in_backlog"
-    },
-    {
-      "id": "探讨诸界末日在线结局 #82::durable_fact",
-      "session_title": "探讨诸界末日在线结局 #82",
-      "claim_type": "durable_fact",
-      "sources": [
-        "state.db"
-      ],
-      "snippets": [
-        "进行你的下一步计划，还有你提到的候选提取器，health report都是自动运行的吗"
+        "{\"todos\": [{\"id\": \"1\", \"content\": \"确认候选提取器和 health report 当前是否自动运行\", \"status\": \"completed\"}, {\"id\": \"2\", \"content\": \"为候选提取器增加 docs/reports 输出与 Markdown 摘要\", \"status\": \"completed\"}, {\"id\": \"3\", \"content\": \"创建 cron 包装脚本：Wiki Candidate Extractor 与 Wiki Health Report\", \"status\": \"completed\"}, {\"id\": \"4\", \"content\": \"注册并实锤验证两个 cron job\", \"status\": \"completed\"}, {\"id\": \"5\", \"content\": \"运行最终验证：py_compile、cron run、报告存在、git 状态\", \"status\": \"completed\"}], \"summary\": {\"total\": 5, \"pending\": 0, \"in_progress\": 0, \"completed\": 5, \"cancelled\": 0}}",
+        "{\"todos\": [{\"id\": \"1\", \"content\": \"确认候选提取器和 health report 当前是否自动运行\", \"status\": \"completed\"}, {\"id\": \"2\", \"content\": \"为候选提取器增加 docs/reports 输出与 Markdown 摘要\", \"status\": \"completed\"}, {\"id\": \"3\", \"content\": \"创建 cron 包装脚本：Wiki Candidate Extractor 与 Wiki Health Report\", \"status\": \"completed\"}, {\"id\": \"4\", \"content\": \"注册并实锤验证两个 cron job\", \"status\": \"completed\"}, {\"id\": \"5\", \"content\": \"运行最终验证：py_compile、cron run、报告存在、git 状态\", \"status\": \"in_progress\"}], \"summary\": {\"total\": 5, \"pending\": 0, \"in_progress\": 1, \"completed\": 4, \"cancelled\": 0}}"
       ],
       "confidence_hints": [],
       "review_score": 0.0,
@@ -69,26 +55,12 @@
         "state.db"
       ],
       "snippets": [
-        "✅ 已按“一步步逐项改进 + 每步验证”的方式完成第一批落地。 本轮重点：**把 Wiki 规则从 `novel-lore` 专用扩展到通用 Wiki**，同时补齐 linter、候选提取、search→wiki hook、health report、MkDocs 兼容检查。 --- ## 本轮已完成 ### 1. 通用 Wiki Linter 规则 已改： ```text /home/zack/.hermes/scripts/wiki-lint.py ``` 现在规则不再只服务 `novel-lore`，而是默认扫描： ```text /home/zack/wiki/docs/topics/* ``` 新增硬拦截： ```text 所有公开页面必须有 status 所有非索引页面必须有 confidence 所有非索引页面必须有 sources complete 页面 confidence < 0.8 会报错 missing status 不再绕过检查 ``` 验证结果： ```text python3 -m py_compile /home/zack/.hermes/scripts/wiki-lint.py ✅ 通过 ``` 当前 Wiki lint： ```text ✅ 24 pages | fixes=1 err=0 warn=0 | report=/tmp/wiki_lint_report.json ``` 负测也验证过： ```text 低置信度 complete 页面会被 linter 报出 缺失 status/confidence 会被自动修复或拦截 ``` --- ### 2. `zhu-jie-mo-ri-ending.md` 元数据补齐 已补： ```yaml status: stub confidence: 0.00 sources: - local wiki date_modified: 2026-06-14 ``` 注意：我没有把它标成 `complete`，因为终局分析还需要更强证据链复核。 验证： ```text wiki-lint.py err=0 warn=0 mkdocs build --strict EXIT=0 ``` --- ### 3. 新增通用 raw/session 候选知识提取器 新增： ```text /home/zack/.hermes/scripts/wiki-candidate-extractor.py ``` 功能： ```text 扫描 state.db 扫描 docs/raw/sessions 提取 durable knowledge candidates 输出 JSON 不直接写 Wiki ``` 验证结果： ```text state_db_candidates: 392 raw_session_candidates: 517 total_candidates: 884 EXIT=0 ``` 命令： ```bash python3 /home/zack/.hermes/scripts/wiki-candidate-extractor.py \\ --out /tmp/wiki_candidates_test.json \\ --state-limit 10 \\ --raw-limit 20 ``` --- ### 4. Search → Wiki Hook 改为通用 topic/entity 匹配 已改： ```text /home/zack/.hermes/scripts/wiki_sync_hook.py ``` 现在支持： ```bash --wiki-root --topic-dir --search-report --dry-run ``` 默认不再只匹配 `novel-lore`，而是： ```text 先查 ENTITY_PATTERNS 没有命中则扫描 docs/topics/* 可用 --topic-dir 限制范围 ``` 验证 dry-run： ```text EXIT=0 engine: test results_count: 1 pages_scanned: 1 agent_action_required: true ``` 说明：现在 hook 可以识别相关页面和新增实体短语，但不会自动写事实，仍保留人工/LLM 审核。 --- ### 5. 新增通用 Wiki Health Report 新增： ```text /home/zack/.hermes/scripts/wiki-health.py ``` 生成： ```text /home/zack/wiki/docs/reports/wiki-health.json /home/za"
+        "✅ 先回答你的问题：**刚才提到的候选提取器和 health report 之前不是自动运行，只是脚本。** 我已经把它们接成 **cron 自动运行**，并实锤验证成功。 --- ## 已完成的下一步计划：自动化候选提取 + 健康报告 ### 1. 候选提取器已接入 cron 新增自动任务： ```text Wiki Candidate Extractor daily Job ID: 75b39ccdfa1d Schedule: 每天 03:35 Script: cron-wiki-candidate-extractor.py Mode: no_agent ``` 它会生成： ```text /home/zack/wiki/docs/reports/wiki-candidates.json /home/zack/wiki/docs/reports/wiki-candidates.md ``` 最新 cron 实测结果： ```text last_status: ok last_delivery_error: null ``` 实际输出： ```json { \"state_db_candidates\": 4815, \"raw_session_candidates\": 7950, \"total_candidates\": 12620, \"emitted_candidates\": 1000 } ``` 说明： - 它扫描 `state.db` 和 `docs/raw/sessions` - 提取候选知识片段 - 默认最多输出 1000 条，避免报告过大 - **不会自动写 Wiki 页面**，只是生成候选报告，供后续审核/入库 --- ### 2. Health report 已接入 cron 新增自动任务： ```text Wiki Health Report 6h Job ID: f6fc2dcec42b Schedule: 每 6 小时 Script: cron-wiki-health.py Mode: no_agent ``` 它会生成： ```text /home/zack/wiki/docs/reports/wiki-health.json /home/zack/wiki/docs/reports/wiki-health.md ``` 最新 cron 实测结果： ```text last_status: ok last_delivery_error: null ``` 实际健康状态： ```json { \"health\": \"ok\", \"public_pages\": 24, \"raw_sessions_total\": 114, \"raw_sessions_processed\": 11, \"raw_sessions_unprocessed\": 103, \"missing_status\": 0, \"missing_confidence\": 0, \"missing_sources\": 0, \"low_confidence_complete\": 0 } ``` --- ## 新增/修改文件 ```text /home/zack/.hermes/scripts/wiki-candidate-extractor.py /home/zack/.hermes/scripts/wiki-health.py /home/zack/.hermes/scripts/cron-wiki-candidate-extractor.py /home/zack/.hermes/scripts/cron-wiki-health.py /home/zack/wiki/docs/reports/wiki-candidates.json /home/zack/wiki/docs/reports/wiki-candidates.md /home/zack/wiki/docs/reports/wiki-health.json /home/zack/wiki/docs/reports/wiki-health.md ``` --- ## 验证结果 已跑： ```text py_compile: ✅ wiki-candidate-extractor.py ✅ cron-wiki-candidate-extractor.py ✅ wiki-health.py ✅ cron-wiki-health.py ``` cron 手动触发验证： ```text Wiki Candidate Extractor daily ✅ last_status: ok Wiki Health Report 6h ✅ last_status: ok ``` Wiki 最终验证： ```text w"
       ],
       "confidence_hints": [
-        0.96
+        0.97
       ],
-      "review_score": 0.536,
-      "recommended_action": "review_for_wiki_write"
-    },
-    {
-      "id": "探讨诸界末日在线结局 #82::verification_gate",
-      "session_title": "探讨诸界末日在线结局 #82",
-      "claim_type": "verification_gate",
-      "sources": [
-        "state.db"
-      ],
-      "snippets": [
-        "{\"output\": \"{\\\"ok\\\": true, \\\"health\\\": \\\"ok\\\", \\\"json\\\": \\\"/home/zack/wiki/docs/reports/wiki-health.json\\\", \\\"md\\\": \\\"/home/zack/wiki/docs/reports/wiki-health.md\\\"}\\nHEALTH_EXIT=0\\n{\\n \\\"health\\\": \\\"ok\\\",\\n \\\"counts\\\": {\\n \\\"public_pages\\\": 24,\\n \\\"raw_sessions_total\\\": 114,\\n \\\"raw_sessions_processed\\\": 11,\\n \\\"raw_sessions_unprocessed\\\": 103\\n },\\n \\\"issues\\\": {\\n \\\"missing_status\\\": 0,\\n \\\"missing_confidence\\\": 0,\\n \\\"missing_sources\\\": 0,\\n \\\"low_confidence_complete\\\": 0,\\n \\\"high_confidence_needs_more_sources\\\": 0\\n }\\n}\\n M docs/reports/wiki-health.json\\n M docs/reports/wiki-health.md\", \"exit_code\": 0, \"error\": null}"
-      ],
-      "confidence_hints": [],
-      "review_score": 0.0,
+      "review_score": 0.339,
       "recommended_action": "keep_in_backlog"
     }
   ]
