@@ -12,7 +12,7 @@ tags:
   - index
   - novel-lore
 date_added: 2026-06-10
-date_modified: 2026-06-14
+date_modified: 2026-06-15
 
 ---
 
@@ -52,6 +52,7 @@ date_modified: 2026-06-14
 | [六道轮回 · 概念档案](liudao-lunhui-concept.md) | 六道轮回体系与终局崩碎路径 | complete | 0.88 |
 | [六道争雄 · 概念档案](liudao-zhengxiong-concept.md) | 六道争雄阶段与核心角色关系 | complete | 0.86 |
 | [混沌 · 概念档案](chaos-concept.md) | 混沌、墟墓、邪魔与终局冲突 | complete | 0.82 |
+| [墟墓 · 概念档案](xumu-concept.md) | 概念层墟墓与剧情代称层“大尸兄/巨大尸体/邪魔首领”的边界 | needs-more-sources | 0.78 |
 | [洪荒 · 概念档案](honghuang-concept.md) | 洪荒纪元与六道体系起源 | complete | 0.82 |
 | [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md) | 四圣柱魂器与地之世界关系 | complete | 0.95 |
 | [序列体系 · 概念档案](sequence-system-concept.md) | 序列、术法与终局能力体系 | complete | 0.82 |
@@ -81,6 +82,9 @@ date_modified: 2026-06-14
 - [诸界末日在线](wu-zhuan-zhi-di-concept.md)
 
 | [妖精 · 种族档案](./fire-epoch-fairies-concept.md) | Wiki | Auto-added |
+
+
+## Summary
 
 
 ## Summary
