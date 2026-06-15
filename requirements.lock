@@ -1,0 +1,14 @@
+# MkDocs dependency lock for /home/zack/wiki
+# Generated: 2026-06-14
+#
+# Current verified versions:
+#   mkdocs==1.6.1
+#   mkdocs-material==9.7.6
+#
+# Compatibility guard:
+#   MkDocs 2.0 is expected to remove the plugin system according to the
+#   Material for MkDocs warning emitted by `mkdocs build --strict`.
+#   Keep this pin below 2.0 until a no-plugin migration path is implemented.
+
+mkdocs==1.6.1
+mkdocs-material==9.7.6

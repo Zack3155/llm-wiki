@@ -5,6 +5,7 @@ exclude_docs: |
   raw/**
   pages/**
   archive/**
+  reports/**
   log.md
 theme:
   name: material

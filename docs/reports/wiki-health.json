@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-06-14T23:21:58.655876+00:00",
+  "wiki_root": "/home/zack/wiki",
+  "counts": {
+    "public_pages": 24,
+    "raw_sessions_total": 114,
+    "raw_sessions_processed": 11,
+    "raw_sessions_unprocessed": 103
+  },
+  "status_counts": {
+    "complete": 19,
+    "needs-more-sources": 4,
+    "stub": 1
+  },
+  "issues": {
+    "missing_status": [],
+    "missing_confidence": [],
+    "missing_sources": [],
+    "low_confidence_complete": [],
+    "high_confidence_needs_more_sources": []
+  },
+  "health": "ok"
+}
