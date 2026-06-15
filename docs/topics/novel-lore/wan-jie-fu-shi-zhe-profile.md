@@ -3,16 +3,17 @@ title: 万界俯视者 — 角色档案
 name: wan-jie-fu-shi-zhe
 topic: novel-lore
 date_added: 2026-06-13
-date_modified: 2026-06-12
-last_modified: 2026-06-13
+date_modified: 2026-06-15
+last_modified: 2026-06-15
 status: needs-more-sources
 sources:
-- 飘天文学第1676章《万界俯视者》原文
-- 飘天文学第1677章《灵魂俯视》原文
-- 飘天文学第2191章《血海之门》原文
+- QQ阅读第1676章《万界俯视者》原文检索摘要
+- QQ阅读第1677章《灵魂俯视》原文检索摘要
+- QQ阅读第2191章《血海之门》原文检索摘要
 - 2026-06-15 layered_search：万界俯视者 / 真古之魔 / 圣界铁律 交叉检索
 confidence: 0.75
 ---
+
 
 
 
@@ -155,12 +156,12 @@ confidence: 0.75
 - [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 万界俯视者不在六道体系内
 - [独孤峰 · 角色档案](du-ge-feng-profile.md) — 柳平捏造的身份角色
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 全文结局梳理
-- [诸界末日在线](liu-ping-profile.md)
-- [诸界末日在线](wan-shen-nu-di-profile.md)
-- [诸界末日在线](xie-dao-ling-profile.md)
+- [诸界末日在线](liu-ping-profile.md) — 柳平相关身份线
+- [诸界末日在线](wan-shen-nu-di-profile.md) — 墟墓篇章高位格存在对照
+- [诸界末日在线](xie-dao-ling-profile.md) — 终局与真实世界众生线
 
 ## 待补证清单
 
-- 补第 658 章《万界俯视者》、第 659 章《灵魂俯视》的原文片段，确认“真古之魔·万界俯视者”名号、召唤方式与能力边界。
-- 补第 2225 章《血海之门》原文，确认“破圣界铁律”与血海、圣界、世界之门之间的关系。
+- 补第 1676 章《万界俯视者》、第 1677 章《灵魂俯视》的原文片段，确认“真古之魔·万界俯视者”名号、召唤方式与能力边界。
+- 补第 2191 章《血海之门》原文，确认“破圣界铁律”与血海、圣界、世界之门之间的关系。
 - 不补到“真古之魔”的最终起源前，不把本页升级为 `complete`；当前只能确认名号层级，不确认最终本质。
