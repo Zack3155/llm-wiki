@@ -1,30 +1,22 @@
 ---
-
-
-
-
-
 title: 站点身份与新 topic 边界
 name: site-identity-topic-boundary
 topic: general
 status: complete
-confidence: 0.90
+confidence: 0.9
 sources:
-  - 本地 Wiki 结构审计
-  - mkdocs.yml 站点配置审计
-  - 站点身份通用化讨论
+- 本地 Wiki 结构审计
+- mkdocs.yml 站点配置审计
+- 站点身份通用化讨论
 tags:
-  - site-identity
-  - general
-  - topic-boundary
+- site-identity
+- general
+- topic-boundary
 date_added: 2026-06-16
-date_modified: 2026-06-16
-
-
-
-
-
+date_modified: &id001 2026-06-16
+last_modified: *id001
 ---
+
 
 
 
