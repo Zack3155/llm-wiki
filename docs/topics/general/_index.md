@@ -1,5 +1,6 @@
 ---
 
+
 title: 通用主题 · 索引
 name: general-index
 topic: general
@@ -15,7 +16,9 @@ tags:
 date_added: 2026-06-16
 date_modified: 2026-06-16
 
+
 ---
+
 
 
 ## Summary
@@ -26,7 +29,7 @@ date_modified: 2026-06-16
 
 ## 页面
 
-| 页面 | 摘要 | 状态 | 置信度 |
+| 页面 | 摘要 | 状态 | 证据等级 |
 |---|---|---:|---:|
 | [站点身份与新 topic 边界](site-identity-topic-boundary.md) | 明确站点身份、topic 边界和脚本通用化约束 | complete | 0.90 |
 
@@ -38,7 +41,7 @@ date_modified: 2026-06-16
 
 ## See also
 
-
+- [⚠️ PENDING FIX]
 
 Confidence Score: 0.86
 Sources:
