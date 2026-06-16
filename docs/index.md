@@ -1,37 +1,45 @@
 ---
-title: 诸界末日在线知识库
+title: LLM Wiki · 知识库
 name: root-index
 topic: general
 status: complete
-confidence: 0.86
+confidence: 0.88
 sources:
   - 本地 Wiki 审计结果
   - MkDocs 构建验证
+  - 站点身份通用化讨论
 tags:
   - index
-  - novel-lore
+  - general
+  - site-identity
 date_added: 2026-06-14
-date_modified: 2026-06-15
+date_modified: 2026-06-16
 ---
 
 ## Summary
 
-《诸界末日在线》中文考据知识库，覆盖角色身份、终局设定、六道体系、混沌、墟墓、序列体系、四圣柱与关键概念。本站优先记录“已交叉验证”的结论，并对仍有争议的终局关系保留证据边界。
+本站是通用 LLM Wiki 知识库，当前首个内容 corpus 是《诸界末日在线》考据。站点身份不再等同于 novel-lore；novel-lore 只是当前已落地的小说考据 topic。
 
-# 诸界末日在线知识库
+# LLM Wiki · 知识库
 
 ## 当前站点状态
 
 - 站点框架：MkDocs + Material for MkDocs
+- 站点身份：通用知识库，当前主内容 corpus 为《诸界末日在线》
 - 构建状态：`mkdocs build --strict` 已通过
 - 本地预览：`http://127.0.0.1:8081/`
-- 最近重点：修复首页、索引页、表格格式、假 confidence 与核心 lore 冲突
+- 最近重点：通用化站点身份、topic 边界、脚本扫描范围、健康报告与渲染检查
 
 ## 快速入口
 
-### 主线与终局
+### 站点身份与治理
 
-- [诸界末日在线 · 终局分析](topics/novel-lore/zhu-jie-mo-ri-ending.md)
+- [站点身份与新 topic 边界](topics/general/site-identity-topic-boundary.md)
+- [通用主题索引](topics/general/_index.md)
+
+### 当前主内容 corpus：《诸界末日在线》
+
+- [《诸界末日在线》· 终局分析](topics/novel-lore/zhu-jie-mo-ri-ending.md)
 - [六道轮回 · 概念档案](topics/novel-lore/liudao-lunhui-concept.md)
 - [六道体系总览 · 概念档案](topics/novel-lore/liudao-system-overview-concept.md)
 - [混沌 · 概念档案](topics/novel-lore/chaos-concept.md)
@@ -64,6 +72,11 @@ date_modified: 2026-06-15
 
 ## 相关索引
 
-- [诸界末日在线 · 考据索引](topics/novel-lore/_index.md)
-- [概念档案](topics/novel-lore/_index.md#概念档案)
-- [角色档案](topics/novel-lore/_index.md#角色档案)
+- [通用主题索引](topics/general/_index.md)
+- [《诸界末日在线》· 考据索引](topics/novel-lore/_index.md)
+
+Confidence Score: 0.88
+Sources:
+- 本地 Wiki 审计结果
+- MkDocs 构建验证
+- 站点身份通用化讨论
