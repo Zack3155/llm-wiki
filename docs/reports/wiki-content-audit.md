@@ -1,6 +1,6 @@
 # Wiki Content Audit Report
 
-Generated: 2026-06-16T00:11:25
+Generated: 2026-06-16T00:11:47
 Wiki root: `/home/zack/wiki`
 Topic dir: `all docs/topics/*`
 Pages scanned: 25
