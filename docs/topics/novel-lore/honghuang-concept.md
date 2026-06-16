@@ -39,6 +39,7 @@ confidence: 0.88
 
 
 
+
 ## Summary
 
 **洪荒纪元**是《诸界末日在线》六道轮回体系的前史。根据多源交叉验证，六道轮回并非传统宗教概念，而是 **洪荒纪元被邪魔侵蚀毁灭后的残骸**，经顾青山前世作为混沌使徒的牺牲与重构，形成六道闭环世界体系。
@@ -114,8 +115,8 @@ confidence: 0.88
 - [六道争雄 · 概念档案](liudao-zhengxiong-concept.md)
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md)
 - [顾青山 — 角色档案](gu-qing-shan-profile.md)
-- [诸界末日在线](di-zhi-qian-bi-concept.md)
-- [诸界末日在线](liudao-system-overview-concept.md)
-- [诸界末日在线](world-gate-concept.md)
-- [诸界末日在线](sequence-system-concept.md)
-- [概念档案](chaos-concept.md)
+- [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md)
+- [六道体系总览 · 概念档案](liudao-system-overview-concept.md)
+- [世界之门 · 概念档案](world-gate-concept.md)
+- [序列体系 · 概念档案](sequence-system-concept.md)
+- [混沌 · 概念档案](chaos-concept.md)

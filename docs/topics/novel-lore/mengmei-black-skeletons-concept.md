@@ -44,6 +44,7 @@ confidence: 0.74
 
 
 
+
 ## Summary
 
 **蒙昧世界中的黑色骷髅目前只能被谨慎判定为“蒙昧世界中的群体性邪魔/邪恶灵体残骸”，不能提升为某个具名隐藏角色。** 现有章节显示它们成群出现、被巨大尸体击杀后会从泥土中重新冒出；但与“巨大尸体/幕/邪魔之主”之间的读者混淆仍未完全消除，因此本页保持 `needs-more-sources`。
@@ -92,9 +93,9 @@ confidence: 0.74
 
 ## See also
 
-- [幕 / 冰封之尸 · 角色档案](bingfengzhishi-profile.md) — 巨大尸体身份与封印看守人边界
-- [邪魔之主 · 角色档案](xiemozhizhu-profile.md) — 邪魔阵营首领线，非黑色骷髅本身
-- [柳平 · 角色档案](liu-ping-profile.md) — 扮演邪魔首领的人，避免与黑色骷髅混淆
+- [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) — 巨大尸体身份与封印看守人边界
+- [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 邪魔阵营首领线，非黑色骷髅本身
+- [柳平 — 角色档案](liu-ping-profile.md) — 扮演邪魔首领的人，避免与黑色骷髅混淆
 
 ## 来源
 

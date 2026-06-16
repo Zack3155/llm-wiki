@@ -39,6 +39,7 @@ last_modified: 2026-06-12
 
 
 
+
 ## Summary
 
 **谢道灵**，贯穿《诸界末日在线》全篇的核心人物。表面身份从NPC到圣人、宗主之女、天帝层层叠加，但真实位格远超所有表象。她是"最终之术"的术主，也是真实世界的圣尊——换言之，**游戏里的 NPC 最后是主角的造物主**。掌握六道碎片与风之正神之力，在黄泉界拥有极高话语权。
@@ -89,8 +90,8 @@ last_modified: 2026-06-12
 ## See also
 
 - [诸界末日在线 · 考据索引](./_index.md)
-- [顾青山 · 角色档案](gu-qing-shan-profile.md)
-- [柳平 · 角色档案](liu-ping-profile.md)
-- [万神女帝 · 角色档案](wan-shen-nu-di-profile.md)
-- [独孤峰 · 角色档案](du-ge-feng-profile.md)
-- [诸界末日在线](wan-jie-fu-shi-zhe-profile.md)
+- [顾青山 — 角色档案](gu-qing-shan-profile.md)
+- [柳平 — 角色档案](liu-ping-profile.md)
+- [万神女帝身份考据 · 角色档案](wan-shen-nu-di-profile.md)
+- [独孤峰 — 角色档案](du-ge-feng-profile.md)
+- [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md)

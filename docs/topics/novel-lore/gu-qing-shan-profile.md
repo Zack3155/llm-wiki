@@ -39,6 +39,7 @@ confidence: 0.88
 
 
 
+
 ## Summary
 
 ### Real Identity Test: 顾青山身份=毁灭+混沌 (contradiction test)
@@ -259,12 +260,12 @@ confidence: 0.88
 - 多年后前线战忽见仰大圣法斗百招顿悟虚属自己意渐渐出众拔峰成仙位指
 - **十年逆转点：十年为他修机救王城部修发剑秘·归击杀终魔神被带走偷渡回前。现在一直在着往前走不得不用尽办法搏几乎休息时候
 ## See also
-- [柳平 · 角色档案](liu-ping-profile.md) — 顾青山的学生，扮演邪魔首领帮助其完成历史使命
-- [谢道灵 · 角色档案](xie-dao-ling-profile.md) — 混沌最高序列核心人物
-- [幕 / 冰封之尸 · 角色档案](bingfengzhishi-profile.md) — 远古封印看守人
+- [柳平 — 角色档案](liu-ping-profile.md) — 顾青山的学生，扮演邪魔首领帮助其完成历史使命
+- [谢道灵 — 角色档案](xie-dao-ling-profile.md) — 混沌最高序列核心人物
+- [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) — 远古封印看守人
 - [虚空三术与众生同调 · 概念对照档案](xukong-san-shu-comparison.md) — 众生同调奥秘与一人万生之术原文对照
 - [诸界末日在线 · 考据索引](./_index.md)
-- [终局分析](zhu-jie-mo-ri-ending.md) — 顾青山终局行动与身份争议
-- [诸界末日在线](du-ge-feng-profile.md)
-- [诸界末日在线](wan-shen-nu-di-profile.md)
-- [诸界末日在线](wan-jie-fu-shi-zhe-profile.md)
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 顾青山终局行动与身份争议
+- [独孤峰 — 角色档案](du-ge-feng-profile.md)
+- [万神女帝身份考据 · 角色档案](wan-shen-nu-di-profile.md)
+- [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md)

@@ -45,6 +45,7 @@ confidence: 0.66
 
 
 
+
 ## Summary
 
 **世界之门不是单纯“虚空里的青铜门”。目前可确认的是：它是《诸界末日在线》后期涉及世界、虚空、末日、时间线和血海之门等多个层面的“门”概念。** 但它的完整机制、与“门与世界”“血海之门”“虚空原本之界”的精确关系，现有公开可检索资料还不足，不能写成定论。
@@ -84,18 +85,17 @@ confidence: 0.66
 
 ## See also
 
-- [顾青山 · 角色档案](gu-qing-shan-profile.md) — 世界之门相关行动的主角视角
-- [谢道灵 · 角色档案](xie-dao-ling-profile.md) — 后期时间线与未来转移相关角色
+- [顾青山 — 角色档案](gu-qing-shan-profile.md) — 世界之门相关行动的主角视角
+- [谢道灵 — 角色档案](xie-dao-ling-profile.md) — 后期时间线与未来转移相关角色
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 终局时间线与世界结构转场
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md) — 世界结构崩碎后的转场背景
 - [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md) — 血海、圣界与后期世界结构相关高位存在
-- [诸界末日在线](di-zhi-qian-bi-concept.md)
-- [诸界末日在线](honghuang-concept.md)
-- [诸界末日在线](liudao-lunhui-concept.md)
-- [诸界末日在线](liudao-system-overview-concept.md)
-- [诸界末日在线](liudao-zhengxiong-concept.md)
-- [诸界末日在线](sequence-system-concept.md)
-- [概念档案](chaos-concept.md)
+- [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md) — 世界结构相关概念参照
+- [洪荒纪元 · 概念档案](honghuang-concept.md) — 世界结构早期背景
+- [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 洪荒→六道→争雄→崩碎完整脉络
+- [六道争雄 · 概念档案](liudao-zhengxiong-concept.md) — 六道体系演进背景
+- [序列体系 · 概念档案](sequence-system-concept.md) — 序列与世界规则的关系
+- [混沌 · 概念档案](chaos-concept.md) — 后期世界规则与终极结构参照
 
 ## 来源
 

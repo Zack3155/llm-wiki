@@ -38,6 +38,7 @@ sources:
 
 
 
+
 ## Summary
 
 六道争雄是《诸界末日在线》世界观中的核心终极事件 — **六道轮回世界体系进行的世界归属争夺战**。
@@ -108,8 +109,8 @@ sources:
 - [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 六道体系总览与专题导航
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md) — 六道轮回的本质、功能与崩碎转场
 - [洪荒纪元 · 概念档案](honghuang-concept.md) — 六道轮回的起源与机制
-- [诸界末日在线 · 结局概览](zhu-jie-mo-ri-ending.md) — 含第五/六阶段（六道争雄前奏与正式展开）
-- [诸界末日在线](di-zhi-qian-bi-concept.md)
-- [诸界末日在线](world-gate-concept.md)
-- [诸界末日在线](sequence-system-concept.md)
-- [概念档案](chaos-concept.md)
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 含第五/六阶段（六道争雄前奏与正式展开）
+- [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md)
+- [世界之门 · 概念档案](world-gate-concept.md)
+- [序列体系 · 概念档案](sequence-system-concept.md)
+- [混沌 · 概念档案](chaos-concept.md)

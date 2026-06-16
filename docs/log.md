@@ -1,3 +1,23 @@
+---
+title: Wiki Change Log
+name: wiki-change-log
+topic: general
+status: generated
+confidence: 0.80
+sources:
+  - 本地 Wiki 变更日志
+  - MkDocs 构建验证
+date_added: 2026-06-13
+date_modified: 2026-06-15
+last_modified: 2026-06-15
+---
+
+## Summary
+
+本文件记录 Wiki 页面新增、索引更新、自动归档与验证结果。它是变更日志与运维审计记录，不是 lore 结论本身；其中涉及 lore 的条目仍以对应实体页、来源页和验证脚本为准。
+
+# Wiki Change Log
+
 ## 2026-06-14 — Auto-Filer Sync (33:00 UTC / ~03:00 next cycle)
 
 ### New page: `novel-lore/yong-mie-zhi-wang-profile.md`
@@ -52,9 +72,6 @@
   - Confidence: 0.75 (needs-more-sources: deeper essence not revealed in-source)
 - **Index updated**: `_index.md` — added new entry to role profiles table
 - **Lint/Build**: clean (lint fixes=9, err=0 warn=0; mkdocs build OK)
-
-# Wiki Change Log
-
 
 ## 2026-06-13 — Auto-Filer (cron)
 

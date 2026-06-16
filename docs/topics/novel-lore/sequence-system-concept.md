@@ -3,16 +3,17 @@ title: 序列体系 · 概念档案
 name: sequence-system
 topic: novel-lore
 date_added: 2026-06-13
-date_modified: 2026-06-14
-last_modified: 2026-06-13
+date_modified: 2026-06-15
+last_modified: 2026-06-15
 status: complete
 sources:
 - 和图书 第31章《邪魔的序列》、第33章《没有序列的众生》原文
 - 第61章/第533章附近神剑关于众生序列与六道轮回对话原文
 - 百度百科"顾青山"条目（混沌最高序列相关）
-- layered_search 多组中文关键词交叉检索（和图书、飘天文学、69书吧、Scribd校对版全本、黄金屋中文网等独立源）
+- 2026-06-15 layered_search：序列体系 / 混沌最高序列 / 诸界末日在线 交叉检索
 confidence: 0.91
 ---
+
 
 
 
@@ -40,7 +41,7 @@ confidence: 0.91
       并连接众生/末日/六道/混沌等世界结构的"秩序线路"。
 ```
 
-主要序列类别（由低到高）：魔王序列 → 邪魔序列 → 众生序列 → 六道轮回（终极兵器） → 混沌最高序列。
+主要序列类别 / 概念层级：魔王序列与邪魔序列 → 众生序列 → 六道轮回（众生序列中的终极兵器） → 混沌最高序列。
 
 ---
 
@@ -147,9 +148,14 @@ confidence: 0.91
 比魔王序列、众生序列更高层的终极序列，与末日、混沌及顾青山的真实身份直接相关。
 
 ### 正式名称
+
+更稳妥写法是：
+
 ```text
-混沌最高序列·诸界末日在线
+最高序列·诸界末日在线
 ```
+
+并补充说明：正文/百科摘要中出现过“末日亦是混沌的最高序列”的表述，因此本页将其归入“混沌最高序列”层级。
 
 ### 特性
 - 由顾青山父母所留
@@ -182,6 +188,7 @@ confidence: 0.91
 | 序列 = 游戏等级/职业 | 早期像游戏系统，后期上升到宇宙权柄与世界结构 |
 | 魔王序列就是邪魔序列 | 魔王序列被邪魔力量**污染后**才成为邪魔的序列 |
 | 六道轮回只是众多序列之一 | 它是众生序列中的终极兵器，且具有自主进化能力 |
+| 混沌最高序列名称固定为“混沌最高序列·诸界末日在线” | 更稳妥写法是“最高序列·诸界末日在线”，并说明“末日亦是混沌的最高序列” |
 | 顾青山是普通序列持有者 | 他是混沌最高序列的承载者，位格远超一般序列玩家 |
 
 ---
@@ -191,11 +198,11 @@ confidence: 0.91
 - [顾青山 — 角色档案](gu-qing-shan-profile.md) — 混沌最高序列承载者的完整设定
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md) — 众生序列终极兵器的详细分析
 - [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 洪荒→六道→争雄→崩碎完整脉络
-- [诸界末日在线结局分析](zhu-jie-mo-ri-ending.md) — 全文终局与序列在结局中的作用
-- [诸界末日在线](di-zhi-qian-bi-concept.md)
-- [诸界末日在线](honghuang-concept.md)
-- [诸界末日在线](liudao-zhengxiong-concept.md)
-- [诸界末日在线](world-gate-concept.md)
-- [概念档案](chaos-concept.md)
-- [诸界末日在线](wu-zhuan-zhi-di-concept.md)
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 全文终局与序列在结局中的作用
+- [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md)
+- [洪荒纪元 · 概念档案](honghuang-concept.md)
+- [六道争雄 · 概念档案](liudao-zhengxiong-concept.md)
+- [世界之门 · 概念档案](world-gate-concept.md)
+- [混沌 · 概念档案](chaos-concept.md)
+- [无转之地 · 概念档案](wu-zhuan-zhi-di-concept.md)
 - [诸界末日在线 · 考据索引](./_index.md)

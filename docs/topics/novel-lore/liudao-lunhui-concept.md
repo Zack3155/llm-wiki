@@ -39,6 +39,7 @@ confidence: 0.88
 
 
 
+
 ## Summary
 
 **六道轮回**是《诸界末日在线》中由 **洪荒纪元毁灭残骸** 演化而成的六道闭环世界体系，并非传统宗教意义上的轮回概念。它既是洪荒残骸、镇压容器和天道兵器熔炉，也是六道争雄、圣选者晋升、界力争夺与最终对抗邪魔/末日的世界舞台。
@@ -346,7 +347,7 @@ confidence: 0.88
 - [顾青山 — 角色档案](gu-qing-shan-profile.md)
 - [谢道灵 — 角色档案](xie-dao-ling-profile.md)
 - [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md)
-- [诸界末日在线](di-zhi-qian-bi-concept.md)
-- [诸界末日在线](world-gate-concept.md)
-- [诸界末日在线](sequence-system-concept.md)
-- [概念档案](chaos-concept.md)
+- [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md)
+- [世界之门 · 概念档案](world-gate-concept.md)
+- [序列体系 · 概念档案](sequence-system-concept.md)
+- [混沌 · 概念档案](chaos-concept.md)

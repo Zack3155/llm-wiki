@@ -78,7 +78,7 @@ date_modified: 2026-06-15
 - 若同一页面出现 `confidence: 0.xx`，必须确认它只存在于 YAML frontmatter，正文不得出现假 confidence。
 ## See also
 
-- [诸界末日在线](wu-zhuan-zhi-di-concept.md)
+- [无转之地 · 概念档案](wu-zhuan-zhi-di-concept.md)
 
 | [妖精 · 种族档案](./fire-epoch-fairies-concept.md) | Wiki | Auto-added |
 

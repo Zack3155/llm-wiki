@@ -39,6 +39,7 @@ confidence: 0.92
 
 
 
+
 ## Summary
 
 **幕**，核心角色。其**本体就是冰封之尸"万物与众生的灭绝者"**。他是**封印掌管者**，负责防止冰封之尸复活。后来**反抗了命运**，主动汲取冰封之尸的力量，成为顾青山的同伴并教他各种术法。
@@ -82,5 +83,5 @@ confidence: 0.92
 
 - [诸界末日在线 · 考据索引](./_index.md)
 - [墟墓 · 概念档案](xumu-concept.md) — 概念层墟墓与剧情代称层区分
-- [扮演邪魔首领](liu-ping-profile.md)
-- [独孤峰 · 角色档案](du-ge-feng-profile.md)
+- [柳平 — 角色档案](liu-ping-profile.md)
+- [独孤峰 — 角色档案](du-ge-feng-profile.md)

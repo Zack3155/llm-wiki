@@ -37,6 +37,7 @@ date_added: '2026-06-13'
 
 
 
+
 ## Summary
 
 **独孤峰 = 柳平扮演的身份**。根据 PTT CFantasy 实况讨论（2022年4月15日）的原文确认，柳平利用邪魔 BOSS 的黑甲"捏了一个独孤将军的身份"，这个身份后来在《诸界末日在线》中被用来扮演"邪魔首领/巨大黑甲尸体"的角色。
@@ -93,10 +94,10 @@ date_added: '2026-06-13'
 
 ## See also
 
-- [柳平 · 角色档案](liu-ping-profile.md) — 独孤峰的扮演者
-- [顾青山 · 角色档案](gu-qing-shan-profile.md) — 与独孤峰有直接冲突
-- [谢道灵 · 角色档案](xie-dao-ling-profile.md) — 合作关系
-- [邪魔之主 · 角色档案](xiemozhizhu-profile.md) — 身份关联实体
+- [柳平 — 角色档案](liu-ping-profile.md) — 独孤峰的扮演者
+- [顾青山 — 角色档案](gu-qing-shan-profile.md) — 与独孤峰有直接冲突
+- [谢道灵 — 角色档案](xie-dao-ling-profile.md) — 合作关系
+- [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 身份关联实体
 - [诸界末日在线 · 考据索引](./_index.md)
-- [柳平 · 角色档案](liu-ping-profile.md) — 终局相关角色
-- [诸界末日在线](wan-jie-fu-shi-zhe-profile.md)
+- [柳平 — 角色档案（liu ping profile）](liu-ping-profile.md) — 终局相关角色
+- [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md)

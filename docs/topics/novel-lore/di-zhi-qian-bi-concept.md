@@ -39,6 +39,7 @@ confidence: 0.95
 
 
 
+
 ## Summary
 
 地之钱币是《诸界末日在线》中"四圣柱"孕育的四件法则魂器之一。四圣柱孕育的魂器分别为：地之钱币、海底之书、焰灵坠饰、风之匙，持有者经认可可成为凌驾众神的"四柱正神"（传说不可战胜）。地之钱币与地之世界共生共存，发动**真实幸运**可获得无量虚空之中一切存在与非存在的护持。
@@ -87,10 +88,10 @@ confidence: 0.95
 ## See also
 
 - [诸界末日在线 · 考据索引](./_index.md)
-- [洪荒 · 概念档案](honghuang-concept.md)
-- [诸界末日在线](liudao-lunhui-concept.md)
-- [诸界末日在线](liudao-system-overview-concept.md)
-- [诸界末日在线](liudao-zhengxiong-concept.md)
-- [诸界末日在线](world-gate-concept.md)
-- [诸界末日在线](sequence-system-concept.md)
-- [概念档案](chaos-concept.md)
+- [洪荒纪元 · 概念档案](honghuang-concept.md)
+- [六道轮回 · 概念档案](liudao-lunhui-concept.md)
+- [六道体系总览 · 概念档案](liudao-system-overview-concept.md)
+- [六道争雄 · 概念档案](liudao-zhengxiong-concept.md)
+- [世界之门 · 概念档案](world-gate-concept.md)
+- [序列体系 · 概念档案](sequence-system-concept.md)
+- [混沌 · 概念档案](chaos-concept.md)

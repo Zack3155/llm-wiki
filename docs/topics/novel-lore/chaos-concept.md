@@ -31,6 +31,7 @@ confidence: 0.93
 
 
 
+
 ## Summary
 
 **"混沌"**是《诸界末日在线》中最核心的终极力量概念，不是普通法术或外挂。它有三层等价定义：
@@ -163,15 +164,15 @@ confidence: 0.93
 
 - [顾青山 — 角色档案](gu-qing-shan-profile.md) — 混沌真身的完整设定
 - [序列体系 · 概念档案](sequence-system-concept.md) — 五级序列层级（含混沌最高序列）
-- [诸界末日在线结局分析](zhu-jie-mo-ri-ending.md) — 混沌吞没墟墓、虚空时代开启
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 混沌吞没墟墓、虚空时代开启
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md) — 混沌与六道的关系
 - [墟墓 · 概念档案](xumu-concept.md) — 概念层墟墓与剧情代称层区分
 - [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 与墟墓篇章高度相关的最终 BOSS
 - [谢道灵 — 角色档案](xie-dao-ling-profile.md) — 混沌术法的主导者
-- [概念档案](di-zhi-qian-bi-concept.md)
-- [概念档案](honghuang-concept.md)
-- [概念档案](liudao-system-overview-concept.md)
-- [概念档案](liudao-zhengxiong-concept.md)
-- [概念档案](world-gate-concept.md)
-- [诸界末日在线](wu-zhuan-zhi-di-concept.md)
+- [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md)
+- [洪荒纪元 · 概念档案](honghuang-concept.md)
+- [六道体系总览 · 概念档案](liudao-system-overview-concept.md)
+- [六道争雄 · 概念档案](liudao-zhengxiong-concept.md)
+- [世界之门 · 概念档案](world-gate-concept.md)
+- [无转之地 · 概念档案](wu-zhuan-zhi-di-concept.md)
 - [诸界末日在线 · 考据索引](./_index.md)

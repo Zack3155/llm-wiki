@@ -32,6 +32,7 @@ confidence: 0.75
 
 
 
+
 ## Summary
 
 **万界俯视者**是《诸界末日在线》中登场的神秘至高位格存在。正文给予的完整名号为**"真古之魔·万界俯视者"**——其中"真古之魔"为本体名号，"万界俯视者"为称号/尊称。
@@ -151,15 +152,15 @@ confidence: 0.75
 
 ## See also
 
-- [顾青山 · 角色档案](gu-qing-shan-profile.md) — 获得万界俯视者青睐的主角灵魂
-- [邪魔之主 · 角色档案](xiemozhizhu-profile.md) — 最终BOSS，与万界俯视者非同一存在
-- [幕 / 冰封之尸 · 角色档案](bingfengzhishi-profile.md) — 远古封印看守人，同属高位格但不同体系
+- [顾青山 — 角色档案](gu-qing-shan-profile.md) — 获得万界俯视者青睐的主角灵魂
+- [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 最终BOSS，与万界俯视者非同一存在
+- [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) — 远古封印看守人，同属高位格但不同体系
 - [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 万界俯视者不在六道体系内
-- [独孤峰 · 角色档案](du-ge-feng-profile.md) — 柳平捏造的身份角色
+- [独孤峰 — 角色档案](du-ge-feng-profile.md) — 柳平捏造的身份角色
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 全文结局梳理
-- [诸界末日在线](liu-ping-profile.md) — 柳平相关身份线
-- [诸界末日在线](wan-shen-nu-di-profile.md) — 墟墓篇章高位格存在对照
-- [诸界末日在线](xie-dao-ling-profile.md) — 终局与真实世界众生线
+- [柳平 — 角色档案](liu-ping-profile.md) — 柳平相关身份线与高位格对照
+- [万神女帝身份考据 · 角色档案](wan-shen-nu-di-profile.md) — 墟墓篇章高位格存在对照
+- [谢道灵 — 角色档案](xie-dao-ling-profile.md) — 终局与真实世界众生线
 
 ## 待补证清单
 

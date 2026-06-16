@@ -22,6 +22,7 @@ last_modified: *id001
 
 
 
+
 ## Summary
 
 墟墓在《诸界末日在线》中至少有两层含义：概念层上，它是混沌体系中的毁灭力量源头、混沌之灵的坟墓与终局冲突的核心对象；剧情代称层上，读者讨论常把“墟墓 / 巨大尸体 / 大尸兄 / 邪魔首领”关联到终局中的首领级存在。由于“概念层墟墓”与“剧情代称层墟墓”容易被混用，本页暂标为 `needs-more-sources`，并优先区分证据边界。
@@ -83,9 +84,9 @@ last_modified: *id001
 ## See also
 
 - [混沌 · 概念档案](chaos-concept.md)
-- [邪魔之主 · 角色档案](xiemozhizhu-profile.md)
-- [幕 / 冰封之尸 · 角色档案](bingfengzhishi-profile.md)
-- [柳平 · 角色档案](liu-ping-profile.md)
+- [邪魔之主 — 角色档案](xiemozhizhu-profile.md)
+- [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md)
+- [柳平 — 角色档案](liu-ping-profile.md)
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md)
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md)
 - [诸界末日在线 · 考据索引](./_index.md)
