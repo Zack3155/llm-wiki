@@ -47,7 +47,6 @@ date_modified: 2026-06-16
 
 ## See also
 
-- [《诸界末日在线》考据索引](../../novel-lore/_index.md)
 
 Confidence Score: 0.86
 Sources:
