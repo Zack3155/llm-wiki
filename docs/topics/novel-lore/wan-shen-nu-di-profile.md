@@ -12,8 +12,10 @@ sources:
 - 速读谷第536章章节扫描
 - 2026-06-15 layered_search：万神女帝 / 蕾妮朵儿 / 幕 / 时空之谜 交叉检索
 - 2026-06-16 layered_search：万神女帝 / 蕾妮朵儿 / 第536章 / 墟墓交叉检索
-confidence: '0.72'
+confidence: 0.72
 ---
+
+
 
 
 

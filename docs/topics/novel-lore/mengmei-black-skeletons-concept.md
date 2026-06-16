@@ -12,8 +12,10 @@ sources:
 - SearXNG 中文关键词交叉检索
 - 2026-06-15 layered_search 精确章节检索：第603章《世界之墓！》、黑色骷髅、巨大尸体
 - 2026-06-16 layered_search：蒙昧世界 / 黑色骷髅 / 第39章 / 第603章交叉检索
-confidence: '0.74'
+confidence: 0.74
 ---
+
+
 
 
 

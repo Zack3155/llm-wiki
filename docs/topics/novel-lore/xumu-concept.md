@@ -3,7 +3,7 @@ title: 墟墓 · 概念档案
 name: xumu-concept
 topic: novel-lore
 status: needs-more-sources
-confidence: '0.78'
+confidence: 0.78
 sources:
 - 百度百科《诸界末日在线》词条（墟墓、混沌定义）
 - 百度贴吧终局梳理帖（墟墓/巨大尸体/大尸兄读者归纳）
@@ -15,6 +15,8 @@ date_added: '2026-06-15'
 date_modified: '2026-06-16'
 last_modified: '2026-06-16'
 ---
+
+
 
 
 
