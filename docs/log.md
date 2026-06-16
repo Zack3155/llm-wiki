@@ -95,3 +95,25 @@ last_modified: 2026-06-15
 
 ### Verification
 - Lint and build results recorded below by tool calls.
+
+## 2026-06-16 — Auto-Filer (cron, ~10:40 UTC+8)
+
+### New topic: `quanqiu-gaowu/` — 《全球高武》考据专题
+
+#### New page: `quanqiu-gaowu/fang-ping-profile.md`
+- Topic: 方平（男主角）真实身份核查
+- Key finding: **方平不是任何天帝转世**；战天帝转世是王金洋（百度百科明确）。方平来自投影世界/前世地球，被三帝通过系统布局为后手人物。终局中成为"阴间主宰"，与苍猫共同维持阴阳两界平衡
+- Sources: 百度百科"方平"/"全球高武"/"战天帝"/"斗天帝"词条；第1432章终章原文 (bidutuijian.com)；SearXNG layered search ≥5 independent hits
+- Confidence: 0.88
+
+#### New page: `quanqiu-gaowu/zhongzi-concept.md`
+- Topic: "种子"概念 — 非人物也非物品，是三界生命起源与能量循环核心（世界级规则）
+- Key finding: 苍猫吞下旧种子成为阳间主宰，方平成阴间主宰；区分世界种子 vs 气血种子/生命种子等同名异义概念
+- Sources: 百度百科"全局高武"全文 keyword extraction (55,881 chars)；终章原文；SearXNG layered search multi-engine cross-ref
+- Confidence: 0.90
+
+#### New page: `quanqiu-gaowu/_index.md`
+- Topic index with status/confidence tables, cross-links to novel-lore and general indexes
+
+### Verification
+- Lint and build results recorded below by tool calls.
