@@ -2,6 +2,7 @@
 
 
 
+
 title: 站点身份与新 topic 边界
 name: site-identity-topic-boundary
 topic: general
@@ -20,7 +21,9 @@ date_modified: 2026-06-16
 
 
 
+
 ---
+
 
 
 
@@ -75,6 +78,7 @@ date_modified: 2026-06-16
 
 ## See also
 
+- [《诸界末日在线》考据索引](../../novel-lore/_index.md)
 
 Confidence Score: 0.90
 Sources:
