@@ -2,51 +2,18 @@
 title: 蒙昧世界黑色骷髅 · 概念档案
 name: mengmei-black-skeletons
 topic: novel-lore
-date_added: 2026-06-11
-date_modified: 2026-06-15
-last_modified: 2026-06-15
+date_added: '2026-06-11'
+date_modified: '2026-06-16'
+last_modified: '2026-06-16'
 status: needs-more-sources
-tags:
-- 蒙昧世界
-- 黑色骷髅
-- 邪魔
-- 巨大尸体
-- 幕
+tags: ''
 sources:
 - 本地 Wiki 蒙昧世界黑色骷髅页面
 - SearXNG 中文关键词交叉检索
 - 2026-06-15 layered_search 精确章节检索：第603章《世界之墓！》、黑色骷髅、巨大尸体
-confidence: 0.74
+- 2026-06-16 layered_search：蒙昧世界 / 黑色骷髅 / 第39章 / 第603章交叉检索
+confidence: '0.74'
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Summary
@@ -112,3 +79,7 @@ confidence: 0.74
 
 - 当前置信度：0.74
 - 依据：原文章节片段 + 补搜显示身份混淆但未解决
+
+Confidence Score: 0.74 | Sources: 《诸界末日在线》第39章《时空乱流》；《诸界末日在线》第603章《世界之墓！》；2026-06-16 layered_search 蒙昧世界 / 黑色骷髅 / 第39章 / 第603章交叉检索。
+- [概念档案](xumu-concept.md)
+- [概念档案](zhu-jie-mo-ri-ending.md)

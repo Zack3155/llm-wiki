@@ -1,0 +1,35 @@
+# MkDocs 2.0 migration probe configuration.
+# This intentionally omits plugins to test the future Material for MkDocs warning:
+# "All plugins will stop working" under MkDocs 2.0.
+#
+# Do not use this as the production config until navigation behavior, excluded
+# docs, and index-page handling are explicitly accepted.
+
+docs_dir: docs
+site_name: "诸界末日在线 · 知识库"
+site_dir: site-mkdocs-2-probe
+exclude_docs: |
+  raw/**
+  pages/**
+  archive/**
+  reports/**
+  log.md
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: purple
+    - scheme: default
+      primary: indigo
+      accent: purple
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - tables
+  - attr_list
+  - toc:
+      permalink: true

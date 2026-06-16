@@ -3,44 +3,16 @@ title: 诸界末日在线 · 终局分析
 name: zhu-jie-mo-ri-ending
 topic: novel-lore
 date_added: '2026-06-13'
-date_modified: 2026-06-15
-last_modified: 2026-06-15
+date_modified: '2026-06-16'
+last_modified: '2026-06-16'
 status: needs-more-sources
-confidence: 0.78
+confidence: '0.78'
 sources:
 - 百度百科《诸界末日在线》词条
 - 知乎/贴吧/PTT 终局梳理交叉验证
 - 本地 Wiki 六道轮回、墟墓、幕、柳平、独孤峰、万神女帝等页面
+- 2026-06-16 layered_search：六道轮回 / 终局 / 混沌 / 墟墓 / 六道崩碎交叉检索
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Summary
@@ -77,19 +49,21 @@ sources:
 - **独孤峰身份**：早期知乎剧情梳理称独孤峰为"水之纪元使徒"，但 2026-06-13 PTT 实况验证修正为：**独孤峰=柳平捏造的身份**。详见 [独孤峰档案](du-ge-feng-profile.md)。
 - **万神女帝之死**：知乎讨论指出作者战力系统存在矛盾 — 女帝展现的实力（秒级火圣柱）与其最终被击败的方式不匹配。详见 [万神女帝档案](wan-shen-nu-di-profile.md)。
 
-### See also:
+### See also
+
 - [墟墓 · 概念档案](xumu-concept.md) — 概念层墟墓与剧情代称层区分
-- [邪魔之主 · 角色档案](xiemozhizhu-profile.md) — BOSS 本体 / 幕后黑手
-- [顾青山 · 主角档案](gu-qing-shan-profile.md) — 六道兵器与洪荒使徒的转生身
+- [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — BOSS 本体 / 幕后黑手
+- [顾青山 — 主角档案](gu-qing-shan-profile.md) — 六道兵器与洪荒使徒的转生身
 - [六道体系总览 · 概念档案](liudao-system-overview-concept.md) — 六道体系总览与专题导航
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md) — 六道轮回本质、功能与崩碎转场
 - [六道争雄 · 概念档案](liudao-zhengxiong-concept.md) — 六道争雄规则与启动机制
 - [洪荒纪元 · 概念档案](honghuang-concept.md) — 六道轮回的起源与机制
-- [幕/冰封尸体档案](bingfengzhishi-profile.md) — 冰封尸体身份验证（幕 ≠ 邪魔之主）
-- [柳平 · 角色档案](liu-ping-profile.md) — 扮演邪魔首领的人
+- [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) — 冰封尸体身份验证（幕 ≠ 邪魔之主）
+- [柳平 — 角色档案](liu-ping-profile.md) — 扮演邪魔首领的人
 - [独孤峰 · 角色档案](du-ge-feng-profile.md) — 柳平捏造的身份
-- [万神女帝档案](wan-shen-nu-di-profile.md) — 女帝陨落与战力系统争议
-- [顾青山 · 角色档案](gu-qing-shan-profile.md) — 终局行动核心
-- [六道轮回](liudao-lunhui-concept.md)
-- [诸界末日在线](sequence-system-concept.md)
-- [诸界末日在线 · 考据索引](./_index.md)
+- [万神女帝身份考据 · 角色档案](wan-shen-nu-di-profile.md) — 女帝陨落与战力系统争议
+
+Confidence Score: 0.78 | Sources: 百度百科《诸界末日在线》词条；知乎/贴吧/PTT 终局梳理交叉验证；本地 Wiki 六道轮回、墟墓、幕、柳平、独孤峰、万神女帝等页面；2026-06-16 layered_search 六道轮回 / 终局 / 混沌 / 墟墓 / 六道崩碎交叉检索。
+- [概念档案](_index.md)
+- [概念档案](mengmei-black-skeletons-concept.md)
+- [概念档案](world-gate-concept.md)

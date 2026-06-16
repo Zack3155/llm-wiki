@@ -2,46 +2,18 @@
 title: 万神女帝身份考据 · 角色档案
 name: wan-shen-nu-di
 topic: novel-lore
-date_added: 2026-06-13
-date_modified: 2026-06-12
-last_modified: 2026-06-12
+date_added: '2026-06-13'
+date_modified: '2026-06-16'
+last_modified: '2026-06-16'
 status: needs-more-sources
 sources:
 - 'Zhihu Q&A #433978647'
 - 百度百科《诸界末日在线》词条
 - 速读谷第536章章节扫描
 - 2026-06-15 layered_search：万神女帝 / 蕾妮朵儿 / 幕 / 时空之谜 交叉检索
-confidence: 0.7
+- 2026-06-16 layered_search：万神女帝 / 蕾妮朵儿 / 第536章 / 墟墓交叉检索
+confidence: '0.72'
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Summary
@@ -71,18 +43,20 @@ confidence: 0.7
 - **百度百科**称其为"人族后裔"，但知乎/PTT 读者普遍认为此说法过于简化，未能解释其与"幕"和墟墓系统的深层关联。
 - **死亡场景**存在作者战力系统矛盾：女帝展现的实力（秒级火圣柱）与其最终被击败的方式不匹配，疑似剧情需要导致的 retcon。
 
-### See also:
-- [顾青山档案](gu-qing-shan-profile.md) — 主角时间线 + 势力对抗动态
-- [诸界末日在线结局](zhu-jie-mo-ri-ending.md) — 女帝陨落如何催化墟墓篇章崩塌序列
-- [幕/冰封尸体档案](bingfengzhishi-profile.md) — 与女帝势力可能的起源关联
-- [谢道灵档案](xie-dao-ling-profile.md) — 最终之术术主，与女帝有间接关联
-- [诸界末日在线 · 考据索引](./_index.md)
-- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 女帝身份与终局争议
-- [诸界末日在线](liu-ping-profile.md)
-- [诸界末日在线](wan-jie-fu-shi-zhe-profile.md)
+### See also
+
+- [顾青山 — 角色档案](gu-qing-shan-profile.md) — 主角时间线与女帝势力对抗背景
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 女帝陨落与终局争议
+- [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) — 女帝势力与幕/墟墓起源推测边界
+- [谢道灵 — 角色档案](xie-dao-ling-profile.md) — 终局真实世界众生线
+- [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md) — 后期高位格存在对照
+- [柳平 — 角色档案](liu-ping-profile.md) — 终局身份线与高位格对照
 
 ## 待补证清单
 
 - 补第 536 章《鬼面神器》相关原文，确认“鬼面”与万神女帝、苍无彰、七鬼流转的完整链条。
 - 补女帝陨落章节或高质量校对原文，确认“秒级火圣柱”与最终被击败之间的战力表现是否确为矛盾，还是存在未收录的机制解释。
 - 补“万神女帝 = 人族后裔”与“幕 / 时空之谜混沌使徒关联”之间的原文边界，避免把读者推测写成正文事实。
+
+Confidence Score: 0.72 | Sources: Zhihu Q&A #433978647；百度百科《诸界末日在线》词条；速读谷第536章章节扫描；2026-06-16 layered_search 万神女帝 / 蕾妮朵儿 / 第536章 / 墟墓交叉检索。
+- [诸界末日在线](_index.md)

@@ -3,28 +3,18 @@ title: 墟墓 · 概念档案
 name: xumu-concept
 topic: novel-lore
 status: needs-more-sources
-confidence: 0.78
+confidence: '0.78'
 sources:
 - 百度百科《诸界末日在线》词条（墟墓、混沌定义）
 - 百度贴吧终局梳理帖（墟墓/巨大尸体/大尸兄读者归纳）
 - PTT CFantasy 结局讨论（柳平/邪魔首领/固定历史讨论）
 - 本地 Wiki 交叉引用审计
-tags:
-- concept
-- ending
-- chaos
-- demon
-date_added: 2026-06-15
-date_modified: &id001 2026-06-15
-last_modified: *id001
+- 2026-06-16 layered_search：墟墓 / 巨大尸体 / 大尸兄 / 邪魔首领 / 幕交叉检索
+tags: ''
+date_added: '2026-06-15'
+date_modified: '2026-06-16'
+last_modified: '2026-06-16'
 ---
-
-
-
-
-
-
-
 
 
 ## Summary
@@ -95,5 +85,7 @@ last_modified: *id001
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md)
 - [诸界末日在线 · 考据索引](./_index.md)
 - [无转之地 · 概念档案](wu-zhuan-zhi-di-concept.md)
+- [巨大尸体 / 蒙昧世界黑色骷髅 · 概念档案](mengmei-black-skeletons-concept.md)
+- [世界之门 · 概念档案](world-gate-concept.md)
 
-Confidence Score: 0.78 | Sources: 百度百科《诸界末日在线》词条；百度贴吧终局梳理帖；PTT CFantasy 结局讨论；本地 Wiki 交叉引用审计。
+Confidence Score: 0.78 | Sources: 百度百科《诸界末日在线》词条；百度贴吧终局梳理帖；PTT CFantasy 结局讨论；本地 Wiki 交叉引用审计；2026-06-16 layered_search 墟墓 / 巨大尸体 / 大尸兄 / 邪魔首领 / 幕交叉检索。

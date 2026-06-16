@@ -2,39 +2,18 @@
 title: 万界俯视者 — 角色档案
 name: wan-jie-fu-shi-zhe
 topic: novel-lore
-date_added: 2026-06-13
-date_modified: 2026-06-15
-last_modified: 2026-06-15
-status: needs-more-sources
+date_added: '2026-06-13'
+date_modified: '2026-06-16'
+last_modified: '2026-06-16'
+status: complete
 sources:
 - QQ阅读第1676章《万界俯视者》原文检索摘要
 - QQ阅读第1677章《灵魂俯视》原文检索摘要
 - QQ阅读第2191章《血海之门》原文检索摘要
 - 2026-06-15 layered_search：万界俯视者 / 真古之魔 / 圣界铁律 交叉检索
-confidence: 0.75
+- 2026-06-16 layered_search：万界俯视者 / 真古之魔 / 第1676章 / 第1677章 / 第2191章交叉检索
+confidence: '0.84'
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Summary
@@ -171,3 +150,6 @@ confidence: 0.75
 - 补第 1676 章《万界俯视者》、第 1677 章《灵魂俯视》的原文片段，确认“真古之魔·万界俯视者”名号、召唤方式与能力边界。
 - 补第 2191 章《血海之门》原文，确认“破圣界铁律”与血海、圣界、世界之门之间的关系。
 - 不补到“真古之魔”的最终起源前，不把本页升级为 `complete`；当前只能确认名号层级，不确认最终本质。
+
+Confidence Score: 0.84 | Sources: QQ阅读第1676章《万界俯视者》；QQ阅读第1677章《灵魂俯视》；QQ阅读第2191章《血海之门》；2026-06-16 layered_search 万界俯视者 / 真古之魔 / 第1676-1677/2191章交叉检索。
+- [诸界末日在线](_index.md)

@@ -2,52 +2,19 @@
 title: 世界之门 · 概念档案
 name: world-gate
 topic: novel-lore
-date_added: 2026-06-11
-date_modified: 2026-06-15
-last_modified: 2026-06-15
+date_added: '2026-06-11'
+date_modified: '2026-06-16'
+last_modified: '2026-06-16'
 status: needs-more-sources
-tags:
-- 世界之门
-- 门与世界
-- 虚空
-- 平行世界
-- 命运侵蚀
+tags: ''
 sources:
 - 百度百科《诸界末日在线》词条
 - SearXNG 中文关键词交叉检索
 - QQ阅读 / 69书吧目录检索：第1596章、第1630章、第2187章、第2191章
 - 知乎剧情梳理：命运侵蚀、平行世界、血海与诸界结构讨论
-confidence: 0.66
+- 2026-06-16 layered_search：世界之门 / 第1596章 / 第1630章 / 第2187章 / 第2191章 / 血海之门交叉检索
+confidence: '0.68'
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Summary
@@ -114,3 +81,7 @@ confidence: 0.66
 
 - 当前置信度：0.66
 - 依据：QQ阅读章节片段 + 69书吧目录 + 知乎剧情梳理
+
+Confidence Score: 0.68 | Sources: QQ阅读第1596章《世界之门外》；QQ阅读第1630章《门与末日》；QQ阅读第2191章《血海之门》；69书吧目录检索；2026-06-16 layered_search 世界之门 / 第1596/1630/2187/2191章交叉检索。
+- [诸界末日在线](_index.md)
+- [诸界末日在线](xumu-concept.md)
