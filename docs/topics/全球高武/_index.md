@@ -14,6 +14,7 @@ tags:
   - "小说考据"
 topic_key: "quanqiu-gaowu"
 ---
+
 ## Summary
 
 《全球高武》考据索引收录已验证的角色、概念与终局条目。小说由老鹰吃小鸡创作，2018 年连载于起点中文网，2019 年完结。所有页面应在 frontmatter 中标注 `status`、`confidence`、`sources`，并在正文中保留证据边界。
@@ -39,6 +40,7 @@ topic_key: "quanqiu-gaowu"
 | [战天帝 · 角色档案](zhan-tian-di-profile.md) | 三帝之首、系统制造者与方平布局的核心驱动力 | complete | 0.93 |
 | [霸天帝 · 概念档案](ba-tian-di-profile.md) | 肉身极道四帝之一，李寒松前世原型 | complete | 0.90 |
 | [灭天帝 · 角色档案](mie-tian-di-profile.md) | 精神力极道四帝之一，姚成军前世原型 | complete | 0.88 |
+| [天帝 · 角色档案](tian-di-profile.md) | 最终反派，仙源计划缔造者，第1431章被方平斩杀 | complete | 0.90 |
 
 ## 概念档案
 
