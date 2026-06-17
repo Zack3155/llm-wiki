@@ -3,8 +3,8 @@ title: 全球高武 · 考据索引
 name: "quanqiu-gaowu-index"
 topic: "全球高武"
 date_added: 2026-06-16
-date_modified: 2026-06-16
-last_modified: 2026-06-16
+date_modified: 2026-06-17
+last_modified: 2026-06-17
 status: "complete"
 confidence: 0.85
 sources:
@@ -35,6 +35,7 @@ topic_key: "quanqiu-gaowu"
 | 页面 | 摘要 | 状态 | 置信度 |
 |---|---|---:|---:|
 | [方平 · 角色档案](fang-ping-profile.md) | 男主角真实身份、三帝布局后手与终局阴间主宰位格 | complete | 0.88 |
+| [阳神 · 角色档案](yang-shen-profile.md) | 初武皇者、三界第二强者，方平的关键引路人 | complete | 0.92 |
 
 ## 概念档案
 
