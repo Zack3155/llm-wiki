@@ -89,4 +89,6 @@ topic_key: zhu-jie-mo-ri
 - [巨大尸体 / 蒙昧世界黑色骷髅 · 概念档案](mengmei-black-skeletons-concept.md)
 - [世界之门 · 概念档案](world-gate-concept.md)
 
+- [邪魔首领](du-ge-feng-profile.md)
+
 Confidence Score: 0.78 | Sources: 百度百科《诸界末日在线》词条；百度贴吧终局梳理帖；PTT CFantasy 结局讨论；本地 Wiki 交叉引用审计；2026-06-16 layered_search 墟墓 / 巨大尸体 / 大尸兄 / 邪魔首领 / 幕交叉检索。

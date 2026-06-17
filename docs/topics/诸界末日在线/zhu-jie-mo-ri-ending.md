@@ -68,4 +68,6 @@ tags:
 - [世界之门 · 概念档案](world-gate-concept.md) — 终局从六道防线到虚空时代的转场入口
 - [诸界末日在线 · 考据索引](./_index.md) — 小说考据索引
 
+- [六道轮回](sequence-system-concept.md)
+
 Confidence Score: 0.78 | Sources: 百度百科《诸界末日在线》词条；知乎/贴吧/PTT 终局梳理交叉验证；本地 Wiki 六道轮回、墟墓、幕、柳平、独孤峰、万神女帝等页面；2026-06-16 layered_search 六道轮回 / 终局 / 混沌 / 墟墓 / 六道崩碎交叉检索。

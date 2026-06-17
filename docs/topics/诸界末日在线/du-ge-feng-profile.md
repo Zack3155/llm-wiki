@@ -2,7 +2,7 @@
 title: 独孤峰 — 角色档案
 name: du-ge-feng
 topic: 诸界末日在线
-date_modified: '2026-06-12'
+date_modified: 2026-06-16
 last_modified: '2026-06-12'
 sources:
 - PTT CFantasy 实况讨论
@@ -78,3 +78,5 @@ tags:
 - [诸界末日在线 · 考据索引](./_index.md)
 - [柳平 — 角色档案（liu ping profile）](liu-ping-profile.md) — 终局相关角色
 - [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md)
+- [邪魔首领](xumu-concept.md)
+- [邪魔首领](zhu-jie-mo-ri-ending.md)

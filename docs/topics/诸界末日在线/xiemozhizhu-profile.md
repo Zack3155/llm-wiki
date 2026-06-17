@@ -99,5 +99,5 @@ topic_key: zhu-jie-mo-ri
 - [独孤峰 — 角色档案](./du-ge-feng-profile.md) — 柳平捏造的身份
 - [虚空三术与众生同调 · 概念对照档案](./xukong-san-shu-comparison.md) — 一人万生之术原文证据与能力对照（含完整虚空三术关系表）
 - [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 本页对应实体
-- [核心身份架构](qingtongzhizhu-profile.md)
-- [核心身份架构](yong-mie-zhi-wang-profile.md)
+- [青铜之主 — 角色/存在档案](qingtongzhizhu-profile.md)
+- [永灭之王 / 魔躯 — 角色档案](yong-mie-zhi-wang-profile.md)

@@ -27,7 +27,7 @@ date_modified: 2026-06-16
 - 站点框架：MkDocs + Material for MkDocs
 - 站点身份：通用知识库，支持任意 topic 与小说 corpus
 - 当前小说考据 topic：
-  - 《诸界末日在线》：当前首个小说考据 topic
+  - 《诸界末日在线》：同级小说考据 topic
   - 《全球高武》：同级小说考据 topic
 - 构建状态：`mkdocs build --strict` 已通过
 - 本地预览：`http://127.0.0.1:8081/`
