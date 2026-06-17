@@ -6,7 +6,7 @@ date_added: 2026-06-16
 date_modified: 2026-06-17
 last_modified: 2026-06-17
 status: "complete"
-confidence: 0.85
+confidence: 0.90
 sources:
   - "本地 Wiki 索引审计"
   - "MkDocs 页面渲染验证"
@@ -36,6 +36,9 @@ topic_key: "quanqiu-gaowu"
 |---|---|---:|---:|
 | [方平 · 角色档案](fang-ping-profile.md) | 男主角真实身份、三帝布局后手与终局阴间主宰位格 | complete | 0.88 |
 | [阳神 · 角色档案](yang-shen-profile.md) | 初武皇者、三界第二强者，方平的关键引路人 | complete | 0.92 |
+| [战天帝 · 角色档案](zhan-tian-di-profile.md) | 三帝之首、系统制造者与方平布局的核心驱动力 | complete | 0.93 |
+| [霸天帝 · 概念档案](ba-tian-di-profile.md) | 肉身极道四帝之一，李寒松前世原型 | complete | 0.90 |
+| [灭天帝 · 角色档案](mie-tian-di-profile.md) | 精神力极道四帝之一，姚成军前世原型 | complete | 0.88 |
 
 ## 概念档案
 
