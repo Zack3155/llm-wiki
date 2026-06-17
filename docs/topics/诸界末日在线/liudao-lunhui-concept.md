@@ -3,7 +3,7 @@ title: 六道轮回 · 概念档案
 name: six-path-reincarnation
 topic: 诸界末日在线
 date_added: 2026-06-10
-date_modified: 2026-06-13
+date_modified: 2026-06-16
 last_modified: 2026-06-12
 status: complete
 sources:
@@ -328,3 +328,4 @@ tags:
 - [世界之门 · 概念档案](world-gate-concept.md)
 - [序列体系 · 概念档案](sequence-system-concept.md)
 - [混沌 · 概念档案](chaos-concept.md)
+- [核心判断](wu-zhuan-zhi-di-concept.md)
