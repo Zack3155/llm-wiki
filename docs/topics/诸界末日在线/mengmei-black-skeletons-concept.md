@@ -1,25 +1,21 @@
 ---
 title: 蒙昧世界黑色骷髅 · 概念档案
 name: mengmei-black-skeletons
-topic: novel-lore
+topic: 诸界末日在线
 date_added: '2026-06-11'
 date_modified: '2026-06-16'
 last_modified: '2026-06-16'
 status: needs-more-sources
-tags: ''
+tags:
+- 小说考据
 sources:
 - 本地 Wiki 蒙昧世界黑色骷髅页面
 - SearXNG 中文关键词交叉检索
 - 2026-06-15 layered_search 精确章节检索：第603章《世界之墓！》、黑色骷髅、巨大尸体
 - 2026-06-16 layered_search：蒙昧世界 / 黑色骷髅 / 第39章 / 第603章交叉检索
 confidence: 0.74
+topic_key: zhu-jie-mo-ri
 ---
-
-
-
-
-
-
 
 ## Summary
 

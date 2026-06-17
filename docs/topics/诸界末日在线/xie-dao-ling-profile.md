@@ -1,7 +1,7 @@
 ---
 title: 谢道灵 — 角色档案
 name: xie-dao-ling
-topic: novel-lore
+topic: 诸界末日在线
 status: complete
 sources:
 - 'Zhihu Q&A thread #433978647'
@@ -12,42 +12,10 @@ confidence: 0.88
 date_added: 2026-06-13
 date_modified: 2026-06-12
 last_modified: 2026-06-12
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

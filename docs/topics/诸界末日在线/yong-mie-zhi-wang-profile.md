@@ -1,45 +1,21 @@
 ---
 title: 永灭之王 / 魔躯 — 角色档案
 name: yong-mie-zhi-wang
-topic: novel-lore
+topic: 诸界末日在线
 status: complete
 date_added: '2026-06-14'
 date_created: '2026-06-14'
-date_modified: &id001 2026-06-14
+date_modified: 2026-06-14
 sources:
 - 第三百二十二章《永灭之王》原文（微信读书 / 起点中文网 / UU看书 / 黄金屋中文网多站交叉）
 - SearXNG 检索结果 8 条独立来源
 - 知乎剧情全解析帖（提及"永灭之王为首"击碎六道）
 tags:
-- novel-lore
-- boss
-- 反派
-- 地之纪元
+- 小说考据
 confidence: 0.88
-last_modified: *id001
+last_modified: 2026-06-14
+topic_key: zhu-jie-mo-ri
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

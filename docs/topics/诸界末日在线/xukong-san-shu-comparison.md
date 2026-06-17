@@ -1,7 +1,7 @@
 ---
 title: 虚空三术与众生同调 · 概念对照档案
 name: xukong-san-shu-vs-zhongsheng-tongdiao
-topic: novel-lore
+topic: 诸界末日在线
 status: complete
 date_added: 2026-06-13
 date_modified: 2026-06-13
@@ -17,32 +17,10 @@ sources:
 - PTT CFantasy 实况讨论
 - UUKanshu / 天涯书库原文检索
 confidence: 0.88
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

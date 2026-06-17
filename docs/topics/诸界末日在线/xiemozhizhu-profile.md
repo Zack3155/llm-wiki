@@ -1,11 +1,11 @@
 ---
 title: 邪魔之主 — 角色档案
 name: xiemozhizhu
-topic: novel-lore
+topic: 诸界末日在线
 status: complete
 date_created: '2026-06-19'
 date_added: 2026-06-10
-date_modified: 2026-06-12
+date_modified: 2026-06-16
 last_modified: 2026-06-12
 sources:
 - 百度百科《诸界末日在线》词条
@@ -14,46 +14,10 @@ sources:
 - 百度贴吧剧情讨论区
 - PTT CFantasy 实况
 tags:
-- novel-lore
-- boss
-- 反派
+- 小说考据
 confidence: 0.9
+topic_key: zhu-jie-mo-ri
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 
@@ -135,3 +99,5 @@ confidence: 0.9
 - [独孤峰 — 角色档案](./du-ge-feng-profile.md) — 柳平捏造的身份
 - [虚空三术与众生同调 · 概念对照档案](./xukong-san-shu-comparison.md) — 一人万生之术原文证据与能力对照（含完整虚空三术关系表）
 - [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 本页对应实体
+- [核心身份架构](qingtongzhizhu-profile.md)
+- [核心身份架构](yong-mie-zhi-wang-profile.md)

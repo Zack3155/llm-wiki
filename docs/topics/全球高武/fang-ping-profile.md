@@ -1,18 +1,21 @@
 ---
 title: 方平 — 角色档案（全球高武）
 name: fang-ping-ggga
-topic: quanqiu-gaowu
+topic: 全球高武
 date_added: 2026-06-16
 date_modified: 2026-06-16
 last_modified: 2026-06-16
 status: complete
 sources:
-  - 百度百科"方平"词条 (https://baike.baidu.com/item/方平/23629282)
-  - 百度百科"全球高武"词条全文提取，含人物介绍段
-  - 百度百科"战天帝"/"斗天帝"词条交叉验证
-  - 第1432章终章原文 (bidutuijian.com/books/全球高武/1404.html)
-  - SearXNG layered search: "全球高武 方平 真实身份", "方平 战天帝转世", "全球高武 方平 系统真正的主人"
+- 百度百科"方平"词条 (https://baike.baidu.com/item/方平/23629282)
+- 百度百科"全球高武"词条全文提取，含人物介绍段
+- 百度百科"战天帝"/"斗天帝"词条交叉验证
+- 第1432章终章原文 (bidutuijian.com/books/全球高武/1404.html)
+- 'SearXNG layered search: "全球高武 方平 真实身份", "方平 战天帝转世", "全球高武 方平 系统真正的主人"'
 confidence: 0.88
+topic_key: quanqiu-gaowu
+tags:
+- 小说考据
 ---
 
 ## Summary
@@ -93,6 +96,7 @@ confidence: 0.88
 - **苍猫** → 阳间主宰（三界的种子与统治者）
 - 两界通过新建立的六道轮回互通，日后轮流坐庄、轮流成为种子
 
+
 Confidence Score: 0.88
 Sources:
 - 百度百科"方平""战天帝""斗天帝""全球高武"词条
@@ -102,4 +106,4 @@ Key caveat: 起点/Qidian 原站访问被验证页阻挡，正文证据主要来
 
 See also:
 - [种子 · 概念档案（全球高武）](zhongzi-concept.md)
-- 【站点索引】全球高武 · 考据索引 (../quanqiu-gaowu/_index.md)
+- 【站点索引】全球高武 · 考据索引 (../全球高武/_index.md)

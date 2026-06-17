@@ -1,7 +1,7 @@
 ---
 title: 六道轮回 · 概念档案
 name: six-path-reincarnation
-topic: novel-lore
+topic: 诸界末日在线
 date_added: 2026-06-10
 date_modified: 2026-06-13
 last_modified: 2026-06-12
@@ -12,42 +12,10 @@ sources:
 - 本地 Wiki：洪荒纪元与六道轮回、六道争雄、终局分析、顾青山档案
 - layered_search 多组中文关键词交叉检索
 confidence: 0.88
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

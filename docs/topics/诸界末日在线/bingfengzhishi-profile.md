@@ -1,7 +1,7 @@
 ---
 title: 幕 / 冰封之尸 — 角色档案
 name: bingfengzhishi
-topic: novel-lore
+topic: 诸界末日在线
 date_added: 2026-06-10
 date_modified: 2026-06-12
 last_modified: 2026-06-12
@@ -12,42 +12,10 @@ sources:
 - '知乎全解析帖 #433978647'
 - PTT CFantasy
 confidence: 0.92
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

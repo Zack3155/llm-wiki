@@ -1,7 +1,7 @@
 ---
 title: 顾青山 — 角色档案
 name: gu-qing-shan
-topic: novel-lore
+topic: 诸界末日在线
 date_added: 2026-06-08
 date_modified: 2026-06-12
 last_modified: 2026-06-12
@@ -11,43 +11,10 @@ sources:
 - 知乎全解析帖
 - 本地 Wiki 交叉验证
 confidence: 0.88
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

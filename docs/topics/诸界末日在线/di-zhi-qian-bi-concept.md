@@ -1,7 +1,7 @@
 ---
 title: 地之钱币 · 概念档案
 name: di-zhi-qian-bi
-topic: novel-lore
+topic: 诸界末日在线
 date_added: 2026-06-13
 date_modified: 2026-06-13
 last_modified: 2026-06-12
@@ -12,42 +12,10 @@ sources:
 - 知乎故事线梳理帖
 - 贴吧/飘天文学章节目录 (第700~926章)
 confidence: 0.95
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

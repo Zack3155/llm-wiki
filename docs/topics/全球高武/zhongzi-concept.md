@@ -1,16 +1,19 @@
 ---
 title: 种子 · 概念档案（全球高武）
 name: zhongzi-concept-ggga
-topic: quanqiu-gaowu
+topic: 全球高武
 date_added: 2026-06-16
 date_modified: 2026-06-16
 last_modified: 2026-06-16
 status: complete
 sources:
-  - 百度百科"全球高武"词条全文提取（seed keyword density analysis）
-  - SearXNG layered search: "种子 苍猫吞噬种子 三界 阳间 阴间 六道的轮回 气血种子 生命种子"
-  - Zhihu/SoHu/Baike cross-references via /tmp/layered_search_report.json
-confidence: 0.90
+- 百度百科"全球高武"词条全文提取（seed keyword density analysis）
+- SearXNG layered search: 种子 苍猫吞噬种子 三界 阳间 阴间 六道的轮回 气血种子 生命种子
+- Zhihu/SoHu/Baike cross-references via /tmp/layered_search_report.json
+confidence: 0.9
+topic_key: quanqiu-gaowu
+tags:
+- 小说考据
 ---
 
 ## Summary
@@ -96,7 +99,7 @@ confidence: 0.90
 
 > "这猫……会舍不得吗？"——暗示其他人成为种子后可能舍不得放弃力量导致失衡风险；而一人一猫轮流坐庄可能是最安全的平衡方案。See also:
 - [方平 — 角色档案（全球高武）](fang-ping-profile.md)
-- 【站点索引】全球高武 · 考据索引 (../quanqiu-gaowu/_index.md)
+- 【站点索引】全球高武 · 考据索引 (../全球高武/_index.md)
 
 Confidence Score: 0.90
 Sources:

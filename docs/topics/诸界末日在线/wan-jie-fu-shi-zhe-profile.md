@@ -1,7 +1,7 @@
 ---
 title: 万界俯视者 — 角色档案
 name: wan-jie-fu-shi-zhe
-topic: novel-lore
+topic: 诸界末日在线
 date_added: '2026-06-13'
 date_modified: '2026-06-16'
 last_modified: '2026-06-16'
@@ -13,13 +13,10 @@ sources:
 - 2026-06-15 layered_search：万界俯视者 / 真古之魔 / 圣界铁律 交叉检索
 - 2026-06-16 layered_search：万界俯视者 / 真古之魔 / 第1676章 / 第1677章 / 第2191章交叉检索
 confidence: 0.84
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
 
 ## Summary
 

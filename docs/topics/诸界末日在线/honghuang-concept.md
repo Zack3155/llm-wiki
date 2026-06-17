@@ -1,7 +1,7 @@
 ---
 title: 洪荒纪元 · 概念档案
 name: honghuang-era
-topic: novel-lore
+topic: 诸界末日在线
 date_added: 2026-06-10
 date_modified: 2026-06-13
 last_modified: 2026-06-12
@@ -12,42 +12,10 @@ sources:
 - layered_search 多组中文关键词交叉检索
 - 飘天文学 第618章《六道争雄之始！》原文片段
 confidence: 0.88
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

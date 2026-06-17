@@ -1,7 +1,7 @@
 ---
 title: 序列体系 · 概念档案
 name: sequence-system
-topic: novel-lore
+topic: 诸界末日在线
 date_added: 2026-06-13
 date_modified: 2026-06-15
 last_modified: 2026-06-15
@@ -12,33 +12,10 @@ sources:
 - 百度百科"顾青山"条目（混沌最高序列相关）
 - 2026-06-15 layered_search：序列体系 / 混沌最高序列 / 诸界末日在线 交叉检索
 confidence: 0.91
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

@@ -1,7 +1,7 @@
 ---
 title: 柳平 — 角色档案
 name: liu-ping
-topic: novel-lore
+topic: 诸界末日在线
 date_modified: '2026-06-12'
 last_modified: '2026-06-12'
 sources:
@@ -11,42 +11,10 @@ sources:
 confidence: 0.92
 status: complete
 date_added: '2026-06-13'
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

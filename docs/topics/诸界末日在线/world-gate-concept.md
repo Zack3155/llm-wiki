@@ -1,12 +1,13 @@
 ---
 title: 世界之门 · 概念档案
 name: world-gate
-topic: novel-lore
+topic: 诸界末日在线
 date_added: '2026-06-11'
 date_modified: '2026-06-16'
 last_modified: '2026-06-16'
 status: needs-more-sources
-tags: ''
+tags:
+- 小说考据
 sources:
 - 百度百科《诸界末日在线》词条
 - SearXNG 中文关键词交叉检索
@@ -14,13 +15,8 @@ sources:
 - 知乎剧情梳理：命运侵蚀、平行世界、血海与诸界结构讨论
 - 2026-06-16 layered_search：世界之门 / 第1596章 / 第1630章 / 第2187章 / 第2191章 / 血海之门交叉检索
 confidence: 0.68
+topic_key: zhu-jie-mo-ri
 ---
-
-
-
-
-
-
 
 ## Summary
 

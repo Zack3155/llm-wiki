@@ -1,7 +1,7 @@
 ---
 title: 混沌 · 概念档案
 name: chaos-concept
-topic: novel-lore
+topic: 诸界末日在线
 date_added: 2026-06-13
 date_modified: 2026-06-14
 last_modified: 2026-06-13
@@ -13,33 +13,10 @@ sources:
 - PTT实况讨论（洪荒纪元、六道轮回成因分析）
 - layered_search 多组中文关键词交叉检索（和图书、飘天文学、69书吧、Scribd校对版等独立源）
 confidence: 0.93
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

@@ -1,7 +1,7 @@
 ---
 title: 万神女帝身份考据 · 角色档案
 name: wan-shen-nu-di
-topic: novel-lore
+topic: 诸界末日在线
 date_added: '2026-06-13'
 date_modified: '2026-06-16'
 last_modified: '2026-06-16'
@@ -13,13 +13,10 @@ sources:
 - 2026-06-15 layered_search：万神女帝 / 蕾妮朵儿 / 幕 / 时空之谜 交叉检索
 - 2026-06-16 layered_search：万神女帝 / 蕾妮朵儿 / 第536章 / 墟墓交叉检索
 confidence: 0.72
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
 
 ## Summary
 

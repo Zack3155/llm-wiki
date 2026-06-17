@@ -1,7 +1,7 @@
 ---
 title: 六道争雄 · 概念档案
 name: liudao-zhengxiong
-topic: novel-lore
+topic: 诸界末日在线
 date_added: '2026-06-10'
 date_modified: 2026-06-13
 last_modified: '2026-06-12'
@@ -11,42 +11,10 @@ sources:
 - SearXNG layered_search.py (exit=0, 8 results)
 - Baike.baidu.com 诸界末日在线词条 (JS全文提取, 8+ hits)
 - 飘天文学第六百一十八章原文 (novel text verification)
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

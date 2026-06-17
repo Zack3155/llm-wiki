@@ -1,7 +1,7 @@
 ---
 title: 青铜之主 — 角色/存在档案
 name: qingtongzhizhu
-topic: novel-lore
+topic: 诸界末日在线
 status: complete
 date_added: 2026-06-13
 date_modified: 2026-06-14
@@ -18,36 +18,10 @@ sources:
 - PTT CFantasy 实况讨论
 - 知乎剧情全解析帖（zhihu.com/question/433978647）
 tags:
-- novel-lore
-- 战争存在
-- 一人万生之术
+- 小说考据
 confidence: 0.84
+topic_key: zhu-jie-mo-ri
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

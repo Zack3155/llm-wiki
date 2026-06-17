@@ -1,7 +1,7 @@
 ---
 title: 无转之地 · 概念档案
 name: wu-zhuan-zhi-di
-topic: novel-lore
+topic: 诸界末日在线
 date_added: '2026-06-14'
 date_modified: 2026-06-15
 last_modified: '2026-06-14'
@@ -17,29 +17,10 @@ sources:
 - 本地 Wiki 交叉页：六��轮回、终局分析、顾青山档案、冰封之尸档案
 - layered_search 多组中文关键词交叉检索（SearXNG L1，独立来源 ≥8）
 confidence: 0.88
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 

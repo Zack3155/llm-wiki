@@ -1,7 +1,7 @@
 ---
 title: 墟墓 · 概念档案
 name: xumu-concept
-topic: novel-lore
+topic: 诸界末日在线
 status: needs-more-sources
 confidence: 0.78
 sources:
@@ -10,17 +10,13 @@ sources:
 - PTT CFantasy 结局讨论（柳平/邪魔首领/固定历史讨论）
 - 本地 Wiki 交叉引用审计
 - 2026-06-16 layered_search：墟墓 / 巨大尸体 / 大尸兄 / 邪魔首领 / 幕交叉检索
-tags: ''
+tags:
+- 小说考据
 date_added: '2026-06-15'
 date_modified: '2026-06-16'
 last_modified: '2026-06-16'
+topic_key: zhu-jie-mo-ri
 ---
-
-
-
-
-
-
 
 ## Summary
 

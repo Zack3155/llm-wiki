@@ -1,24 +1,25 @@
 ---
-
 title: 诸界末日在线 · 考据索引
-name: novel-lore-index
-topic: novel-lore
-status: complete
+name: "zhu-jie-mo-ri-index"
+topic: "诸界末日在线"
+status: "complete"
 confidence: 0.82
 sources:
-  - 本地 Wiki 索引审计
-  - MkDocs 页面渲染验证
+  - "本地 Wiki 索引审计"
+  - "MkDocs 页面渲染验证"
 tags:
-  - index
-  - novel-lore
+  - "小说考据"
 date_added: 2026-06-10
-date_modified: 2026-06-15
-
+date_modified: 2026-06-16
+topic_key: "zhu-jie-mo-ri"
 ---
-
 ## Summary
 
-本页是《诸界末日在线》考据知识库的专题索引，按“角色档案 / 概念档案 / 对照档案 / 终局分析”组织。所有页面均应在 frontmatter 中标注 `status`、`confidence`、`sources`，并在正文中保留证据边界。
+《诸界末日在线》考据索引按“角色档案 / 概念档案 / 对照档案 / 终局分析”组织。所有页面均应在 frontmatter 中标注 `status`、`confidence`、`sources`，并在正文中保留证据边界。
+
+## 同级小说 corpus
+
+- [《全球高武》考据索引](../全球高武/_index.md)
 
 # 诸界末日在线 · 考据索引
 
@@ -55,6 +56,7 @@ date_modified: 2026-06-15
 | [洪荒 · 概念档案](honghuang-concept.md) | 洪荒纪元与六道体系起源 | complete | 0.82 |
 | [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md) | 四圣柱魂器与地之世界关系 | complete | 0.95 |
 | [序列体系 · 概念档案](sequence-system-concept.md) | 序列、术法与终局能力体系 | complete | 0.82 |
+| [妖精 · 种族档案](fire-epoch-fairies-concept.md) | 火之纪元妖精种族与火种体系 | complete | 0.82 |
 | [世界之门 · 概念档案](world-gate-concept.md) | 世界之门与终局通道争议 | needs-more-sources | 0.62 |
 | [蒙昧世界黑色骷髅 · 概念档案](mengmei-black-skeletons-concept.md) | 蒙昧世界黑色骷髅来源争议 | needs-more-sources | 0.64 |
 
@@ -76,9 +78,22 @@ date_modified: 2026-06-15
 - 若页面涉及“墟墓 / 邪魔之主 / 幕 / 大尸兄 / 柳平 / 独孤峰”，必须先到对应概念页或对照页确认身份边界。
 - 读者讨论帖只能作为辅助证据；百度百科、原文片段、可复核章节索引优先。
 - 若同一页面出现 `confidence: 0.xx`，必须确认它只存在于 YAML frontmatter，正文不得出现假 confidence。
+
 ## See also
 
 - [无转之地 · 概念档案](wu-zhuan-zhi-di-concept.md)
+- [《全球高武》考据索引](../全球高武/_index.md)
 
-| [妖精 · 种族档案](./fire-epoch-fairies-concept.md) | Wiki | Auto-added |
 
+
+
+
+
+
+
+
+
+Confidence Score: 0.82
+Sources:
+- 本地 Wiki 索引审计
+- MkDocs 页面渲染验证

@@ -1,7 +1,7 @@
 ---
 title: 六道体系总览 · 概念档案
 name: six-path-system-overview
-topic: novel-lore
+topic: 诸界末日在线
 date_added: 2026-06-12
 date_modified: 2026-06-13
 last_modified: 2026-06-12
@@ -11,42 +11,10 @@ sources:
 - 飘天文学 第618章《六道争雄之始！》原文片段
 - 百度百科《诸界末日在线》词条
 confidence: 0.9
+topic_key: zhu-jie-mo-ri
+tags:
+- 小说考据
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Summary
 
