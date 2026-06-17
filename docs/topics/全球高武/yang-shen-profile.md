@@ -7,14 +7,15 @@ date_modified: 2026-06-17
 last_modified: 2026-06-17
 status: complete
 sources:
-  - "百度百科「阳神（小说《全球高武》的角色）」(https://baike.baidu.com/item/阳神/55627279)"
-  - "腾讯动漫问答：全球高武里的阳神 (https://ac.qq.com/Ask/detail/aid/zfjdosycam)"
-  - "SearXNG layered search results corroborating identity and role"
+- 百度百科「阳神（小说《全球高武》的角色）」(https://baike.baidu.com/item/阳神/55627279)
+- 腾讯动漫问答：全球高武里的阳神 (https://ac.qq.com/Ask/detail/aid/zfjdosycam)
+- SearXNG layered search results corroborating identity and role
 confidence: 0.92
 topic_key: quanqiu-gaowu
 tags:
-  - 小说考据
+- 小说考据
 ---
+
 
 ## Summary
 
