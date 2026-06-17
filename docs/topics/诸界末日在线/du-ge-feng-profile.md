@@ -78,5 +78,5 @@ tags:
 - [诸界末日在线 · 考据索引](./_index.md)
 - [柳平 — 角色档案（liu ping profile）](liu-ping-profile.md) — 终局相关角色
 - [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md)
-- [邪魔首领](xumu-concept.md)
-- [邪魔首领](zhu-jie-mo-ri-ending.md)
+- [墟墓 · 概念档案](xumu-concept.md) — 与“邪魔首领/巨大尸体”表象相关
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 终局行动与身份边界
