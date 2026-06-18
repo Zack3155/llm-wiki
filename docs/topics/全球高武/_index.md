@@ -3,8 +3,8 @@ title: 全球高武 · 考据索引
 name: "quanqiu-gaowu-index"
 topic: "全球高武"
 date_added: 2026-06-16
-date_modified: 2026-06-17
-last_modified: 2026-06-17
+date_modified: 2026-06-18
+last_modified: 2026-06-18
 status: "complete"
 confidence: 0.90
 sources:
@@ -41,6 +41,7 @@ topic_key: "quanqiu-gaowu"
 | [霸天帝 · 概念档案](ba-tian-di-profile.md) | 肉身极道四帝之一，李寒松前世原型 | complete | 0.90 |
 | [灭天帝 · 角色档案](mie-tian-di-profile.md) | 精神力极道四帝之一，姚成军前世原型 | complete | 0.88 |
 | [天帝 · 角色档案](tian-di-profile.md) | 最终反派，仙源计划缔造者，第1431章被方平斩杀 | complete | 0.90 |
+| [斗天帝 · 角色档案](dou-tian-di-profile.md) | 最古老的极道天帝、能量极道开创者，三界第四强者 | complete | 0.90 |
 
 ## 概念档案
 
