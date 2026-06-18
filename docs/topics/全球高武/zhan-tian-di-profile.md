@@ -1,12 +1,20 @@
 ---
+title: 战天帝 — 角色档案（全球高武）
 topic: 全球高武
 topic_key: quanqiu-gaowu
 tags:
 - 小说考据
+date_added: 2026-06-17
 date_modified: 2026-06-17
-last_modified: '2026-06-12'
-status: stub
-confidence: 0.00
+last_modified: 2026-06-17
+status: complete
+confidence: 0.93
+sources:
+- 百度百科「战天帝」词条
+- 百度百科「王金洋」词条交叉验证
+- SearXNG layered search corroborating identity (≥3 independent hits)
+- Dcard 「#心得分享全球高武角色介紹」综合帖子
+- 起点中文《全球高武》资源站角色页
 ---
 
 
