@@ -7,16 +7,17 @@ date_modified: 2026-06-17
 last_modified: 2026-06-17
 status: complete
 sources:
-  - 百度百科「天帝（小说《全球高武》中的角色）」(https://baike.baidu.com/item/天帝/55617457)
-  - 百度百科「全球高武」词条全文
-  - 起点中文《全球高武》章节目录（第1431章「斩天帝！」、第1432章「三界新生，有缘再会」）
-  - 腾讯动漫问答：全球高武灵皇和天帝什么关系 (https://m.ac.qq.com/ask/detail/aid/zfzfpejdwz)
-  - 知乎专栏：小说全球高武中主要事件介绍
-confidence: 0.90
+- 百度百科「天帝（小说《全球高武》中的角色）」(https://baike.baidu.com/item/天帝/55617457)
+- 百度百科「全球高武」词条全文
+- 起点中文《全球高武》章节目录（第1431章「斩天帝！」、第1432章「三界新生，有缘再会」）
+- 腾讯动漫问答：全球高武灵皇和天帝什么关系 (https://m.ac.qq.com/ask/detail/aid/zfzfpejdwz)
+- 知乎专栏：小说全球高武中主要事件介绍
+confidence: 0.9
 topic_key: quanqiu-gaowu
 tags:
-  - 小说考据
+- 小说考据
 ---
+
 
 ## Summary
 

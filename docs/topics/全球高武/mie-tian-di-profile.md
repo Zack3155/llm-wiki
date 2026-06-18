@@ -10,11 +10,12 @@ sources:
 - 百度百科「灭天帝」词条 (https://baike.baidu.com/item/%E7%8D%B5%E5%A4%A9%E5%B8%9D)
 - 百度百科「姚成军」词条交叉验证
 - SearXNG layered search results corroborating identity and role
-confidence: 0.90
+confidence: 0.9
 topic_key: quanqiu-gaowu
 tags:
 - 小说考据
 ---
+
 
 
 ## Summary

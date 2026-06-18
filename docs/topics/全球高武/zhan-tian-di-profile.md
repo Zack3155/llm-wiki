@@ -1,22 +1,14 @@
 ---
-title: 战天帝 — 角色档案（全球高武）
-name: zhan-tian-di-ggga
 topic: 全球高武
-date_added: 2026-06-17
-date_modified: 2026-06-17
-last_modified: 2026-06-17
-status: complete
-sources:
-- 百度百科「战天帝」词条 (https://baike.baidu.com/item/战天帝)
-- 百度百科「阳神（小说《全球高武》的角色）」交叉验证 (https://baike.baidu.com/item/阳神/55627279)
-- 百度百科「方平」词条（确认方平不是战天帝转世）(https://baike.baidu.com/item/方平/23629282)
-- SearXNG layered search: "王金洋 全球高武 战天帝 转世 身份 系统" (≥5 hits, source tier 1–2)
-- 哔哩哔哩「高武故事缔造者、高武人物志——战天帝」视频文案
-confidence: 0.93
 topic_key: quanqiu-gaowu
 tags:
 - 小说考据
+date_modified: 2026-06-17
+last_modified: '2026-06-12'
+status: stub
+confidence: 0.00
 ---
+
 
 
 ## Summary
@@ -130,10 +122,12 @@ tags:
 - [种子 · 概念档案（全球高武）](zhongzi-concept.md)
 - 【站点索引】全球高武 · 考据索引 (_index.md)
 - [中九皇四帝之一](ba-tian-di-profile.md)
+- [全名仅单字](mie-tian-di-profile.md)
 Confidence Score: 0.93
 Sources:
 - 百度百科「战天帝」「阳神」「方平」「全球高武」词条交叉验证
 - SearXNG layered search cross-reference (≥5 independent hits, source tier 1–2)
 - 哔哩哔哩「高武人物志——战天帝」视频文案
 Key caveat: 百度百科为读者分析性质的百科条目，非起点/Qidian原站官方来源；未达0.95置信度。
+
 
