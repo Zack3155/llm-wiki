@@ -117,3 +117,4 @@ last_modified: 2026-06-15
 
 ### Verification
 - Lint and build results recorded below by tool calls.
+2026-06-18 12:04:55 [WIKI-AUTO-FILER] New page: 斗天帝 · 角色档案 (global-gao-wu/dou-tian-di-profile.md) — verified via Baidu Baike + SearXNG layered search. Updated _index.md. Lint: clean (36 pages, 2 fixes). Build: clean.
