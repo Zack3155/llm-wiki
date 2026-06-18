@@ -3,7 +3,7 @@ title: 灭天帝 — 角色档案（全球高武）
 name: mie-tian-di-ggga
 topic: 全球高武
 date_added: 2026-06-17
-date_modified: 2026-06-17
+date_modified: 2026-06-18
 last_modified: 2026-06-17
 status: complete
 sources:
@@ -91,9 +91,10 @@ tags:
 - [霸天帝 · 角色档案（全球高武）](ba-tian-di-profile.md)
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
 - 【站点索引】全球高武 · 考据索引 (_index.md)
-
+- [灭天帝](dou-tian-di-profile.md)
 Confidence Score: 0.90
 Sources:
 - 百度百科「灭天帝」「姚成军」词条交叉验证
 - SearXNG layered search corroborating identity (≥3 independent hits)
 Key caveat: 来源仍为百科与读者综合帖，非起点/Qidian原站官方正文。
+

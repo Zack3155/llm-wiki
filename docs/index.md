@@ -38,11 +38,11 @@ date_modified: 2026-06-16
 | 更新时间 | 分类 | 页面 |
 |---|---|---|
 | 2026-06-18 | 小说考据 | [斗天帝 — 角色档案（全球高武）](topics/全球高武/dou-tian-di-profile.md) |
+| 2026-06-18 | 小说考据 | [灭天帝 — 角色档案（全球高武）](topics/全球高武/mie-tian-di-profile.md) |
 | 2026-06-17 | 小说考据 | [战天帝 — 角色档案（全球高武）](topics/全球高武/zhan-tian-di-profile.md) |
 | 2026-06-17 | 小说考据 | [阳神 — 角色档案（全球高武）](topics/全球高武/yang-shen-profile.md) |
 | 2026-06-17 | 小说考据 | [天帝 — 角色档案（全球高武）](topics/全球高武/tian-di-profile.md) |
 | 2026-06-17 | 小说考据 | [霸天帝 — 角色档案（全球高武）](topics/全球高武/ba-tian-di-profile.md) |
-| 2026-06-17 | 小说考据 | [灭天帝 — 角色档案（全球高武）](topics/全球高武/mie-tian-di-profile.md) |
 | 2026-06-16 | site-identity / general / topic-boundary | [站点身份与新 topic 边界](topics/general/site-identity-topic-boundary.md) |
 | 2026-06-16 | 小说考据 | [六道轮回 · 概念档案](topics/诸界末日在线/liudao-lunhui-concept.md) |
 
