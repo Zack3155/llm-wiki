@@ -118,9 +118,11 @@ tags:
 
 
 
-## See also
+## See Also
+
 - [种子 · 概念档案（全球高武）](zhongzi-concept.md)
-- 【站点索引】全球高武 · 考据索引 (../全球高武/_index.md)
+- [全球高武 · 考据索引](../全球高武/_index.md)
+
 Confidence Score: 0.88
 Sources:
 - 百度百科"方平""战天帝""斗天帝""全球高武"词条

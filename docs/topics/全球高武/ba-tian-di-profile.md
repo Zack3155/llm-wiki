@@ -88,12 +88,12 @@ tags:
 - 但霸天帝真身若存世，对此关系持否认态度
 - 李寒松最终强调自己是新武人，不是霸天帝
 
-## See also
+## See Also
 
 - [战天帝 · 角色档案（全球高武）](zhan-tian-di-profile.md)
 - [灭天帝 · 角色档案（全球高武）](mie-tian-di-profile.md)
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
-- 【站点索引】全球高武 · 考据索引 (_index.md)
+- [全球高武 · 考据索引](../全球高武/_index.md)
 
 Confidence Score: 0.91
 Sources:

@@ -70,11 +70,11 @@ tags:
 - 从阳神的行动和布局来看，他更像是在利用布局培养/影响三界发展，而非直接参与
 - 阳神和方平是两个独立角色
 
-## See also
+## See Also
 
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
 - [种子 · 概念档案（全球高武）](zhongzi-concept.md)
-- 【站点索引】全球高武 · 考据索引 (_index.md)
+- [全球高武 · 考据索引](../全球高武/_index.md)
 
 Confidence Score: 0.92
 Sources:

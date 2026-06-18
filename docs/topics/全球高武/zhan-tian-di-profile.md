@@ -128,7 +128,7 @@ sources:
 - 通过制造系统、培养方平、借王金洋转世，完成了跨越千年的布局
 - 最终以自己的寂灭代价，完成了修补本源漏洞的使命
 
-## See also
+## See Also
 
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
 - [阳神 · 角色档案（全球高武）](yang-shen-profile.md)
@@ -136,6 +136,7 @@ sources:
 - 【站点索引】全球高武 · 考据索引 (_index.md)
 - [中九皇四帝之一](ba-tian-di-profile.md)
 - [全名仅单字](mie-tian-di-profile.md)
+
 Confidence Score: 0.93
 Sources:
 - 百度百科「战天帝」「阳神」「方平」「全球高武」词条交叉验证

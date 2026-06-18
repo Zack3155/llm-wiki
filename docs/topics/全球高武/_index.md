@@ -49,7 +49,7 @@ topic_key: "quanqiu-gaowu"
 |---|---|---:|---:|
 | [种子 · 概念档案](zhongzi-concept.md) | 三界生命起源与能量循环核心，非人物或物品 | complete | 0.90 |
 
-## See also
+## See Also
 
 - [《诸界末日在线》考据索引](../诸界末日在线/_index.md)
 - [站点身份与新 topic 边界](../general/site-identity-topic-boundary.md)

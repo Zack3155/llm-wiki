@@ -79,7 +79,7 @@ topic_key: "zhu-jie-mo-ri"
 - 读者讨论帖只能作为辅助证据；百度百科、原文片段、可复核章节索引优先。
 - 若同一页面出现 `confidence: 0.xx`，必须确认它只存在于 YAML frontmatter，正文不得出现假 confidence。
 
-## See also
+## See Also
 
 - [无转之地 · 概念档案](wu-zhuan-zhi-di-concept.md)
 - [《全球高武》考据索引](../全球高武/_index.md)

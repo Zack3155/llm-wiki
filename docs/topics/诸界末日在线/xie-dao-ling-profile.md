@@ -75,7 +75,7 @@ tags:
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 最终之术术主定位
 - [柳平 · 角色档案](liu-ping-profile.md) — 合作杀死邪魔 BOSS
 
-## See also
+## See Also
 
 - [诸界末日在线 · 考据索引](./_index.md)
 - [顾青山 — 角色档案](gu-qing-shan-profile.md)

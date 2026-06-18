@@ -326,7 +326,7 @@ tags:
 
 ---
 
-## See also
+## See Also
 
 - [六道体系总览 · 概念档案](liudao-system-overview-concept.md)
 - [六道争雄 · 概念档案](liudao-zhengxiong-concept.md)

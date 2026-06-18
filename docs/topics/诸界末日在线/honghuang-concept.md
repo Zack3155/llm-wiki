@@ -97,7 +97,7 @@ tags:
 
 ---
 
-## See also
+## See Also
 
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md)
 - [六道争雄 · 概念档案](liudao-zhengxiong-concept.md)

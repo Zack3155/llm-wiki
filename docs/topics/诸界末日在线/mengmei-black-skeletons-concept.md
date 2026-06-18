@@ -74,7 +74,7 @@ topic_key: zhu-jie-mo-ri
   - 证据强度：低到中等，主要是读者混淆风险。
 - 当前状态：未完全解决。为遵守置信度门槛，本页不得标 `complete`。
 
-## See also
+## See Also
 
 - [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) — 巨大尸体身份与封印看守人边界
 - [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 邪魔阵营首领线，非黑色骷髅本身
@@ -92,6 +92,8 @@ topic_key: zhu-jie-mo-ri
 - 当前置信度：0.74
 - 依据：原文章节片段 + 补搜显示身份混淆但未解决
 
-Confidence Score: 0.74 | Sources: 《诸界末日在线》第39章《时空乱流》；《诸界末日在线》第603章《世界之墓！》；2026-06-16 layered_search 蒙昧世界 / 黑色骷髅 / 第39章 / 第603章交叉检索。
+Confidence Score: 0.74
+Sources:
+《诸界末日在线》第39章《时空乱流》；《诸界末日在线》第603章《世界之墓！》；2026-06-16 layered_search 蒙昧世界 / 黑色骷髅 / 第39章 / 第603章交叉检索。
 - [概念档案](xumu-concept.md)
 - [概念档案](zhu-jie-mo-ri-ending.md)

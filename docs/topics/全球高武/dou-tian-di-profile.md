@@ -137,14 +137,14 @@ sources:
 | 结局 | 融合自爆（可能未死） | 自裁后转世 | 陨落后转世 | 陨落后转世 | 被方平斩杀 |
 | 立场 | 对抗天帝 | 对抗天帝 | 对抗天帝 | 对抗天帝 | 三皇之首 |
 
-## See also
+## See Also
 
 - [战天帝 · 角色档案（全球高武）](zhan-tian-di-profile.md)
 - [霸天帝 · 角色档案（全球高武）](ba-tian-di-profile.md)
 - [灭天帝 · 角色档案（全球高武）](mie-tian-di-profile.md)
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
 - [阳神 · 角色档案（全球高武）](yang-shen-profile.md)
-- 【站点索引】全球高武 · 考据索引 (_index.md)
+- [全球高武 · 考据索引](../全球高武/_index.md)
 
 Confidence Score: 0.90
 Sources:

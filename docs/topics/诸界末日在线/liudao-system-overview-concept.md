@@ -85,7 +85,7 @@ tags:
 
 ---
 
-## See also
+## See Also
 
 - [洪荒纪元 · 概念档案](honghuang-concept.md)
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md)

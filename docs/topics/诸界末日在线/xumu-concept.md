@@ -87,7 +87,7 @@ topic_key: zhu-jie-mo-ri
 - 若引用“混沌杀死墟墓”，可标为较高置信度，因为百度百科与多源搜索摘要可交叉支持。
 - 若引用“墟墓本体过载导致终局崩碎”，应补充原文章节或至少补充第二来源后再提升置信度。
 
-## See also
+## See Also
 
 - [混沌 · 概念档案](chaos-concept.md)
 - [邪魔之主 — 角色档案](xiemozhizhu-profile.md)
@@ -102,4 +102,6 @@ topic_key: zhu-jie-mo-ri
 
 - [邪魔首领](du-ge-feng-profile.md)
 
-Confidence Score: 0.78 | Sources: 百度百科《诸界末日在线》词条；百度贴吧终局梳理帖；PTT CFantasy 结局讨论；本地 Wiki 交叉引用审计；2026-06-16 layered_search 墟墓 / 巨大尸体 / 大尸兄 / 邪魔首领 / 幕交叉检索。
+Confidence Score: 0.78
+Sources:
+百度百科《诸界末日在线》词条；百度贴吧终局梳理帖；PTT CFantasy 结局讨论；本地 Wiki 交叉引用审计；2026-06-16 layered_search 墟墓 / 巨大尸体 / 大尸兄 / 邪魔首领 / 幕交叉检索。

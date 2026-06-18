@@ -85,13 +85,14 @@ tags:
 - 转世为姚成军后，他**指导方平感悟本源世界**
 - 这是方平后期实力飞跃的关键助力
 
-## See also
+## See Also
 
 - [战天帝 · 角色档案（全球高武）](zhan-tian-di-profile.md)
 - [霸天帝 · 角色档案（全球高武）](ba-tian-di-profile.md)
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
-- 【站点索引】全球高武 · 考据索引 (_index.md)
-- [灭天帝](dou-tian-di-profile.md)
+- [全球高武 · 考据索引](../全球高武/_index.md)
+- [斗天帝 · 角色档案（全球高武）](dou-tian-di-profile.md)
+
 Confidence Score: 0.90
 Sources:
 - 百度百科「灭天帝」「姚成军」词条交叉验证

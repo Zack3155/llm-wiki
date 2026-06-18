@@ -34,7 +34,7 @@ date_modified: 2026-06-16
 - `topics/全球高武`：《全球高武》小说考据 topic，与《诸界末日在线》同级。
 - `raw/`、`reports/`、`archive/`、`site/`：生成或原始素材目录，不应当被当成公开知识页。
 
-## See also
+## See Also
 
 - [《诸界末日在线》考据索引](../诸界末日在线/_index.md)
 - [《全球高武》考据索引](../全球高武/_index.md)

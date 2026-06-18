@@ -110,20 +110,13 @@ tags:
 
 > "这猫……会舍不得吗？"——暗示其他人成为种子后可能舍不得放弃力量导致失衡风险；而一人一猫轮流坐庄可能是最安全的平衡方案。
 
-## See also
-- [方平 — 角色档案（全球高武）](fang-ping-profile.md)
-- 【站点索引】全球高武 · 考据索引 (../全球高武/_index.md)
+## See Also
 
+- [方平 — 角色档案（全球高武）](fang-ping-profile.md)
+- [全球高武 · 考据索引](../全球高武/_index.md)
 
 Confidence Score: 0.90
 Sources:
 - 百度百科"全球高武"词条全文提取（seed/苍猫吞噬种子 keyword analysis, 55881 chars）
 - 第1432章终章原文 (bidutuijian.com chapter text extraction)
 - SearXNG layered search cross-reference (8 results from Zhihu/SoHu/Baike/Douyin Baike/Moegirl)
-
-
-
-
-
-
-
