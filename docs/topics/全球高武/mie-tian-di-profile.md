@@ -26,7 +26,7 @@ tags:
 
 
 
-## Summary
+## 概述
 
 灭天帝（名"灭"），《全球高武》九皇四帝之一。精神力极道，战力8300万。性格冷酷、沉默寡言但重情义，与战天帝极其交好。天界坠毁当日为给战天帝报仇被诸皇围杀，灵识化万道本源降落天界，万星坠毁尸身镇苦海。转世为姚成军（第一军校副校长），是方平的兄弟之一。帝坟一战中吸收灭天帝心脏部分能量提升并恢复记忆，晋级破九境，最终三界决战身化大道进入阴间逍遥快活。
 
@@ -88,7 +88,7 @@ tags:
 - 转世为姚成军后，他**指导方平感悟本源世界**
 - 这是方平后期实力飞跃的关键助力
 
-## See Also
+## 参见
 
 - [战天帝 · 角色档案（全球高武）](zhan-tian-di-profile.md)
 - [霸天帝 · 角色档案（全球高武）](ba-tian-di-profile.md)
@@ -96,9 +96,9 @@ tags:
 - [全球高武 · 考据索引](../全球高武/_index.md)
 - [斗天帝 · 角色档案（全球高武）](dou-tian-di-profile.md)
 
-Confidence Score: 0.90
-Sources:
+置信度评分: 0.90
+来源:
 - 百度百科「灭天帝」「姚成军」词条交叉验证
-- SearXNG layered search corroborating identity (≥3 independent hits)
+- SearXNG 分层搜索结果佐证身份 (≥3 independent hits)
 Key caveat: 来源仍为百科与读者综合帖，非起点/Qidian原站官方正文。
 

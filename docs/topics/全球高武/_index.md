@@ -15,7 +15,7 @@ tags:
 topic_key: "quanqiu-gaowu"
 ---
 
-## Summary
+## 概述
 
 《全球高武》考据索引收录已验证的角色、概念与终局条目。小说由老鹰吃小鸡创作，2018 年连载于起点中文网，2019 年完结。所有页面应在 frontmatter 中标注 `status`、`confidence`、`sources`，并在正文中保留证据边界。
 
@@ -49,12 +49,12 @@ topic_key: "quanqiu-gaowu"
 |---|---|---:|---:|
 | [种子 · 概念档案](zhongzi-concept.md) | 三界生命起源与能量循环核心，非人物或物品 | complete | 0.90 |
 
-## See Also
+## 参见
 
 - [《诸界末日在线》考据索引](../诸界末日在线/_index.md)
 - [站点身份与新 topic 边界](../general/site-identity-topic-boundary.md)
 
-Confidence Score: 0.85
-Sources:
+置信度评分: 0.85
+来源:
 - 本地 Wiki 索引审计
 - MkDocs strict build 验证通过

@@ -30,7 +30,7 @@ tags:
 
 
 
-## Summary
+## 概述
 
 《全球高武》里的**种子不是一个人，也不是某种物品或能力**。它是**孕育并维持三界生命与能量的世界级规则核心**——生命的起源、世界能量循环的枢纽。当强者过度吸收生命力导致失衡时，种子通过灭世/重启回收能量以维持自身存续。终局中苍猫吞下旧种子成为"阳间之种"，方平将新界分为阴阳两界并通过六道轮回重新平衡世界。
 
@@ -113,13 +113,13 @@ tags:
 
 > "这猫……会舍不得吗？"——暗示其他人成为种子后可能舍不得放弃力量导致失衡风险；而一人一猫轮流坐庄可能是最安全的平衡方案。
 
-## See Also
+## 参见
 
 - [方平 — 角色档案（全球高武）](fang-ping-profile.md)
 - [全球高武 · 考据索引](../全球高武/_index.md)
 
-Confidence Score: 0.90
-Sources:
+置信度评分: 0.90
+来源:
 - 百度百科"全球高武"词条全文提取（seed/苍猫吞噬种子 keyword analysis, 55881 chars）
 - 第1432章终章原文 (bidutuijian.com chapter text extraction)
-- SearXNG layered search cross-reference (8 results from Zhihu/SoHu/Baike/Douyin Baike/Moegirl)
+- SearXNG 分层搜索交叉参考 (8 results from Zhihu/SoHu/Baike/Douyin Baike/Moegirl)

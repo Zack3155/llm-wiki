@@ -32,7 +32,7 @@ tags:
 
 
 
-## Summary
+## 概述
 
 ### Identity Claim Test: 方平 ≠ 任何天帝转世 (refutation verified)
 
@@ -121,16 +121,16 @@ tags:
 
 
 
-## See Also
+## 参见
 
 - [种子 · 概念档案（全球高武）](zhongzi-concept.md)
 - [全球高武 · 考据索引](../全球高武/_index.md)
 
-Confidence Score: 0.88
-Sources:
+置信度评分: 0.88
+来源:
 - 百度百科"方平""战天帝""斗天帝""全球高武"词条
 - 第1432章终章原文提取 (bidutuijian.com)
-- SearXNG layered search cross-reference (≥5 independent hits)
+- SearXNG 分层搜索交叉参考（≥5 独立来源命中）
 Key caveat: 起点/Qidian 原站访问被验证页阻挡，正文证据主要来自可访问章节页与百科交叉验证；未给到 0.95 置信度。
 
 

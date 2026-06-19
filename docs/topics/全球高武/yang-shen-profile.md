@@ -27,7 +27,7 @@ tags:
 
 
 
-## Summary
+## 概述
 
 阳神，男，《全球高武》中的初武皇者、初武领袖，三界第二强者（战力 2.3 亿）。在阳城一中伪装成看门大爷（杨大爷），是方平的关键引路人兼战天帝布局的知情者。终局中帮助人类阻拦种子插手决战，战后离开三界游历无尽混沌。
 
@@ -73,14 +73,14 @@ tags:
 - 从阳神的行动和布局来看，他更像是在利用布局培养/影响三界发展，而非直接参与
 - 阳神和方平是两个独立角色
 
-## See Also
+## 参见
 
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
 - [种子 · 概念档案（全球高武）](zhongzi-concept.md)
 - [全球高武 · 考据索引](../全球高武/_index.md)
 
-Confidence Score: 0.92
-Sources:
+置信度评分: 0.92
+来源:
 - 百度百科「阳神（小说《全球高武》的角色）」(https://baike.baidu.com/item/阳神/55627279)
 - 腾讯动漫问答 (https://ac.qq.com/Ask/detail/aid/zfjdosycam)
-- SearXNG layered search cross-reference
+- SearXNG 分层搜索交叉参考

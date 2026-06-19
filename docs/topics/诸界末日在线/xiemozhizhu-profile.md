@@ -33,7 +33,7 @@ topic_key: zhu-jie-mo-ri
 
 
 
-## Summary
+## 概述
 
 **邪魔之主**，最终BOSS。其**真实身份是被"永灭之王"（地之纪元初来者）封印于青铜柱上的存在**，称号"万物与众生的灭绝者，不可听闻的秘密末日"。
 
@@ -104,7 +104,7 @@ topic_key: zhu-jie-mo-ri
 
 > ⚠️ VERIFIED on 2026-06-13 via 百度百科+抖音百科+知乎+PTT: **冰封尸体 = 幕**，柳平是扮演邪魔首领的人。读者该批评基于正确的事实判断。
 
-## See Also
+## 参见
 - [墟墓 · 概念档案](xumu-concept.md) — 概念层墟墓与剧情代称层区分
 - [幕 / 冰封之尸 — 角色档案](./bingfengzhishi-profile.md) — SearXNG+百度百科+抖音百科+知乎+PTT交叉验证更新:冰封尸体=幕
 - [顾青山 — 角色档案](./gu-qing-shan-profile.md)

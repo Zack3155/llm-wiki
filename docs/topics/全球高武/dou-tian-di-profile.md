@@ -13,7 +13,7 @@ confidence: 0.9
 sources:
 - 百度百科「斗天帝」词条 (https://baike.baidu.com/item/斗天帝/55727911)
 - 百度百科「全球高武」词条交叉验证
-- SearXNG layered search corroborating identity (≥3 independent hits)
+- SearXNG 分层搜索结果佐证身份 (≥3 independent hits)
 - 知乎「如何评价全球高武的结局？」综合讨论
 - Dcard 「#心得分享全球高武角色介紹」综合帖子
 ---
@@ -22,7 +22,7 @@ sources:
 
 
 
-## Summary
+## 概述
 
 斗天帝（单名"斗"），《全球高武》中**最古老的极道天帝**与初代武者领袖之一，战力位列**三界第四**（约1.8亿）。开创**能量极道**体系，不与天帝同流，被战天帝、灭天帝、霸天帝尊称为"大哥"。四极道天帝中**唯一未曾转世**的存在——因最终决战中与神皇、东皇融合自爆困住天帝，但**可能并未真正死亡**。
 
@@ -140,7 +140,7 @@ sources:
 | 结局 | 融合自爆（可能未死） | 自裁后转世 | 陨落后转世 | 陨落后转世 | 被方平斩杀 |
 | 立场 | 对抗天帝 | 对抗天帝 | 对抗天帝 | 对抗天帝 | 三皇之首 |
 
-## See Also
+## 参见
 
 - [战天帝 · 角色档案（全球高武）](zhan-tian-di-profile.md)
 - [霸天帝 · 角色档案（全球高武）](ba-tian-di-profile.md)
@@ -149,11 +149,11 @@ sources:
 - [阳神 · 角色档案（全球高武）](yang-shen-profile.md)
 - [全球高武 · 考据索引](../全球高武/_index.md)
 
-Confidence Score: 0.90
-Sources:
+置信度评分: 0.90
+来源:
 - 百度百科「斗天帝」词条 (https://baike.baidu.com/item/斗天帝/55727911)
 - 百度百科「全球高武」词条交叉验证
-- SearXNG layered search results corroborating identity (≥3 independent hits)
+- SearXNG 分层搜索结果佐证身份（≥3 独立来源命中）
 - 知乎「如何评价全球高武的结局？」综合讨论
 - Dcard 「#心得分享全球高武角色介紹」综合帖子
 Key caveat: 百度百科为读者分析性质的百科条目，非起点/Qidian原站官方来源；"斗天帝未死"段落置信度仅0.70，铸神使说法未在原文中明确证实。

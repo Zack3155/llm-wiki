@@ -16,7 +16,7 @@ date_added: 2026-06-14
 date_modified: 2026-06-16
 ---
 
-## Summary
+## 概述
 
 本站是通用 LLM Wiki 知识库；`小说考据` 是共同分类标签，不是站点边界。当前已有同级小说考据 topic：《诸界末日在线》与《全球高武》。
 
@@ -96,8 +96,8 @@ date_modified: 2026-06-16
 - [《诸界末日在线》· 考据索引](topics/诸界末日在线/_index.md)
 - [《全球高武》· 考据索引](topics/全球高武/_index.md)
 
-Confidence Score: 0.90
-Sources:
+置信度评分: 0.90
+来源:
 - 本地 Wiki 审计结果
 - MkDocs 构建验证
 - 站点身份通用化讨论

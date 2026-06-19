@@ -1,4 +1,5 @@
 ---
+
 title: 诸界末日在线 · 考据索引
 name: "zhu-jie-mo-ri-index"
 topic: "诸界末日在线"
@@ -10,10 +11,12 @@ sources:
 tags:
   - "小说考据"
 date_added: 2026-06-10
-date_modified: 2026-06-16
+date_modified: 2026-06-19
 topic_key: "zhu-jie-mo-ri"
+
 ---
-## Summary
+
+## 概述
 
 《诸界末日在线》考据索引按“角色档案 / 概念档案 / 对照档案 / 终局分析”组织。所有页面均应在 frontmatter 中标注 `status`、`confidence`、`sources`，并在正文中保留证据边界。
 
@@ -79,7 +82,7 @@ topic_key: "zhu-jie-mo-ri"
 - 读者讨论帖只能作为辅助证据；百度百科、原文片段、可复核章节索引优先。
 - 若同一页面出现 `confidence: 0.xx`，必须确认它只存在于 YAML frontmatter，正文不得出现假 confidence。
 
-## See Also
+## 参见
 
 - [无转之地 · 概念档案](wu-zhuan-zhi-di-concept.md)
 - [《全球高武》考据索引](../全球高武/_index.md)
@@ -93,7 +96,10 @@ topic_key: "zhu-jie-mo-ri"
 
 
 
-Confidence Score: 0.82
-Sources:
+置信度评分: 0.82
+来源:
 - 本地 Wiki 索引审计
 - MkDocs 页面渲染验证
+
+| [⚠️ PENDING FIX] | Wiki | Auto-added |
+

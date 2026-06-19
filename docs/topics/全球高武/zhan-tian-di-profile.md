@@ -12,7 +12,7 @@ confidence: 0.93
 sources:
 - 百度百科「战天帝」词条
 - 百度百科「王金洋」词条交叉验证
-- SearXNG layered search corroborating identity (≥3 independent hits)
+- SearXNG 分层搜索结果佐证身份 (≥3 independent hits)
 - Dcard 「#心得分享全球高武角色介紹」综合帖子
 - 起点中文《全球高武》资源站角色页
 ---
@@ -27,7 +27,7 @@ sources:
 
 
 
-## Summary
+## 概述
 
 战天帝（单名"战"），《全球高武》中九皇四帝之一、三帝之首。生前战力近2亿，可弑杀皇者。拜师神皇、东皇、人皇，气血极道与各力均衡发展。因不忍对师傅和道友出手而自裁，死后用三帝之力制造系统选中方平为后手，转世为王金洋。其终局目的是让方平灭武解决三界本源漏洞、平定三界。
 
@@ -131,7 +131,7 @@ sources:
 - 通过制造系统、培养方平、借王金洋转世，完成了跨越千年的布局
 - 最终以自己的寂灭代价，完成了修补本源漏洞的使命
 
-## See Also
+## 参见
 
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
 - [阳神 · 角色档案（全球高武）](yang-shen-profile.md)
@@ -140,10 +140,10 @@ sources:
 - [中九皇四帝之一](ba-tian-di-profile.md)
 - [全名仅单字](mie-tian-di-profile.md)
 
-Confidence Score: 0.93
-Sources:
+置信度评分: 0.93
+来源:
 - 百度百科「战天帝」「阳神」「方平」「全球高武」词条交叉验证
-- SearXNG layered search cross-reference (≥5 independent hits, source tier 1–2)
+- SearXNG 分层搜索交叉参考（≥5 独立来源命中，来源层级 1–2）
 - 哔哩哔哩「高武人物志——战天帝」视频文案
 Key caveat: 百度百科为读者分析性质的百科条目，非起点/Qidian原站官方来源；未达0.95置信度。
 
