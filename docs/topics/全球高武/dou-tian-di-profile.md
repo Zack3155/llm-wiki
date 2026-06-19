@@ -9,7 +9,7 @@ date_added: 2026-06-18
 date_modified: 2026-06-18
 last_modified: 2026-06-18
 status: complete
-confidence: 0.90
+confidence: 0.9
 sources:
 - 百度百科「斗天帝」词条 (https://baike.baidu.com/item/斗天帝/55727911)
 - 百度百科「全球高武」词条交叉验证
@@ -17,6 +17,7 @@ sources:
 - 知乎「如何评价全球高武的结局？」综合讨论
 - Dcard 「#心得分享全球高武角色介紹」综合帖子
 ---
+
 
 
 ## Summary
