@@ -118,3 +118,16 @@ last_modified: 2026-06-15
 ### 验证
 − 代码检查与构建结果记录在下方工具调用中。
 2026-06-18 12:04:55 [Wiki自动归档] 新建页面: 斗天帝 · 角色档案 (global-gao-wu/dou-tian-di-profile.md) — verified via Baidu Baike + SearXNG layered search. Updated _index.md. Lint: clean (36 pages, 2 fixes). Build: clean.
+
+## 2026-06-19 — 自动归档同步 (3-hour Auto-Filer)
+
+### 新建页面: `quanqiu-gaowu/diku-yuhaishan-concept.md`
+- Topic: 地窟 / 地界、御海山、王战之地与界域之地的结构关系
+- Key finding: 地窟/地界是与人界相对的巨大异界世界；御海山是地窟/地界中心大陆；王战之地是御海山中心禁地，与二王传说和人类武者遗迹有关，但起源细节仍未完全确定
+- Sources: 百科/抖音百科《全球高武》条目、起点中文资源站镇星城资料、第560章《王战之地》、知乎整理、Dcard 读者梳理
+- 置信度: 0.88；状态: `needs-more-sources`
+− 涉及页面: diku-yuhaishan-concept.md (new), _index.md (updated)
+
+### 验证
+− 待运行: `wiki-lint.py`, `mkdocs build --strict`, `wiki-health.py`, `wiki-content-audit.py`
+

@@ -3,8 +3,8 @@ title: 全球高武 · 考据索引
 name: "quanqiu-gaowu-index"
 topic: "全球高武"
 date_added: 2026-06-16
-date_modified: 2026-06-18
-last_modified: 2026-06-18
+date_modified: 2026-06-19
+last_modified: 2026-06-19
 status: "complete"
 confidence: 0.90
 sources:
@@ -33,21 +33,22 @@ topic_key: "quanqiu-gaowu"
 
 ## 角色档案
 
-| 页面 | 摘要 | 状态 | 置信度 |
-|---|---|---:|---:|
-| [方平 · 角色档案](fang-ping-profile.md) | 男主角真实身份、三帝布局后手与终局阴间主宰位格 | complete | 0.88 |
-| [阳神 · 角色档案](yang-shen-profile.md) | 初武皇者、三界第二强者，方平的关键引路人 | complete | 0.92 |
-| [战天帝 · 角色档案](zhan-tian-di-profile.md) | 三帝之首、系统制造者与方平布局的核心驱动力 | complete | 0.93 |
-| [霸天帝 · 概念档案](ba-tian-di-profile.md) | 肉身极道四帝之一，李寒松前世原型 | complete | 0.90 |
-| [灭天帝 · 角色档案](mie-tian-di-profile.md) | 精神力极道四帝之一，姚成军前世原型 | complete | 0.88 |
-| [天帝 · 角色档案](tian-di-profile.md) | 最终反派，仙源计划缔造者，第1431章被方平斩杀 | complete | 0.90 |
-| [斗天帝 · 角色档案](dou-tian-di-profile.md) | 最古老的极道天帝、能量极道开创者，三界第四强者 | complete | 0.90 |
+|| 页面 | 摘要 | 状态 | 置信度 |
+||---|---|---:|---:|
+|| [方平 · 角色档案](fang-ping-profile.md) | 男主角真实身份、三帝布局后手与终局阴间主宰位格 | complete | 0.88 |
+|| [阳神 · 角色档案](yang-shen-profile.md) | 初武皇者、三界第二强者，方平的关键引路人 | complete | 0.92 |
+|| [战天帝 · 角色档案](zhan-tian-di-profile.md) | 三帝之首、系统制造者与方平布局的核心驱动力 | complete | 0.93 |
+|| [霸天帝 · 概念档案](ba-tian-di-profile.md) | 肉身极道四帝之一，李寒松前世原型 | complete | 0.90 |
+|| [灭天帝 · 角色档案](mie-tian-di-profile.md) | 精神力极道四帝之一，姚成军前世原型 | complete | 0.88 |
+|| [天帝 · 角色档案](tian-di-profile.md) | 最终反派，仙源计划缔造者，第1431章被方平斩杀 | complete | 0.90 |
+|| [斗天帝 · 角色档案](dou-tian-di-profile.md) | 最古老的极道天帝、能量极道开创者，三界第四强者 | complete | 0.90 |
 
 ## 概念档案
 
-| 页面 | 摘要 | 状态 | 置信度 |
-|---|---|---:|---:|
-| [种子 · 概念档案](zhongzi-concept.md) | 三界生命起源与能量循环核心，非人物或物品 | complete | 0.90 |
+|| 页面 | 摘要 | 状态 | 置信度 |
+||---|---|---:|---:|
+|| [种子 · 概念档案](zhongzi-concept.md) | 三界生命起源与能量循环核心，非人物或物品 | complete | 0.90 |
+|| [地窟与御海山 · 概念档案](diku-yuhaishan-concept.md) | 地窟/地界、御海山、王战之地与界域之地的结构关系；细粒度数字待原文补证 | needs-more-sources | 0.88 |
 
 ## 参见
 
