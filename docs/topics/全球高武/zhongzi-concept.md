@@ -119,6 +119,7 @@ tags:
 ## 参见
 
 - [方平 — 角色档案（全球高武）](fang-ping-profile.md)
+- [源地 · 概念档案（全球高武）](yuandi-concept.md)
 - [全球高武 · 考据索引](../全球高武/_index.md)
 
 置信度评分: 0.90

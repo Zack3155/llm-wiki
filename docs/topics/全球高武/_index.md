@@ -3,8 +3,8 @@ title: 全球高武 · 考据索引
 name: "quanqiu-gaowu-index"
 topic: "全球高武"
 date_added: 2026-06-16
-date_modified: 2026-06-19
-last_modified: 2026-06-19
+date_modified: 2026-06-20
+last_modified: 2026-06-20
 status: "complete"
 confidence: 0.90
 sources:
@@ -48,6 +48,7 @@ topic_key: "quanqiu-gaowu"
 || 页面 | 摘要 | 状态 | 置信度 |
 ||---|---|---:|---:|
 || [种子 · 概念档案](zhongzi-concept.md) | 三界生命起源与能量循环核心，非人物或物品 | complete | 0.90 |
+|| [源地 · 概念档案](yuandi-concept.md) | 旧源地三十六重天、第二源地与仙源/种子的概念边界 | complete | 0.95 |
 || [地窟与御海山 · 概念档案](diku-yuhaishan-concept.md) | 地窟/地界、御海山、王战之地与界域之地的结构关系；细粒度数字待原文补证 | needs-more-sources | 0.79 |
 
 ## 参见

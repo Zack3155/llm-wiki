@@ -127,6 +127,7 @@ tags:
 ## 参见
 
 - [种子 · 概念档案（全球高武）](zhongzi-concept.md)
+- [源地 · 概念档案（全球高武）](yuandi-concept.md)
 - [全球高武 · 考据索引](../全球高武/_index.md)
 
 置信度评分: 0.88

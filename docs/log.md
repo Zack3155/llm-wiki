@@ -18,6 +18,15 @@ last_modified: 2026-06-15
 
 # Wiki 变更日志
 
+## 2026-06-20 — Wiki Knowledge Auto-Filer（3小时窗口）
+
+### 新建页面: `全球高武/yuandi-concept.md`
+- Topic: `源地` 概念档案（《全球高武》）
+- Core finding: 源地不是普通地名，而是承载皇者道果、裂缝与本源循环的旧三界核心空间；需区分天帝制造的旧源地/第一源地三十六重天与方平的第二源地。
+- Multi-source verification: lore_search_optimizer + layered_search SearXNG；百度百科「天帝」/「方平」/「全球高武」交叉摘要；第1409章 WebNovel 摘要与第1432章潇湘书院正文摘要。
+- 置信度: 0.95
+- 涉及页面: `yuandi-concept.md`（new）、`_index.md`（updated）、`zhongzi-concept.md`/`tian-di-profile.md`/`fang-ping-profile.md`（参见链接更新）
+
 ## 2026-06-14 — 自动归档同步 (33:00 UTC / ~03:00 next cycle)
 
 ### 新建页面: `novel-lore/yong-mie-zhi-wang-profile.md`
