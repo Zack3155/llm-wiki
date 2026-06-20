@@ -125,7 +125,7 @@ last_modified: 2026-06-15
 - Topic: 地窟 / 地界、御海山、王战之地与界域之地的结构关系
 - Key finding: 地窟/地界是与人界相对的巨大异界世界；御海山是地窟/地界中心大陆；王战之地是御海山中心禁地，与二王传说和人类武者遗迹有关，但起源细节仍未完全确定
 - Sources: 百科/抖音百科《全球高武》条目、起点中文资源站镇星城资料、第560章《王战之地》、知乎整理、Dcard 读者梳理
-- 置信度: 0.84；状态: `needs-more-sources`
+- 置信度: 0.79；状态: `needs-more-sources`
 − 涉及页面: diku-yuhaishan-concept.md (new), _index.md (updated)
 
 ### 验证
