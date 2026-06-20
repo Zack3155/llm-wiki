@@ -48,7 +48,7 @@ topic_key: "quanqiu-gaowu"
 || 页面 | 摘要 | 状态 | 置信度 |
 ||---|---|---:|---:|
 || [种子 · 概念档案](zhongzi-concept.md) | 三界生命起源与能量循环核心，非人物或物品 | complete | 0.90 |
-|| [地窟与御海山 · 概念档案](diku-yuhaishan-concept.md) | 地窟/地界、御海山、王战之地与界域之地的结构关系；细粒度数字待原文补证 | needs-more-sources | 0.88 |
+|| [地窟与御海山 · 概念档案](diku-yuhaishan-concept.md) | 地窟/地界、御海山、王战之地与界域之地的结构关系；细粒度数字待原文补证 | needs-more-sources | 0.84 |
 
 ## 参见
 
