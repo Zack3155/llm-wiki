@@ -37,6 +37,7 @@ date_modified: 2026-06-16
 
 | 更新时间 | 分类 | 页面 |
 |---|---|---|
+| 2026-06-21 | 小说考据 / 角色档案 | [神皇 — 角色档案（全球高武）](topics/全球高武/shen-huang-profile.md) |
 | 2026-06-20 | 小说考据 | [源地 · 概念档案（全球高武）](topics/全球高武/yuandi-concept.md) |
 | 2026-06-19 | 小说考据 | [地窟与御海山 · 概念档案（全球高武）](topics/全球高武/diku-yuhaishan-concept.md) |
 | 2026-06-18 | 小说考据 | [斗天帝 — 角色档案（全球高武）](topics/全球高武/dou-tian-di-profile.md) |
@@ -44,7 +45,6 @@ date_modified: 2026-06-16
 | 2026-06-17 | 小说考据 | [战天帝 — 角色档案（全球高武）](topics/全球高武/zhan-tian-di-profile.md) |
 | 2026-06-17 | 小说考据 | [阳神 — 角色档案（全球高武）](topics/全球高武/yang-shen-profile.md) |
 | 2026-06-17 | 小说考据 | [天帝 — 角色档案（全球高武）](topics/全球高武/tian-di-profile.md) |
-| 2026-06-17 | 小说考据 | [霸天帝 — 角色档案（全球高武）](topics/全球高武/ba-tian-di-profile.md) |
 
 ## 快速入口
 
