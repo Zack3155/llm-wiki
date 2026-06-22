@@ -1,7 +1,7 @@
 ---
 title: Readme
 date_added: 2026-06-21
-date_modified: 2026-06-21
+date_modified: 2026-06-22
 status: stub
 confidence: 0.00
 sources:
@@ -139,6 +139,9 @@ python3 scripts/mkdocs-compat-check.py
 ## License
 
 MIT
+
+## Summary
+
 
 ## Summary
 
