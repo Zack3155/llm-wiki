@@ -1,3 +1,11 @@
+---
+title: Readme
+date_added: 2026-06-21
+status: stub
+confidence: 0.00
+sources:
+  - local wiki
+---
 # LLM Wiki
 
 A structured, auto-maintained knowledge base for LLM-related research, novel lore analysis, and character/entity profiling. Built with MkDocs + Material for MkDocs, with automated linter, health checks, and daily sync pipelines.
@@ -130,3 +138,6 @@ python3 scripts/mkdocs-compat-check.py
 ## License
 
 MIT
+
+## Summary
+
