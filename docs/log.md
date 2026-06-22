@@ -152,3 +152,14 @@ last_modified: 2026-06-15
 - **Lint**: clean (4 auto-fixes applied by linter)
 - **Build**: clean (mkdocs build succeeded, README.md conflict pre-existing)
 - **Health**: ok
+
+## 2026-06-22 03:03 UTC — Wiki Auto-Filer (3h)
+- **recent_messages_3h**: 82
+- **candidate_sessions**: 3 (Telegram truncation investigation, World Cup news, previous auto-filer)
+- **Durable knowledge found**: None
+  - Telegram session: Hermes ops/wiki-ops infrastructure (not wiki knowledge)
+  - World Cup session: Transient sports news (not durable)
+  - Previous auto-filer: Self-referential
+- **Raw files pending**: 114 (all from older dates, June 6-10)
+- **Linter**: 3 auto-fixed (README.md Summary heading), 0 errors, 2 warnings (orphan/duplicate headings)
+- **Build**: Clean (strict mode passed)
