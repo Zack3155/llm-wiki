@@ -3,6 +3,7 @@ site_name: "LLM Wiki · 知识库"
 site_dir: site
 exclude_docs: |
   raw/**
+  README.md
   pages/**
   archive/**
   reports/**
