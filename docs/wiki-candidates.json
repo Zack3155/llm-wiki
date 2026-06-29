@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-29T04:04:21.452461+00:00",
+  "state_db": "/home/zack/.hermes/data/state.db",
+  "raw_dir": "/home/zack/wiki/raw",
+  "counts": {
+    "state_db_candidates": 0,
+    "raw_session_candidates": 0,
+    "total_candidates": 0,
+    "emitted_candidates": 0,
+    "filtered_noise_candidates": 0,
+    "operational_noise_count": 0,
+    "emitted_operational_noise_candidates": 0
+  },
+  "filtered_noise": [],
+  "candidates": []
+}
