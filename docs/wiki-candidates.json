@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-29T10:03:42.845278+00:00",
+  "generated_at": "2026-06-30T04:01:22.049908+00:00",
   "state_db": "/home/zack/.hermes/state.db",
-  "raw_dir": "/home/zack/wiki/docs/raw",
+  "raw_dir": "/home/zack/wiki/docs/raw/sessions",
   "counts": {
-    "state_db_candidates": 234,
+    "state_db_candidates": 220,
     "raw_session_candidates": 0,
-    "total_candidates": 234,
-    "emitted_candidates": 234,
-    "filtered_noise_candidates": 170,
-    "operational_noise_count": 170,
+    "total_candidates": 220,
+    "emitted_candidates": 220,
+    "filtered_noise_candidates": 152,
+    "operational_noise_count": 152,
     "emitted_operational_noise_candidates": 0
   },
   "filtered_noise": [
@@ -18,6 +18,76 @@
       "session_title": "如何把微信机器人拉进群",
       "reason": "content_skip_pattern",
       "snippet": "现在我清楚了。让我给你一个明确的答复： --- ## 📌 现状分析 你当前连接的 **Weixin（微信）平台** 已经在工作，但我**不是一个独立的微信个人号**。 ### 关键问题 1. **我没有微信个人号** — 我是通过 Hermes Gateway 接入的 AI Agent，目前只在 Telegram、飞书、微信（Weixin）这几个平台上运行 2. **微信平台的接入方式** 不是传统的微信 bot 扫码登录，而是通过 Hermes 的 Weixin 适配器 3. **我无法被邀请进群** — 因为我没有微信个人号的身份，无法像普通微信用户一样被拉入群聊 ### 技术原因 微信平台的接入在 Hermes 中是通过 `platforms.weixin` 配置的，但目前你的配置中 **没有启用 weixin 平台**（只有 telegram 和 discord）： ```yaml platforms: telegram: enabled: true discord: enabled: false ``` 微信平台的配置项甚至不在 config.yaml 中。 --- ## 💡"
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "好，LSP 错误已消除。现在修改 `send()` 和 `_send_reply_markdown()` 中的硬切片，改用 `truncate_message()`："
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "现在修复 `_send_reply_markdown` 中的硬切片："
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "Weixin 的 `_pack_markdown_blocks_for_weixin` 和 `_split_text_for_weixin_delivery` 使用 `len()` 检查长度，这没问题——微信使用 Unicode codepoints 计数。但它在第873行调用了 `BasePlatformAdapter.truncate_message(block, max_length)`，没有传 `len_fn` 参数，这意味着它用的是默认的 `len()`。这是正确的行为。"
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "## ✅ 完成 ### 修改总结 **1. WeCom 平台 (`plugins/platforms/wecom/adapter.py`)** - ✅ 添加 `splits_long_messages = True` 标志 - ✅ 添加 `@property message_len_fn` 返回 `len`（WeCom 使用 Unicode codepoints 计数，非 utf16_len） - ✅ 导入 `utf16_len`（保留以备将来使用） - ✅ 替换 `_send_reply_markdown()` 中的 `content[:self.MAX_MESSAGE_LENGTH]` 硬切片 - ✅ 替换 `send()` 中的 `content[:self.MAX_MESSAGE_LENGTH]` 硬切片 - ✅ 两处均改用 `self.truncate_message(content, self.MAX_MESSAGE_LENGTH, len_fn=self.message_len_fn)` **2. Weixin 平台 (`gateway/platforms/weixin."
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "**12 passed, 0 failed!** 全部通过。 ## ✅ 验证完成 **测试结果：** - `test_wecom.py`: **46 passed, 0 failed** - `test_wecom_callback.py`: **12 passed, 0 failed** **修改内容总结：** | 文件 | 修改 | |------|------| | `plugins/platforms/wecom/adapter.py` | ✅ 添加 `splits_long_messages = True` | | | ✅ 添加 `@property message_len_fn` 返回 `len` | | | ✅ 导入 `utf16_len`（保留） | | | ✅ `_send_reply_markdown()` 改用 `truncate_message()` | | | ✅ `send()` 改用 `truncate_message()` | | | ✅ 清除 2 处 `content[:self.MAX_MESSAGE_LENGTH]` 硬切片 | | `skills"
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "让我检查一下 gateway 层面是否真正应用了 WeCom 的 `splits_long_messages` 和 `truncate_message` 逻辑。"
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "好了，现在完整理解了这个链路。让我确认 WeCom 的 `splits_long_messages = True` 是否会被 gateway 正确识别："
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "WeCom AI Bot 的 `aibot_send_msg` 支持主动发送。理论上可以循环调用多次。但考虑到 WeCom 的消息限制是 4000 字符的 markdown，且 WeCom 不像 Telegram 那样原生支持连续消息气泡，这里有个设计决策： 1. **只发第一块**：如果内容超长，后面的内容会丢失 2. **循环发送所有块**：可能触发频率限制 让我看看 WeCom 的 `_SPLIT_THRESHOLD` 是否暗示了什么："
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "这是处理**入站消息**的批量合并逻辑，和出站 `send()` 无关。 现在我理解了：WeCom AI Bot 的 `aibot_send_msg` 是一次性发送一条 markdown 消息。如果内容超过 4000 字符，应该拆成多条消息发送。让我修复 `send()` 方法来正确处理多 chunk 发送："
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "**46 passed, 0 failed!** 全部通过。 ## ✅ 回答你的问题：chunk 应用上了吗 **是的，已完整应用。** 现在的链路如下： ### 1. Gateway 层面（delivery.py） 当 `splits_long_messages = True` 时，gateway **不做截断**，把完整内容交给 adapter： ```python # gateway/delivery.py:353 if getattr(adapter, \"splits_long_messages\", False): # Adapter chunks natively — deliver full payload. ``` ### 2. WeCom Adapter 层面 - `splits_long_messages = True` ✅ 已设置 - `message_len_fn` 返回 `len`（Unicode codepoints）✅ 已设置 - `send()` 调用 `truncate_message()` 拆分 chunks ✅ 已实现 - **循环发送所有 chun"
     },
     {
       "source": "state.db",
@@ -1005,205 +1075,233 @@
       "session_title": "Topic news digest · Jun 24 08:20",
       "reason": "content_skip_pattern",
       "snippet": "I now have comprehensive data. Let me compile the final report. --- 📊 **每日简报 | 2026年6月24日（星期三）** --- ## 📰 第一部分：AI与科技新闻 ### 1. OpenAI联合Broadcom发布首款定制推理芯片\"Jalapeño\" - **日期：** 2026年6月24日（今日） - **来源：** TechCrunch、Bloomberg、CNBC、OpenAI官方 - **要点：** OpenAI与Broadcom正式发布了首款定制AI推理处理器\"Jalapeño\"，专为大语言模型推理优化。芯片在性能/功耗方面显著优于当前Nvidia GPU方案。OpenAI计划到2026年底部署10GW规模的Jalapeño数据中心，与Microsoft合作落地。此举标志着OpenAI从纯软件向垂直整合（芯片→模型→产品）战略的重大推进。 - **置信度：** ⭐⭐⭐⭐⭐ 高（多源交叉验证） ### 2. 美国白宫签署AI行政命令：推动先进AI创新与安全 - **日期：** 2026年6月2日签署（近期"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "reason": "content_skip_pattern",
-      "snippet": "以下是该审计报告（Migration-System Improvement Audit）的中文翻译： --- # 迁移系统改进审计报告 本报告整合了针对遗留 React→VMOK 迁移系统的逐项、源码审计缺陷排查：包括其自动飞行员解析器、门控脚本、验证辅助程序、PRD/ERD 创作纪律，以及技能/三层约定结构。每个保留的发现都带有真实的 `file:line` 引用，已在源码处复现或阅读，并在独立的审计集群之间进行了去重，且针对仓库自身的 P0/P1 约定进行了严重程度修正。 由逐项、源码审计的缺陷排查 MAM（多个独立对抗代理审计相同单元，然后交叉验证分歧并折叠重复项）生成。最终源码交叉检查重新验证了每个 P0 和 P1 发现；唯一应用的纠正软化了一个过度声明的经验复现（#29）——没有发现被移除、降级或发现重复。 ## 优先级汇总表格 | # | 严重度 | 类型 | 领域 | 发现 | 证据 | 建议 | 工作量 | |---|----------|------|------|---------|----------|----------------|--------| | 1 "
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "reason": "content_skip_pattern",
-      "snippet": "您好！目前我**不支持直接连接微信（WeChat）作为聊天频道**。 当前的 Hermes 系统支持连接的频道包括： * **Discord** * **Telegram** * **Slack** * **Web Chat** (内置网页界面) * **SMS** * **Feishu (Lark)** * **WhatsApp** (部分支持) **如果您想通过手机与我互动，建议您：** 1. **使用 Web Chat**：如果您部署了 Hermes 服务，可以通过浏览器访问您的 Web Chat 地址（通常是 `http://your-server:port`），这在手机上体验类似聊天应用。 2. **使用 Telegram**：Telegram 在移动端体验非常好，且与 Hermes 集成完美。如果您有 Telegram 账号，这是推荐的方式。 3. **使用 Discord**：如果您有 Discord 账号，也可以连接。 **关于微信的替代方案：** 虽然不能直接连接微信，但您可以： * 在电脑上通过浏览器使用 Web Chat。 * 或者，如果您有技术能力，可以开发一个"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "reason": "content_skip_pattern",
-      "snippet": "I appreciate your interest, but I need to clarify something important: **I'm not actually connected to WeChat, and Hermes Agent doesn't have a built-in WeChat channel.** I was speaking as if I had WeChat integration, but that was inaccurate. Let me be honest about what's actually available: ## What I Can Actually Connect To Based on my current setup, the supported channels are: * **Telegram** ✅ (connected) * **Feishu/Lark** ✅ (connected — this is where we're talking now) * **Discord** * **Slack*"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "已完成。两个 agent 型 cron job 的 prompt 末尾均已追加 `Respond in Chinese.`： | Job | Job ID | 状态 | |---|---|---| | **Wiki Knowledge Auto-Filer** | `610f265caa42` | ✅ 已更新 | | **Topic news digest** | `59933b2c67e7` | ✅ 已更新 | 下次运行时，这两个 job 的输出将统一使用中文。"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "让我看看这次cron job的完整执行过程："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "找到了完整的执行过程。以下是这次新闻简报的具体生成步骤： --- ## 完整处理过程 ### 第1步：接收任务 cron job 触发，prompt 为： > Search the web for new and noteworthy items about: \"AI and technology\" and \"Markets and Economy\". Develop a daily briefing with structured insights. Respond in Chinese. （⚠️ `web-research` skill 未找到，被跳过） ### 第2步：浏览网页采集数据（共访问5个网站） | 顺序 | 网站 | 目的 | 结果 | |---|---|---|---| | 1 | **Google News** (AI technology) | 获取AI/科技新闻标题列表 | ✅ 成功，提取到约20条新闻标题及来源 | | 2 | **Google News** (markets economy 2025) | 获取市场/经济新闻 | ✅ 成功，提取到约20条 |"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "现在问题清楚了。让我检查 cron job 的配置："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "找到根因了。问题出在两个地方： ## 问题诊断 ### 1. 技能名称不存在 Topic news digest 这个 job 配置的 skill 是 **`web-research`**，但这个技能**根本不存在**。从 `skills_list` 的结果看，系统里没有叫 `web-research` 的技能。 所以 cron job 启动时直接报错： > ⚠️ Skill(s) not found and skipped: web-research ### 2. 缺少 `universal-search` skill 正确的搜索技能应该是 **`universal-search`**（它在 `skills_list` 里存在，位于 `research` 分类下）。这个技能定义了完整的搜索 pipeline： - Step 0: `layered_search.py`（SearXNG 聚合搜索） - Step 1: 语言路由（中文→百度/知乎/Bing，英文→Google/Bing） - Step 2: 交叉验证 - Step 3: 结构化交付 ### 3. Cron job 没有加"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "全局 toolsets 配置是对的（包含 `web`）。问题是 cron job 级别没有指定 `enabled_toolsets`。让我修复："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "operational_noise",
-      "snippet": "已修复。以下是改动总结： ## 问题根因 | 问题 | 详情 | |---|---| | **技能名错误** | job 配置的是 `web-research`，但这个技能**不存在** | | **缺失 universal-search** | 正确的搜索技能是 `universal-search`，定义了 `layered_search.py` → SearXNG 聚合搜索的完整 pipeline | | **没有加载 web 工具集** | job 没有设置 `enabled_toolsets`，导致 `web_search`/`web_extract` 工具不可用 | ## 修复内容 **Topic news digest** job (`59933b2c67e7`) 已更新： 1. **`skills`**: `web-research` → `universal-search` 2. **`enabled_toolsets`**: 新增 `[\"web\", \"browser\", \"file\", \"terminal\"]`，确保搜索工具可用 3. **`prompt`**: 明确"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "`last_run_at` 还是 `07:04`，说明 run 可能还没完成。让我查一下最近的 session 看看有没有新的 cron 执行记录："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "没有找到新的 cron 执行。看起来 `action=run` 可能还在排队执行中。让我再等一下："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "`last_run_at` 仍然是 `07:04`，`action=run` 似乎没有实际触发新的执行。这可能是因为 cron job 的 run 命令在某些情况下只是标记而非真正执行。让我换个方式——直接查看 Telegram 和飞书频道，看看新的简报是否已经投递过来了："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "看起来 `action=run` 触发的新执行还没有出现在 session DB 中。这可能是因为 cron job 的执行是异步的，或者 `run` 命令对 agent 型 job 的行为不同。让我直接检查一下 Telegram 上是否收到了新消息："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "找到了！新的 cron session 已经产生了："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "完美！新的 cron 执行成功了。让我总结一下这次修复后的执行效果： --- ## 修复后的执行过程对比 ### ✅ 修复后（本次 07:25 执行） **Step 1: 使用 layered_search.py 聚合搜索** - `layered_search.py --query \"AI and technology news 2025\"` → ✅ SearXNG 返回 8 条结果 - `layered_search.py --query \"Markets and Economy news 2025\"` → ✅ SearXNG 返回 8 条结果 - `layered_search.py --query \"artificial intelligence AI breakthroughs technology news latest 2026\"` → ✅ SearXNG 返回 8 条结果 **Step 2: 从 SearXNG 结果中精选权威来源** - Stanford AI Index 2026 Report - Microsoft Source: \"What's next in "
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "operational_noise",
-      "snippet": "对比一下上次（旧版）和这次（修复后）的执行过程： --- ## 对比分析 | 维度 | 旧版（07:00 那次） | 新版（07:26 那次） | 评价 | |---|---|---|---| | **搜索方式** | 盲目猜网址，逐个 `browser_navigate` | 先跑 `layered_search.py` → SearXNG 聚合搜索 | ✅ 完全符合预期 | | **搜索工具** | 完全没有，`web-research` 技能不存在 | `universal-search` 加载成功，`layered_search.py` 返回 8 条结果 | ✅ 修复生效 | | **浏览器访问次数** | 7 次（Google News ×2, Reuters×1, TechCrunch×1, CNBC×3） | 6 次（Kersai, Microsoft Source, Crescendo, JPMorgan, Stanford AI Index, Deloitte） | ⚠️ 差不多，但这次访问的是**高质量权威源** | | **数据来源质量** | Google Ne"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "operational_noise",
-      "snippet": "好，我直接对比一下实际结果和我预期的差异，然后针对性优化 prompt。 ## 实际结果 vs 预期 | 预期 | 实际 | 差距 | |---|---|---| | ✅ SearXNG 聚合搜索替代盲猜 | ✅ 确实走了 `layered_search.py`，3 次搜索拿到 24 条结果 | 达到 | | ✅ Reuters 不再被反爬拦截 | ✅ SearXNG 绕过了单站反爬 | 达到 | | ✅ 数据质量提升 | ✅ 用了 Stanford AI Index、Microsoft Source、JPMorgan、Deloitte 等权威来源 | 达到 | | ⚠️ 新闻时效性 | 部分新闻是 6/18-19 的，不是当天最新的 | **有差距** | | ⚠️ 日期标注 | 输出写的是\"6月22日（周一）\"，实际是 6/24（周三） | **有差距** | | ⚠️ 旧闻混入 | Stanford AI Index、Microsoft 7 大趋势是长期报告，不是当日新闻 | **有差距** | | ⚠️ 缺少实时行情 | 没有抓取 S&P 500、油价等当日市场数据 | **有"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "`last_run_at` 仍然没有变。`action=run` 对 agent 型 cron job 似乎没有立即触发执行——它可能只是注册了一个执行请求，实际执行要走调度队列。让我检查 session DB 里有没有新的执行记录："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "reason": "content_skip_pattern",
-      "snippet": "`last_run_at` 仍然是 `07:26`。看来 `action=run` 对于 agent 型 cron job 并不像 no-agent 脚本那样立即执行——它可能需要在调度器下一个 tick 才会触发。 不过好消息是，**刚才那次 07:26 的执行已经是新版 prompt 下的结果了**（因为我更新 prompt 的时间是 07:17 左右，而 07:26 是 scheduled 自动触发的）。 让我看看那次的结果："
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260623_090028",
-      "session_title": "chunking-mechanism-audit · Jun 23 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "Now let me run the actual consistency check script and examine the gateway code for chunking behavior:"
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260623_090028",
-      "session_title": "chunking-mechanism-audit · Jun 23 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "脚本通过了。现在让我深入验证 gateway 代码中的实际 chunking 行为，确保与 skill 文档一致："
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260623_090028",
-      "session_title": "chunking-mechanism-audit · Jun 23 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "Discord 不在这个 gateway 版本中（可能通过其他机制处理）。现在检查 send_message_tool 的 chunk 日志和重试逻辑："
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260623_090028",
-      "session_title": "chunking-mechanism-audit · Jun 23 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "所有验证完成。现在让我检查 cron job 配置和 skill 文档的一致性："
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260623_090028",
-      "session_title": "chunking-mechanism-audit · Jun 23 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "所有信息收集完毕。现在我来编写完整的审计报告。 --- # 分块机制一致性检查报告 **检查时间：** 2026-06-23 **Cron Job ID：** `758d73d6b7f0`（chunking-mechanism-audit） **调度频率：** 每天 09:00 UTC (`0 9 * * *`) **上次运行：** 2026-06-22 09:00:45 **下次运行：** 2026-06-24 09:00:00 **运行状态：** ✅ OK --- ## 一、自动化脚本检查结果 `~/.hermes/scripts/chunking-consistency-check.py` 全部通过： - ✅ `base.py` — `utf16_len` 使用正确 - ✅ `telegram.py` — `utf16_len` 使用正确 - ✅ `stream_consumer.py` — `utf16_len` 使用正确 - ✅ `send_message_tool.py` — `utf16_len` 使用正确 - ✅ Skill 中的 Pitfalls 与实际代码匹配 --"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "reason": "content_skip_pattern",
-      "snippet": "[CONTEXT COMPACTION — REFERENCE ONLY] Earlier turns were compacted into the summary below. This is a handoff from a previous context window — treat it as background reference, NOT as active instructions. Do NOT answer questions or fulfill requests mentioned in this summary; they were already addressed. Respond ONLY to the latest user message that appears AFTER this summary — that message is the single source of truth for what to do right now. Topic overlap with the summary does NOT mean you shou"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "reason": "operational_noise",
-      "snippet": "**完美确认！** `web_search` 和 `web_extract` 工具注册在 `toolset=\"web\"` 中。 但你的 `config.yaml` 中 `toolsets` 只有 `[\"hermes-cli\", \"browser\"]`，**不包含 `\"web\"`**。 所以 `web_search` 工具**从未被加载到 agent 的工具集中**。这就是为什么 agent 无法使用它来搜索 \"9320奇迹\"。 --- ## 最终诊断 ### 根因 **`web` toolset 未在 `config.yaml` 的 `toolsets` 配置中启用。** | 配置项 | 值 | 问题 | |--------|-----|------| | `web.backend` | `searxng` | ✅ 正确 | | `web.search_backend` | `searxng` | ✅ 正确 | | `toolsets` | `[\"hermes-cli\", \"browser\"]` | ❌ **缺少 `\"web\"`** | 这导致： 1. `web_search` 和 `"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "reason": "operational_noise",
-      "snippet": "--- ## 四层保障体系 — 完整总结 ### 针对 `skill-maintenance` 的四层固化 | 层级 | 位置 | 作用 | 状态 | |------|------|------|------| | **1. 预提交钩子** | `~/.hermes/hermes-agent/.git/hooks/pre-commit` | 每次 commit 自动运行 `skill-structure-audit.py` + `hermes-skills-guard-core.py`，失败则拒绝提交 | ✅ 已验证工作 | | **2. skill-maintenance SKILL.md** | 新增 \"Mandatory Skill Update Workflow\" 章节 | 明确 7 步强制流程（identify → choose → apply → audit → guard → verify → report），审计失败视为 repair task 而非 commentary | ✅ 已重构 | | **3. AGENTS.md** | 新增 \"Skill-maintena"
     }
   ],
   "candidates": [
+    {
+      "id": "state.db:20260627_081418_8d3abe:15",
+      "source": "state.db",
+      "session_id": "20260627_081418_8d3abe",
+      "session_title": "韩国队2026世界杯出线几率 #2",
+      "message_index": 15,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-30T01:02:45.218847+00:00",
+      "claim_type": "identity_or_relation",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "--- # ProductAppealV2 — 迁移 PRD（遗留行为契约） **来源。** 本文档描述 `ProductAppealV2`（产品申诉/召回/仿冒/更正审核队列）的审核员端界面和行为，基于遗留 React 模板 `legacy/legacy-react-templates/src/templates/ProductAppealV2/` 清洁室导出——其 `App.tsx`、左侧 `components/BaseInfo/index.tsx` + `components/BaseInfo/MultiLanguageRejectionInfo.tsx`、中间 `components/ReviewedInfo/index.tsx` 和 `components/ReviewedInfoV2/index.tsx`，以及 `typings/index.ts` 任务数据形状——以及这些文件组合的共享界面：决策控件 `legacy/legacy-react-templates/src/common/components/operateWithSecondReason/index.tsx`、hooks `common/hooks/useRejectLabels.tsx` 和 `common/hooks/useGraySwitch.ts`、商品评论卡 `common/components/product-reviews/index.tsx`、授权/未授权品牌标签 `common/components/tag/tag.tsx`、外部证据块 `common/components/appeal/ViolationCredentials.tsx`，以及意外伤害防护 `common/utils/checkShowAccidentalInjuryModal.ts`。遗留代码对行为和逐字段内容是权威的。未参考任何 VMOK 实现、先前 PRD 或先前 ERD（清洁室）；四个捕获的任务载荷仅用作生产渲染的 live ground truth，不作为契约。 **Live 引用。** 生产界面 ground truth 是 `packages/jimu-containers/moderation-debug-container/src/test/ProductAppealV2/screenshots/` 下的四张截图：`id-recall-prohibited-default.png`（单语言召回/禁售产品申诉）、`br-translation-default.png`（显示翻译/原文对的翻译队列和升级功能）、`id-counterfeit-default.png`（仿冒/IPR 申诉，其审核商品卡使用审核提示渲染器）和 `us-correction-default.png`（卖家更正列表，显示更正信息卡）。它们——配合 `auto-tester/live-capture/product-appeal-v2/{id-recall-prohibited,br-translation,id-counterfeit,us-correction}-dom.html` 下捕获的 DOM 记录—— govern 哪些卡/分区/控件渲染、其三列排列和组件样式；但它们对字段值或特定案例内容从来不是权威的（每个具体字符串——店铺 ID、类目路径、拒绝原因标签——是运行时绑定的任务数据）。 ## §1 目的与范围 ProductAppealV2 是**二次审核商品审核**的审核员工作台——卖家商品在执行行动（召回、禁售、仿冒/IPR 标记或更正要求）后进入的队列，以便人类重新决定是否维持或推翻。一个任务代表一个商品——或在多语言列表中，一个商品的几种语言变体——卖家对此提出申诉、提交更正或被路由重新审核。审核员的工作是阅读完整商品界面连同原始违规和卖家申诉/更正证据，然后返回一个裁决：**批准**（推翻/通过）、**不批准**（维持拒绝，引用具体原因），或——仅在翻译/可转让队列上——将任务**升级**到本地语言审核员当他们无法决定时。 同一模板服务于几个场景变体，仅在任务数据激活的侧卡和决策选项上有所不同：召回/禁售产品申诉、翻译队列、仿冒/IPR 申诉、卖家更正列表、欧盟商品列表申诉和多语言列表。变体从不通过模式开关选择——它是哪些任务字段被填充的自然结果（`appeal_info` 块、`correction_info` 块、`moderation_hint_info`、`translate_materials` 或可转移的 `queue_conf`、语言的 `product_list`）连同队列的 `logic_queue`、`tcs_passthrough_d"
+    },
+    {
+      "id": "state.db:20260628_105014_f8ec61:16",
+      "source": "state.db",
+      "session_id": "20260628_105014_f8ec61",
+      "session_title": "Fixing Cron Job Language Output #3",
+      "message_index": 16,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T19:42:45.182563+00:00",
+      "claim_type": "identity_or_relation",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "以下是完整翻译： --- # 计划 — 经验教训捕获：技能更新 + 门限增强（来自 TrademarkV2 会话） ## 背景 TrademarkV2 重新转换会话暴露了持久的经验教训。一个只读 Workflow（MAM 集成）挖掘出 9 条持久经验教训 → 19 项提案 → 13 项经对抗性确认，每项放置于 3 层中（运行 wf_08daf651-200）。本计划实施这些提案。用户还指示（L8）将此方法——Workflow(MAM 集成) → 分析会话经验教训 → 技能/门限提案 → 对抗验证 + 3 层 → 供审批的计划文件——成为**默认的经验教训捕获流程**，编码为一个技能。 **范围外（保持现状）**：TrademarkV2 停留在 needs-fixtures（appeal / cobranding / entity-change 没有生产 fixture——这是一个真实的数据缺口，切勿伪造）。不更改其 verify 状态。 **纪律（每个阶段）**：每次提交触及 `.agents/skills/**` 或 `scripts/lib/` → P0 技能变更纪律：提交前 ≥3-agent skill-maintenance MAM（3 层 + 四文件 + 内容通用性）；提交前台 + 顺序执行（P0 无后台 git）；保持 migration-autopilot ⇄ change-autopilot 同步。 ## 核心洞察（Phase 0 阻塞一切） improvement-audit #44（\"将 baselineCount 应用到所有仅收缩列表\"）完成了 2/12。手动接线其余 10 个 = 10 个内联克隆的增长守卫体 = P0 复制粘贴违规，dup-guard 标记。因此先提取共享叶，然后 10 个消费者**导入**它。 --- ## Phase 0 — 共享增长守卫辅助（1 个 MAM + 1 次提交）— **先决条件** - **新 `scripts/lib/growthGuard.mjs`** — 一个私有的 fail-closed count-vs-baseline 核心（自身**绝不能**复制粘贴 size>baseline 体），暴露为 3 种薄形状：`arrayGrowthGuard(allowlist,{arrayKey})`、`perKindGrowthGuard(allowlist,{kinds})`、`pairCountGrowthGuard(allowlist,{recordsKey})`。统一规则：非空列表/种类/记录集携带缺失/非数字的 baselineCount → ERROR（fail-closed，不能自我解除武装）；count > baseline → ERROR；否则 []。 - **重构现有 2 个实现**：`convergence-ratchet.mjs` 的 convergenceGrowthGuard + `erd-section-check.mjs` 的 checkGrowthGuard。隐藏语义变更：这将 erd-section 从**无操作当 baseline 缺失**升级为 **fail-closed**。安全（section-conformance 声明了 baselineCount），但在**同一次提交**中重写 `erd-section-growth-guard.test.mjs:75-86`（断言旧的无操作）为 fail-closed。 - 修复 `erd-section-check.mjs:382` 的过时注释。 --- ## Phase 1 — 将 10 个剩余的仅收缩列表接线到辅助（分批；每批 1 个 MAM + 1 次提交） 每个列表：添加 `baselineCount = 当前提交长度`（读取**实际**长度，永远不要使用 audit #44 的示例 `{prd:13,erd:1}`）；使其 loadAllowlist 表面 baselineCount（大多数今天丢弃它）；调用正确的 growthGuard 形状；推入现有的 exit-1 ratchet 数组；添加同置测试，具有统一的 3 项 DoD：baseline-pass / smuggled-add-FAIL / 缺失或非数字时 fail-closed。 - **1a migration-transform**： - binding-parity（baselineCount 0；在 runRatchet 中运行） - control-coverage（allNullControls.length；在 main() 中**无条件**运行，不是在 `if(!record)` 的 swe"
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:16",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 16,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T16:25:05.483108+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "**46 passed, 0 failed.** 上次失败是因为缺少 `pytest-asyncio`（已安装），代码本身没有问题。"
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:15",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 15,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T16:24:18.702629+00:00",
+      "claim_type": "identity_or_relation",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "上次 pytest 失败是因为缺少 `pytest-asyncio`，不是代码问题。让我重新验证："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:14",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 14,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T16:15:32.555499+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "看到了。Telegram 的 `send()` 用 `for i, chunk in enumerate(chunks):` 循环发送所有 chunks。WeCom 的当前实现只发了 `chunks[0]`。 但是等等——WeCom AI Bot 的 API 是否支持连续发送多条消息？让我检查："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:13",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 13,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T16:14:39.502518+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "发现一个问题：`send()` 中虽然调用了 `truncate_message()`，但只发送了 `chunks[0]`，**没有循环发送后续 chunks**。这和 Telegram 的实现不同。让我看看 Telegram 是怎么做的："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:12",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 12,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T16:14:05.173270+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "完美。现在验证 WeCom 的 `send()` 方法是否正确处理多 chunk 发送（而不仅仅是第一块）："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:11",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 11,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T15:25:39.982983+00:00",
+      "claim_type": "identity_or_relation",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "问题是缺少 `pytest-asyncio`。这不是我的修改导致的——是测试环境问题。让我用项目自带的 pytest 配置来运行："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:10",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 10,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T15:21:21.484157+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "硬切片已全部清除。现在检查 truncate_message 是否被正确调用："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:9",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 9,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T15:19:02.180625+00:00",
+      "claim_type": "wiki_maintenance",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "现在更新 reply-optimization skill，记录 WeCom 的发现："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:8",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 8,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T15:17:56.707977+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "Weixin 平台已经使用了 `_split_text` → `_split_text_for_weixin_delivery` → `BasePlatformAdapter.truncate_message`，看起来 chunking 链是完整的。但它用的是 `len()` 而非 `utf16_len`，这是正确的（微信使用 Unicode codepoints 计数）。 让我验证一下 Weixin 的 `_split_text` 是否调用了 `truncate_message`："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:7",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 7,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T15:17:19.308659+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "现在检查 Weixin 平台的 chunking 实现是否完整："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:6",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 6,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T15:13:17.355690+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "它是 `@property`，所以我需要用 `@property` 装饰器："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:5",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 5,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T15:09:59.221015+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "现在修复 WeCom 的两处硬切片。首先看它是否导入了 truncate_message："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:4",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 4,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T15:02:56.194456+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "现在让我检查微信（Weixin）平台适配器是否存在："
+    },
+    {
+      "id": "state.db:cron_59933b2c67e7_20260629_070011:1",
+      "source": "state.db",
+      "session_id": "cron_59933b2c67e7_20260629_070011",
+      "session_title": "Topic news digest · Jun 29 07:11",
+      "message_index": 1,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-29T14:11:06.482166+00:00",
+      "claim_type": "identity_or_relation",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "Now I have all the data I need. Let me compile the comprehensive daily briefing report. --- # 📊 每日简报 | 2026年6月29日（星期一） --- ## 第一部分：AI 与科技新闻 ### 1. 中国取消12,000个\"过时\"大学专业，全面转向AI教育 中国政府正在推进近五年来最彻底的高等教育改革：取消12,200个本科专业项目，同时新增超过10,000个AI相关专业。此举旨在将高等教育与国家经济转型方向对齐，信号强烈。 - **来源**: Tranquillity News / South China Morning Post | **日期**: 2026年6月27日 | **置信度**: 0.92 ### 2. OpenAI联合Broadcom发布首款定制AI芯片\"Jalapeño\" OpenAI于6月24日展示了其与Broadcom合作开发的首款定制AI芯片——\"Jalapeño\"（墨西哥辣椒），专为大语言模型推理任务设计。这是双方计划部署10吉瓦算力基础设施的第一步，Celestica参与板卡和机柜制造。 - **来源**: Reuters / Bloomberg / WSJ | **日期**: 2026年6月24-25日 | **置信度**: 0.95 ### 3. 企业大规模裁员加速：AI投资取代人力 路透社6月29日报道，全球企业正加速裁员以配合AI投资转型。汇丰银行(HSBC)计划到2028年底裁减约2万人（占员工10%）；英美烟草(BAT)裁撤9,000个岗位并将3,500个角色外包给第三方（包括埃森哲）。投资者和经济学家对AI颠覆传统行业、导致就业流失的担忧日益加深。 - **来源**: Reuters | **日期**: 2026年6月29日 | **置信度**: 0.93 ### 4. Google AI团队人才流失加剧：多名顶尖研究员跳槽Anthropic Google DeepMind连续遭遇重大人才流失。Gemini项目核心研究员Jonas Adler和Alexander Pritzel已加入Anthropic，此前Arthur Conmy也做出同样选择。SignalFire报告显示，Google研究员跳槽Anthropic的概率是其他人的11倍。 - **来源**: Bloomberg | **日期**: 2026年6月24-26日 | **置信度**: 0.90 ### 5. 福特承认AI在复杂工程任务上不如人类工程师 福特汽车公开承认其AI引入计划遭遇挫折——计算机算法无法自学人类工程师数十年积累的实践经验。福特已重新雇佣了350名资深工程师（包括前员工和供应商专家）来弥补AI的不足。 - **来源**: PoweredByAI / Reuters | **日期**: 2026年6月29日 | **置信度**: 0.88 ### 6. 特朗普不再将Anthropic视为国家安全威胁，但保留紧急权力 特朗普表示他不再将Anthropic视为国家安全威胁，但未排除根据《国防生产法》动用紧急权力的可能性。此前美国曾对Anthropic最先进的Mythos模型实施出口管制，近日已部分解除。 - **来源**: Axios | **日期**: 2026年6月22-27日 | **置信度**: 0.85 ### 7. 五角大楼呼吁国会不要限制AI发展 五角大楼首席技术官Emil Michael呼吁国会避免对数据中心和AI使用施加限制，称这将阻碍军事现代化和创新。与此同时，Anthropic与五角大楼在自主武器和监控AI使用上的严格管控方面存在分歧。 - **来源**: Crypto Briefing / Stars and Stripes | **日期**: 2026年6月26-29日 | **置信度**: 0.82 ### 8. 2026年全球AI支出预计达2.6万亿美元，NVIDIA黄仁勋呼吁建立新规范 全球AI支出在2026年预计达到2.6万亿美元，其中数据中心投资近8000亿美元。NVIDIA首席执行官黄仁勋指出，AI采用不仅需要更好的模型，还需要社会建立新的使用规范和明确的安全标准。 - **来源**: 多方报道综合 | **日期**: 2026年6月29日 | **置信度**: 0.87 --- ## 第二部分：市场与经济 ### 📈 实时市场指数（2026年6月29日 美东时间上午10:05） | 指数/资产 | 最新价格 | 涨跌 | 涨跌幅 | |-----------|---------|------|--------| | **标普500** | 7,391.75 | +37.73 |"
+    },
     {
       "id": "state.db:20260628_175902_684c63cf:3",
       "source": "state.db",
@@ -3809,62 +3907,6 @@
       "snippet": "以下是这段内容的中文翻译： --- 我已完成任务分析，并返回了结构化方案。关键发现摘要如下： **决定性的架构事实**（结构化输出中引用的文件:行号）：Guard B1 所需的 precondition→fixture 匹配器，其核心逻辑是以**自然语言形式存在于 `.agents/skills/auto-test-pipeline/design.md:147-196` 中、由 LLM 执行**，而非共享代码。`erd-precondition-check.mjs:65-95` 仅将谓词的*键*与描述符模式进行校验——它从未将谓词针对 fixture 描述符进行评估——且 `list-fixtures.ts` 没有 `--match` 标志。因此，若不提取 `scripts/lib/preconditionMatch.mjs`，B1 无法以机械方式构建；而提取之后，`erd-precondition-check.mjs` 也可复用该模块（从而实现整体简化）。这项提取工作是本次构建中最大的工作量，我已将其标记给实现者。 **Part A** —— 四条内容通用规则，全部单点归属在 `review.md`（判决/解释阶段），辅以 `design.md` 交叉引用，且措辞不包含任何事件令牌（incident tokens）：A1 声明前先驱动 `[no-fixture]`、A2 缺失控制 = 缺陷候选、A3 全新驱动完整性（扩展现有论述）、A4 先检查提交再排序。 **Part B** —— B1（新建 `no-fixture-justification-check.mjs`，即核心守卫，复用已提取的匹配器 + `feedbackVerdicts.mjs` 解析器 + 降级横幅）、B2（扩展 `feedback-coverage-check.mjs:219-258` 现有的 run↔report 绑定，加入逐行全新 run Backing 支持——零新增连线）、B3（诚然不可守卫 → 转向纪律性建议，基于 `operatePanelStates[]`）、B4（合并入 B1，无需单独脚本）。Verify-gate 连线配置写入 `middle-gate-phases.mjs` 的 `verify[]` / `complete[]` 数组中。"
     },
     {
-      "id": "state.db:20260623_171950_7cd6b9d9:10",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 10,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-25T20:07:59.460928+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "看起来你对 ERD 中 §8 Scenarios 的场景 9、14、15 有疑问或想确认覆盖情况。让我对比一下你之前提出的三个测试需求和当前 ERD 中的对应场景： --- ## 覆盖对比 ### 你的测试需求 vs ERD 场景 | # | 你的需求 | ERD 对应场景 | 覆盖状态 | |---|---------|-------------|---------| | §9 | **多国扩展** — 需要测试产品同时列在多国的场景，验证拒收正确扇出 | **Scenario 9** — Multi-country (global selling) expansion | ✅ 已覆盖 | | §14 | **发送至列表治理 → 结果 300** — 需要测试包含\"发送至列表治理\"问题的任务 | **Scenario 14** — Send to listing governance → 300 | ✅ 已覆盖 | | §15 | **SKU 价格差异徽章** — 需要测试具有显著价格差异的多变体产品 | **Scenario 15** — SKU \"Excessive price differences\" badge | ✅ 已覆盖 | --- ### 具体分析 **Scenario 9 — 多国扩展** - **前置条件：** `bizType = global_selling`, `hasRejectOptions = true` - **行为：** 当审核员打开一个 `global_selling` 任务并拒收一个原因时，每个 `reject_label` 和 `parts` 条目都为每个市场发出一次 - **覆盖了你提到的：** \"我们需要一个产品同时列在多个市场的情景来验证拒收正确扇出\" **Scenario 14 — 发送至列表治理** - **前置条件：** `country = US`, `nodeName = any` - **行为：** 当符合条件的美国任务显示 Send-to-LG 单选按钮，审核员勾选\"是\"时，提交短路到 `result: 300` - **覆盖了你提到的：** \"我们需要一个包含这个问题的测试用例来验证勾选'是'产生正确的 300 结果\" **Scenario 15 — SKU 价格差异徽章** - **前置条件：** `country = US`（具有两个以上 SKU 且售价跨度超过配置 `skuMaxRatio` 的任务） - **行为：** 当审核员打开产品价格跨度达到或超过配置阈值的产品时，SKU 卡片在表上方渲染\"Excessive price differences: N times\" - **覆盖了你提到的：** \"我们需要一个具有广泛定价变体的测试用例来验证徽章出现\" --- ### 结论 **三个测试需求已全部被 ERD 吸收为 §8 Scenarios 9、14、15。** 这些场景描述了正确的前置条件、行为路径和预期结果。 不过需要注意的是，正如你在审计报告中提到的，这些场景需要对应的 **fixture 数据** 才能实际执行。当前所有注册的 ProductHazmat fixture 都是 `work_mode: \"scan\"`，所以： - Scenario 9 需要一个 `global_selling` 类型的 fixture - Scenario 14 需要一个包含 `send_to_listing_governance` 字段的 US 任务 fixture - Scenario 15 需要一个 SKU 价格差异显著的 fixture 这些 fixture 的注册是后续需要补充的工作。"
-    },
-    {
-      "id": "state.db:20260623_171950_7cd6b9d9:9",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 9,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-25T20:07:59.456663+00:00",
-      "claim_type": "wiki_maintenance",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "wiki 里没有 ProductHazmat 的文档目录。既然用户提供了一份完整的 ERD 内容，我应该直接基于这份内容来回答。让我重新理解用户的需求。 用户之前发送了三段关于测试用例需求的内容（§9、§14、§15），然后现在又发送了完整的 ERD 文件。看起来用户是想让我对比这两份内容——用户的测试需求 vs ERD 中已有的场景描述。 让我仔细对比一下： 1. **§9 Multi-country expansion** — 用户说\"需要测试用例验证多国拒收扩展\"，而 ERD 中 §8 Scenario 9 已经描述了 `global_selling` 场景。 2. **§14 Send to listing governance → result 300** — 用户说\"需要测试用例验证 Send-to-LG\"，而 ERD 中 §8 Scenario 14 已经描述了。 3. **§15 SKU price difference badge** — 用户说\"需要测试用例验证 SKU 价格差异徽章\"，而 ERD 中 §8 Scenario 15 已经描述了。 看起来用户的三段文本是早期的需求/观察，而 ERD 已经将这些需求吸收到了 §8 Scenarios 中。让我确认这一点并回复用户。"
-    },
-    {
-      "id": "state.db:20260623_171950_7cd6b9d9:8",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 8,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-25T20:07:59.448321+00:00",
-      "claim_type": "wiki_maintenance",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "这个 wiki 目录里没有 ProductHazmat 相关的文档。让我看看是否有迁移项目的目录："
-    },
-    {
-      "id": "state.db:20260623_171950_7cd6b9d9:7",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 7,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-25T20:07:59.417467+00:00",
-      "claim_type": "wiki_maintenance",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "好的，我来更新 ProductHazmat 的 ERD，补充 §8 场景 9、14、15 的测试用例需求。"
-    },
-    {
       "id": "state.db:20260625_095750_ea629ed9:2",
       "source": "state.db",
       "session_id": "20260625_095750_ea629ed9",
@@ -3975,62 +4017,6 @@
       "noise_reason": null,
       "confidence_hint": null,
       "snippet": "好的，我已经收集了足够的信息来为你们制定详细的行程。以下是我的私人订制建议： --- # 🇮🇩 巴厘岛 + 布罗莫火山 私人订制行程 ## 2026年9月6日 - 9月12日（7天6晚） --- ## 📋 行程总览 | 日期 | 地点 | 住宿 | 主要活动 | |------|------|------|----------| | D1 (9/6) | 巴厘岛南部 | Andaz Bali (Seminyak) | 抵达 + 精灵坠崖 | | D2 (9/7) | 巴厘岛南部 | Andaz Bali (Seminyak) | 蓝梦岛/佩尼达岛一日游 | | D3 (9/8) | 布罗莫火山区域 | Mount Bromo Lodge 或 Hotel Bromo | 前往布罗莫 + 火山日出 | | D4 (9/9) | 布罗莫火山区域 | Mount Bromo Lodge 或 Hotel Bromo | 火山群探索 + 沙海摩托 | | D5 (9/10) | 布罗莫 → 巴厘岛中部 | Ubud 丛林度假村 | 返回巴厘岛 + 乌布丛林体验 | | D6 (9/11) | 巴厘岛中部 | Ubud 丛林度假村 | 乌布文化 + 梯田 + 水神庙 | | D7 (9/12) | 巴厘岛中部 | - | 早晨自由活动 + 前往机场 | --- ## 🏨 酒店推荐 ### 第1-2晚：Andaz Bali（已预订） - **位置**：Sanur（圣库），巴厘岛东南部 - **特色**：安可达旗下奢华品牌，无边泳池、海景房、Spa - **预算**：约 ¥1,500-2,500/晚（取决于房型和季节） ### 第3-4晚：布罗莫区域酒店（预算内推荐） | 酒店名称 | 类型 | 价格范围 | 特点 | |----------|------|----------|------| | **Mount Bromo Lodge** | 经济型 | ¥150-300/晚 | 步行可达观景台，早餐含火山咖啡 | | **Hotel Bromo** | 舒适型 | ¥300-500/晚 | 暖气房（夜间冷）、观景阳台 | | **Bromo Paradise Hotel** | 中高端 | ¥500-800/晚 | 豪华包间、私人观景台 | **推荐**：选择 **Hotel Bromo** 或 **Bromo Paradise Hotel**，性价比最高，观景体验好。 ### 第5-6晚：乌布丛林度假村（预算内推荐） | 酒店名称 | 类型 | 价格范围 | 特点 | |----------|------|----------|------| | **Ubud Tropical Resort** | 经济型 | ¥200-400/晚 | 热带花园、泳池、靠近猴林 | | **Tjampuhan Resort** | 舒适型 | ¥400-700/晚 | 山谷景观、Spa、有机餐厅 | | **Maya Ubud Resort** | 高端型 | ¥800-1,500/晚 | 悬崖泳池、顶级Spa、米其林餐厅 | **推荐**：选择 **Tjampuhan Resort** 或 **Ubud Tropical Resort**，平衡预算和体验。 --- ## 🗓️ 每日详细行程 ### Day 1（9/6 周六）：抵达 + 精灵坠崖 **上午/下午**：抵达巴厘岛伍拉·赖国际机场（DPS） - 办理落地签（¥250/人，30天单次入境） - 提前预约接机服务（约 ¥200-300） **傍晚**：前往 **精灵坠崖（Kelingking Beach）** - 距离：约1.5小时车程（从机场到Tulamben区域） - 门票：约 ¥30/人 - 最佳时间：16:00-18:00（光线柔和，适合拍照） - 特色：7字形悬崖，被誉为\"巴厘岛小恐龙\" **晚上**：返回Andaz Bali - 酒店晚餐：海景餐厅，约 ¥200-400/人 **注意事项**： - 带好相机和三脚架 - 穿防滑鞋（悬崖步道较陡） - 带驱蚊液 --- ### Day 2（9/7 周日）：蓝梦岛/佩尼达岛一日游 **全天**：佩尼达岛（Nusa Penida）浮潜 + 悬崖探险 | 时间 | 活动 | 备注 | |------|------|------| | 07:00 | 酒店出发前往港口 | Sanur Port | | 07:30 | 快艇前往佩尼达岛 | 航程约30分钟 | | 09:00 | 天使湾（Angel's Billabong） | 天然无边泳池 | | 10:00 | 破碎沙滩（Broken Beach） | 海蚀拱门奇观 | | 12:00 | "
-    },
-    {
-      "id": "state.db:20260623_171950_7cd6b9d9:6",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 6,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-25T00:31:03.642502+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "好的，我们来聊聊如何在微信上接入 AI 机器人。 首先需要明确一点：**微信（WeChat）是一个封闭的平台，腾讯（Tencent）没有提供官方的、公开的 API 来让个人或小团队直接创建聊天机器人。** 这与 Telegram、Discord 等平台完全不同。 因此，要在微信上使用 AI 机器人，有以下几种主流的技术路径，它们的难度和成本各不相同： --- ### 路径一：使用企业微信（WeCom）API（官方推荐，最稳定） 这是目前最正规、最稳定的方式。企业微信是腾讯推出的办公工具，它提供了完善的 API，允许开发者创建应用和机器人。 * **优点：** * **官方支持：** API 稳定，不易被封禁。 * **功能强大：** 可以实现群聊机器人、单聊应用等。 * **免费：** 基础 API 调用是免费的。 * **缺点：** * **需要企业认证：** 你必须拥有一个已认证的企业微信账号（个人无法申请）。 * **体验不同：** 用户需要在“企业微信”App 中使用，而不是普通的微信。 * **实现思路：** 1. 注册并认证企业微信。 2. 在企业微信后台创建一个“自建应用”。 3. 配置应用的回调 URL，这个 URL 指向你的后端服务（比如你正在搭建的 Hermes 服务）。 4. 当用户在企业微信里给应用发消息时，腾讯会将消息 POST 到你的回调 URL。 5. 你的服务接收到消息后，调用 AI 模型（如 Claude, GPT）生成回复。 6. 将回复通过企业微信 API 发送给用户。 --- ### 路径二：使用第三方微信机器人框架（非官方，有风险） 这类项目通过逆向工程微信协议来模拟登录和收发消息。最著名的开源项目是 **Wechaty**。 * **优点：** * **可以直接在个人微信上使用。** * 社区活跃，有多种语言的 SDK（Python, Go, JavaScript 等）。 * **缺点：** * **极高的封号风险：** 这是最大的问题。腾讯严厉打击非官方的微信客户端和机器人，使用这种方式极易导致微信号被永久封禁。**绝不建议用于重要账号！** * **不稳定：** 一旦微信协议更新，机器人就会失效，需要等待框架作者更新。 * **需要维护：** 你需要自己处理登录、掉线等问题。 * **实现思路：** 1. 安装 `Wechaty` 等框架。 2. 获取一个临时的微信二维码进行登录（通常使用 puppet 服务，有些是免费的，有些需要付费）。 3. 编写代码监听消息事件。 4. 收到消息后，调用 AI 接口，然后将回复发送出去。 --- ### 路径三：微信支付商户平台公众号（特定场景） 如果你的业务与微信支付相关，可以通过公众号接入。 * **优点：** 官方支持，合法合规。 * **缺点：** 门槛高，需要企业资质，且只能用于特定的商业场景，不适合做通用的聊天机器人。 --- ### 总结与建议 | 特性 | 企业微信 (WeCom) | 第三方框架 (如 Wechaty) | | :--- | :--- | :--- | | **合法性** | ✅ 官方支持 | ❌ 违反用户协议 | | **稳定性** | ✅ 高 | ❌ 低，易失效 | | **封号风险** | ✅ 无 | ⚠️ **极高** | | **使用门槛** | 需要企业认证 | 个人即可，但需技术能力 | | **适用场景** | 企业内部沟通、客户服务 | **不推荐用于生产环境** | **我的建议是：** 1. **如果你是个人或小型团队，想自己玩一玩：** 可以尝试 **企业微信**，虽然需要企业认证，但这是最安全、最稳定的方式。你可以用一个朋友或家人的公司资质来注册。 2. **如果你非常想在个人微信上使用，并且能承担封号风险：** 可以研究 **Wechaty** 等项目，但请务必使用一个全新的、不重要的微信小号进行测试，**千万不要用在你的主号上**。 3. **对于生产环境或重要业务：** **强烈推荐使用企业微信**，或者考虑使用 Telegram/Discord 等对机器人友好的平台。 你想了解哪种方式的更详细的技术实现步骤吗？"
-    },
-    {
-      "id": "state.db:20260623_171950_7cd6b9d9:5",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 5,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T23:15:56.542991+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "好的，我来分析这段关于测试用例需求的内容，并补充到之前的翻译和文档中。 这段内容提出了三个具体的测试用例需求，用于验证 ProductHazmat 模板的关键功能： 1. **多国扩展测试 (§9)**：需要创建一个产品同时在多个国家销售的任务，以验证拒收是否能正确地向所有市场扩展。当前的4个测试用例都只涉及单国家产品。 2. **发送至列表治理测试 (§14)**：需要创建一个包含\"发送至列表治理\"选项的任务，以验证当审核员选择\"是\"时，是否能产生正确的结果代码300。当前的测试用例中这个字段根本不出现。 3. **SKU价格差异徽章测试 (§15)**：需要创建一个具有显著价格差异的多变体产品，以验证\"异常价格差异：N倍\"徽章是否正确显示。当前的测试用例中变体间价格差异不足以触发此徽章。 这些都是有价值的测试增强建议，能够提高迁移后系统的验证覆盖率。是否需要我将这些内容整合到之前的PRD或ERD文档中，还是作为单独的测试需求文档？"
-    },
-    {
-      "id": "state.db:20260623_171950_7cd6b9d9:4",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 4,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:49:33.329055+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "以下是该 ERD 文档的完整中文翻译： --- # ProductHazmat — ERD（VMOK 实现 + 验证） 审核员面对的行为契约是 PRD [`specify-prd.md`](./specify-prd.md)，从遗留的 `ProductHazmat` React 模板中通过洁净室方法推导得出。本 ERD 指定了 VMOK 迁移的 ProductHazmat **如何实现**该契约、迁移中**有意偏离**遗留行为的地方、剩余的**对齐差距**（未实现的 PRD 行为）、**提交验证**，以及自动测试工作流消费的**§8 验证场景**。请先阅读 PRD 了解\"应该发生什么\"；本文档是\"VMOK 如何做以及我们如何验证\"。基于 PRD + 当前 VMOK 实现洁净室编写（TCC 模式 `7646850708272056072.json`、注册的 `product_hazmat` DecisionSpec、其 `escape-passthrough/product-hazmat` 运行时，以及共享的收敛引擎 `layout-shell-legacy` / `info-card-legacy` / `product-info-legacy` / `ModuleBoardOperate`）；刻意**不**参考预先存在的 `specify-erd.md`——它已过时，描述的是先前基于场景的实现（`scenes/product-hazmat` 文件夹、`IncompleteInfoReminder` Alert、提交覆盖工厂和 `SingleModuleOperate`），而这些已不再存在。 ## §1 VMOK 实现 ProductHazmat 是一个模式组合模板（TCC `7646850708272056072.json`），通过 `@moderation-lowcode/layout-shell-legacy`（`tcc:11-13`）渲染。它是一个重新实现的迁移模板——其先前的 `scenes/` 文件夹已被删除——因此其整个操作运行时直接写在配置引用的 escape-passthrough 模块（`escape-passthrough/product-hazmat/`）中，并通过注册的 DecisionSpec `decisionId: product_hazmat`（`decision-registry/specs/product-hazmat.ts:24-115`）通过 `getDecisionSpec` 解析，而非 `getScene`。每个表面都通过收敛的 `-legacy` 引擎渲染——不加载遗留 React 应用和遗留锻造组件。 ### 1.1 三区域布局（`tcc:17-49`） 与遗留的双栏主体不同，`layout-shell-legacy` 将显示分为三个区域，左区域固定为 20% 宽度（`leftElementStyle.width: \"20%\"`，`tcc:53`）： - **左侧身份列——三个堆叠的 `info-card-legacy` 块：** - **`reasonBanner`**（`tcc:18-23`，配置 `tcc:85-93`，数据 `tcc:313-316`）—— `Reason` 卡片，`variant: banner`，基础 `severity: info`，带有 `severityField: reason` + `severityCases`，将精确字面值 `Shop Tab Recommand Hign VV` 映射到 `warn`（红色强调状态）。数据 `source` 从 `data[0].reason` 读取 `global_selling` 任务的原因，否则从顶层 `reason` 读取，默认为 `''`。实现了 PRD 的值条件原因高亮。 - **`productInfo`**（`tcc:24-27`，配置 `tcc:95-122`，数据 `tcc:318-321`）—— `Product` 卡片：`Status`（`seller_info.shop_status` 枚举通过 `format` 表映射为 `new create` / `pending to review` / `active` / `deactive` / `review reject` / `in active` / `Withdraw`）、可复制的 `Product Id`（`business_incoming.object_key`），以及条件性高亮的 `DG Lock` 行（`dropWhenEmpty`），从 `is_dg_lock` 计算的 `Yes` / `No`（`undef"
-    },
-    {
-      "id": "state.db:20260623_171950_7cd6b9d9:3",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 3,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:31:44.399846+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "以下是该 ERD 文档的中文翻译： --- # ProductHazmat — ERD（VMOK 实现与验证） 面向审核员的**行为契约即 PRD** [`specify-prd.md`](./specify-prd.md)，从遗留的 `ProductHazmat` React 模板通过洁净室方法推导得出。本 ERD 规定了 VMOK 迁移后的 ProductHazmat **如何实现**该契约、迁移中**有意偏离**遗留行为的地方、剩余的**对等差距**（PRD 行为未实现的部分）、**提交验证**以及自动测试工作流消费的**§8 验证场景**。请先阅读 PRD 了解\"应该发生什么\"；本文档则是\"VMOK 如何做以及如何验证\"。本文基于 PRD + 当前 VMOK 实现（TCC 架构 `7646850708272056072.json`、注册的 `product_hazmat` DecisionSpec、其 `escape-passthrough/product-hazmat` 运行时，以及共享的收敛引擎 `layout-shell-legacy` / `info-card-legacy` / `product-info-legacy` / `ModuleBoardOperate`）以洁净室方式编写；特意未咨询预先存在的 `specify-erd.md` —— 它已过时，描述的是一个先前基于场景的实现（`scenes/product-hazmat` 文件夹、`IncompleteInfoReminder` Alert、submit-override factories 和 `SingleModuleOperate`），这些已不复存在。 ## §1 VMOK 实现 ProductHazmat 是一个 TCC 架构组成的模板（TCC `7646850708272056072.json`），通过 `@moderation-lowcode/layout-shell-legacy`（`tcc:11-13`）渲染。它是一个重新实现的迁移模板 —— 其先前的 `scenes/` 文件夹已被删除 —— 因此其整个操作运行时直接在配置引用的 escape-passthrough 模块（`escape-passthrough/product-hazmat/`）中编写，并通过注册的 DecisionSpec `decisionId: product_hazmat`（`decision-registry/specs/product-hazmat.ts:24-115`）通过 `getDecisionSpec` 解析，永不使用 `getScene`。每个表面都通过收敛的 `-legacy` 引擎渲染 —— 不加载遗留 React 应用和遗留锻造组件。 ### 1.1 三区布局（`tcc:17-49`） 与遗留的两栏主体不同，`layout-shell-legacy` 将显示分为三个区域，左栏固定为 20% 宽度（`leftElementStyle.width: \"20%\"`，`tcc:53`）： - **左侧身份列 —— 三个堆叠的 `info-card-legacy` 区块：** - **`reasonBanner`**（`tcc:18-23`，配置 `tcc:85-93`，数据 `tcc:313-316`）—— `Reason` 卡片，`variant: banner`，基础 `severity: info`，带有 `severityField: reason` + `severityCases`，将精确字面值 `Shop Tab Recommand Hign VV` 映射到 `warn`（红色强调状态）。数据 `source` 从 `data[0].reason`（针对 `global_selling` 任务）或顶层 `reason` 读取原因，默认为 `''`。实现了 PRD 中的值条件性原因高亮。 - **`productInfo`**（`tcc:24-27`，配置 `tcc:95-122`，数据 `tcc:318-321`）—— `Product` 卡片：`Status`（`seller_info.shop_status` 枚举通过 `format` 表映射为 `new create` / `pending to review` / `active` / `deactive` / `review reject` / `in active` / `Withdraw`）、可复制的 `Product Id`（`business_incoming.object_key`），以及条件性的高亮 `DG Lock` 行（`dropWhenEmpty`），"
     },
     {
       "id": "state.db:20260624_082342_22cf2b:8",
@@ -4145,90 +4131,6 @@
       "snippet": "## “天道无亲，常与善人” 出自 **《老子》（道德经）第七十九章**： > **天道无亲，常与善人。** ### 字面意思 - **天道**：自然规律、宇宙法则。 - **无亲**：没有偏爱、不分亲疏，不偏袒任何一个人。 - **常与**：常常给予（帮助、眷顾）。 - **善人**：行善之人、顺应大道之人。 整句意思是：**自然规律对任何人都没有偏爱，但它总是眷顾那些行善（顺应大道）的人。** ### 深层含义 这句话传达了几层思想： 1. **公平无私**：天道不偏向任何人，不因为血缘、地位、财富而区别对待，它是客观公正的。 2. **善有善报**：虽然天道不偏私，但\"善人\"因其行为顺应了自然规律，自然而然会得到好的结果。这不是\"奖励\"，而是因果的自然体现。 3. **劝人向善**：老子在告诉人们——行善不是为了求上天保佑，而是因为善行本身符合天道，顺应天道的结果必然是好的。 ### 上下文背景 这一章的前文讲的是\"和大怨，必有余怨\"——调解深重的怨恨，不可能完全消除。最后以\"天道无亲，常与善人\"收尾，表达了一个朴素的信念：**世间虽有不公，但天道最终会站在善的一方。** ### 简而言之 > **老天爷不讲人情，但好人自有好报。**"
     },
     {
-      "id": "state.db:20260623_112956_5bc7b675:9",
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "message_index": 9,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:23:42.533524+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "这次手动 `action=run` 没有产生新的 session——它似乎只是触发了下一次定时调度，没有立即执行。让我再等一会儿看看："
-    },
-    {
-      "id": "state.db:20260623_112956_5bc7b675:8",
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "message_index": 8,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:23:42.495416+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "`last_run_at` 还是 `07:26`，说明这次手动 run 可能还在排队或执行中。让我再等一下："
-    },
-    {
-      "id": "state.db:20260623_112956_5bc7b675:7",
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "message_index": 7,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T14:39:47.397955+00:00",
-      "claim_type": "wiki_maintenance",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "已更新。这次的改进是在**保持现有 pipeline 不变**的前提下，只优化了 prompt，增加了三条硬性规则： 1. **强制使用当天日期** — 不从搜索结果里偷日期 2. **48小时新闻过滤** — 排除年度报告、年度指数等时效性差的内容 3. **必须抓取实时市场数据** — S&P 500、NASDAQ、道指、VIX、原油、汇率，缺一不可 明天（6月25日）早上7点会跑第一次带这些约束的版本，到时候对比效果。"
-    },
-    {
-      "id": "state.db:20260623_112956_5bc7b675:6",
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "message_index": 6,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T14:29:04.964725+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "搜索到的还是 07:00 那次旧的。让我直接用 session ID 读取 07:26 的执行："
-    },
-    {
-      "id": "state.db:20260623_112956_5bc7b675:5",
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "message_index": 5,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T14:29:04.901896+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "看起来 run 命令返回很快但 `last_run_at` 没变，可能是异步执行。让我等一会儿再查："
-    },
-    {
-      "id": "state.db:20260623_112956_5bc7b675:4",
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "message_index": 4,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T14:29:04.897343+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "`action=run` 已经触发了，但 `last_run_at` 还是旧的 `07:04`，说明 run 可能还在执行中。让我等一下再查："
-    },
-    {
       "id": "state.db:cron_59933b2c67e7_20260624_071730:1",
       "source": "state.db",
       "session_id": "cron_59933b2c67e7_20260624_071730",
@@ -4255,230 +4157,6 @@
       "noise_reason": null,
       "confidence_hint": null,
       "snippet": "Now I have comprehensive data. Let me compile the briefing and deliver it. --- # 📊 每日科技与市场简报 **📅 日期：2026年6月24日（星期三）** --- ## 一、🤖 人工智能与科技动态 ### 1. OpenAI发布首款自研芯片\"Jalapeño\" OpenAI宣布与Broadcom合作，推出其首款自研AI芯片\"Jalapeño\"。这标志着OpenAI正从纯软件公司转向硬件垂直整合，旨在降低AI推理成本并提升算力效率。此举将加剧AI芯片领域的竞争格局。 ### 2. SK海力士计划290亿美元美股上市 韩国最大芯片制造商SK Hynix计划进行290亿美元的纳斯达克上市融资，用于支持AI芯片产能扩张。这是半导体行业近年来规模最大的IPO之一，反映出全球对AI存储芯片（HBM）需求的持续强劲。 ### 3. Qualcomm收购AI初创企业Modular 高通与AI初创公司Modular达成合作协议，以强化其软件栈和数据中心的AI布局。这显示了传统芯片厂商正在加速向AI全栈解决方案转型。 ### 4. 科技巨头AI投入回报进入\"账本到期\"阶段 据Yahoo Finance报道，大型科技公司已在AI基础设施上投入约2.7万亿美元，如今开始面临实质性的回报压力。分析师指出，AI投资回报周期正在缩短，市场要求更明确的商业化成果。 ### 5. AI能源消耗引发政策关注 纽约时报和CNBC报道，AI数据中心电力需求激增，国会正在推进一项法案，要求科技公司支付数据中心运营成本。同时，有提案探索利用住宅电力基础设施来缓解AI供电压力。 ### 6. AI泡沫论再起 NPR、卫报等媒体纷纷报道关于\"AI是否泡沫\"的讨论。斯坦福大学招生中AI的影响、Cory Doctorow对AI泡沫的批评、以及多位VC对估值过高的担忧，都表明市场对AI产业的热情正在趋于理性。 ### 7. Alphabet正式纳入道琼斯工业平均指数 谷歌母公司Alphabet于6月23日正式取代Verizon加入道琼斯工业平均指数，凸显科技股在美国经济中的核心地位进一步提升。 ### 8. Anthropic Claude新功能与企业AI部署 Anthropic推出Claude Tag功能，通过Slack消息学习企业上下文信息，推动AI在企业工作流中的深度集成。同时Menlo Ventures（曾押注Anthropic）成功募集30亿美元新基金，显示风投对AI赛道的持续看好。 ### 9. 超人类收购GPTZero Superhuman收购AI检测初创公司GPTZero，反映出随着AI生成内容激增，内容真实性验证成为新兴刚需。 ### 10. Meta进军预测市场 扎克伯格表示希望Meta推出自有预测市场平台，结合社交网络与预测机制，可能重塑信息传播和民意分析方式。 --- ## 二、📈 市场与经济展望 ### 1. 全球主要股指表现（6月24日） | 指数 | 点位 | 涨跌幅 | |------|------|--------| | S&P 500 | 7,381.64 | +0.22% | | NASDAQ | 25,612.60 | +0.10% | | 道琼斯 | 51,750.64 | +0.16% | | 日经225 | 69,174.97 | -0.88% | | 恒生指数 | 23,412.18 | +0.33% | | 上证综指 | 4,110.81 | +0.11% | | 德国DAX | 24,629.58 | -1.06% | | VIX恐慌指数 | 19.03 | -2.36% | 美股三大指数小幅上涨，芯片股从前期抛售中反弹；亚洲市场分化，恒指和纳指走强，日经下跌；欧洲DAX承压。VIX回落至19附近，市场恐慌情绪有所缓解。 ### 2. JPMorgan上调2026年S&P 500目标价 摩根大通上调2026年标普500目标指数，但警告股市前景仍面临多重挑战，包括地缘政治风险、通胀反复和利率不确定性。 ### 3. 油价大幅下挫，布油跌破75美元 受特朗普声称伊朗保证不收取霍尔木兹海峡通行费的消息影响，布伦特原油跌至75美元以下，创美国-伊朗冲突前新低。油价暴跌对通胀预期和能源板块产生连锁影响。 ### 4. 美国财政部监管伊朗资金解冻流程 财政部长贝森特表示，美国财政部将在伊朗资金释放过程中进行监督，这一表态有助于稳定市场对中东局势的预期。 ### 5. 防御性板块剧烈波动 据报德国拟裁撤军舰，防务股大幅下挫，莱茵金属股价下跌17%。地缘政治缓和预期正引发军事/防务板块重新定价。 ### 6. 市场与经济\"日益脱节\"警告 顶级经济学家警告，金融市场表"
-    },
-    {
-      "id": "state.db:20260623_171950_7cd6b9d9:2",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 2,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T08:57:32.431480+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": 0.5,
-      "snippet": "好的，我来帮你翻译这份 PRD。由于内容较长，我将分段进行翻译以确保准确性。 --- # ProductHazmat — 产品需求文档（基于遗留系统衍生） **来源说明。** 本 PRD 是从遗留 React 源码中通过独立开发方式推导得出的——包括 `legacy/legacy-react-templates/src/templates/ProductHazmat/App.tsx`（及其 `useFormHookWrapper` 内的 `submitTask` 闭包）、本地的 `components/HazmatInfo`、`components/ReviewedInfo` 和 `components/SendToListingGovernance`，以及 `constants.ts` 和 `style.module.scss`——同时结合其组合使用的共享产品组件与钩子（`baseInfo`、`rejectAll`、`productFormDrawer`、`confirmTableDrawer`、`subReasonRadioGroup`、`auditCard`、`skuTable`、`imagesViewer`、`textHighlight`、`productLogistics`、`skcImages`；`useRejectLabels`、`useInitialValue`、`useFormHookWrapper`、`useGraySwitch`、`transformRejectLabels`、`checkShowAccidentalInjuryModal`、`ModuleNameMap` 常量，及产品类型定义）和本模板的生产环境截图。未参考 VMOK/TCC 实现、任何 `-legacy`/operate 内部细节，也无 prior PRD 或 ERD 可供查阅。本文档仅描述面向审核员（moderator）的遗留行为，从审核员视角出发。 **生产参考。** 生产界面由 `packages/jimu-containers/moderation-debug-container/src/test/ProductHazmat/screenshots/` 下的五张截图佐证，这些截图对于哪些卡片/控件渲染、布局及控件样式具有权威性（但绝不用于字段值，因为字段值是运行时绑定到任务数据的）： - `hazmat-eu13-full-default.jpeg`（一个欧盟/FR \"EU13\" 任务——\"原因：|危险品\"横幅、左侧产品+商店卡片（单个黄色高亮商店标签）和拒绝全部面板显示三个预勾选的危险品原因，以及右侧列审计卡片中包含一个尚未回答的危化品信息表单）； - `hazmat-eu13-full-isHazmatYes.jpeg`（同一任务选择\"是否为危化品：是\"后，揭示 UN 编号 / 包装组 / \"选择危险品类别\"字段）； - `hazmat-eu13-confirm-drawer.jpeg`（提交前确认抽屉——模块内容/拒绝原因/操作表格，带保存控件）； - `hazmat-us-ll-full-default.jpeg`（一个美国任务——长垂直列表的商店标签、品牌\"已授权\"标签、\"危险品或危险材料：是\"属性，以及左侧列中的\"不完整危化品信息\"/发送至列表治理卡片）； - `hazmat-us-ll-sendToLG-checked.jpeg`（同一美国任务勾选\"发送至列表治理\"后，整个右列变暗至约 30% 不透明度）。 --- ## §1 目的与范围 ProductHazmat 是审核员用于审查某个电商产品是否属于危险材料/危险品（\"危化品\"/DG）的面板，并在适用时捕获或更正其危险品分类。审核员一次打开一个任务。该任务包含一个产品（名称、销售类型、类别、证书、品牌、属性、图片、描述、视频、物流、SKU），该产品属于某个商店，并带有 incoming 审核原因、可选的机器/模型输出，以及队列提供的产品级拒绝标签。顶部\"原因：\"横幅回显传入的原因；在危化品队列中，它显示为\"原因：|危险品\"。 审核员在此面板上的工作最终归结为每个任务的唯一结果： - **确认/记录危化品分类** —— 决定产品是否为危险品（\"是否为危化品：否/是\"），如果是，则记录其 UN 编号、包装组和危险品类别。即使产品被批准，此分类也会随结果一起携带。 - **拒绝整个产品** —— 在\"拒绝全部\"面板中标记一个或多个危险品拒绝原因。当原因暴露出子原因时，必须提供必需的子原因。这是此模板上唯一的拒绝路径。 - **升级至列表治理** —— 对于符合条件的美国任务，将产品移交至下游列表治理流程，而非在此处做出决定。 范围涵盖单国家任务和多国\"全球销售\"任务下"
-    },
-    {
-      "id": "state.db:20260623_171950_7cd6b9d9:1",
-      "source": "state.db",
-      "session_id": "20260623_171950_7cd6b9d9",
-      "session_title": "Product Hazmat PRD Translation",
-      "message_index": 1,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T08:42:47.649468+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": 0.5,
-      "snippet": "以下是该 PRD 的中文翻译： --- # ProductHazmat — 产品需求文档（源自遗留系统） **来源说明。** 本 PRD 是从遗留 React 源码中通过洁净室方法推导得出的 —— 包括 `legacy/legacy-react-templates/src/templates/ProductHazmat/App.tsx`（及其 `useFormHookWrapper` 内的 `submitTask` 闭包）、本地的 `components/HazmatInfo`、`components/ReviewedInfo` 和 `components/SendToListingGovernance`，以及 `constants.ts` 和 `style.module.scss` —— 同时结合了它所组合使用的共享产品组件和钩子（`baseInfo`、`rejectAll`、`productFormDrawer`、`confirmTableDrawer`、`subReasonRadioGroup`、`auditCard`、`skuTable`、`imagesViewer`、`textHighlight`、`productLogistics`、`skcImages`；`useRejectLabels`、`useInitialValue`、`useFormHookWrapper`、`useGraySwitch`、`transformRejectLabels`、`checkShowAccidentalInjuryModal`、`ModuleNameMap` 常量，以及产品类型定义）和本模板的生产环境截图。未参考 VMOK/TCC 实现、任何 `-legacy`/operate 内部逻辑，也无 prior PRD 或 ERD。本文档仅描述面向审核员（moderator）的遗留行为，从审核员的视角出发。 **线上参考。** 生产界面由 `packages/jimu-containers/moderation-debug-container/src/test/ProductHazmat/screenshots/` 下的五张截图佐证，这些截图对于哪些卡片/控件渲染、布局及控件样式具有权威性（但绝不用于字段值，因为字段值是在运行时绑定任务数据的）：`hazmat-eu13-full-default.jpeg`（一个欧盟/法国\"EU13\"任务 —— \"原因：|危险品\"横幅、左侧产品和店铺卡片含单个黄色高亮店铺标签，以及拒收全部面板显示三个预勾选的危险品原因，右侧审计卡片包含一个尚未回答的危化品信息表单）；`hazmat-eu13-full-isHazmatYes.jpeg`（同一任务选择\"是否为危险品：是\"后，显示联合国编号/包装组/\"选择危险品类别\"字段）；`hazmat-eu13-confirm-drawer.jpeg`（提交前确认抽屉 —— 含模块内容/拒绝原因/操作表格及保存控件）；`hazmat-us-ll-full-default.jpeg`（美国任务 —— 长长的店铺标签垂直列表、品牌\"已授权\"标签、\"危险品或有害物质：是\"属性，以及左侧列中的\"不完整危化品信息\"/发送至列表治理卡片）；以及 `hazmat-us-ll-sendToLG-checked.jpeg`（同一美国任务勾选\"发送至列表治理\"后，整个右侧列变暗至约 30% 不透明度）。 ## §1 目的与范围 ProductHazmat 是审核员用来审查某个电商产品是否属于有害物质/危险品（\"hazmat\" / DG）的审核界面，并在适用时记录或更正其危险品分类。审核员一次打开一个任务。任务包含一个属于某店铺的产品（名称、销售类型、类别、证书、品牌、属性、图片、描述、视频、物流、SKU）、一个传入的审核原因、可选的机器/模型输出，以及队列提供的产品级拒收标签。顶部\"原因：\"横幅会复现传入的原因；在危险品队列上，它显示为\"原因：|危险品\"。 审核员在此界面上的工作归结为每个任务的单一结果： - **确认/记录危险品分类** —— 决定产品是否为危险品（\"是否为危险品：否/是\"），如果是，则记录其联合国编号、包装组和危险品类别。即使产品获批，此分类也会随结果一起携带。 - **拒收整个产品** —— 在\"拒收全部\"面板中标记一个或多个危险品拒收原因。如果原因暴露了子原因，则必须提供子原因。这是此模板唯一的拒收路径。 - **升级至列表治理** —— 对于符合条件的美国任务，将产品移交下游列表治理流程，而非在此处做出决定。 范围涵盖单国任务和多国\"全球销售\"任务下的产品（一个任务代表一个销往多个市场的產品），其中审核员的单一决定扩展为适用于所有市场。产品内容本身是只读的；影响"
-    },
-    {
-      "id": "state.db:20260623_112956_5bc7b675:3",
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "message_index": 3,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T08:40:22.500298+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "## “天道无亲，常与善人” 出自 **《老子》（道德经）第七十九章**： > **天道无亲，常与善人。** ### 字面意思 - **天道**：自然规律、宇宙法则。 - **无亲**：没有偏爱、不分亲疏，不偏袒任何一个人。 - **常与**：常常给予（帮助、眷顾）。 - **善人**：行善之人、顺应大道之人。 整句意思是：**自然规律对任何人都没有偏爱，但它总是眷顾那些行善（顺应大道）的人。** ### 深层含义 这句话传达了几层思想： 1. **公平无私**：天道不偏向任何人，不因为血缘、地位、财富而区别对待，它是客观公正的。 2. **善有善报**：虽然天道不偏私，但\"善人\"因其行为顺应了自然规律，自然而然会得到好的结果。这不是\"奖励\"，而是因果的自然体现。 3. **劝人向善**：老子在告诉人们——行善不是为了求上天保佑，而是因为善行本身符合天道，顺应天道的结果必然是好的。 ### 上下文背景 这一章的前文讲的是\"和大怨，必有余怨\"——调解深重的怨恨，不可能完全消除。最后以\"天道无亲，常与善人\"收尾，表达了一个朴素的信念：**世间虽有不公，但天道最终会站在善的一方。** ### 简而言之 > **老天爷不讲人情，但好人自有好报。**"
-    },
-    {
-      "id": "state.db:20260623_112956_5bc7b675:2",
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "message_index": 2,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T08:06:36.250804+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "\"天道无亲，常与善人\"出自《道德经》第六十七章（不同版本章数略有差异），是老子的重要思想之一。 ## 字面意思 - **天道**：自然规律、宇宙的法则 - **无亲**：没有偏爱、不分亲疏 - **常与**：总是帮助、眷顾 - **善人**：行善之人、顺应大道的人 整句话的意思是：**自然的法则对谁都没有偏私，但总是会眷顾那些行善的人。** ## 深层含义 1. **天道公正无私** — 自然规律不偏向任何人，无论贵贱亲疏，一视同仁。 2. **善有善报并非偶然** — 虽然天道没有主观的\"偏爱\"，但行善之人顺应了自然的大道，因此自然会得到好的结果。这不是天道的\"恩赐\"，而是因果的自然体现。 3. **\"与\"字的精妙** — 这里的\"与\"不是\"给予\"，而是\"帮助、亲近、眷顾\"的意思。天道并非主动去帮助谁，而是善人因与道相合而自然受益。 ## 现代启示 这句话提醒我们：不要期望靠投机取巧获得长久成功，真正顺应规律、行善积德的人，最终会得到自然的回馈。这是一种超越功利心的智慧。"
-    },
-    {
-      "id": "state.db:20260623_112956_5bc7b675:1",
-      "source": "state.db",
-      "session_id": "20260623_112956_5bc7b675",
-      "session_title": "Topology Tax Planning Comparison",
-      "message_index": 1,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T00:33:45.359653+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "好的，让我基于你提供的信息，结合这份文档，给你一个全面的分析。 --- ## 核心情况分析 你的关键身份特征： | 维度 | 你的状态 | |---|---| | 签证 | TN签证（加拿大临时居民） | | 加拿大税务身份 | **非加拿大税务居民**（non-resident for Canadian tax purposes） | | 美国税务身份 | **美国税务居民**（虽非公民/绿卡，但按实质存在测试或其他方式成为税务居民） | | 加拿大公司 | 合伙人之一，持有股份 | 这意味着你面临**双重税务管辖**——美国要对你的全球收入征税，加拿大也要对来源加拿大的收入征税。 --- ## 基于文档的三种方案分析 ### ⚠️ 重要前提 文档中所有分析都是针对**加拿大税务居民**的CCPC（加拿大控制私人公司）。你是**非居民股东**，很多规则对你不完全适用，这是第一个关键差异。 --- ### 方案1：直接分红（最可能适合你当前的情况） **文档结论：** 个人税负40%，净到手60%。 **对你的影响：** - 作为**非居民股东**，加拿大 withholding tax（预扣税）通常是 **15%-25%**（取决于加美税收协定），而不是40%的个人边际税率。 - 加美税收协定下，加拿大公司向你支付股息时，只需代扣 **15%** 的预扣税。 - 然后你在美国申报这笔收入，可以申请 **Foreign Tax Credit（外国税收抵免）** 避免双重征税。 - **这是最简单、风险最小的方式。** --- ### 方案2：服务公司结构（⛔ 强烈不建议） 文档中这个方案的核心风险对你来说更加严重： | 风险 | 说明 | |---|---| | **PSB风险** | 如果你通过自己的公司给加拿大公司提供服务，CRA可能认定这是个人服务公司，税率高达44.5% | | **关联公司规则** | 如果你持股≥25%，你的InvestCo与加拿大公司被视为关联公司，共享$50万SBD额度 | | **非居民额外复杂性** | 你是非居民，跨境服务费还涉及transfer pricing（转让定价）、withholding tax等问题 | | **TN签证限制** | TN签证有雇主限制，通过自己的公司向加拿大公司提供服务可能违反签证条件 | **结论：对你来说这个方案风险极高，几乎不可行。** --- ### 方案3：Section 85 HoldCo结构（⛔ 复杂且不必要） | 问题 | 说明 | |---|---| | **被动收入SBD缩减** | 如果HoldCo产生超过$50K被动收入，会缩减加拿大公司的SBD额度 | | **非居民持股** | 你是非居民，这个结构的税务逻辑对你不适用 | | **合规成本极高** | 需要专业律师和会计师，跨境双重合规 | **结论：对你的情况来说过度复杂化，不推荐。** --- ## 给你的实操建议 ### 🟢 最佳路径：直接分红 + 跨境税务规划 1. **让加拿大公司直接给你个人分红** - 加拿大代扣15%预扣税（加美税收协定优惠税率） - 你收到税后净额 2. **在美国报税时申请Foreign Tax Credit** - 用Form 1116申报外国税收抵免 - 避免同一笔收入被两国重复征税 3. **考虑FBAR和Form 8938** - 如果加拿大公司股权价值超过阈值，需要向美国财政部和IRS申报 4. **考虑PFIC规则** - 如果你的加拿大公司被美国视为被动投资公司（某些情况下CCPC可能触发），会有惩罚性税务后果 - **这点非常重要，需要专业税务顾问评估** ### 🔴 绝对要避免的 - **不要通过自己的服务公司向加拿大公司收费**（PSB风险 + TN签证风险 + 跨境复杂性） - **不要搭建HoldCo结构**（过度复杂，对你非居民身份无意义） - **不要忽视美国的海外资产申报义务** --- ## 你需要立即做的 | 优先级 | 事项 | |---|---| | 🔴 紧急 | 找一位同时懂**加美跨境税务**的注册会计师（CPA）或税务律师 | | 🔴 紧急 | 确认你的加拿大公司是否会被美国IRS认定为PFIC | | 🟡 重要 | 确认你的持股是否需要FBAR/Form 8938申报 | | 🟡 重要 | 确认你的TN签证状态是否允许这种持股/分红安排 | | 🟢 常规 | 保留所有分红记录、预扣税凭证，用于美国Foreign Tax Credit | --- ## 总结 | 方案 | 适合度 | 原因 | |---|---|---| | **直接分红** | ✅ 最适合 | 简单、合规成本低、利用加美税收协定 | "
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:11",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 11,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T18:22:35.114066+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "Now I have comprehensive, up-to-date information. Let me compile the summary: --- ## 🏆 2026 FIFA 世界杯最新战况 **赛事阶段：小组赛进行中**（约第 6 比赛日，6 月下旬） --- ### 🔴 正在进行 **葡萄牙 3-0 乌兹别克斯坦**（第 56 分钟，Group K） - ⭐ **C 罗创造历史**：成为首位在 **6 届不同世界杯** 上取得进球的球员 - 他本场梅开二度，葡萄牙目前大比分领先 --- ### 📋 部分小组积分榜 **Group A** | 排名 | 球队 | 场次 | 胜 | 平 | 负 | 进球 | 失球 | 净胜球 | 积分 | |------|------|------|----|----|----|------|------|--------|------| | 1 | 🇲🇽 墨西哥 | 2 | 2 | 0 | 0 | 3 | 0 | +3 | **6** ✅ | | 2 | 🇰🇷 韩国 | 2 | 1 | 0 | 1 | 2 | 2 | 0 | **3** | | 3 | 🇨🇿 捷克 | 2 | 0 | 1 | 1 | 2 | 3 | -1 | **1** | | 4 | 🇿🇦 南非 | 2 | 0 | 1 | 1 | 1 | 3 | -2 | **1** | **Group B** | 排名 | 球队 | 场次 | 胜 | 平 | 负 | 进球 | 失球 | 净胜球 | 积分 | |------|------|------|----|----|----|------|------|--------|------| | 1 | 🇨🇦 加拿大 | 2 | 1 | 1 | 0 | 7 | 1 | +6 | **4** | | 2 | 🇨🇭 瑞士 | 2 | 1 | 1 | 0 | 5 | 2 | +3 | **4** | | 3 | 🇧🇦 波黑 | 2 | 0 | 1 | 1 | 2 | 5 | -3 | **1** | | 4 | 🇶🇦 卡塔尔 | 2 | 0 | 1 | 1 | 1 | 7 | -6 | **1** | --- ### 📰 今日要闻 1. **🏅 金靴争夺白热化** — 多位顶级前锋在世界杯舞台上展开激烈角逐 2. **🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 vs 加纳** — 斯彭斯和格伊预计首发，英格兰小组赛第二场 3. **🇬🇭 塞梅约的故事** — 从英格兰非联赛（巴斯城）到世界杯，加纳边锋的励志旅程 4. **🚫 解说员被吊销 FIFA 证件** — 巴拉圭vs土耳其比赛中，一名解说员因对赛会及裁判发表辱骂言论被剥夺世界杯采访资格 5. **🛸 美国赛场查获 300+ 无人机** — 美国当局在世界杯场馆没收了超过 300 架未经授权的无人机 6. **👑 特朗普将出席决赛并颁奖** — 美国总统计划出席世界杯决赛并颁发奖杯 7. **🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰球迷征服波士顿** — 苏格兰队在波士顿的表现赢得大量当地球迷支持，英格兰球迷能否复制这一成功？ --- ### 📌 关键看点 - **小组赛接近尾声**：已有 8 支球队确定无缘出线，小组末轮公平竞赛问题引发讨论 - **C 罗创纪录**：首位在 6 届世界杯进球的球员，继续书写传奇 - **淘汰赛即将开始**：小组赛后将是 48 队扩军后的淘汰赛阶段 > ⚠️ 积分榜数据来自比赛进行中，部分场次尚未结束，积分可能随时变化。"
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:10",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 10,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:58:07.742319+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "以下是中文翻译： --- MAM 前置门控检查捕捉到了一个重要问题。我的实时捕获破坏了 PSD 的 render-conformance 门控——这是一个**真正的阳性发现**： 通过将 `777552-live-interactions.json` 保存到 PSD 的截图文档目录（按你的请求），我触发了新的 **Fix #2 enumerated-controls 检测视角**：该视角现在要求 PSD 的 render-evidence 必须携带 `enumeratedControls[]` 交叉验证 VMOK 渲染结果与实际控件——而 PSD 之前编写的 render-evidence 并没有这个字段。因此，`transform-render-conformance --record product-selection-distribution` 现在失败了。这正是你之前预测的\"transform/re-verify 会受到影响\"——实时参考正确地指出了 PSD 的 render-verify 从未交叉检查过各区块的控件（即 check→drawers 的映射）。 这个问题暴露了两件事： 1. **门控完整性缺口**（MAM 本应标记出来）：Agent C 的检测视角没有 shrink-only 白名单——与此仓库中其他所有新门控不同（convergence / section-conformance / submission-wire-shape 都豁免了既有积压记录）。因此，向现有记录添加清单会**回溯性地破坏它**，而不是将其 grandfather（豁免）。 2. **脆弱的测试**：测试用例 (g) 断言\"PSD 无操作\"——现在这个断言已经不成立了，因为清单已经存在。 备注：这不是 commit-hook 阻断项（render-conformance 是 autopilot 的 transform→ERD 门控，不是 commit hook），而且 3 个 MAM 审计器都遇到了瞬态 API 500 错误（没有返回裁决——我会重新运行它们）。我自己的机械重跑其余全部通过（submission-wire-shape、erd-parity-gap、skill-paths、gate-catalog 均通过）。"
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:9",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 9,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:01:39.627446+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "--- ## 总结：四层保障体系 | 层级 | 位置 | 作用 | 状态 | |------|------|------|------| | **1. config.yaml** | `toolsets: '[\"hermes-cli\", \"browser\", \"web\"]'` | 让 `web_search` 工具进入 agent 的工具集 | ✅ 已修复 | | **2. universal-search Skill** | `~/.hermes/skills/research/universal-search/SKILL.md` | Triggers + Hard Gates 强制先搜后答 | ✅ 已加固 | | **3. AGENTS.md** | 新增\"Search-first rule\"章节 | 全局行为规则，凌驾于所有其他行为之上 | ✅ 已添加 | | **4. meta-cognitive-reasoning Skill** | 新增\"Memory-only answer\"反模式 | 在推理协议中加入强制预搜索步骤 | ✅ 已添加 | 这四层从**基础设施**（工具加载）→ **行为协议**（skill 触发）→ **全局规则**（AGENTS.md）→ **推理框架**（MCR 协议）逐级加固，确保 `universal-search` 在任何场景下都能被可靠触发。"
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:8",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 8,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:01:39.624873+00:00",
-      "claim_type": "verification_gate",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "好了，信息足够了。让我给你完整的总结： --- ## 确保 `universal-search` 被触发的全部四层保障 ### ✅ 第一层（已完成）：`config.yaml` — 启用 `web` toolset **根因修复。** 之前 `toolsets: '[\"hermes-cli\", \"browser\"]'` 缺少 `\"web\"`，导致 `web_search` 工具根本不在 agent 的工具集中。 已修复为：`toolsets: '[\"hermes-cli\", \"browser\", \"web\"]'` --- ### ✅ 第二层（已完成）：`universal-search` Skill — Triggers + Hard Gates - **Triggers**：任何事实性问题必须先搜索再回答 - **Hard Gates**：绝不说\"我不知道\"，绝不允许跳过搜索 --- ### 🔧 第三层（已完成）：`AGENTS.md` — 全局搜索规则 已在 `AGENTS.md` 末尾添加了 **\"Search-first rule for factual queries\"** 章节，作为全局行为规则。 --- ### 🔧 第四层（建议）：`meta-cognitive-reasoning` Skill — 置信度规则强化 当前 `meta-cognitive-reasoning` skill 的 **SOLVE 步骤** 已经要求对 0.9+ 置信度需要 \"cross-validated by 2+ independent search sources\"。但缺少一个硬性规则：**面对事实性问题时，必须先搜索才能评估置信度**。 建议在 `meta-cognitive-reasoning` 的 Hard Gates 或 Known Failure Patterns 中添加一条："
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:7",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 7,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:01:39.599159+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "--- ### 🔧 第四层（新增）：`system` skill — `meta-cognitive-reasoning` 让我检查这个 skill 是否也需要加入搜索规则："
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:6",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 6,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:01:39.580946+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "`AGENTS.md` 是开发指南，不适合放运行时行为规则。让我找更好的位置："
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:5",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 5,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:01:39.571358+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "好的，现在我对整个系统有了完整的理解。让我给你一个全面的回答： --- ## 确保 `universal-search` 被触发的多层保障 ### 第一层（已完成）：`config.yaml` — 启用 `web` toolset **这是最关键的修复。** 之前 `toolsets: '[\"hermes-cli\", \"browser\"]'` 缺少 `\"web\"`，导致 `web_search` 工具根本不在 agent 的工具集中。 ✅ 已修复为：`toolsets: '[\"hermes-cli\", \"browser\", \"web\"]'` --- ### 第二层（已完成）：`universal-search` Skill — Triggers + Hard Gates 已经添加了： - **Triggers**：任何事实性问题必须先搜索再回答 - **Hard Gates**：绝不说\"我不知道\"，绝不允许跳过搜索直接回答 --- ### 第三层（新增建议）：在 `AGENTS.md` 中添加全局规则"
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:4",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 4,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:01:38.917243+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "**确认了！** 默认的 `toolsets` 是 `[\"hermes-cli\"]`，而你的配置覆盖为 `[\"hermes-cli\", \"browser\"]`。`\"web\"` toolset 不在其中。 让我看看 `web` toolset 包含哪些工具："
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:3",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 3,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:01:38.872082+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "好了，`web_search` 确实被注册为工具。但关键是它是否在 **当前会话的工具集中**。 让我检查 `toolsets` 配置到底影响了什么："
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:2",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 2,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:01:38.807036+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "**找到了！** 这就是根因。"
-    },
-    {
-      "id": "state.db:20260623_085542_19248a:1",
-      "source": "state.db",
-      "session_id": "20260623_085542_19248a",
-      "session_title": "Optimize Prompt For Multi Module Bug #3",
-      "message_index": 1,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-23T16:01:38.769343+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "现在让我看看 `web_search` 工具的实际注册情况，以及它是否在 agent 的工具集中："
     }
   ]
 }
