@@ -7,6 +7,7 @@ exclude_docs: |
   pages/**
   archive/**
   reports/**
+  reviews/**
   log.md
 theme:
   name: material

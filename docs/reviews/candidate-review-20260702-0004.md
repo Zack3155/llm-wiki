@@ -1,12 +1,5 @@
----
-title: Candidate-Review-20260702-0004
-date_added: 2026-07-02
-date_modified: 2026-07-02
-status: stub
-confidence: 0.00
-sources:
-  - local wiki
----
+
+
 
 
 
