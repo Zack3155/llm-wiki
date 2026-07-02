@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-30T04:01:22.049908+00:00",
+  "generated_at": "2026-07-02T10:03:34.039733+00:00",
   "state_db": "/home/zack/.hermes/state.db",
-  "raw_dir": "/home/zack/wiki/docs/raw/sessions",
+  "raw_dir": "/home/zack/wiki/docs/raw",
   "counts": {
-    "state_db_candidates": 220,
+    "state_db_candidates": 216,
     "raw_session_candidates": 0,
-    "total_candidates": 220,
-    "emitted_candidates": 220,
-    "filtered_noise_candidates": 152,
-    "operational_noise_count": 152,
+    "total_candidates": 216,
+    "emitted_candidates": 216,
+    "filtered_noise_candidates": 130,
+    "operational_noise_count": 130,
     "emitted_operational_noise_candidates": 0
   },
   "filtered_noise": [
@@ -88,6 +88,13 @@
       "session_title": "如何把微信机器人拉进群",
       "reason": "content_skip_pattern",
       "snippet": "**46 passed, 0 failed!** 全部通过。 ## ✅ 回答你的问题：chunk 应用上了吗 **是的，已完整应用。** 现在的链路如下： ### 1. Gateway 层面（delivery.py） 当 `splits_long_messages = True` 时，gateway **不做截断**，把完整内容交给 adapter： ```python # gateway/delivery.py:353 if getattr(adapter, \"splits_long_messages\", False): # Adapter chunks natively — deliver full payload. ``` ### 2. WeCom Adapter 层面 - `splits_long_messages = True` ✅ 已设置 - `message_len_fn` 返回 `len`（Unicode codepoints）✅ 已设置 - `send()` 调用 `truncate_message()` 拆分 chunks ✅ 已实现 - **循环发送所有 chun"
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "reason": "content_skip_pattern",
+      "snippet": "## ✅ 解决了 ### 改了什么 | 问题 | 修复 | |------|------| | WeCom 硬切片 `content[:4000]` 丢失超长内容 | 改用 `truncate_message()` 拆分 + 循环发送所有 chunks | | WeCom 没有 `splits_long_messages` 标志 | 设为 `True`，gateway 不再提前截断 | | WeCom 没有 `message_len_fn` | 添加，返回 `len`（Unicode codepoints） | | reply-optimization skill 缺 WeCom/Weixin 记录 | 补充 Platform Limits 表和 Pitfall #4 | ### 现在的行为 ``` AI 输出 10000 字符 → Gateway: 不截断（splits_long_messages=True） → WeCom send(): truncate_message() → [chunk1, chunk2, chunk3] → 依次发送 3 条消息（每条间隔 0.5s） ``"
     },
     {
       "source": "state.db",
@@ -410,6 +417,20 @@
       "session_title": "韩国队2026世界杯出线几率 #2",
       "reason": "content_skip_pattern",
       "snippet": "--- # TrademarkV2 — 产品需求（遗留派生） **来源。** 基于 LEGACY TrademarkV2 React 源码（`legacy/legacy-react-templates/src/templates/TrademarkV2/`）及其导入的共享 `legacy/legacy-react-templates/src/common` 组件（`operateWithApproval`、`escalate-toggle`、`audit-mode`、`useInitialValue`、`useRejectLabels`）清洁室导出，加上 7 张生产 live 截图。刻意未参考预先存在的 PRD/ERD/记录和 VMOK 实现。 **Live 引用。** `packages/jimu-containers/moderation-debug-container/src/test/TrademarkV2/screenshots/` 的 7 张生产 live 截图（`standard-brand-authorization`、`standard-jp`、`standard-t"
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260627_081418_8d3abe",
+      "session_title": "韩国队2026世界杯出线几率 #2",
+      "reason": "operational_noise",
+      "snippet": "--- # 捕获计划 — 6 保留，1 丢弃 两个突出教训（真正新的、持久的）： - **L-A1 — 构建不变量 →** `migration-transform/review.md` 中新子节（共享对齐主页，两个 autopilot 继承）：extract-from-aggregate → operate offer-visibility 必须镜像 display hide-when-empty，两者重用**相同**提取逻辑。+ 新共享 memory `feedback_display_operate_visibility_symmetry.md`。 - **L-A2 — 诊断启发式 →** `migration-debug-tool/design.md` § 对齐失败分类法中新 parity-failure 类：多余提交 part 通常是显示但应隐藏的 operate 选项——在序列化之前 diff operate-offers vs display-shows。共享相同 memory。 扩展和 lapse 单行： - **L-B →** `migration-architect"
+    },
+    {
+      "source": "state.db",
+      "session_id": "20260627_081418_8d3abe",
+      "session_title": "韩国队2026世界杯出线几率 #2",
+      "reason": "content_skip_pattern",
+      "snippet": "这里为你优化后的 Prompt。你可以直接发给 Claude（建议搭配 `claude-sonnet-4` 或 `opus-4` 等强推理模型）。 我将你的口语化需求转化为了**结构化指令**，明确了**标准化目标**、**分类映射规则**以及**清理策略**，并加入了“执行边界”约束以防止模型产生幻觉或过度工程。 *** ### 推荐 Prompt 内容 ```markdown # Role: Senior Frontend Architect & Migration Specialist (Lowcode/VMOK) # Goal Initiate a comprehensive refactoring of the existing Migration Templates. Focus on **unifying the Layout** and **standardizing the Operate Panel** across all templates to reduce code duplication and ensure visual/behavioral consi"
     },
     {
       "source": "state.db",
@@ -900,184 +921,107 @@
       "session_title": "Topology Tax Planning Comparison #3",
       "reason": "content_skip_pattern",
       "snippet": "All changes are complete and verified. Here's a summary: --- # ✅ 改进已完成 ## 改进1：`delivery.py` 消除硬编码 `MAX_PLATFORM_OUTPUT` **变更文件：** `gateway/delivery.py` - ❌ 删除：`MAX_PLATFORM_OUTPUT = 4000` 和 `TRUNCATED_VISIBLE = 3800` 硬编码常量 - ✅ 新增：`_get_max_platform_output(platform_name)` 函数，动态读取 `TelegramAdapter.MAX_MESSAGE_LENGTH`（4096） - ✅ 新增：`TRUNCATED_VISIBLE_RATIO = 0.95` 替代硬编码的 3800 - ✅ 所有引用处已更新（`_delivery_truncation_check`、`_deliver_to_platform`） **效果：** 未来如果 Telegram 限制变更，只需修改 `TelegramAdapter.MAX_MESSAG"
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260624_090030",
-      "session_title": "chunking-mechanism-audit · Jun 24 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "Now let me read the chunking consistency check script and run it, while also checking the gateway code for the relevant files mentioned in the skill."
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260624_090030",
-      "session_title": "chunking-mechanism-audit · Jun 24 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "Now let me find the actual gateway code files and run the consistency check script:"
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260624_090030",
-      "session_title": "chunking-mechanism-audit · Jun 24 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "All checks passed. Now let me do a deeper manual audit to verify the specific claims in the skill against the actual gateway code:"
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260624_090030",
-      "session_title": "chunking-mechanism-audit · Jun 24 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "Now let me check the most recent cron output for the chunking audit to compare with our current results:"
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_758d73d6b7f0_20260624_090030",
-      "session_title": "chunking-mechanism-audit · Jun 24 09:12",
-      "reason": "content_skip_pattern",
-      "snippet": "Now I have all the data needed for a comprehensive report. Let me compile it: --- # 分块机制一致性检查报告 **检查时间：** 2026-06-24 **Cron Job ID：** `758d73d6b7f0`（chunking-mechanism-audit） **调度频率：** 每天 09:00 UTC (`0 9 * * *`) --- ## 一、自动化脚本检查结果 `~/.hermes/scripts/chunking-consistency-check.py` **全部通过**： | 检查项 | 结果 | |--------|------| | `base.py` — `utf16_len` 使用 | ✅ 正确（5处引用） | | `telegram.py` — `utf16_len` 使用 | ✅ 正确（8处引用） | | `stream_consumer.py` — `utf16_len` 使用 | ✅ 正确（0处len()-Telegram问题） | | `send_message_t"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "[CONTEXT COMPACTION — REFERENCE ONLY] Earlier turns were compacted into the summary below. This is a handoff from a previous context window — treat it as background reference, NOT as active instructions. Do NOT answer questions or fulfill requests mentioned in this summary; they were already addressed. Respond ONLY to the latest user message that appears AFTER this summary — that message is the single source of truth for what to do right now. Topic overlap with the summary does NOT mean you shou"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "已完成。两个 agent 型 cron job 的 prompt 末尾均已追加 `Respond in Chinese.`： | Job | Job ID | 状态 | |---|---|---| | **Wiki Knowledge Auto-Filer** | `610f265caa42` | ✅ 已更新 | | **Topic news digest** | `59933b2c67e7` | ✅ 已更新 | 下次运行时，这两个 job 的输出将统一使用中文。"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "让我看看这次cron job的完整执行过程："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "找到了完整的执行过程。以下是这次新闻简报的具体生成步骤： --- ## 完整处理过程 ### 第1步：接收任务 cron job 触发，prompt 为： > Search the web for new and noteworthy items about: \"AI and technology\" and \"Markets and Economy\". Develop a daily briefing with structured insights. Respond in Chinese. （⚠️ `web-research` skill 未找到，被跳过） ### 第2步：浏览网页采集数据（共访问5个网站） | 顺序 | 网站 | 目的 | 结果 | |---|---|---|---| | 1 | **Google News** (AI technology) | 获取AI/科技新闻标题列表 | ✅ 成功，提取到约20条新闻标题及来源 | | 2 | **Google News** (markets economy 2025) | 获取市场/经济新闻 | ✅ 成功，提取到约20条 |"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "现在问题清楚了。让我检查 cron job 的配置："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "找到根因了。问题出在两个地方： ## 问题诊断 ### 1. 技能名称不存在 Topic news digest 这个 job 配置的 skill 是 **`web-research`**，但这个技能**根本不存在**。从 `skills_list` 的结果看，系统里没有叫 `web-research` 的技能。 所以 cron job 启动时直接报错： > ⚠️ Skill(s) not found and skipped: web-research ### 2. 缺少 `universal-search` skill 正确的搜索技能应该是 **`universal-search`**（它在 `skills_list` 里存在，位于 `research` 分类下）。这个技能定义了完整的搜索 pipeline： - Step 0: `layered_search.py`（SearXNG 聚合搜索） - Step 1: 语言路由（中文→百度/知乎/Bing，英文→Google/Bing） - Step 2: 交叉验证 - Step 3: 结构化交付 ### 3. Cron job 没有加"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "全局 toolsets 配置是对的（包含 `web`）。问题是 cron job 级别没有指定 `enabled_toolsets`。让我修复："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "operational_noise",
-      "snippet": "已修复。以下是改动总结： ## 问题根因 | 问题 | 详情 | |---|---| | **技能名错误** | job 配置的是 `web-research`，但这个技能**不存在** | | **缺失 universal-search** | 正确的搜索技能是 `universal-search`，定义了 `layered_search.py` → SearXNG 聚合搜索的完整 pipeline | | **没有加载 web 工具集** | job 没有设置 `enabled_toolsets`，导致 `web_search`/`web_extract` 工具不可用 | ## 修复内容 **Topic news digest** job (`59933b2c67e7`) 已更新： 1. **`skills`**: `web-research` → `universal-search` 2. **`enabled_toolsets`**: 新增 `[\"web\", \"browser\", \"file\", \"terminal\"]`，确保搜索工具可用 3. **`prompt`**: 明确"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "`last_run_at` 还是 `07:04`，说明 run 可能还没完成。让我查一下最近的 session 看看有没有新的 cron 执行记录："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "没有找到新的 cron 执行。看起来 `action=run` 可能还在排队执行中。让我再等一下："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "`last_run_at` 仍然是 `07:04`，`action=run` 似乎没有实际触发新的执行。这可能是因为 cron job 的 run 命令在某些情况下只是标记而非真正执行。让我换个方式——直接查看 Telegram 和飞书频道，看看新的简报是否已经投递过来了："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "看起来 `action=run` 触发的新执行还没有出现在 session DB 中。这可能是因为 cron job 的执行是异步的，或者 `run` 命令对 agent 型 job 的行为不同。让我直接检查一下 Telegram 上是否收到了新消息："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "找到了！新的 cron session 已经产生了："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "完美！新的 cron 执行成功了。让我总结一下这次修复后的执行效果： --- ## 修复后的执行过程对比 ### ✅ 修复后（本次 07:25 执行） **Step 1: 使用 layered_search.py 聚合搜索** - `layered_search.py --query \"AI and technology news 2025\"` → ✅ SearXNG 返回 8 条结果 - `layered_search.py --query \"Markets and Economy news 2025\"` → ✅ SearXNG 返回 8 条结果 - `layered_search.py --query \"artificial intelligence AI breakthroughs technology news latest 2026\"` → ✅ SearXNG 返回 8 条结果 **Step 2: 从 SearXNG 结果中精选权威来源** - Stanford AI Index 2026 Report - Microsoft Source: \"What's next in "
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "operational_noise",
-      "snippet": "对比一下上次（旧版）和这次（修复后）的执行过程： --- ## 对比分析 | 维度 | 旧版（07:00 那次） | 新版（07:26 那次） | 评价 | |---|---|---|---| | **搜索方式** | 盲目猜网址，逐个 `browser_navigate` | 先跑 `layered_search.py` → SearXNG 聚合搜索 | ✅ 完全符合预期 | | **搜索工具** | 完全没有，`web-research` 技能不存在 | `universal-search` 加载成功，`layered_search.py` 返回 8 条结果 | ✅ 修复生效 | | **浏览器访问次数** | 7 次（Google News ×2, Reuters×1, TechCrunch×1, CNBC×3） | 6 次（Kersai, Microsoft Source, Crescendo, JPMorgan, Stanford AI Index, Deloitte） | ⚠️ 差不多，但这次访问的是**高质量权威源** | | **数据来源质量** | Google Ne"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "operational_noise",
-      "snippet": "好，我直接对比一下实际结果和我预期的差异，然后针对性优化 prompt。 ## 实际结果 vs 预期 | 预期 | 实际 | 差距 | |---|---|---| | ✅ SearXNG 聚合搜索替代盲猜 | ✅ 确实走了 `layered_search.py`，3 次搜索拿到 24 条结果 | 达到 | | ✅ Reuters 不再被反爬拦截 | ✅ SearXNG 绕过了单站反爬 | 达到 | | ✅ 数据质量提升 | ✅ 用了 Stanford AI Index、Microsoft Source、JPMorgan、Deloitte 等权威来源 | 达到 | | ⚠️ 新闻时效性 | 部分新闻是 6/18-19 的，不是当天最新的 | **有差距** | | ⚠️ 日期标注 | 输出写的是\"6月22日（周一）\"，实际是 6/24（周三） | **有差距** | | ⚠️ 旧闻混入 | Stanford AI Index、Microsoft 7 大趋势是长期报告，不是当日新闻 | **有差距** | | ⚠️ 缺少实时行情 | 没有抓取 S&P 500、油价等当日市场数据 | **有"
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "`last_run_at` 仍然没有变。`action=run` 对 agent 型 cron job 似乎没有立即触发执行——它可能只是注册了一个执行请求，实际执行要走调度队列。让我检查 session DB 里有没有新的执行记录："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "content_skip_pattern",
-      "snippet": "`last_run_at` 仍然是 `07:26`。看来 `action=run` 对于 agent 型 cron job 并不像 no-agent 脚本那样立即执行——它可能需要在调度器下一个 tick 才会触发。 不过好消息是，**刚才那次 07:26 的执行已经是新版 prompt 下的结果了**（因为我更新 prompt 的时间是 07:17 左右，而 07:26 是 scheduled 自动触发的）。 让我看看那次的结果："
-    },
-    {
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "reason": "operational_noise",
-      "snippet": "找到了！这是 08:20 那次执行的结果。让我详细对比一下： --- ## 修复后（08:20 执行）vs 预期 ### ✅ 完全达标的部分 | 项目 | 预期 | 实际 | 评价 | |---|---|---|---| | **搜索方式** | `layered_search.py` → SearXNG | ✅ 跑了 5 次 `layered_search.py`，每次 8 条结果 | 完美 | | **日期标注** | 使用当天日期 | ✅ 写的是\"2026年6月24日（星期三）\" | 修正了上次 6/22 的错误 | | **时效性** | 只收录 48 小时内新闻 | ✅ 大部分是 6/23-24 的当日新闻 | 上次 6/18-19 的问题解决了 | | **实时市场数据** | 必须抓取 S&P 500、NASDAQ 等 | ✅ 有完整表格：S&P 500 7,384、NASDAQ 25,764、道指 52,072、VIX 18.25、布伦特原油 $76.34、USD/CNY 6.80 | 完美 | | **去重** | 只收录新内容 | ✅ 没有重复 07:25 那次的内"
-    },
-    {
-      "source": "state.db",
-      "session_id": "cron_59933b2c67e7_20260624_080830",
-      "session_title": "Topic news digest · Jun 24 08:20",
-      "reason": "content_skip_pattern",
-      "snippet": "I now have comprehensive data. Let me compile the final report. --- 📊 **每日简报 | 2026年6月24日（星期三）** --- ## 📰 第一部分：AI与科技新闻 ### 1. OpenAI联合Broadcom发布首款定制推理芯片\"Jalapeño\" - **日期：** 2026年6月24日（今日） - **来源：** TechCrunch、Bloomberg、CNBC、OpenAI官方 - **要点：** OpenAI与Broadcom正式发布了首款定制AI推理处理器\"Jalapeño\"，专为大语言模型推理优化。芯片在性能/功耗方面显著优于当前Nvidia GPU方案。OpenAI计划到2026年底部署10GW规模的Jalapeño数据中心，与Microsoft合作落地。此举标志着OpenAI从纯软件向垂直整合（芯片→模型→产品）战略的重大推进。 - **置信度：** ⭐⭐⭐⭐⭐ 高（多源交叉验证） ### 2. 美国白宫签署AI行政命令：推动先进AI创新与安全 - **日期：** 2026年6月2日签署（近期"
     }
   ],
   "candidates": [
+    {
+      "id": "state.db:20260627_081418_8d3abe:17",
+      "source": "state.db",
+      "session_id": "20260627_081418_8d3abe",
+      "session_title": "韩国队2026世界杯出线几率 #2",
+      "message_index": 17,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-07-01T23:14:57.060567+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "--- # PhotoModeAllowEntry — Render-Verify Runbook（门控源预计算） **目标：** `auto-tester/render-evidence/photo-mode-allow-entry.json`（尚不存在）；然后设置 `data.json pipeline.transform.renderEvidence` 为它。记录**不在 grandfathered 中** → 所有齿轮 live（geometryHarvest 必需，liveGeometry 必需，双边比率两边重新计算 + 0.04 硬限制，liveCrossVerify[] 矩阵必需，states[] 必需因为 23 张 live 截图 ≥ 2）。 ## Live 操作数已固定（只读） - `render-verify-setup.json` liveGeometry：viewport 1920×978，列 `sideLeft:300 / mid:1288 / sideRight:300`，columnX `4 / 316 / 1616`，blockOrder `[sideLeft,mid,sideRight]`。块：baseInformation / pictureBox / anchorList / operate。 - screenshotsRel：`src/test/PhotoModeAllowEntry/screenshots`（23 张图片）。 ## 执行陷阱（每项错过将 FAIL 门控） 1. **无 CAPTURE_CONFIGS 条目** 对于 PhotoModeAllowEntry → `render-capture --side vmok` 死亡。编写 `--config photo-mode-capture.config.json`。`columns` 键**必须**是 `sideLeft`/`mid`/`sideRight`（与 liveGeometry 相同名称）以便两边重新计算；geometry[] 组 `[[\"sideLeft\",\"mid\"],[\"sideRight\"]]`（内容 vs operate；live = [0.841, 0.159]）。列必须**分区**所有采集的列（≥2 组）。 2. **新引擎 :3023** — `photomode-evidence-legacy` 必须在 harness-up 前 pinned 在 vmokRemotes.ts 中，否则 Picture 块渲染为空。harness-up：先 `source nvm.sh && nvm use`（需要 emo 在 PATH 上）；`--timeout 360`（dev build 慢）。深链接使用**数字** id：`http://localhost:8080/?template=7657543992959059719&case=<key>`。 3. **operatePanel opt-out 存在于 render-evidence 中，而非 render-verify-setup** — 门控从 render-evidence 读取 `operatePanel`。设置 `operatePanel.subReasons:false` + 一个 `reason`（扁平单选 Radio.Group，无 parent_code → 无 sub-reason 级）以豁免 reject-subreason 状态。**不要**设置 `operatePanel.decision:false`（此模板有拒绝决策界面）。批准是**隐式的**（无批准控件；默认渲染 = 批准状态）→ operatePanelStates `approve` 使用默认渲染截图。 4. **host-chrome controlKeys 导致 VMOK 中缺失硬 FAIL**（`controlInventoryDiffError` 无偏差逃逸）。`raisehand-icon-button` + `debug-tools-icon-button` 是平台 HOC chrome（ERD §2 差距），非模板界面——render-verify 前，从 live `*-interactions.json` 中那两个条目的 `controlKey` 字段移除（保留 label/note 作为文档；这些文件在 auto-tester/live-capture 中，非保存夹具案例，所以可编辑）。在 render-evidence gaps[] 中记录解决的 host-chrome 故意差距。验证这不触发 `live-capture-completene"
+    },
+    {
+      "id": "state.db:20260627_081418_8d3abe:16",
+      "source": "state.db",
+      "session_id": "20260627_081418_8d3abe",
+      "session_title": "韩国队2026世界杯出线几率 #2",
+      "message_index": 16,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-07-01T22:31:55.895977+00:00",
+      "claim_type": "identity_or_relation",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "--- # PhotoModeAllowEntry — 迁移 PRD（遗留行为契约） **来源。** 本文档描述审核员端界面 `PhotoModeAllowEntry`（\"PhotoMode 准入/发布初始审核\"）的行为，基于遗留 React 模板 `legacy/legacy-react-templates/src/templates/PhotoModeAllowEntry/` 及其导入的共享组件清洁室导出（`legacy/legacy-react-templates/src/common/**`——videoAnchor 系列、MediaInfo、ReportInfo、ExplanatoryNotes、FilterBar、ImgWithBox、PriceCalculatorModal、CouponCheck，以及 `useQueue` / `useMusicPlayer` / `useFormhookWrapper` hooks），加上生产截图语料。以下所有 file:line 引用相对于 `legacy/legacy-react-templates/src/`。刻意未参考预先存在的 PRD/ERD、VMOK 实现、TCC/TCS 模式和任何夹具（清洁室）。 **Live 引用。** 生产界面 ground truth 是 `packages/jimu-containers/moderation-debug-container/src/test/PhotoModeAllowEntry/screenshots/` 的截图集。它仅对**渲染内容**（哪些卡/控件出现、排列和组件样式）是权威的——对字段值从来不是，因为每个具体字符串都是运行时绑定的任务数据。捕获覆盖四个生产队列家族，它们是同一模板的数据/国家分支，而非独立模式：欧盟翻译发布审核（`eu-translate-publish-*`）、英国非翻译高浏览量审核（`gb-vv-hit-*`）、德国 photomode 举报审核（`de-photomode-report-*`）和美国发布审核带可选免责声明（`us-publish-disclaimers-*`）。两个文件——`eu-translate-publish-raisehand-drawer.jpeg` 和 `eu-translate-publish-debugtools-drawer.jpeg`——描绘宿主容器 chrome 并被排除在模板界面之外。 ## §1 目的与范围 PhotoModeAllowEntry 是 TikTok Shop \"photo mode\" 帖子（多图像轮播带可选音频、标题/描述和锚定店铺商品）在准入/发布审核阶段的人类审核模板。审核员检查帖子的帧、其音频和 ASR 转录、创作者信息和每个锚定商品，然后做出以下三种裁决之一：批准帖子、用一个完整帖子原因拒绝（可选限定于特定违规商品）、或——仅在翻译能力队列上——当无法决定时将任务升级到本地审核员队列（templates/PhotoModeAllowEntry/App.tsx:33-201）。 模板通过带 extra-info 和 wrap-container HOC 的遗留应用工厂挂载（templates/PhotoModeAllowEntry/main.tsx:14-20）。一个生产模板服务于至少四个不同的队列家族（见 Live 引用）；它们之间的差异完全是数据、场景、国家和队列条件的，详见 §4。 范围内：三列任务体；条件 LLM 横幅；左侧基本信息/创作者信息和举报信息；中间图片区（包括翻译队列原文/翻译工具）、带 ASR 词跳转的音频播放器和锚定商品列表（含过滤/分页和欧盟价格/优惠券扩展）；右侧 Operate 面板的标准和 QA 队列两种变体；以及完整提交/回显契约（App.tsx:120-201）。范围外：每张截图中可见的 TCS 宿主 chrome（队列标题栏、\"查看模式\"横幅、带空格键提交的 Submit/Submit and Leave/Previous 页脚、举手和调试工具抽屉）；远程加载的 Price-Calculator 和 Coupon-Check 工具的内部逻辑（作为 federated remotes 加载——common/component/PriceCalculatorModal/index.tsx, common/component/CouponCheck/index.tsx）；以及共享提交包装器的 RCA/QA-extra-info 容器管道（common/hooks/useFormhookWrapper.tsx）。 ## §2 功能概要 - **三列工作区：** 左侧基本信息/创作者信息、中间媒体 "
+    },
+    {
+      "id": "state.db:cron_59933b2c67e7_20260701_070032:1",
+      "source": "state.db",
+      "session_id": "cron_59933b2c67e7_20260701_070032",
+      "session_title": "Topic news digest · Jul 01 07:06",
+      "message_index": 1,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-07-01T14:06:11.195828+00:00",
+      "claim_type": "verification_gate",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "I have all the data I need. Let me now compile the comprehensive daily briefing. # 📊 每日简报 | 2026年7月1日（星期三） --- ## 第一部分：AI 与科技新闻 ### 1. 联合国警告：AI 快速发展加剧全球不平等，发布负责任开发框架 联合国独立国际人工智能科学小组发布首份报告，警告 AI 的快速发展可能加剧全球不平等。报告指出，虽然全球超过十亿人每周使用 AI 工具，但\"全球南方\"国家的采用率远远落后于发达国家。美国和中国在领先 AI 模型开发和算力基础设施投资方面占据主导地位。报告呼吁各国发展本地 AI 基础设施（如数据中心）、提升 AI 素养、建立 AI 安全研究所。 > 📰 来源：路透社 / 卫报 | 2026-07-01 | 🔗 [Guardian](https://www.theguardian.com/technology/2026/jul/01/un-report-ai-inequality) | 置信度：0.95 ### 2. Anthropic 发布 Claude Science 科研工作台，进军药物发现 Anthropic 正式推出 Claude Science——一个统一的 AI 科研工作台，整合了多个科学数据库、工具和可视化能力。同时，Anthropic 宣布启动内部药物发现项目，专注于传统制药公司忽视的\"被忽略的疾病\"。生命科学负责人 Eric Kauderer-Abrams 表示，作为公益公司，Anthropic 可以选择以患者利益为优先的项目。 > 📰 来源：CNBC / Firstpost / MIT Technology Review | 2026-06-30 | 置信度：0.93 ### 3. OpenAI 发布 GPT-5.6，推出 Sol、Terra、Luna 三款模型 OpenAI 于 6 月 26 日正式发布 GPT-5.6，包含三个模型层级：Sol 在编程和网络安全性方面表现领先；Terra 将成本降低了一半；Luna 专注于推理速度。此次发布标志着 OpenAI 在 AI 模型分层策略上迈出了重要一步。 > 📰 来源：Memeburn / TechTimes | 2026-06-26 | 置信度：0.90 ### 4. Cisco 向 9 万名员工全面部署 AI 智能体 Cisco 宣布从 7 月底新财年开始，为其约 9 万名员工全面部署 AI 智能体。每位员工将获得个性化 AI 助手，系统可根据任务类型动态选择最优模型，大部分基础设施构建在公司内部以控制成本和保障数据安全。CFO Mark Patterson 透露，其财务报告的 MD&A 初稿中 80%-90% 已由 AI 完成。 > 📰 来源：Fortune | 2026-07-01 | 置信度：0.95 ### 5. 美国国会推进两党 AI 法案 一项罕见的两党 AI 立法正在国会推进中，Cognizant 等公司公开支持该法案通过。该法案旨在建立统一的 AI 监管框架，平衡创新与安全。 > 📰 来源：Fortune | 2026-07-01 | 置信度：0.88 ### 6. Google 再次遭遇 AI 人才流失，两名顶级研究人员跳槽 Anthropic 据洛杉矶时报报道，Google/Alphabet 的两名高级 AI 研究人员计划跳槽至竞争对手 Anthropic。这是 Anthropic 持续从 Google 挖角顶尖人才的最新案例，可能削弱 Google 在 Gemini 项目上的竞争力。 > 📰 来源：LA Times | 2026-06-29 | 置信度：0.90 ### 7. 中金公司推出\"虚拟银行家\"AI 形象\"Wendy\"和\"Weiwei\" OCBC 银行推出基于 AI 的\"虚拟银行家\"平台\"Wendy\"和\"Weiwei\"，两位虚拟金融顾问可处理财富管理咨询。这反映了银行业加速整合 AI 技术的趋势。 > 📰 来源：Fortune | 2026-07-01 | 置信度：0.85 ### 8. 高盛警告：杠杆股票押注高度集中于 AI 生态系统 高盛发布报告警告，当前杠杆股票押注\"非常集中于 AI 生态系统\"，暗示 AI 板块可能存在过度投机风险。与此同时，FactSet 预期 7 月中旬银行财报季及大型科技公司\"七大巨头\"财报将成关键催化剂。 > 📰 来源：Fortune / Invezz | 2026-07-01 | 置信度：0.92 --- ## 第二部分：市场与经济 ### 实时主要指数（截至美东时间 2026年7月1日 上午10点） | 指数 | 最新值 | 涨跌 | 涨跌幅 | |------|-"
+    },
+    {
+      "id": "state.db:cron_59933b2c67e7_20260630_224031:1",
+      "source": "state.db",
+      "session_id": "cron_59933b2c67e7_20260630_224031",
+      "session_title": "Topic news digest · Jun 30 22:48",
+      "message_index": 1,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-07-01T05:48:20.548039+00:00",
+      "claim_type": "verification_gate",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "I now have all the data needed. Let me compile the final comprehensive report. --- # 📊 每日简报 | 2026年6月30日（周二） --- ## 第一部分：AI 与科技新闻 ### 1. Alphabet完成史上最大AI融资：847.5亿美元股权募集 Alphabet的847.5亿美元股权融资正式完成，创下科技公司史上最大规模。其中包含伯克希尔·哈撒韦100亿美元投资（以351.81美元/股认购A类股、348.20美元/股认购C类股）。CEO皮查伊表示AI企业需求已超过算力供应，2026年资本支出指引为1800-1900亿美元，2027年将大幅增加。 - **来源**: BuildFastWithAI / CNBC - **日期**: 2026年6月30日 - **置信度**: 0.95 ### 2. SpaceX股价双位数暴跌，马斯克失去全球首富地位 SpaceX在IPO后不久遭遇股价双位数下跌，原因是公司在募资850亿美元后仍寻求发行200亿美元债券，引发投资者对巨额项目成本的担忧。此次下跌使马斯克失去\"全球首位万亿富翁\"地位。OpenAI因此可能推迟IPO计划至明年。 - **来源**: The Guardian - **日期**: 2026年6月30日 - **置信度**: 0.92 ### 3. OpenAI发布首款自研芯片\"Jalapeno\"（辣椒） OpenAI与博通联合推出专为大语言模型推理优化的首款定制芯片\"Jalapeno\"，从设计到量产仅用时九个月。OpenAI自身AI参与了芯片设计过程，标志着AI公司从纯软件向硬件垂直整合的重大转折。 - **来源**: AI-Weekly / OpenAI官方 - **日期**: 2026年6月28-30日 - **置信度**: 0.93 ### 4. AI芯片竞争白热化：Etched估值达50亿美元 Nvidia竞争对手Etched宣布已签约10亿美元推理系统订单，TSMC已成功制造其芯片。该公司累计融资8亿美元，估值50亿美元，投资方包括Jane Street、Karpathy、Hinton、Fei-Fei Li等。Cerebras已完成今年首个AI芯片IPO，Groq刚融资6.5亿美元。 - **来源**: TechCrunch - **日期**: 2026年6月30日 - **置信度**: 0.94 ### 5. Google AI人才流失严重：五个月内六名研究员离职 Google AI编码突击队因五个月内流失六名研究人员而被迫转型至中训练阶段。DeepMind多名高管集体离职，Sergey Brin内部备忘录紧急呼吁\"弥合代理执行差距\"。研究员Denny Zhou已跳槽Meta超级智能实验室。 - **来源**: BuildFastWithAI / LinkedIn - **日期**: 2026年6月29-30日 - **置信度**: 0.90 ### 6. GPT-5.6限量发布，Gemini 3.5 Pro延期 OpenAI向极少数合作伙伴限量发布GPT-5.6，白宫已将其纳入政府审查流程。Google Gemini 3.5 Pro错过6月截止日期，Polymarket预测其发布概率降至97%（不会发布）。Anthropic则推进Claude Sonnet 5发布，强化代理工作流能力。 - **来源**: AI-Weekly / BuildFastWithAI - **日期**: 2026年6月29-30日 - **置信度**: 0.88 ### 7. 中国AI产业进入\"政策+模型+终端\"三浪交汇期 6月29日国务院常务会议审查AI发展，强调加大AI创新突破和超大规模基础设施建设。同时，中国出台对外投资新规，Meta收购中国AI公司Manus案被否决后引发合规博弈。英伟达H20芯片在中国市场遇冷，已被终止。 - **来源**: CSDN / Mondaq / AxtekIC - **日期**: 2026年6月29-30日 - **置信度**: 0.87 ### 8. GitHub Copilot计量计费引发开发者账单暴涨 GitHub Copilot从固定费率转为按量计费后，大量高级用户账单激增10-50倍，引发开发者社区强烈反弹。这被视为自2022年以来开发者工具领域最大的结构性转变。35%的受访AI从业者预计一年内AI将承担其大部分工作。 - **来源**: BuildFastWithAI - **日期**: 2026年6月30日 - **置信度**: 0.91 --- ## 第二部分：市场与经济 ### 📈 实时市场指数（2026年6月30日收盘） | 指数 | "
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:19",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 19,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-30T07:24:57.007757+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "`truncate_message` 会加 chunk 指示符 `(1/2)` 导致总字符略多。这是正常的。修一下断言放宽："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:18",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 18,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-30T07:23:32.302164+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "`message_len_fn` 是 property，不需要调用。修一下："
+    },
+    {
+      "id": "state.db:20260628_175902_684c63cf:17",
+      "source": "state.db",
+      "session_id": "20260628_175902_684c63cf",
+      "session_title": "如何把微信机器人拉进群",
+      "message_index": 17,
+      "role": "assistant",
+      "tool_name": null,
+      "timestamp": "2026-06-30T07:21:23.391075+00:00",
+      "claim_type": "durable_fact",
+      "noise_reason": null,
+      "confidence_hint": null,
+      "snippet": "`name` 是只读 property。修一下测试脚本："
+    },
     {
       "id": "state.db:20260627_081418_8d3abe:15",
       "source": "state.db",
@@ -4003,160 +3947,6 @@
       "noise_reason": null,
       "confidence_hint": null,
       "snippet": "好的，我已经收集了足够的信息来为你们制定详细的行程。以下是我的私人订制建议： --- # 🇮🇩 巴厘岛 + 布罗莫火山 私人订制行程 ## 2026年9月6日 - 9月12日（7天6晚） --- ## 📋 行程总览 | 日期 | 地点 | 住宿 | 主要活动 | |------|------|------|----------| | D1 (9/6) | 巴厘岛南部 | Andaz Bali (Seminyak) | 抵达 + 精灵坠崖 | | D2 (9/7) | 巴厘岛南部 | Andaz Bali (Seminyak) | 蓝梦岛/佩尼达岛一日游 | | D3 (9/8) | 布罗莫火山区域 | Mount Bromo Lodge 或 Hotel Bromo | 前往布罗莫 + 火山日出 | | D4 (9/9) | 布罗莫火山区域 | Mount Bromo Lodge 或 Hotel Bromo | 火山群探索 + 沙海摩托 | | D5 (9/10) | 布罗莫 → 巴厘岛中部 | Ubud 丛林度假村 | 返回巴厘岛 + 乌布丛林体验 | | D6 (9/11) | 巴厘岛中部 | Ubud 丛林度假村 | 乌布文化 + 梯田 + 水神庙 | | D7 (9/12) | 巴厘岛中部 | - | 早晨自由活动 + 前往机场 | --- ## 🏨 酒店推荐 ### 第1-2晚：Andaz Bali（已预订） - **位置**：Sanur（圣库），巴厘岛东南部 - **特色**：安可达旗下奢华品牌，无边泳池、海景房、Spa - **预算**：约 ¥1,500-2,500/晚（取决于房型和季节） ### 第3-4晚：布罗莫区域酒店（预算内推荐） | 酒店名称 | 类型 | 价格范围 | 特点 | |----------|------|----------|------| | **Mount Bromo Lodge** | 经济型 | ¥150-300/晚 | 步行可达观景台，早餐含火山咖啡 | | **Hotel Bromo** | 舒适型 | ¥300-500/晚 | 暖气房（夜间冷）、观景阳台 | | **Bromo Paradise Hotel** | 中高端 | ¥500-800/晚 | 豪华包间、私人观景台 | **推荐**：选择 **Hotel Bromo** 或 **Bromo Paradise Hotel**，性价比最高，观景体验好。 ### 第5-6晚：乌布丛林度假村（预算内推荐） | 酒店名称 | 类型 | 价格范围 | 特点 | |----------|------|----------|------| | **Ubud Tropical Resort** | 经济型 | ¥200-400/晚 | 热带花园、泳池、靠近猴林 | | **Tjampuhan Resort** | 舒适型 | ¥400-700/晚 | 山谷景观、Spa、有机餐厅 | | **Maya Ubud Resort** | 高端型 | ¥800-1,500/晚 | 悬崖泳池、顶级Spa、米其林餐厅 | **推荐**：选择 **Tjampuhan Resort** 或 **Ubud Tropical Resort**，平衡预算和体验。 --- ## 🗓️ 每日详细行程 ### Day 1（9/6 周六）：抵达 + 精灵坠崖 **上午/下午**：抵达巴厘岛伍拉·赖国际机场（DPS） - 办理落地签（¥250/人，30天单次入境） - 提前预约接机服务（约 ¥200-300） **傍晚**：前往 **精灵坠崖（Kelingking Beach）** - 距离：约1.5小时车程（从机场到Tulamben区域） - 门票：约 ¥30/人 - 最佳时间：16:00-18:00（光线柔和，适合拍照） - 特色：7字形悬崖，被誉为\"巴厘岛小恐龙\" **晚上**：返回Andaz Bali - 酒店晚餐：海景餐厅，约 ¥200-400/人 **注意事项**： - 带好相机和三脚架 - 穿防滑鞋（悬崖步道较陡） - 带驱蚊液 --- ### Day 2（9/7 周日）：蓝梦岛/佩尼达岛一日游 **全天**：佩尼达岛（Nusa Penida）浮潜 + 悬崖探险 | 时间 | 活动 | 备注 | |------|------|------| | 07:00 | 酒店出发前往港口 | Sanur Port | | 07:30 | 快艇前往佩尼达岛 | 航程约30分钟 | | 09:00 | 天使湾（Angel's Billabong） | 天然无边泳池 | | 10:00 | 破碎沙滩（Broken Beach） | 海蚀拱门奇观 | | 12:00 | "
-    },
-    {
-      "id": "state.db:20260624_082342_22cf2b:9",
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "message_index": 9,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-25T02:49:26.523141+00:00",
-      "claim_type": "ending_or_timeline",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "好的，我已经收集了足够的信息来为你们制定详细的行程。以下是我的私人订制建议： --- # 🇮🇩 巴厘岛 + 布罗莫火山 私人订制行程 ## 2026年9月6日 - 9月12日（7天6晚） --- ## 📋 行程总览 | 日期 | 地点 | 住宿 | 主要活动 | |------|------|------|----------| | D1 (9/6) | 巴厘岛南部 | Andaz Bali (Seminyak) | 抵达 + 精灵坠崖 | | D2 (9/7) | 巴厘岛南部 | Andaz Bali (Seminyak) | 蓝梦岛/佩尼达岛一日游 | | D3 (9/8) | 布罗莫火山区域 | Mount Bromo Lodge 或 Hotel Bromo | 前往布罗莫 + 火山日出 | | D4 (9/9) | 布罗莫火山区域 | Mount Bromo Lodge 或 Hotel Bromo | 火山群探索 + 沙海摩托 | | D5 (9/10) | 布罗莫 → 巴厘岛中部 | Ubud 丛林度假村 | 返回巴厘岛 + 乌布丛林体验 | | D6 (9/11) | 巴厘岛中部 | Ubud 丛林度假村 | 乌布文化 + 梯田 + 水神庙 | | D7 (9/12) | 巴厘岛中部 | - | 早晨自由活动 + 前往机场 | --- ## 🏨 酒店推荐 ### 第1-2晚：Andaz Bali（已预订） - **位置**：Sanur（圣库），巴厘岛东南部 - **特色**：安可达旗下奢华品牌，无边泳池、海景房、Spa - **预算**：约 ¥1,500-2,500/晚（取决于房型和季节） ### 第3-4晚：布罗莫区域酒店（预算内推荐） | 酒店名称 | 类型 | 价格范围 | 特点 | |----------|------|----------|------| | **Mount Bromo Lodge** | 经济型 | ¥150-300/晚 | 步行可达观景台，早餐含火山咖啡 | | **Hotel Bromo** | 舒适型 | ¥300-500/晚 | 暖气房（夜间冷）、观景阳台 | | **Bromo Paradise Hotel** | 中高端 | ¥500-800/晚 | 豪华包间、私人观景台 | **推荐**：选择 **Hotel Bromo** 或 **Bromo Paradise Hotel**，性价比最高，观景体验好。 ### 第5-6晚：乌布丛林度假村（预算内推荐） | 酒店名称 | 类型 | 价格范围 | 特点 | |----------|------|----------|------| | **Ubud Tropical Resort** | 经济型 | ¥200-400/晚 | 热带花园、泳池、靠近猴林 | | **Tjampuhan Resort** | 舒适型 | ¥400-700/晚 | 山谷景观、Spa、有机餐厅 | | **Maya Ubud Resort** | 高端型 | ¥800-1,500/晚 | 悬崖泳池、顶级Spa、米其林餐厅 | **推荐**：选择 **Tjampuhan Resort** 或 **Ubud Tropical Resort**，平衡预算和体验。 --- ## 🗓️ 每日详细行程 ### Day 1（9/6 周六）：抵达 + 精灵坠崖 **上午/下午**：抵达巴厘岛伍拉·赖国际机场（DPS） - 办理落地签（¥250/人，30天单次入境） - 提前预约接机服务（约 ¥200-300） **傍晚**：前往 **精灵坠崖（Kelingking Beach）** - 距离：约1.5小时车程（从机场到Tulamben区域） - 门票：约 ¥30/人 - 最佳时间：16:00-18:00（光线柔和，适合拍照） - 特色：7字形悬崖，被誉为\"巴厘岛小恐龙\" **晚上**：返回Andaz Bali - 酒店晚餐：海景餐厅，约 ¥200-400/人 **注意事项**： - 带好相机和三脚架 - 穿防滑鞋（悬崖步道较陡） - 带驱蚊液 --- ### Day 2（9/7 周日）：蓝梦岛/佩尼达岛一日游 **全天**：佩尼达岛（Nusa Penida）浮潜 + 悬崖探险 | 时间 | 活动 | 备注 | |------|------|------| | 07:00 | 酒店出发前往港口 | Sanur Port | | 07:30 | 快艇前往佩尼达岛 | 航程约30分钟 | | 09:00 | 天使湾（Angel's Billabong） | 天然无边泳池 | | 10:00 | 破碎沙滩（Broken Beach） | 海蚀拱门奇观 | | 12:00 | "
-    },
-    {
-      "id": "state.db:20260624_082342_22cf2b:8",
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "message_index": 8,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:24:46.100338+00:00",
-      "claim_type": "ending_or_timeline",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "看到了！`last_run_at` 已经从 `07:26` 更新为 `08:20`，说明 `action=run` 最终触发了执行，只是延迟了约50分钟。让我看看这次执行的结果："
-    },
-    {
-      "id": "state.db:20260624_082342_22cf2b:7",
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "message_index": 7,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:24:46.093793+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "这次手动 `action=run` 没有产生新的 session——它似乎只是触发了下一次定时调度，没有立即执行。让我再等一会儿看看："
-    },
-    {
-      "id": "state.db:20260624_082342_22cf2b:6",
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "message_index": 6,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:24:46.053925+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "`last_run_at` 还是 `07:26`，说明这次手动 run 可能还在排队或执行中。让我再等一下："
-    },
-    {
-      "id": "state.db:20260624_082342_22cf2b:5",
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "message_index": 5,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:24:46.046061+00:00",
-      "claim_type": "wiki_maintenance",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "已更新。这次的改进是在**保持现有 pipeline 不变**的前提下，只优化了 prompt，增加了三条硬性规则： 1. **强制使用当天日期** — 不从搜索结果里偷日期 2. **48小时新闻过滤** — 排除年度报告、年度指数等时效性差的内容 3. **必须抓取实时市场数据** — S&P 500、NASDAQ、道指、VIX、原油、汇率，缺一不可 明天（6月25日）早上7点会跑第一次带这些约束的版本，到时候对比效果。"
-    },
-    {
-      "id": "state.db:20260624_082342_22cf2b:4",
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "message_index": 4,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:24:46.037136+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "搜索到的还是 07:00 那次旧的。让我直接用 session ID 读取 07:26 的执行："
-    },
-    {
-      "id": "state.db:20260624_082342_22cf2b:3",
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "message_index": 3,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:24:45.962802+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "看起来 run 命令返回很快但 `last_run_at` 没变，可能是异步执行。让我等一会儿再查："
-    },
-    {
-      "id": "state.db:20260624_082342_22cf2b:2",
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "message_index": 2,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:24:45.958098+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "`action=run` 已经触发了，但 `last_run_at` 还是旧的 `07:04`，说明 run 可能还在执行中。让我等一下再查："
-    },
-    {
-      "id": "state.db:20260624_082342_22cf2b:1",
-      "source": "state.db",
-      "session_id": "20260624_082342_22cf2b",
-      "session_title": "Topology Tax Planning Comparison #2",
-      "message_index": 1,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T15:24:45.866240+00:00",
-      "claim_type": "identity_or_relation",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "## “天道无亲，常与善人” 出自 **《老子》（道德经）第七十九章**： > **天道无亲，常与善人。** ### 字面意思 - **天道**：自然规律、宇宙法则。 - **无亲**：没有偏爱、不分亲疏，不偏袒任何一个人。 - **常与**：常常给予（帮助、眷顾）。 - **善人**：行善之人、顺应大道之人。 整句意思是：**自然规律对任何人都没有偏爱，但它总是眷顾那些行善（顺应大道）的人。** ### 深层含义 这句话传达了几层思想： 1. **公平无私**：天道不偏向任何人，不因为血缘、地位、财富而区别对待，它是客观公正的。 2. **善有善报**：虽然天道不偏私，但\"善人\"因其行为顺应了自然规律，自然而然会得到好的结果。这不是\"奖励\"，而是因果的自然体现。 3. **劝人向善**：老子在告诉人们——行善不是为了求上天保佑，而是因为善行本身符合天道，顺应天道的结果必然是好的。 ### 上下文背景 这一章的前文讲的是\"和大怨，必有余怨\"——调解深重的怨恨，不可能完全消除。最后以\"天道无亲，常与善人\"收尾，表达了一个朴素的信念：**世间虽有不公，但天道最终会站在善的一方。** ### 简而言之 > **老天爷不讲人情，但好人自有好报。**"
-    },
-    {
-      "id": "state.db:cron_59933b2c67e7_20260624_071730:1",
-      "source": "state.db",
-      "session_id": "cron_59933b2c67e7_20260624_071730",
-      "session_title": "Topic news digest · Jun 24 07:25",
-      "message_index": 1,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T14:25:57.330430+00:00",
-      "claim_type": "ending_or_timeline",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "I now have comprehensive data from multiple authoritative sources. Let me compile the final daily briefing report. --- # 📊 每日简报 | 2026年6月22日（周一） ## 一、🤖 AI与科技动态 ### 🔥 头条新闻 **1. Google联合科技巨头发布Agentic AI开放标准 ARDS** Google推出了「智能体资源发现规范」（Agentic Resource Discovery Specification, ARDS），这是一个开源标准（Apache 2.0许可），使AI智能体能够自主发现、解释和交互网络上的各类资源。微软、GitHub、Hugging Face、NVIDIA、Amazon、Cisco、Salesforce和Snowflake等巨头共同支持。这标志着**多智能体协作生态进入标准化时代**。 > *来源：IndianWeb2, 2026-06-19* **2. Qualcomm拟以80-100亿美元收购Tenstorrent** 高通正就收购AI芯片公司Tenstorrent进行早期谈判，估值在80至100亿美元之间。Tenstorrent由芯片传奇人物Jim Keller领导，采用开放的RISC-V标准设计AI芯片。此举表明高通意图在由NVIDIA和AMD主导的AI硬件市场争夺席位。 > *来源：Memeburn, 2026-06-19* **3. HPE与NVIDIA扩展AI工厂，部署Agentic AI** HPE联合NVIDIA扩展其AI Factory产品组合，部署支持自主多智能体系统的Agentic AI基础设施。新增NVIDIA Vera CPU用于智能体编排，以及NVIDIA Agent Toolkit用于安全管控生产环境中的自主智能体。 > *来源：Insider Monkey, 2026-06-19* ### 📈 行业趋势 **4. Stanford 2026 AI Index Report关键发现** 斯坦福大学HAI发布年度AI指数报告，核心要点： - **AI能力持续加速**：2025年行业生产的90%以上前沿模型已达到或超越人类基线水平（博士级科学问答、多模态推理、竞赛数学）。SWE-bench编程基准从60%跃升至接近100% - **中美AI差距实质闭合**：中美模型性能自2025年初以来多次交替领先。截至2026年3月，Anthropic顶级模型仅领先中国模型2.7% - **美国拥有全球最多AI数据中心**：5,427个数据中心，但几乎所有AI芯片依赖台积电一家台湾代工厂 - **AI安全未跟上能力发展**：记录的AI事故从2024年的233起上升至2025年的362起 - **美国AI投资领先但人才吸引力下降** > *来源：Stanford HAI AI Index Report 2026* **5. Microsoft 7大AI趋势（2026）** - AI将从\"工具\"进化为\"合作伙伴\"——AI代理成为数字同事 - 新安全框架将保护AI代理（类似人类的安全保护） - AI正在缩小全球健康差距——微软MAI-DxO医疗诊断准确率达85.5%（远超医生平均20%） - AI将成为科研核心——生成假设、控制实验、参与发现 - 量子计算与AI的混合方法带来突破 - 更高效、更小的AI模型 - AI驱动的科学发现加速 > *来源：Microsoft Source, 2025-12-08* **6. 2026年AI重大突破方向** - **Agentic AI**：从被动助手到自主执行复杂多步任务，市场规模预计从2024年52亿美元增长至2034年2000亿美元 - **实体AI与人形机器人**：Boston Dynamics Atlas人形机器人于2026年1月在现代汽车工厂首次实地测试 - **NVIDIA Alpamayo**：100亿参数视觉-语言-动作模型用于自动驾驶 - **LG智能家居AI机器人**：基于NVIDIA Jetson Thor，可在虚拟环境中学习和模拟行为 > *来源：Kersai AI, 2026-01-04* ### 💊 医疗健康AI - **Anthropic Claude Opus 4.7**：机器人编程速度提升20倍，展现大幅提升的推理能力 - **Halberd NeuroSense AI**：通过语音样本分析压力和情绪状态，用于焦虑、PTSD和创伤性脑损伤研究 - **堪萨斯大学PP-VAE**：在心电图分析中平衡患者隐私与诊断准确性 > *来源：Blockchain.News / GlobeNewswir"
-    },
-    {
-      "id": "state.db:cron_59933b2c67e7_20260624_070030:1",
-      "source": "state.db",
-      "session_id": "cron_59933b2c67e7_20260624_070030",
-      "session_title": "Topic news digest · Jun 24 07:03",
-      "message_index": 1,
-      "role": "assistant",
-      "tool_name": null,
-      "timestamp": "2026-06-24T14:03:56.387995+00:00",
-      "claim_type": "durable_fact",
-      "noise_reason": null,
-      "confidence_hint": null,
-      "snippet": "Now I have comprehensive data. Let me compile the briefing and deliver it. --- # 📊 每日科技与市场简报 **📅 日期：2026年6月24日（星期三）** --- ## 一、🤖 人工智能与科技动态 ### 1. OpenAI发布首款自研芯片\"Jalapeño\" OpenAI宣布与Broadcom合作，推出其首款自研AI芯片\"Jalapeño\"。这标志着OpenAI正从纯软件公司转向硬件垂直整合，旨在降低AI推理成本并提升算力效率。此举将加剧AI芯片领域的竞争格局。 ### 2. SK海力士计划290亿美元美股上市 韩国最大芯片制造商SK Hynix计划进行290亿美元的纳斯达克上市融资，用于支持AI芯片产能扩张。这是半导体行业近年来规模最大的IPO之一，反映出全球对AI存储芯片（HBM）需求的持续强劲。 ### 3. Qualcomm收购AI初创企业Modular 高通与AI初创公司Modular达成合作协议，以强化其软件栈和数据中心的AI布局。这显示了传统芯片厂商正在加速向AI全栈解决方案转型。 ### 4. 科技巨头AI投入回报进入\"账本到期\"阶段 据Yahoo Finance报道，大型科技公司已在AI基础设施上投入约2.7万亿美元，如今开始面临实质性的回报压力。分析师指出，AI投资回报周期正在缩短，市场要求更明确的商业化成果。 ### 5. AI能源消耗引发政策关注 纽约时报和CNBC报道，AI数据中心电力需求激增，国会正在推进一项法案，要求科技公司支付数据中心运营成本。同时，有提案探索利用住宅电力基础设施来缓解AI供电压力。 ### 6. AI泡沫论再起 NPR、卫报等媒体纷纷报道关于\"AI是否泡沫\"的讨论。斯坦福大学招生中AI的影响、Cory Doctorow对AI泡沫的批评、以及多位VC对估值过高的担忧，都表明市场对AI产业的热情正在趋于理性。 ### 7. Alphabet正式纳入道琼斯工业平均指数 谷歌母公司Alphabet于6月23日正式取代Verizon加入道琼斯工业平均指数，凸显科技股在美国经济中的核心地位进一步提升。 ### 8. Anthropic Claude新功能与企业AI部署 Anthropic推出Claude Tag功能，通过Slack消息学习企业上下文信息，推动AI在企业工作流中的深度集成。同时Menlo Ventures（曾押注Anthropic）成功募集30亿美元新基金，显示风投对AI赛道的持续看好。 ### 9. 超人类收购GPTZero Superhuman收购AI检测初创公司GPTZero，反映出随着AI生成内容激增，内容真实性验证成为新兴刚需。 ### 10. Meta进军预测市场 扎克伯格表示希望Meta推出自有预测市场平台，结合社交网络与预测机制，可能重塑信息传播和民意分析方式。 --- ## 二、📈 市场与经济展望 ### 1. 全球主要股指表现（6月24日） | 指数 | 点位 | 涨跌幅 | |------|------|--------| | S&P 500 | 7,381.64 | +0.22% | | NASDAQ | 25,612.60 | +0.10% | | 道琼斯 | 51,750.64 | +0.16% | | 日经225 | 69,174.97 | -0.88% | | 恒生指数 | 23,412.18 | +0.33% | | 上证综指 | 4,110.81 | +0.11% | | 德国DAX | 24,629.58 | -1.06% | | VIX恐慌指数 | 19.03 | -2.36% | 美股三大指数小幅上涨，芯片股从前期抛售中反弹；亚洲市场分化，恒指和纳指走强，日经下跌；欧洲DAX承压。VIX回落至19附近，市场恐慌情绪有所缓解。 ### 2. JPMorgan上调2026年S&P 500目标价 摩根大通上调2026年标普500目标指数，但警告股市前景仍面临多重挑战，包括地缘政治风险、通胀反复和利率不确定性。 ### 3. 油价大幅下挫，布油跌破75美元 受特朗普声称伊朗保证不收取霍尔木兹海峡通行费的消息影响，布伦特原油跌至75美元以下，创美国-伊朗冲突前新低。油价暴跌对通胀预期和能源板块产生连锁影响。 ### 4. 美国财政部监管伊朗资金解冻流程 财政部长贝森特表示，美国财政部将在伊朗资金释放过程中进行监督，这一表态有助于稳定市场对中东局势的预期。 ### 5. 防御性板块剧烈波动 据报德国拟裁撤军舰，防务股大幅下挫，莱茵金属股价下跌17%。地缘政治缓和预期正引发军事/防务板块重新定价。 ### 6. 市场与经济\"日益脱节\"警告 顶级经济学家警告，金融市场表"
     }
   ]
 }
