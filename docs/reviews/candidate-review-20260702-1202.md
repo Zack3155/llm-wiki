@@ -1,4 +1,5 @@
 ---
+date_added: 2026-07-02
 date_modified: 2026-07-03
 title: Wiki Candidate Review Plan
 topic: general
@@ -7,6 +8,7 @@ confidence: 0.8
 sources: state.db
 ---
 
+date_added: 2026-07-02
 date_modified: 2026-07-03
 # Wiki Candidate Review Plan
 
@@ -79,8 +81,4 @@ date_modified: 2026-07-03
 - Sources: state.db
 
 1. --- # PhotoModeAllowEntry — Render-Verify Runbook（门控源预计算） **目标：** `auto-tester/render-evidence/photo-mode-allow-entry.json`（尚不存在）；然后设置 `data.json pipeline.transform.renderEvidence` 为它。记录**不在 grandfathered 中** → 所有齿轮 live（geometryHarvest 必需，liveGeometry 必需，双边比率两边重新计算 + 0.04 硬限制，liveCrossVerify[] 矩阵必需，states[] 必需因为 23 张 live 截图 ≥ 2）。 ## Live 操作数已固定（只读） - `render-verify-setup.json` liveGeometry：viewport 1920×978，列 `sideLeft:300 / mid:1288 / sideRight:300`，columnX `4 / 316 / 1616`，blockOrder `[sideLeft,mid,sideRight]`。块：baseInformation / pictureBox / anchorList / operate。 - screenshotsRel：`src/test/PhotoModeAllowEntry/screenshots`（23 张图片）。 ## 执行陷阱（每项错过将 FAIL 门控） 1. **无 CAPTURE_CONFIGS 条目** 对于 PhotoModeAllowEntry → `render-capture --side vmok` 死亡。编写 `--config photo-mode-capture.config.json`。`columns` 键**必须**是 `sideLeft`/`mid`/`sideRight`（与 liveGeometry 相同名称）以便两边重新计算；geometry[] 组 `[["sideLeft","mid"],["sideRight"]]`（内容 vs operate；live = [0.841, 0.159]）。列必须**分区**所有采集的列（≥2 组）。 2. **新引擎 :3023** — `photomode-evidence-legacy` 必须在 harness-up 前 pinned 在 vmokRemotes.ts 中，否则 Picture 块渲染为空。harness-up：先 `source nvm.sh && nvm use`（需要 emo 在 PATH 上）；`--timeout 360`（dev build 慢）。深链接使用**数字** id：`http://localhost:8080/?template=7657543992959059719&case=<key>`。 3. **operatePanel opt-out 存在于 render-evidence 中，而非 render-verify-setup** — 门控从 render-evidence 读取 `operatePanel`。设置 `operatePanel.subReasons:false` + 一个 `reason`（扁平单选 Radio.Group，无 parent_code → 无 sub-reason 级）以豁免 reject-subreason 状态。**不要**设置 `operatePanel.decision:false`（此模板有拒绝决策界面）。批准是**隐式的**（无批准控件；默认渲染 = 批准状态）→ operatePanelStates `approve` 使用默认渲染截图。 4. **host-chrome controlKeys 导致 VMOK 中缺失硬 FAIL**（`controlInventoryDiffError` 无偏差逃逸）。`raisehand-icon-button` + `debug-tools-icon-button` 是平台 HOC chrome（ERD §2 差距），非模板界面——render-verify 前，从 live `*-interactions.json` 中那两个条目的 `controlKey` 字段移除（保留 label/note 作为文档；这些文件在 auto-tester/live-capture 中，非保存夹具案例，所以可编辑）。在 render-evidence gaps[] 中记录解决的 host-chrome 故意差距。验证这不触发 `live-capture-completene
-
 ## Summary
-
-## Summary
-
