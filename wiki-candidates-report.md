@@ -1,8 +1,8 @@
 # Wiki Candidate Extractor Report
 
-- Generated: 2026-08-01T04:06:58.042808+00:00
+- Generated: 2026-08-01T10:01:26.065678+00:00
 - State DB: `/home/zack/.hermes/state.db`
-- Raw sessions: `docs/raw/sessions`
+- Raw sessions: `/home/zack/wiki/docs/raw/sessions`
 
 ## Counts
 

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-01T04:06:58.042808+00:00",
+  "generated_at": "2026-08-01T10:01:26.065678+00:00",
   "state_db": "/home/zack/.hermes/state.db",
-  "raw_dir": "docs/raw/sessions",
+  "raw_dir": "/home/zack/wiki/docs/raw/sessions",
   "counts": {
     "state_db_candidates": 21,
     "raw_session_candidates": 0,
