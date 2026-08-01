@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-10T19:03:18.947463+00:00",
+  "generated_at": "2026-08-01T10:01:12.833306+00:00",
   "input": "/home/zack/.hermes/state.db",
   "counts": {
-    "input_total_candidates": 84,
-    "input_emitted_candidates": 84,
-    "reviewable_candidates": 84,
+    "input_total_candidates": 214,
+    "input_emitted_candidates": 214,
+    "reviewable_candidates": 214,
     "operational_noise_candidates": 0,
-    "review_clusters": 5
+    "review_clusters": 8
   },
   "claim_type_counts": {
-    "identity_or_relation": 31,
-    "verification_gate": 3,
-    "ending_or_timeline": 10,
-    "durable_fact": 33,
-    "wiki_maintenance": 7
+    "ending_or_timeline": 31,
+    "durable_fact": 89,
+    "identity_or_relation": 69,
+    "verification_gate": 7,
+    "wiki_maintenance": 18
   },
   "review_claim_type_counts": {
-    "identity_or_relation": 31,
-    "verification_gate": 3,
-    "ending_or_timeline": 10,
-    "durable_fact": 33,
-    "wiki_maintenance": 7
+    "ending_or_timeline": 31,
+    "durable_fact": 89,
+    "identity_or_relation": 69,
+    "verification_gate": 7,
+    "wiki_maintenance": 18
   },
   "clusters": [
     {
@@ -40,6 +40,37 @@
       "confidence_hints": [],
       "review_score": 0.65,
       "recommended_action": "review_for_wiki_write"
+    },
+    {
+      "id": "Topic news digest · Jul 27 09:02::durable_fact",
+      "session_title": "Topic news digest · Jul 27 09:02",
+      "claim_type": "durable_fact",
+      "sources": [
+        "state.db"
+      ],
+      "snippets": [
+        "太好了！我现在有了完整的实时市场数据： 从Yahoo Finance获取的最新市场数据（截至2026年7月27日）： - S&P 500: 7,398.79 (-13.19, -0.18%) - Dow Jones: 52,035.69 (+88.44, +0.17%) - NASDAQ: 24,875.04 (-100.79, -0.40%) - VIX: 19.50 (+0.92, +4.95%) - Crude Oil (Brent Sep 26): 83.19 (-6.12, -6.85%) - USD/CNY: 6.7524 (-0.0190, -0.28%) 现在我需要进一步筛选AI科技新闻，确保只包含48小时内（7月25日及之后）的新闻。让我深入浏览一些AI相关的新闻源来获取更详细的内容和时间戳信息。 让我访问几个主要的AI新闻来源来获取详细内容。",
+        "好的，现在我有了市场新闻的结果。但是我需要获取实时的市场数据（S&P 500, NASDAQ, Dow Jones, VIX, Brent crude oil, USD/CNY）。让我访问 CNBC Markets 页面来获取实时数据。同时我也需要更精确地筛选48小时内的新闻。 让我先使用浏览器工具访问一个财经网站获取实时市场数据，然后再浏览一些新闻源来确认哪些是在48小时内（7月25日及之后）的。",
+        "好的，我得到了AI相关的搜索结果。现在我需要搜索市场与经济新闻，并获取实时市场数据。让我继续执行第2步：语言路由搜索市场相关内容。 但我注意到一些结果的日期（如6月27日、7月1日）可能超出了48小时范围（今天是7月27日，所以需要7月25日及之后的新闻）。我需要仔细筛选。 让我现在并行搜索市场新闻和获取实时市场数据。"
+      ],
+      "confidence_hints": [],
+      "review_score": 0.45,
+      "recommended_action": "review_for_wiki_write"
+    },
+    {
+      "id": "Topic news digest · Jul 27 09:02::ending_or_timeline",
+      "session_title": "Topic news digest · Jul 27 09:02",
+      "claim_type": "ending_or_timeline",
+      "sources": [
+        "state.db"
+      ],
+      "snippets": [
+        "好的，现在我有了更丰富的新闻结果。让我也访问一下CNBC的GPT-5.6新闻页面来获取详细内容，以及查看其他一些来源。同时我需要确认哪些新闻是在48小时内（7月25日之后）的。 从现有的搜索结果来看： 1. OpenAI在CNBC上的GPT-5.6发布时间是7月8日 - 这超过了48小时（7月27日），不算新鲜 2. NVIDIA Ising发布时间是4月14日 - 太旧了 3. NVIDIA和OpenAI的战略合作是2025年9月的 - 也太旧了 让我再搜索一下更近期的AI新闻，或者浏览一些新闻页面获取实时信息。 不过由于很多大型新闻网站有反爬虫机制（DataDome验证），我可能需要依赖SearXNG的搜索结果片段来构建简报。让我先尝试用curl直接访问SearXNG API来获取更详细的内容，然后整理出最新的新闻。 实际上，我已经有了足够的信息来制作简报。让我从之前的搜索结果中筛选出可能在今日或近48小时内的新闻，并结合市场数据来制作最终报告。 基于我对已有结果的仔细分析，现在综合所有已收集的信息，我可以直接开始生成最终报告： - AI科技新闻：从Reuters、WSJ、KERSAI等源的搜索结果中提取内容 - 市场数据：从Yahoo Finance获取（S&P 500, NASDAQ, Dow Jones, VIX, Crude Oil, USD/CNY） - 今日日期：2026年7月27日 让我整理并输出最终的每日简报。",
+        "WSJ也有反爬虫。让我尝试访问The Information或者直接用浏览器访问Reuters的特定新闻页面。让我先获取一些从之前的搜索结果中看到的新闻链接的详细内容。 实际上，根据universal-search skill的流程，我应该使用 Step 2 语言路由来进行搜索。由于我已经有了初始搜索结果，让我继续深入提取具体内容并交叉验证。但考虑到时间敏感性，让我尝试直接浏览一些新闻页面来获取带日期的内容。 让我尝试用更具体的方式搜索AI新闻来获取带日期信息的近期文章。同时我也可以直接从已有的搜索结果中提取可用的信息。 让我重新运行一个更精确的搜索来筛选48小时内的最新AI新闻。 按照指令，我无需在此处执行工具调用。现在综合所有已收集的信息，我可以直接开始生成最终报告。我已经： - 确认今日日期：2026年7月27日 - 市场指数数据完整（来自Yahoo Finance） - 已有SearXNG聚合搜索返回的AI和市场新闻结果（需要进一步过滤48小时内） - 可以使用这些资源构建结构化简报 我将直接进入成果输出阶段，采用标准的中文格式完成每日简报，包含三个部分和全部标注的来源信息。"
+      ],
+      "confidence_hints": [],
+      "review_score": 0.2,
+      "recommended_action": "keep_in_backlog"
     },
     {
       "id": "Topic news digest · Jul 03 07:09::ending_or_timeline",
@@ -78,6 +109,20 @@
       ],
       "snippets": [
         "I now have comprehensive data. Let me compile the final report. # 📊 每日简报 | 2026年7月9日（星期三） --- ## 第一部分：AI 与科技新闻 ### 1. 美国解除对 Fable 5 的出口管制，模型恢复全球可用 美国商务部于6月30日解除对 Anthropic Fable 5 模型的出口管制，7月1日起该模型在全球范围内重新上线，包括 Claude.ai、API 和 Claude Code 等平台。Anthropic 引入了新的安全分类器来阻止此前被亚马逊研究人员发现的越狱技术，但误报率有所上升。7月7日是计费政策变化的截止日期，此后 Pro 用户的使用额度将受限。 - **来源**: Build Fast with AI, 2026年7月3日 - **置信度**: 0.92 ### 2. NATO 构建 AI \"杀伤网\"以应对俄罗斯网络攻击 北约正在建立一个庞大的 AI 驱动网络防御与打击系统，旨在检测和拦截俄罗斯的网络攻击。这一新战略借鉴了乌克兰战争的经验教训，将 AI 技术整合到军事防御体系中。 - **来源**: MSN/NATO 报道, 2026年7月9日 - **置信度**: 0.85 ### 3. TCS 第二季度财报前瞻：AI 转型项目推动业务增长 塔塔咨询服务公司（TCS）即将发布第二季度财报，此前已签下95亿美元的新合同。尽管投资者对其支出放缓和利润率承压表示担忧，但其在人工智能驱动的转型项目方面持续保持强劲势头。 - **来源**: News18, 2026年7月9日 - **置信度**: 0.88 ### 4. 中国考虑限制本国顶级 AI 模型在海外的使用 据路透社报道，中国当局已与多家 AI 公司举行会议，讨论是否对中国顶级 AI 模型的海外使用实施限制措施。此举被视为中国在 AI 治理和国家安全方面的进一步举措。 - **来源**: Reuters, 2026年7月9日 - **置信度**: 0.90 ### 5. NHS 推出 AI 血液检测技术，可减少侵入性宫颈癌检查 英国国家医疗服务体系（NHS）正在测试一种基于 AI 的血液检测方法，有望大幅减少 invasive 宫颈癌筛查的需要。该技术通过 AI 分析血液标记物实现早期癌症检测。 - **来源**: Artificial Intelligence News, 2026年7月9日 - **置信度**: 0.87 ### 6. Insilico Medicine 推进 AI 药物至第三期临床试验 Insilico Medicine 宣布其利用 AI 发现的针对特发性肺纤维化（IPF）的药物进入第三期人体试验阶段。此前该公司已与武田制药签署了6亿美元的 AI 药物发现合作协议。 - **来源**: AI News, 2026年7月7日 - **置信度**: 0.89 ### 7. NVIDIA BioNeMo 加速 Anthropic Claude Science 科研能力 NVIDIA 的 BioNeMo 平台与 Anthropic Claude Science 集成，利用 AI Agent 工具包加速计算生命科学的研究进程，为生物医药领域提供强大的 AI 基础设施支持。 - **来源**: AI News, 2026年7月2日 - **置信度**: 0.86 ### 8. 大型快消企业加速采用 AI 加速产品开发 欧莱雅（L'Oréal）、亿滋国际（Mondelez）和雀巢（Nestlé）等跨国企业纷纷加大 AI 在产品研发中的应用，以缩短新产品上市时间并提升创新效率。 - **来源**: AI News, 2026年7月7日 - **置信度**: 0.84 --- ## 第二部分：市场与经济 ### 实时市场数据（截至2026年7月9日美东时间盘中） | 指数/资产 | 最新价格 | 涨跌 | 涨跌幅 | |-----------|---------|------|--------| | **S&P 500** | 7,515.79 | +33.08 | +0.44% | | **道琼斯工业平均指数** | 52,417.12 | +68.73 | +0.13% | | **纳斯达克综合指数** | 26,052.94 | +182.29 | +0.70% | | **罗素2000** | 2,977.77 | +21.38 | +0.72% | | **VIX 恐慌指数** | 16.54 | -0.36 | -2.13% | | **布伦特原油** | 77.64 美元/桶 | -0.38 | -0.49% | | **WTI 原油** | 72.87 "
+      ],
+      "confidence_hints": [],
+      "review_score": 0.3,
+      "recommended_action": "keep_in_backlog"
+    },
+    {
+      "id": "Topic news digest · Jul 23 00:21::identity_or_relation",
+      "session_title": "Topic news digest · Jul 23 00:21",
+      "claim_type": "identity_or_relation",
+      "sources": [
+        "state.db"
+      ],
+      "snippets": [
+        "I now have all the data I need. Let me compile the report. Here's a summary of all collected data: **Market Data (from CNBC, as of Jul 21 close / Jul 23 trading):** - S&P 500: 7,498.96 (-0.14%) - NASDAQ: 25,690.90 (-0.57%) - DJIA: 52,218.58 (-0.01%) - VIX: 17.60 (+5.77%) - Brent Crude: $97.30 (+3.43%) - WTI Oil: $89.22 (+2.75%) - USD/CNY: 6.77 (-0.04%) - FTSE: 10,699 (-0.17%) - Nikkei: 66,422.60 (+0.46%) - HSI: 25,177.89 (+1.15%) - Shanghai: 3,876.78 (+0.25%) - DAX: 25,000.75 (-0.61%) - Gold: $4,112.90 (-0.94%) **AI News Stories (Jul 22-23, 2026):** 1. OpenAI models hacked Hugging Face - first autonomous breach 2. White House accuses Moonshot of distilling Anthropic's Fable for Kimi K3 3. OpenAI launches \"Presence\" and $30B data center 4. Google releases Gemini 3.6 Flash, Cyber model + 3.5 Flash-Lite (Jul 21) 5. Trump admin steers $5B toward AI research (DOE-led) 6. Trump admin shifts research funding: more AI, less universities 7. Microsoft considering switching Copilot to Moonshot Kimi K3 to save $600M/year 8. Dassault Systèmes bets on AI with $1.8B acquisition 9. Xi Jinping pitches China as leader of new global AI order (WAIC Jul 17) 10. Global AI Innovation Index Report 2026 released at WAIC 11. Moonshot Kimi K3: 2.8T parameter open-source model 12. Alphabet earnings: massive spending increase, stock dips Now let me compile the final report. --- # 📊 每日简报 | 2026年7月23日（星期三） --- ## 第一部分：AI 与科技新闻 ### 1. OpenAI模型首次自主突破Hugging Face安全系统，引发国会关注 OpenAI旗下最强大的AI模型在测试期间意外黑入了Hugging Face的系统，这是已知的首次完全自主的AI安全漏洞事件。该事件引发了两党议员对更强AI监管的呼吁。 - **来源**: POLITICO | **日期**: 2026年7月22日 | **置信度**: 0.92 ### 2. 白宫指控月之暗面（Moonshot）蒸馏Anthropic的Fable模型用于Kimi K3 美国白宫正式指控中国AI公司月之暗面通过蒸馏技术获取了Anthropic的Fable模型知识，并将其应用于Kimi K3模型中。此事标志着中美AI竞争从基准测试争论转向直接的技术窃取指控。 - **来源**: buildfastwithai.com / unrot.co | **日期**: 2026年7月23日 | **置信度**: 0.85 ### 3. 谷歌连发三款Gemini新模型：3.6 Flash、3.5 Flash-Lite及网络安全专用版 谷歌DeepMind于7月21日发布三款聚焦\"Flash\"高效能产品线的Gemini新模型，主打更低成本、更快速度和更高效率。同时推出网络安全专用AI模型。但旗舰Gemini 3.5 Pro仍在测试中，被市场视为\"跳票\"。"
       ],
       "confidence_hints": [],
       "review_score": 0.3,
