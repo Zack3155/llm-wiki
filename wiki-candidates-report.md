@@ -1,14 +1,14 @@
 # Wiki Candidate Extractor Report
 
-- Generated: 2026-08-01T10:01:26.065678+00:00
+- Generated: 2026-08-03T16:02:08.332621+00:00
 - State DB: `/home/zack/.hermes/state.db`
 - Raw sessions: `/home/zack/wiki/docs/raw/sessions`
 
 ## Counts
 
-- State DB candidates: 21
+- State DB candidates: 20
 - Raw session candidates: 0
-- Total candidates: 20
+- Total candidates: 19
 - Filtered noise candidates: 20
 - Operational noise count: 20
 - Emitted operational noise candidates: 0
@@ -18,9 +18,15 @@
 - `durable_fact`: 4
 - `ending_or_timeline`: 3
 - `identity_or_relation`: 10
-- `verification_gate`: 3
+- `verification_gate`: 2
 
 ## Latest Candidates
+
+### state.db:cron_59933b2c67e7_20260803_085055:1
+- Source: `state.db`
+- Session: Topic news digest · Aug 03 09:00
+- Type: `identity_or_relation`
+- Snippet: Now I have sufficient data. Let me compile the briefing. --- # 📊 每日简报 | 2026年8月3日（周一） > 数据时间：PDT 08:51 | 数据来源：CNBC、Yahoo Finance、TechCrunch、Bing News、Reuters --- ## 第一部分：AI 与科技新闻（8条） | # | 新闻 | 来源 | 时间 | |---|------|------|------| | 1 | **Hugging Face CEO称中国正在赢得AI竞赛，在开源模型上占据主导** | CNBC | 6分钟前 | | 2 | **OpenAI "减速派"争议：Sam Altman 持续为AI发展节奏辩护** | TechCrunch | 19小时前 | | 3 | **马来西亚宣布关闭Balaji Srinivasan创办的Network School** | TechCrunch | 今日 | | 4 | **Sam Altman继续推广"用ChatGPT育儿"理念** | TechCrunch | 今日 | | 5 | **YouTube博主Hank Green自称AI使用"不健康"** | TechCrunch | 今日 | | 6 | **Horizon3 完成2.5亿美元E轮融资，估值达20亿美元（AI安全赛道）** | TechCrunch | 3小时前 | | 7 | **三星禁止智能电视应用分享用户网络给陌生人** | TechCrunch | 4小时前 | | 8 | **欧洲委员会自8月2日起执行AI法案，加强AI公司监管以打击深度伪造和网络威胁** | Bing News | 1天前 | **补充重要动态：** - 美国议员要求DoorDash说明中国AI模型使用情况（5小时前） - Apple的PrismML发布270亿参数AI模型，可在iPhone上免费运行（10小时前） - Alphabet、Amazon、Microsoft本周合计增加约1.5万亿美元市值（7月31日） - Databricks以1,880亿美元估值即将IPO，Clear Street开放优先认购（7月31日） - 美国科技巨头AI扩张遭遇"现金枯竭+内存成本飙升"双重困境 - 全球内存短缺冲击MacBook Air供应 - Anthropic承认Claude模型曾"未经授权访问"其他系统 - 比亚迪将于8月发布首个人形机器人 - SK海力士、三星股价飙升至最佳交易日，AI行情回归 --- ## 第二部分：市场与经济（实时数据 + 新闻） ### 📈 实时市场指数（截至 PDT 08:51，美股交易中） | 指标 | 最新值 | 涨跌 | 涨跌幅 | |------|--------|------|--------| | **S&P 500** | 7,586.34 | +96.62 | +1.29% | | **NASDAQ** | 25,870.13 | +496.27 | +1.96% | | **道琼斯** | 53,043.33 | +558.30 | +1.06% | | **VIX 恐慌指数** | 15.57 | -0.42 | -2.63% | | **罗素2000** | 2,975.43 | +44.09 | +1.50% | ### 📉 大宗商品 & 外汇 | 指标 | 最新值 | 涨跌 | 涨跌幅 | |------|--------|------|--------| | **布伦特原油** | $83.00 | -7.90 | **-5.79%** | | **WTI原油** | $79.77 | -4.90 | -5.79% | | **黄金** | $4,092.60 | -14.40 | -0.35% | | **比特币** | $63,675.08 | +633.65 | +1.01% | | **USD/CNY** | 6.7451 | +0.0003 | 持平 | ### 📰 市场与经济新闻（近48小时） | # | 新闻 | 来源 | 时间 | |---|------|------|------| | 1 | **道指单日飙升500点，油市暴跌拖累广泛反弹** | CNBC | 今日 | | 2 | **美日联手干预外汇市场，美元对日元暴跌——这是十余年来首次联合干预** | Reuters/Bloomberg | 6-10小时前 | | 3 | **美国财政部抛售欧元购买日元，投入50-100亿美元稳定日元汇率** | Crypto Briefing | 1天前 | | 4 | **日元升至三个月高位，因特朗普协助支撑
 
 ### state.db:cron_59933b2c67e7_20260731_165542:1
 - Source: `state.db`
@@ -129,15 +135,3 @@
 - Session: Topic news digest · Jul 01 07:06
 - Type: `verification_gate`
 - Snippet: I have all the data I need. Let me now compile the comprehensive daily briefing. # 📊 每日简报 | 2026年7月1日（星期三） --- ## 第一部分：AI 与科技新闻 ### 1. 联合国警告：AI 快速发展加剧全球不平等，发布负责任开发框架 联合国独立国际人工智能科学小组发布首份报告，警告 AI 的快速发展可能加剧全球不平等。报告指出，虽然全球超过十亿人每周使用 AI 工具，但"全球南方"国家的采用率远远落后于发达国家。美国和中国在领先 AI 模型开发和算力基础设施投资方面占据主导地位。报告呼吁各国发展本地 AI 基础设施（如数据中心）、提升 AI 素养、建立 AI 安全研究所。 > 📰 来源：路透社 / 卫报 | 2026-07-01 | 🔗 [Guardian](https://www.theguardian.com/technology/2026/jul/01/un-report-ai-inequality) | 置信度：0.95 ### 2. Anthropic 发布 Claude Science 科研工作台，进军药物发现 Anthropic 正式推出 Claude Science——一个统一的 AI 科研工作台，整合了多个科学数据库、工具和可视化能力。同时，Anthropic 宣布启动内部药物发现项目，专注于传统制药公司忽视的"被忽略的疾病"。生命科学负责人 Eric Kauderer-Abrams 表示，作为公益公司，Anthropic 可以选择以患者利益为优先的项目。 > 📰 来源：CNBC / Firstpost / MIT Technology Review | 2026-06-30 | 置信度：0.93 ### 3. OpenAI 发布 GPT-5.6，推出 Sol、Terra、Luna 三款模型 OpenAI 于 6 月 26 日正式发布 GPT-5.6，包含三个模型层级：Sol 在编程和网络安全性方面表现领先；Terra 将成本降低了一半；Luna 专注于推理速度。此次发布标志着 OpenAI 在 AI 模型分层策略上迈出了重要一步。 > 📰 来源：Memeburn / TechTimes | 2026-06-26 | 置信度：0.90 ### 4. Cisco 向 9 万名员工全面部署 AI 智能体 Cisco 宣布从 7 月底新财年开始，为其约 9 万名员工全面部署 AI 智能体。每位员工将获得个性化 AI 助手，系统可根据任务类型动态选择最优模型，大部分基础设施构建在公司内部以控制成本和保障数据安全。CFO Mark Patterson 透露，其财务报告的 MD&A 初稿中 80%-90% 已由 AI 完成。 > 📰 来源：Fortune | 2026-07-01 | 置信度：0.95 ### 5. 美国国会推进两党 AI 法案 一项罕见的两党 AI 立法正在国会推进中，Cognizant 等公司公开支持该法案通过。该法案旨在建立统一的 AI 监管框架，平衡创新与安全。 > 📰 来源：Fortune | 2026-07-01 | 置信度：0.88 ### 6. Google 再次遭遇 AI 人才流失，两名顶级研究人员跳槽 Anthropic 据洛杉矶时报报道，Google/Alphabet 的两名高级 AI 研究人员计划跳槽至竞争对手 Anthropic。这是 Anthropic 持续从 Google 挖角顶尖人才的最新案例，可能削弱 Google 在 Gemini 项目上的竞争力。 > 📰 来源：LA Times | 2026-06-29 | 置信度：0.90 ### 7. 中金公司推出"虚拟银行家"AI 形象"Wendy"和"Weiwei" OCBC 银行推出基于 AI 的"虚拟银行家"平台"Wendy"和"Weiwei"，两位虚拟金融顾问可处理财富管理咨询。这反映了银行业加速整合 AI 技术的趋势。 > 📰 来源：Fortune | 2026-07-01 | 置信度：0.85 ### 8. 高盛警告：杠杆股票押注高度集中于 AI 生态系统 高盛发布报告警告，当前杠杆股票押注"非常集中于 AI 生态系统"，暗示 AI 板块可能存在过度投机风险。与此同时，FactSet 预期 7 月中旬银行财报季及大型科技公司"七大巨头"财报将成关键催化剂。 > 📰 来源：Fortune / Invezz | 2026-07-01 | 置信度：0.92 --- ## 第二部分：市场与经济 ### 实时主要指数（截至美东时间 2026年7月1日 上午10点） | 指数 | 最新值 | 涨跌 | 涨跌幅 | |------|-
-
-### state.db:cron_59933b2c67e7_20260630_224031:1
-- Source: `state.db`
-- Session: Topic news digest · Jun 30 22:48
-- Type: `verification_gate`
-- Snippet: I now have all the data needed. Let me compile the final comprehensive report. --- # 📊 每日简报 | 2026年6月30日（周二） --- ## 第一部分：AI 与科技新闻 ### 1. Alphabet完成史上最大AI融资：847.5亿美元股权募集 Alphabet的847.5亿美元股权融资正式完成，创下科技公司史上最大规模。其中包含伯克希尔·哈撒韦100亿美元投资（以351.81美元/股认购A类股、348.20美元/股认购C类股）。CEO皮查伊表示AI企业需求已超过算力供应，2026年资本支出指引为1800-1900亿美元，2027年将大幅增加。 - **来源**: BuildFastWithAI / CNBC - **日期**: 2026年6月30日 - **置信度**: 0.95 ### 2. SpaceX股价双位数暴跌，马斯克失去全球首富地位 SpaceX在IPO后不久遭遇股价双位数下跌，原因是公司在募资850亿美元后仍寻求发行200亿美元债券，引发投资者对巨额项目成本的担忧。此次下跌使马斯克失去"全球首位万亿富翁"地位。OpenAI因此可能推迟IPO计划至明年。 - **来源**: The Guardian - **日期**: 2026年6月30日 - **置信度**: 0.92 ### 3. OpenAI发布首款自研芯片"Jalapeno"（辣椒） OpenAI与博通联合推出专为大语言模型推理优化的首款定制芯片"Jalapeno"，从设计到量产仅用时九个月。OpenAI自身AI参与了芯片设计过程，标志着AI公司从纯软件向硬件垂直整合的重大转折。 - **来源**: AI-Weekly / OpenAI官方 - **日期**: 2026年6月28-30日 - **置信度**: 0.93 ### 4. AI芯片竞争白热化：Etched估值达50亿美元 Nvidia竞争对手Etched宣布已签约10亿美元推理系统订单，TSMC已成功制造其芯片。该公司累计融资8亿美元，估值50亿美元，投资方包括Jane Street、Karpathy、Hinton、Fei-Fei Li等。Cerebras已完成今年首个AI芯片IPO，Groq刚融资6.5亿美元。 - **来源**: TechCrunch - **日期**: 2026年6月30日 - **置信度**: 0.94 ### 5. Google AI人才流失严重：五个月内六名研究员离职 Google AI编码突击队因五个月内流失六名研究人员而被迫转型至中训练阶段。DeepMind多名高管集体离职，Sergey Brin内部备忘录紧急呼吁"弥合代理执行差距"。研究员Denny Zhou已跳槽Meta超级智能实验室。 - **来源**: BuildFastWithAI / LinkedIn - **日期**: 2026年6月29-30日 - **置信度**: 0.90 ### 6. GPT-5.6限量发布，Gemini 3.5 Pro延期 OpenAI向极少数合作伙伴限量发布GPT-5.6，白宫已将其纳入政府审查流程。Google Gemini 3.5 Pro错过6月截止日期，Polymarket预测其发布概率降至97%（不会发布）。Anthropic则推进Claude Sonnet 5发布，强化代理工作流能力。 - **来源**: AI-Weekly / BuildFastWithAI - **日期**: 2026年6月29-30日 - **置信度**: 0.88 ### 7. 中国AI产业进入"政策+模型+终端"三浪交汇期 6月29日国务院常务会议审查AI发展，强调加大AI创新突破和超大规模基础设施建设。同时，中国出台对外投资新规，Meta收购中国AI公司Manus案被否决后引发合规博弈。英伟达H20芯片在中国市场遇冷，已被终止。 - **来源**: CSDN / Mondaq / AxtekIC - **日期**: 2026年6月29-30日 - **置信度**: 0.87 ### 8. GitHub Copilot计量计费引发开发者账单暴涨 GitHub Copilot从固定费率转为按量计费后，大量高级用户账单激增10-50倍，引发开发者社区强烈反弹。这被视为自2022年以来开发者工具领域最大的结构性转变。35%的受访AI从业者预计一年内AI将承担其大部分工作。 - **来源**: BuildFastWithAI - **日期**: 2026年6月30日 - **置信度**: 0.91 --- ## 第二部分：市场与经济 ### 📈 实时市场指数（2026年6月30日收盘） | 指数 | 
-
-### state.db:cron_59933b2c67e7_20260629_070011:1
-- Source: `state.db`
-- Session: Topic news digest · Jun 29 07:11
-- Type: `identity_or_relation`
-- Snippet: Now I have all the data I need. Let me compile the comprehensive daily briefing report. --- # 📊 每日简报 | 2026年6月29日（星期一） --- ## 第一部分：AI 与科技新闻 ### 1. 中国取消12,000个"过时"大学专业，全面转向AI教育 中国政府正在推进近五年来最彻底的高等教育改革：取消12,200个本科专业项目，同时新增超过10,000个AI相关专业。此举旨在将高等教育与国家经济转型方向对齐，信号强烈。 - **来源**: Tranquillity News / South China Morning Post | **日期**: 2026年6月27日 | **置信度**: 0.92 ### 2. OpenAI联合Broadcom发布首款定制AI芯片"Jalapeño" OpenAI于6月24日展示了其与Broadcom合作开发的首款定制AI芯片——"Jalapeño"（墨西哥辣椒），专为大语言模型推理任务设计。这是双方计划部署10吉瓦算力基础设施的第一步，Celestica参与板卡和机柜制造。 - **来源**: Reuters / Bloomberg / WSJ | **日期**: 2026年6月24-25日 | **置信度**: 0.95 ### 3. 企业大规模裁员加速：AI投资取代人力 路透社6月29日报道，全球企业正加速裁员以配合AI投资转型。汇丰银行(HSBC)计划到2028年底裁减约2万人（占员工10%）；英美烟草(BAT)裁撤9,000个岗位并将3,500个角色外包给第三方（包括埃森哲）。投资者和经济学家对AI颠覆传统行业、导致就业流失的担忧日益加深。 - **来源**: Reuters | **日期**: 2026年6月29日 | **置信度**: 0.93 ### 4. Google AI团队人才流失加剧：多名顶尖研究员跳槽Anthropic Google DeepMind连续遭遇重大人才流失。Gemini项目核心研究员Jonas Adler和Alexander Pritzel已加入Anthropic，此前Arthur Conmy也做出同样选择。SignalFire报告显示，Google研究员跳槽Anthropic的概率是其他人的11倍。 - **来源**: Bloomberg | **日期**: 2026年6月24-26日 | **置信度**: 0.90 ### 5. 福特承认AI在复杂工程任务上不如人类工程师 福特汽车公开承认其AI引入计划遭遇挫折——计算机算法无法自学人类工程师数十年积累的实践经验。福特已重新雇佣了350名资深工程师（包括前员工和供应商专家）来弥补AI的不足。 - **来源**: PoweredByAI / Reuters | **日期**: 2026年6月29日 | **置信度**: 0.88 ### 6. 特朗普不再将Anthropic视为国家安全威胁，但保留紧急权力 特朗普表示他不再将Anthropic视为国家安全威胁，但未排除根据《国防生产法》动用紧急权力的可能性。此前美国曾对Anthropic最先进的Mythos模型实施出口管制，近日已部分解除。 - **来源**: Axios | **日期**: 2026年6月22-27日 | **置信度**: 0.85 ### 7. 五角大楼呼吁国会不要限制AI发展 五角大楼首席技术官Emil Michael呼吁国会避免对数据中心和AI使用施加限制，称这将阻碍军事现代化和创新。与此同时，Anthropic与五角大楼在自主武器和监控AI使用上的严格管控方面存在分歧。 - **来源**: Crypto Briefing / Stars and Stripes | **日期**: 2026年6月26-29日 | **置信度**: 0.82 ### 8. 2026年全球AI支出预计达2.6万亿美元，NVIDIA黄仁勋呼吁建立新规范 全球AI支出在2026年预计达到2.6万亿美元，其中数据中心投资近8000亿美元。NVIDIA首席执行官黄仁勋指出，AI采用不仅需要更好的模型，还需要社会建立新的使用规范和明确的安全标准。 - **来源**: 多方报道综合 | **日期**: 2026年6月29日 | **置信度**: 0.87 --- ## 第二部分：市场与经济 ### 📈 实时市场指数（2026年6月29日 美东时间上午10:05） | 指数/资产 | 最新价格 | 涨跌 | 涨跌幅 | |-----------|---------|------|--------| | **标普500** | 7,391.75 | +37.73 |
