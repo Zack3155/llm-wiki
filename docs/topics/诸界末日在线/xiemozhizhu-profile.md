@@ -93,11 +93,11 @@ topic_key: zhu-jie-mo-ri
 ## 参见
 - [墟墓 · 概念档案](xumu-concept.md) — 概念层墟墓与剧情代称层区分
 - [幕 / 冰封之尸 — 角色档案](./bingfengzhishi-profile.md) — SearXNG+百度百科+抖音百科+知乎+PTT交叉验证更新:冰封尸体=幕
-- [顾青山 — 角色档案](./gu-qing-shan-profile.md)
+- [顾青山 · 角色档案](./gu-qing-shan-profile.md)
 - [诸界末日在线 · 终局分析](./zhu-jie-mo-ri-ending.md)
 - [柳平 — 角色档案](./liu-ping-profile.md) — 扮演邪魔首领的人
 - [独孤峰 — 角色档案](./du-ge-feng-profile.md) — 柳平捏造的身份
 - [虚空三术与众生同调 · 概念对照档案](./xukong-san-shu-comparison.md) — 一人万生之术原文证据与能力对照（含完整虚空三术关系表）
 - [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 本页对应实体
-- [青铜之主 — 角色/存在档案](qingtongzhizhu-profile.md)
-- [永灭之王 / 魔躯 — 角色档案](yong-mie-zhi-wang-profile.md)
+- [青铜之主 · 角色/存在档案](qingtongzhizhu-profile.md)
+- [永灭之王 / 魔躯 · 角色档案](yong-mie-zhi-wang-profile.md)

@@ -242,6 +242,6 @@ tags:
 - [虚空三术与众生同调 · 概念对照档案](xukong-san-shu-comparison.md) — 众生同调奥秘与一人万生之术原文对照
 - [诸界末日在线 · 考据索引](./_index.md)
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 顾青山终局行动与身份争议
-- [独孤峰 — 角色档案](du-ge-feng-profile.md)
+- [独孤峰 · 角色档案](du-ge-feng-profile.md)
 - [万神女帝身份考据 · 角色档案](wan-shen-nu-di-profile.md)
-- [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md)
+- [万界俯视者 · 角色档案](wan-jie-fu-shi-zhe-profile.md)

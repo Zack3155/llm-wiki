@@ -68,6 +68,8 @@ topic_key: zhu-jie-mo-ri
 - [六道争雄 · 概念档案](liudao-zhengxiong-concept.md) — 六道体系演进背景
 - [序列体系 · 概念档案](sequence-system-concept.md) — 序列与世界规则的关系
 - [混沌 · 概念档案](chaos-concept.md) — 后期世界规则与终极结构参照
+- [诸界末日在线 · 考据索引](_index.md)
+- [墟墓 · 概念档案](xumu-concept.md)
 
 ## 来源
 
@@ -86,5 +88,3 @@ topic_key: zhu-jie-mo-ri
 置信度评分: 0.68
 来源:
 QQ阅读第1596章《世界之门外》；QQ阅读第1630章《门与末日》；QQ阅读第2191章《血海之门》；69书吧目录检索；2026-06-16 layered_search 世界之门 / 第1596/1630/2187/2191章交叉检索。
-- [诸界末日在线](_index.md)
-- [诸界末日在线](xumu-concept.md)

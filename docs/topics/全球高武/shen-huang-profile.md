@@ -113,9 +113,9 @@ tags:
 - [天帝 · 角色档案（全球高武）](tian-di-profile.md)
 - [霸天帝 · 角色档案（全球高武）](ba-tian-di-profile.md)
 - [灭天帝 · 角色档案（全球高武）](mie-tian-di-profile.md)
-- [种籽 · 概念档案（全球高武）](zhongzi-concept.md)
+- [种子 · 概念档案（全球高武）](zhongzi-concept.md)
 - [源地 · 概念档案（全球高武）](yuandi-concept.md)
-- 【站点索引】全球高武 · 考据索引 (_index.md)
+- [全球高武 · 考据索引](../全球高武/_index.md)
 
 置信度评分: 0.92
 来源:

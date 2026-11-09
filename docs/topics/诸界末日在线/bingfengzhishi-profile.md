@@ -60,5 +60,5 @@ tags:
 
 - [诸界末日在线 · 考据索引](./_index.md)
 - [墟墓 · 概念档案](xumu-concept.md) — 概念层墟墓与剧情代称层区分
-- [柳平 — 角色档案](liu-ping-profile.md)
-- [独孤峰 — 角色档案](du-ge-feng-profile.md)
+- [柳平 · 角色档案](liu-ping-profile.md)
+- [独孤峰 · 角色档案](du-ge-feng-profile.md)

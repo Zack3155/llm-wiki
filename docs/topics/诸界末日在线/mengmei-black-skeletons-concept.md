@@ -68,6 +68,8 @@ topic_key: zhu-jie-mo-ri
 - [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) — 巨大尸体身份与封印看守人边界
 - [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 邪魔阵营首领线，非黑色骷髅本身
 - [柳平 — 角色档案](liu-ping-profile.md) — 扮演邪魔首领的人，避免与黑色骷髅混淆
+- [墟墓 · 概念档案](xumu-concept.md)
+- [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md)
 
 ## 来源
 
@@ -84,5 +86,3 @@ topic_key: zhu-jie-mo-ri
 置信度评分: 0.74
 来源:
 《诸界末日在线》第39章《时空乱流》；《诸界末日在线》第603章《世界之墓！》；2026-06-16 layered_search 蒙昧世界 / 黑色骷髅 / 第39章 / 第603章交叉检索。
-- [概念档案](xumu-concept.md)
-- [概念档案](zhu-jie-mo-ri-ending.md)

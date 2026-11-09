@@ -67,8 +67,7 @@ tags:
 - [巨大尸体 / 蒙昧世界黑色骷髅 · 概念档案](mengmei-black-skeletons-concept.md) — 终局时间线中的墟墓/巨大尸体代称边界
 - [世界之门 · 概念档案](world-gate-concept.md) — 终局从六道防线到虚空时代的转场入口
 - [诸界末日在线 · 考据索引](./_index.md) — 小说考据索引
-
-- [六道轮回](sequence-system-concept.md)
+- [序列体系 · 概念档案](sequence-system-concept.md)
 
 置信度评分: 0.78
 来源:

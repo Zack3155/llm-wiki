@@ -232,13 +232,13 @@ See also: [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md)、[�
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 六道崩碎时间线（无转之地是否被摧毁待确认）
 - [顾青山 — 角色档案](gu-qing-shan-profile.md) — 进入无转之地的关键事件
 - [幕 / 冰封之尸 — 角色档案](bingfengzhishi-profile.md) — 封印相关的身份区分
+- [混沌 · 概念档案](chaos-concept.md)
+- [序列体系 · 概念档案](sequence-system-concept.md)
+- [诸界末日在线 · 考据索引](./_index.md)
+- [墟墓 · 概念档案](xumu-concept.md)
 
 ---
 
-置信度评分: 置信度评分: 0.88
+置信度评分: 0.88
 来源:
 原文第286/304/305/306章；百度百科"永恒夺念者"；知乎解析帖；抖音百科；layered_search SearXNG L1 ≥8 独立来源
-- [诸界末日在线](chaos-concept.md)
-- [诸界末日在线](sequence-system-concept.md)
-- [诸界末日在线 · 考据索引](./_index.md)
-- [概念档案](xumu-concept.md)

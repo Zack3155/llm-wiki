@@ -126,9 +126,9 @@ sources:
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
 - [阳神 · 角色档案（全球高武）](yang-shen-profile.md)
 - [种子 · 概念档案（全球高武）](zhongzi-concept.md)
-- 【站点索引】全球高武 · 考据索引 (_index.md)
-- [中九皇四帝之一](ba-tian-di-profile.md)
-- [全名仅单字](mie-tian-di-profile.md)
+- [全球高武 · 考据索引](../全球高武/_index.md)
+- [霸天帝 · 角色档案（全球高武）](ba-tian-di-profile.md)
+- [灭天帝 · 角色档案（全球高武）](mie-tian-di-profile.md)
 - [斗天帝 · 角色档案（全球高武）](dou-tian-di-profile.md)
 
 置信度评分: 0.93

@@ -101,4 +101,4 @@ PTT 原文直接指出：**"说起来，顾青山虽然是柳平的老师，但�
 - [独孤峰 — 角色档案](du-ge-feng-profile.md) — 柳平捏造的身份角色
 - [诸界末日在线 · 考据索引](./_index.md)
 - [万神女帝身份考据 · 角色档案](wan-shen-nu-di-profile.md) — 终局相关角色
-- [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md)
+- [万界俯视者 · 角色档案](wan-jie-fu-shi-zhe-profile.md)

@@ -91,7 +91,7 @@ tags:
 - [六道轮回 · 概念档案](liudao-lunhui-concept.md)
 - [六道争雄 · 概念档案](liudao-zhengxiong-concept.md)
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md)
-- [顾青山 — 角色档案](gu-qing-shan-profile.md)
+- [顾青山 · 角色档案](gu-qing-shan-profile.md)
 - [地之钱币 · 概念档案](di-zhi-qian-bi-concept.md)
 - [六道体系总览 · 概念档案](liudao-system-overview-concept.md)
 - [世界之门 · 概念档案](world-gate-concept.md)

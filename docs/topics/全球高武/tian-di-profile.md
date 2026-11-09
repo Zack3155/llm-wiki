@@ -73,7 +73,7 @@ tags:
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
 - [源地 · 概念档案（全球高武）](yuandi-concept.md)
 - [战天帝 · 角色档案（全球高武）](zhan-tian-di-profile.md)
-- [斗天帝 · 角色档案（全球高武）](ba-tian-di-profile.md)
+- [霸天帝 · 角色档案（全球高武）](ba-tian-di-profile.md)
 - [阳神 · 角色档案（全球高武）](yang-shen-profile.md)
 - [全球高武 · 考据索引](../全球高武/_index.md)
 

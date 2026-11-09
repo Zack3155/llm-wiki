@@ -67,8 +67,8 @@ tags:
 ## 参见
 
 - [诸界末日在线 · 考据索引](./_index.md)
-- [顾青山 — 角色档案](gu-qing-shan-profile.md)
-- [柳平 — 角色档案](liu-ping-profile.md)
+- [顾青山 · 角色档案](gu-qing-shan-profile.md)
+- [柳平 · 角色档案](liu-ping-profile.md)
 - [万神女帝身份考据 · 角色档案](wan-shen-nu-di-profile.md)
-- [独孤峰 — 角色档案](du-ge-feng-profile.md)
-- [万界俯视者 — 角色档案](wan-jie-fu-shi-zhe-profile.md)
+- [独孤峰 · 角色档案](du-ge-feng-profile.md)
+- [万界俯视者 · 角色档案](wan-jie-fu-shi-zhe-profile.md)
