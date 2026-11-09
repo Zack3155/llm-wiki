@@ -71,12 +71,11 @@ tags:
 
 ## 参见
 
-- [柳平 — 角色档案](liu-ping-profile.md) — 独孤峰的扮演者
+- [柳平 — 角色档案](liu-ping-profile.md) — 独孤峰的扮演者；终局相关角色
 - [顾青山 — 角色档案](gu-qing-shan-profile.md) — 与独孤峰有直接冲突
 - [谢道灵 — 角色档案](xie-dao-ling-profile.md) — 合作关系
 - [邪魔之主 — 角色档案](xiemozhizhu-profile.md) — 身份关联实体
 - [诸界末日在线 · 考据索引](./_index.md)
-- [柳平 — 角色档案](liu-ping-profile.md) — 终局相关角色
 - [万界俯视者 · 角色档案](wan-jie-fu-shi-zhe-profile.md)
 - [墟墓 · 概念档案](xumu-concept.md) — 与“邪魔首领/巨大尸体”表象相关
 - [诸界末日在线 · 终局分析](zhu-jie-mo-ri-ending.md) — 终局行动与身份边界
