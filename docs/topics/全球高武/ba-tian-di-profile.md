@@ -3,7 +3,7 @@ title: 霸天帝 — 角色档案（全球高武）
 name: ba-tian-di-ggga
 topic: 全球高武
 date_added: 2026-06-17
-date_modified: 2026-06-17
+date_modified: 2026-11-08
 last_modified: 2026-06-17
 status: complete
 sources:
@@ -87,6 +87,7 @@ tags:
 - [灭天帝 · 角色档案（全球高武）](mie-tian-di-profile.md)
 - [方平 · 角色档案（全球高武）](fang-ping-profile.md)
 - [全球高武 · 考据索引](../全球高武/_index.md)
+- [斗天帝 · 角色档案（全球高武）](dou-tian-di-profile.md)
 
 置信度评分: 0.91
 来源:

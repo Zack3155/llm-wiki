@@ -5,7 +5,7 @@ topic_key: quanqiu-gaowu
 tags:
 - 小说考据
 date_added: 2026-06-17
-date_modified: 2026-06-17
+date_modified: 2026-11-08
 last_modified: 2026-06-17
 status: complete
 confidence: 0.93
@@ -129,6 +129,7 @@ sources:
 - 【站点索引】全球高武 · 考据索引 (_index.md)
 - [中九皇四帝之一](ba-tian-di-profile.md)
 - [全名仅单字](mie-tian-di-profile.md)
+- [斗天帝 · 角色档案（全球高武）](dou-tian-di-profile.md)
 
 置信度评分: 0.93
 来源:
@@ -136,5 +137,3 @@ sources:
 - SearXNG 分层搜索交叉参考（≥5 独立来源命中，来源层级 1–2）
 - 哔哩哔哩「高武人物志——战天帝」视频文案
 Key caveat: 百度百科为读者分析性质的百科条目，非起点/Qidian原站官方来源；未达0.95置信度。
-
-
